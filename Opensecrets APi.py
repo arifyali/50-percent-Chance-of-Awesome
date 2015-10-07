@@ -11,21 +11,23 @@ states = {
 import urllib2
 import json, requests
 import csv
+import pandas
 apikey = '32426dda76cf84e7157b8f7b54b39239'
 output = 'json'
 data = []
 
-#for state in states: 
- #   url = "http://www.opensecrets.org/api/?method=getLegislators&id=" + state + "&apikey=" + apikey + '&output=' + output
-  #  resp = requests.get(url=url)
-   # data.append(json.loads(resp.text)) 
-#csvName = "legislatorinfo.csv"
+for state in states: 
+    url = "http://www.opensecrets.org/api/?method=getLegislators&id=" + state + "&apikey=" + apikey + '&output=' + output
+    resp = requests.get(url=url)
+    data.append(json.loads(resp.text)) 
+# csvName = "legislatorinfo.csv"
 legislators = []    
 for i in range(50):
         legislators.append(data[i]['response']['legislator'])
 cid = []
 for no in range(len(legislators)):
-    cid.append(legislators[no]['@attributes']['cid'])
+    for i in range(len(legislators[no])):    
+        cid.append(legislators[no][i]['@attributes']['cid'])
     #names.append(legislators)[no]['@attributes'][]
 #with open(csvName, 'wb') as csvfile:
  #opensecretswriter = csv.writer(csvfile, delimiter=',')     
@@ -34,10 +36,13 @@ for no in range(len(legislators)):
 #for cycle in cycles
 #data = []
 for id in cid3:
-    url ="http://www.opensecrets.org/api/?method=candIndustry&cid=" + id + "&cycle=" + '2014' + "&apikey=" + apikey + '&output=' + output
+    url ="http://www.opensecrets.org/api/?method=candIndustry&cid=" + id + "&cycle=" + '2012' + "&apikey=" + apikey + '&output=' + output
     resp = requests.get(url=url)
     data.append(json.loads(resp.text))
 # to deal with blank pages
 cid1 = cid[32:]
 cid2 = cid[95:]
 cid3 = cid[127:]
+names = []
+for no in range(len(data)):
+    names.append(data[no]['response']['industries']['@attributes']['cand_name'])
