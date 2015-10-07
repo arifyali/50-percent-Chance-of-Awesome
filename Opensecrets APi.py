@@ -5,7 +5,7 @@ Created on Mon Oct  5 17:16:51 2015
 @author: joshuakaplan
 """
 states = {
-        'AK','AL','AR','AZ','CA','CO','CT','DC','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA','MA','MD','ME','MI','MN','MO','MS','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY',
+        'AK','AL','AR','AZ','CA','CO','CT','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA','MA','MD','ME','MI','MN','MO','MS','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY',
 }
 
 import urllib2
@@ -21,11 +21,7 @@ data = []
    # data.append(json.loads(resp.text)) 
 #csvName = "legislatorinfo.csv"
 legislators = []    
-for i in range(51):
-    if len(data[i]['response']['legislator'])>1:        
-        for no in range(len(data[i]['response']['legislator'])):
-            legislators.append(data[i]['response']['legislator'][no])            
-    else:
+for i in range(50):
         legislators.append(data[i]['response']['legislator'])
 cid = []
 for no in range(len(legislators)):
@@ -34,9 +30,14 @@ for no in range(len(legislators)):
 #with open(csvName, 'wb') as csvfile:
  #opensecretswriter = csv.writer(csvfile, delimiter=',')     
     #opensecretswriter.writerow()
-cycles = {'2012','2014'}
-for cycle in cycles
-    for id in cid:
-        url ="http://www.opensecrets.org/api/?method=candIndustry&cid=" + id + "&cycle=" + cycle + "&apikey=" + apikey + '&output=' + output
-            resp = requests.get(url=url)
-            data.append(json.loads)
+#cycles = {'2012','2014'}
+#for cycle in cycles
+#data = []
+for id in cid3:
+    url ="http://www.opensecrets.org/api/?method=candIndustry&cid=" + id + "&cycle=" + '2014' + "&apikey=" + apikey + '&output=' + output
+    resp = requests.get(url=url)
+    data.append(json.loads(resp.text))
+# to deal with blank pages
+cid1 = cid[32:]
+cid2 = cid[95:]
+cid3 = cid[127:]
