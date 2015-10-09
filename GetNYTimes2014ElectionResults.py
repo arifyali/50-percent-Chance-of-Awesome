@@ -1,4 +1,4 @@
-print("Begin program: 2014 Election Results")
+print("Begin program: GetNYTimes2014ElectionResults.py")
 
 from bs4 import BeautifulSoup
 import requests
@@ -29,91 +29,153 @@ stateAbbrevList = ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl",
                    "or", "pa", "ri", "sc", "sd", "tn", "tx", "ut", "vt",
                    "va", "wa", "wv", "wi", "wy"]
 
-for stateNum in range (0,50):
-    if stateNameList[stateNum]=="california":
+csvName = "NYTimes2014elections.csv"
+
+with open(csvName,"w", newline="", encoding="utf8") as csvfile:
+    electionWriter = csv.writer(csvfile,delimiter=",")
+    electionWriter.writerow (["State", "CongressionalMembership",
+                              "Candidate1",  "PartyAffiliation1",  "Votes1",  "VotePercent1",
+                              "Candidate2",  "PartyAffiliation2",  "Votes2",  "VotePercent2",
+                              "Candidate3",  "PartyAffiliation3",  "Votes3",  "VotePercent3",
+                              "Candidate4",  "PartyAffiliation4",  "Votes4",  "VotePercent4",
+                              "Candidate5",  "PartyAffiliation5",  "Votes5",  "VotePercent5",
+                              "Candidate6",  "PartyAffiliation6",  "Votes6",  "VotePercent6",
+                              "Candidate7",  "PartyAffiliation7",  "Votes7",  "VotePercent7",
+                              "Candidate8",  "PartyAffiliation8",  "Votes8",  "VotePercent8",
+                              "Candidate9",  "PartyAffiliation9",  "Votes9",  "VotePercent9",
+                              "Candidate10", "PartyAffiliation10", "Votes10", "VotePercent10",
+                              "Candidate11", "PartyAffiliation11", "Votes11", "VotePercent11",
+                              "Candidate12", "PartyAffiliation12", "Votes12", "VotePercent12"])
+
+    for stateNum in range (0,50):
         print("Current state =", stateNameList[stateNum])
-        
+    
         url = "http://elections.nytimes.com/2014/" + stateNameList[stateNum] + "-elections"
         page = requests.get(url)
         soup = BeautifulSoup(page.text, "lxml")
 
-        csvName = stateNameList[stateNum] + "2014elections.csv"
-
-        with open(csvName,"w", newline="", encoding="utf8") as csvfile:
-            electionWriter = csv.writer(csvfile,delimiter=",")
-            
-            #id=
-            #ALABAMA:
-            #"race-al-house-district-1-2014-general"
-            #"race-al-house-district-2-2014-general"
-            #"race-al-house-district-#-2014-general"
-            #"race-al-senate-class-ii-2014-general"
-            #CALIFORNIA:
-            #No Senate
-            #race-ca-house-district-1-2014-general
-            #race-ca-house-district-#-2014-general
-            #IOWA:
-            #race-ia-senate-class-ii-2014-general
-
-            SenateRace = soup.find(id="race-" + stateAbbrevList[stateNum] + "-senate-class-ii-2014-general")
-            if SenateRace!=None:
-                DO
-                
-            houseDistrictNum = 1
-            nextHouse = soup.find(id="race-" + stateAbbrevList[stateNum] + "-house-district-" + str(houseDistrictNum) + "-2014-general")
-            while nextHouse!=None:
-                data = []
-                td = nextHouse.find_all("td")
-                datastring = ""
-                for i in range (0,len(td)):
-                    currData = td[i].text.strip()
-                    currData = currData.replace("\n","")
-                    currData = " ".join(currData.split())
-                    print(currData)
+        header = [stateNameList[stateNum], "Senate"]
+        senateRace = soup.find(id="race-" + stateAbbrevList[stateNum] + "-senate-class-ii-2014-general")
+        if senateRace!=None:
+            data = []
+            td = senateRace.find_all("td")
+            datastring = "header[0],header[1]"
+            noContest="no"
+            for i in range (0,len(td)):
+                currData = td[i].text.strip()
+                currData = currData.replace("\n","")
+                currData = " ".join(currData.split())
+                if currData[-11:]=="Uncontested":
+                    noContest = "yes"
+                    currData = currData[:-11]
+                if currData!="SHOW ALL HIDE":
                     data.append(currData)
-                    if i==0:
-                        datastring = datastring + "data[" + str(i) + "]"
-                    else:
-                        datastring = datastring + ", data[" + str(i) + "]"
-                electionWriter.writerow(eval(datastring))
-                houseDistrictNum = houseDistrictNum + 1
-                nextHouse = soup.find(id="race-" + stateAbbrevList[stateNum] + "-house-district-" + str(houseDistrictNum) + "-2014-general")
-
-
-
+                    datastring = datastring + ", data[" + str(i) + "]"
+                    if i==(len(td)-1) and noContest=="yes":
+                        for j in range (0,2):
+                            data.append("")
+                            nextI = i + 1 + j
+                            datastring = datastring + ", data[" + str(nextI) + "]"
+                        data.append("Uncontested")
+                        nextI = nextI + 1
+                        datastring = datastring + ", data[" + str(nextI) + "]"
+            electionWriter.writerow(eval(datastring))
             
+        header = [stateNameList[stateNum], "Senate Special"]
+        senateSpecialRace = soup.find(id="race-" + stateAbbrevList[stateNum] + "-senate-class-ii-2014-special-general")
+        if senateSpecialRace!=None:
+            data = []
+            td = senateSpecialRace.find_all("td")
+            datastring = "header[0],header[1]"
+            noContest="no"
+            for i in range (0,len(td)):
+                currData = td[i].text.strip()
+                currData = currData.replace("\n","")
+                currData = " ".join(currData.split())
+                if currData[-11:]=="Uncontested":
+                    noContest = "yes"
+                    currData = currData[:-11]
+                if currData!="SHOW ALL HIDE":
+                    data.append(currData)
+                    datastring = datastring + ", data[" + str(i) + "]"
+                    if i==(len(td)-1) and noContest=="yes":
+                        for j in range (0,2):
+                            data.append("")
+                            nextI = i + 1 + j
+                            datastring = datastring + ", data[" + str(nextI) + "]"
+                        data.append("Uncontested")
+                        nextI = nextI + 1
+                        datastring = datastring + ", data[" + str(nextI) + "]"
+            electionWriter.writerow(eval(datastring))
 
-            #https://docs.python.org/3/library/functions.html#eval
-            #http://stackoverflow.com/questions/961632/converting-integer-to-string-in-python
-            #http://stackoverflow.com/questions/6496884/compress-whitespaces-in-string
-            #http://www.tutorialspoint.com/python/string_join.htm
-            #http://www.tutorialspoint.com/python/string_replace.htm
-            #http://stackoverflow.com/questions/275018/how-can-i-remove-chomp-a-newline-in-python
-            #http://stackoverflow.com/questions/1762484/how-to-find-the-position-of-an-element-in-a-list-in-python
-                
-            #for td in nexthouse.find_all("td"):
-            #    print(td)
-            #    test = td.text.strip()
-            #    print(test)
-                #for i in range (0,len(td)):
-                 #   print(i)
-                    
-                #print(test)
-                    
-                
-            #i = -1
-            #td = nexthouse.find_all("td")
-            #print(td[0])
-            #test = td[0].text.strip()
-            #print(test)
-            #length = len(td)
-            #print(length)
-            
-            
-            #for td in nexthouse.find_all("td"):
-            #    i = i + 1
-            #    x = []
-            #    print(i)
-            #    x[i] = td.text.strip()
-            #    print(x)
+        header = [stateNameList[stateNum], "Senate Special"]
+        senateSpecialRace = soup.find(id="race-" + stateAbbrevList[stateNum] + "-senate-class-iii-2014-general")
+        if senateSpecialRace!=None:
+            data = []
+            td = senateSpecialRace.find_all("td")
+            datastring = "header[0],header[1]"
+            noContest="no"
+            for i in range (0,len(td)):
+                currData = td[i].text.strip()
+                currData = currData.replace("\n","")
+                currData = " ".join(currData.split())
+                if currData[-11:]=="Uncontested":
+                    noContest = "yes"
+                    currData = currData[:-11]
+                if currData!="SHOW ALL HIDE":
+                    data.append(currData)
+                    datastring = datastring + ", data[" + str(i) + "]"
+                    if i==(len(td)-1) and noContest=="yes":
+                        for j in range (0,2):
+                            data.append("")
+                            nextI = i + 1 + j
+                            datastring = datastring + ", data[" + str(nextI) + "]"
+                        data.append("Uncontested")
+                        nextI = nextI + 1
+                        datastring = datastring + ", data[" + str(nextI) + "]"
+            electionWriter.writerow(eval(datastring))
         
+
+        houseDistrictNum = 1
+        header = [stateNameList[stateNum], "House District " + str(houseDistrictNum)]
+        nextHouse = soup.find(id="race-" + stateAbbrevList[stateNum] + "-house-district-" + str(houseDistrictNum) + "-2014-general")
+        while nextHouse!=None:
+            data = []
+            td = nextHouse.find_all("td")
+            datastring = "header[0],header[1]"
+            noContest="no"
+            for i in range (0,len(td)):
+                currData = td[i].text.strip()
+                currData = currData.replace("\n","")
+                currData = " ".join(currData.split())
+                if currData[-11:]=="Uncontested":
+                    noContest = "yes"
+                    currData = currData[:-11]
+                if currData!="SHOW ALL HIDE":
+                    data.append(currData)
+                    datastring = datastring + ", data[" + str(i) + "]"
+                    if i==(len(td)-1) and noContest=="yes":
+                        for j in range (0,2):
+                            data.append("")
+                            nextI = i + 1 + j
+                            datastring = datastring + ", data[" + str(nextI) + "]"
+                        data.append("Uncontested")
+                        nextI = nextI + 1
+                        datastring = datastring + ", data[" + str(nextI) + "]"
+            electionWriter.writerow(eval(datastring))
+            
+            houseDistrictNum = houseDistrictNum + 1
+            header = [stateNameList[stateNum], "House District " + str(houseDistrictNum)]
+            nextHouse = soup.find(id="race-" + stateAbbrevList[stateNum] + "-house-district-" + str(houseDistrictNum) + "-2014-general")
+
+print("End program: GetNYTimes2014ElectionResults.py")
+ 
+#Sources:
+#https://docs.python.org/3/library/functions.html#eval
+#http://stackoverflow.com/questions/961632/converting-integer-to-string-in-python
+#http://stackoverflow.com/questions/6496884/compress-whitespaces-in-string
+#http://www.tutorialspoint.com/python/string_join.htm
+#http://www.tutorialspoint.com/python/string_replace.htm
+#http://stackoverflow.com/questions/275018/how-can-i-remove-chomp-a-newline-in-python
+#http://stackoverflow.com/questions/1762484/how-to-find-the-position-of-an-element-in-a-list-in-python
+#http://stackoverflow.com/questions/663171/is-there-a-way-to-substring-a-string-in-python
