@@ -1,1 +1,405 @@
-,file,column,data type,summary,missing values
+,file,column,data type,summary,missing values,length
+0,FEC Elections Data/2004congresults.xls,#,float64,"count    3788.000000
+mean     1894.500000
+std      1093.645738
+min         1.000000
+25%       947.750000
+50%      1894.500000
+75%      2841.250000
+max      3788.000000
+dtype: float64",0,3788
+0,FEC Elections Data/2004congresults.xls,STATE,object,"count           3788
+unique            55
+top       California
+freq             415
+dtype: object",12,3788
+0,FEC Elections Data/2004congresults.xls,STATE ABBREVIATION,object,"count     3788
+unique      55
+top         CA
+freq       415
+dtype: object",3788,3788
+0,FEC Elections Data/2004congresults.xls,DISTRICT,object,"count     3734
+unique      60
+top          S
+freq       434
+dtype: object",3355,3788
+0,FEC Elections Data/2004congresults.xls,FEC ID,object,"count          2070
+unique         1910
+top       H8NY23084
+freq              5
+dtype: object",5506,3788
+0,FEC Elections Data/2004congresults.xls,INCUMBENT INDICATOR,object,"count     511
+unique      1
+top       (I)
+freq      511
+dtype: object",6554,3788
+0,FEC Elections Data/2004congresults.xls,FIRST NAME,object,"count     2116
+unique    1195
+top       John
+freq        41
+dtype: object",3380,3788
+0,FEC Elections Data/2004congresults.xls,LAST NAME,object,"count          2309
+unique         1595
+top       Scattered
+freq            190
+dtype: object",3050,3788
+0,FEC Elections Data/2004congresults.xls,"LAST NAME, FIRST",object,"count          2360
+unique         1958
+top       Scattered
+freq            240
+dtype: object",2985,3788
+0,FEC Elections Data/2004congresults.xls,TOTAL VOTES,object,"count             1428
+unique               6
+top       Party Votes:
+freq               844
+dtype: object",4720,3788
+0,FEC Elections Data/2004congresults.xls,PARTY,object,"count     3158
+unique      91
+top          R
+freq      1109
+dtype: object",1998,3788
+0,FEC Elections Data/2004congresults.xls,PRIMARY,object,"count          3329
+unique         2201
+top       Unopposed
+freq            214
+dtype: object",1143,3788
+0,FEC Elections Data/2004congresults.xls,PRIMARY %,float64,"count    1545.000000
+mean        0.544984
+std         0.392618
+min         0.000008
+25%         0.150192
+50%         0.513191
+75%         1.000000
+max         1.000000
+dtype: float64",4486,3788
+0,FEC Elections Data/2004congresults.xls,RUNOFF,float64,"count        57.000000
+mean      62162.754386
+std       87069.975184
+min        1044.000000
+25%        8803.000000
+50%       28180.000000
+75%       72238.000000
+max      386133.000000
+dtype: float64",7462,3788
+0,FEC Elections Data/2004congresults.xls,RUNOFF %,object,"count                    69
+unique                   25
+top       Combined Parties:
+freq                     45
+dtype: object",7438,3788
+0,FEC Elections Data/2004congresults.xls,GENERAL,object,"count     2167
+unique    2062
+top          1
+freq        15
+dtype: float64",3243,3788
+0,FEC Elections Data/2004congresults.xls,GENERAL %,float64,"count    1581.000000
+mean        0.311733
+std         0.293917
+min         0.000000
+25%         0.015890
+50%         0.294608
+75%         0.587890
+max         1.000000
+dtype: float64",4414,3788
+0,FEC Elections Data/2004congresults.xls,GE RUNOFF,float64,"count         8.000000
+mean     125592.500000
+std       82610.406719
+min       57042.000000
+25%       60522.500000
+50%       94846.000000
+75%      165195.250000
+max      251185.000000
+dtype: float64",7560,3788
+0,FEC Elections Data/2004congresults.xls,GE RUNOFF %,float64,"count    4.000000
+mean     0.500000
+std      0.040555
+min      0.450393
+25%      0.485737
+50%      0.500000
+75%      0.514263
+max      0.549607
+dtype: float64",7568,3788
+0,FEC Elections Data/2004congresults.xls,Notes (See Endnotes Tab),float64,"count    23.00000
+mean     12.00000
+std       6.78233
+min       1.00000
+25%       6.50000
+50%      12.00000
+75%      17.50000
+max      23.00000
+dtype: float64",7530,3788
+0,FEC Elections Data/2008congresults.xls,1.0,float64,"count    3783.000000
+mean     1893.000000
+std      1092.202362
+min         2.000000
+25%       947.500000
+50%      1893.000000
+75%      2838.500000
+max      3784.000000
+dtype: float64",0,3783
+0,FEC Elections Data/2008congresults.xls,STATE,object,"count           3782
+unique            56
+top       California
+freq             381
+dtype: object",13,3783
+0,FEC Elections Data/2008congresults.xls,STATE ABBREVIATION,object,"count     3783
+unique      56
+top         CA
+freq       381
+dtype: object",3783,3783
+0,FEC Elections Data/2008congresults.xls,DISTRICT,object,"count     3783
+unique     100
+top          S
+freq       364
+dtype: object",3099,3783
+0,FEC Elections Data/2008congresults.xls,FEC ID#,object,"count     3743
+unique    1975
+top        n/a
+freq      1662
+dtype: object",3823,3783
+0,FEC Elections Data/2008congresults.xls,INCUMBENT INDICATOR (I),object,"count     481
+unique      1
+top       (I)
+freq      481
+dtype: object",6604,3783
+0,FEC Elections Data/2008congresults.xls,CANDIDATE NAME (First),object,"count     2155
+unique    1206
+top       John
+freq        47
+dtype: object",3288,3783
+0,FEC Elections Data/2008congresults.xls,Candidate Name (Last),object,"count          2401
+unique         1641
+top       Scattered
+freq            241
+dtype: object",2854,3783
+0,FEC Elections Data/2008congresults.xls,CANDIDATE NAME,object,"count          2406
+unique         2049
+top       Scattered
+freq            246
+dtype: object",2898,3783
+0,FEC Elections Data/2008congresults.xls,TOTAL VOTES,object,"count             1377
+unique               7
+top       Party Votes:
+freq               842
+dtype: object",4812,3783
+0,FEC Elections Data/2008congresults.xls,PARTY,object,"count     3248
+unique      99
+top          D
+freq      1111
+dtype: object",1835,3783
+0,FEC Elections Data/2008congresults.xls,PRIMARY,object,"count          3451
+unique         2247
+top       Unopposed
+freq            237
+dtype: object",901,3783
+0,FEC Elections Data/2008congresults.xls,PRIMARY %,object,"count     1660
+unique    1148
+top          1
+freq       435
+dtype: float64",4271,3783
+0,FEC Elections Data/2008congresults.xls,RUNOFF,float64,"count        51.000000
+mean      66807.176471
+std       88029.416207
+min         753.000000
+25%       15994.500000
+50%       29351.000000
+75%       74061.000000
+max      391214.000000
+dtype: float64",7464,3783
+0,FEC Elections Data/2008congresults.xls,RUNOFF %,float64,"count    24.000000
+mean      0.500000
+std       0.145192
+min       0.212661
+25%       0.423090
+50%       0.500000
+75%       0.576910
+max       0.787339
+dtype: float64",7518,3783
+0,FEC Elections Data/2008congresults.xls,GENERAL ,object,"count     2101
+unique    1991
+top          5
+freq         9
+dtype: float64",3375,3783
+0,FEC Elections Data/2008congresults.xls,GENERAL %,object,"count     1557
+unique    1548
+top          1
+freq         5
+dtype: float64",4454,3783
+0,FEC Elections Data/2008congresults.xls,GE RUNOFF,float64,"count          3.000000
+mean     1425304.000000
+std       637340.684291
+min       909923.000000
+25%      1068978.000000
+50%      1228033.000000
+75%      1682994.500000
+max      2137956.000000
+dtype: float64",7560,3783
+0,FEC Elections Data/2008congresults.xls,GE RUNOFF %,float64,"count    2.000000
+mean     0.500000
+std      0.105212
+min      0.425604
+25%      0.462802
+50%      0.500000
+75%      0.537198
+max      0.574396
+dtype: float64",7562,3783
+0,FEC Elections Data/2008congresults.xls,"COMBINED GE PARTY TOTALS (CT, NY)",float64,"count       119.000000
+mean     129855.739496
+std       52358.092777
+min        4488.000000
+25%      104865.000000
+50%      140529.000000
+75%      168558.000000
+max      230172.000000
+dtype: float64",7328,3783
+0,FEC Elections Data/2008congresults.xls,"COMBINED % (CT, NY)",float64,"count    119.000000
+mean       0.548605
+std        0.229707
+min        0.034085
+25%        0.369723
+50%        0.586699
+75%        0.709947
+max        0.965899
+dtype: float64",7328,3783
+0,FEC Elections Data/2008congresults.xls,FOOTNOTES,object,"count                                                   309
+unique                                                   33
+top       Top 2 Primary System -- Primary ""Party Votes"" ...
+freq                                                     69
+dtype: object",7256,3783
+0,FEC Elections Data/2012congresults.xls,2012 VOTES CAST FOR THE U.S. HOUSE OF REPRESENTATIVES BY PARTY,object,"count     66
+unique    66
+top       WA
+freq       1
+dtype: object",93,81
+0,FEC Elections Data/2012congresults.xls,Unnamed: 1,object,"count     55
+unique    55
+top        0
+freq       1
+dtype: float64",53,81
+0,FEC Elections Data/2012congresults.xls,Unnamed: 2,object,"count          54
+unique         54
+top       2080896
+freq            1
+dtype: float64",55,81
+0,FEC Elections Data/2012congresults.xls,Unnamed: 3,object,"count      19
+unique     19
+top       545
+freq        1
+dtype: float64",125,81
+0,FEC Elections Data/2012congresults.xls,Unnamed: 4,object,"count          57
+unique         57
+top       3904513
+freq            1
+dtype: float64",49,81
+0,FEC Elections Data/2012congresults.xls,Unnamed: 5,object,"count         57
+unique        57
+top       161926
+freq           1
+dtype: float64",49,81
+0,FEC Elections Data/2012congresults.xls,Unnamed: 6,object,"count        53
+unique       53
+top       19333
+freq          1
+dtype: float64",57,81
+0,Contributions by Industry 2012-2014.csv,Unnamed: 0,int64,"count    10711.000000
+mean      5355.000000
+std       3092.143701
+min          0.000000
+25%       2677.500000
+50%       5355.000000
+75%       8032.500000
+max      10710.000000
+dtype: float64",0,10711
+0,Contributions by Industry 2012-2014.csv,CID,object,"count         10711
+unique          629
+top       N00002247
+freq             24
+dtype: object",0,10711
+0,Contributions by Industry 2012-2014.csv,Name,object,"count            10711
+unique             633
+top       Howard Coble
+freq                24
+dtype: object",541,10711
+0,Contributions by Industry 2012-2014.csv,Party,object,"count     10711
+unique        3
+top           R
+freq       5670
+dtype: object",0,10711
+0,Contributions by Industry 2012-2014.csv,Cycle,int64,"count    10711.000000
+mean      2013.011110
+std          0.999985
+min       2012.000000
+25%       2012.000000
+50%       2014.000000
+75%       2014.000000
+max       2014.000000
+dtype: float64",0,10711
+0,Contributions by Industry 2012-2014.csv,Industry,object,"count                 10711
+unique                   85
+top       Lawyers/Law Firms
+freq                    883
+dtype: object",4100,10711
+0,Contributions by Industry 2012-2014.csv,Industry Code,object,"count     10711
+unique       83
+top         K01
+freq        883
+dtype: object",0,10711
+0,Contributions by Industry 2012-2014.csv,Total,int64,"count      10711.000000
+mean      133880.451498
+std       239620.699275
+min          300.000000
+25%        33500.000000
+50%        58250.000000
+75%       130966.500000
+max      4308733.000000
+dtype: float64",0,10711
+0,Contributions by Industry 2012-2014.csv,PACs,int64,"count     10711.000000
+mean      48404.763141
+std       64121.979721
+min      -10000.000000
+25%       11054.500000
+50%       28662.000000
+75%       56500.000000
+max      782800.000000
+dtype: float64",0,10711
+0,Contributions by Industry 2012-2014.csv,Individuals,int64,"count      10711.000000
+mean       85475.688358
+std       221349.619452
+min        -1000.000000
+25%         2500.000000
+50%        20650.000000
+75%        64795.500000
+max      3988791.000000
+dtype: float64",0,10711
+0,Contributions by Industry 2012-2014.csv,Origin,object,"count                              10711
+unique                                 1
+top       Center for Responsive Politics
+freq                               10711
+dtype: object",10711,10711
+0,Contributions by Industry 2012-2014.csv,Last Updated,object,"count          10711
+unique             2
+top       03/09/2015
+freq            5415
+dtype: object",10711,10711
+0,Contributions by Industry 2012-2014.csv,Source,object,"count                                                 10711
+unique                                                 1070
+top       http://www.opensecrets.org/politicians/industr...
+freq                                                     14
+dtype: object",0,10711
+0,Contributions by Industry 2012-2014.csv,industrypercent,float64,"count    10711.000000
+mean         0.099897
+std          0.055575
+min          0.017773
+25%          0.064092
+50%          0.083565
+75%          0.118007
+max          1.000000
+dtype: float64",0,10711
+0,Contributions by Industry 2012-2014.csv,candtotal,int64,"count       10711.000000
+mean      1339831.660069
+std       1852116.959549
+min          1000.000000
+25%        414012.000000
+50%        649316.000000
+75%       1283886.000000
+max      14248796.000000
+dtype: float64",0,10711
