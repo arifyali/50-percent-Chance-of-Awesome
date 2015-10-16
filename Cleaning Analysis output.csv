@@ -1,15 +1,17 @@
 ,file,score
-0,SP500HistoricalDataPart1.csv,0.927153724
-0,SP500HistoricalDataPart2.csv,0.92558559
-0,dJIndustialHistoricalData.csv,0.884430783
-0,Sector base Indices/CBOE Gold Index.csv,0.927906555
-0,Sector base Indices/NASDAQ Banking Index.csv,0.91494899
-0,Sector base Indices/NASDAQ Biotechnology Index.csv,0.91614966
-0,Sector base Indices/NASDAQ Industrial Index.csv,0.916562565
-0,Sector base Indices/NYSE AMEX Oil Index.csv,0.928005788
-0,nytimesTemps.csv,0.225802423
-0,FEC Elections Data/2004congresults.xls,0.431144403
-0,FEC Elections Data/2008congresults.xls,0.41107947
-0,FEC Elections Data/2012congresults.xls,0.575837743
-0,Contributions by Industry 2012-2014.csv,0.915236673
-0,opensecret/fundingCongress.csv,0.78748649
+0,SP500HistoricalDataPart1.csv,0.9271537240759604
+0,SP500HistoricalDataPart2.csv,0.925585590287778
+0,dJIndustialHistoricalData.csv,0.8844307834520626
+0,Sector base Indices/CBOE Gold Index.csv,0.9279065550485055
+0,Sector base Indices/NASDAQ Banking Index.csv,0.9149489902144493
+0,Sector base Indices/NASDAQ Biotechnology Index.csv,0.9161496598639456
+0,Sector base Indices/NASDAQ Industrial Index.csv,0.916562565063502
+0,Sector base Indices/NYSE AMEX Oil Index.csv,0.9280057879505393
+0,nytimesTemps.csv,0.22580242287997998
+0,FEC Elections Data/2004congresults.xls,0.4311444033790919
+0,FEC Elections Data/results06.xls,0.39052928203871595
+0,FEC Elections Data/2008congresults.xls,0.4110794703578209
+0,FEC Elections Data/results10.xls,0.3914148264698968
+0,FEC Elections Data/2012congresults.xls,0.5758377425044092
+0,Contributions by Industry 2012-2014.csv,0.9152366725795911
+0,opensecret/fundingCongress.csv,0.7874864897535446

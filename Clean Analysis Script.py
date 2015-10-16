@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[76]:
+# In[4]:
 
 # In accordance with the class policies and Georgetown's Honor Code,
 # I certify that, with the exceptions of the lecture notes and those
@@ -41,7 +41,7 @@ def textUncleanCounter(column):
     return(count)
 
 
-# In[77]:
+# In[5]:
 
 def cleaniness(filePath, csv = True, sheet = 2):
     missingData = 0
@@ -74,53 +74,53 @@ def cleaniness(filePath, csv = True, sheet = 2):
     return(T)
 
 
-# In[78]:
+# In[6]:
 
 outPutLog = outPutLog.append(cleaniness("SP500HistoricalDataPart1.csv"))
 
 
-# In[79]:
+# In[7]:
 
 outPutLog = outPutLog.append(cleaniness("SP500HistoricalDataPart2.csv"))
 print(outPutLog)
 
 
-# In[80]:
+# In[8]:
 
 outPutLog = outPutLog.append(cleaniness("dJIndustialHistoricalData.csv"))
 #outPutLog.to_csv("OutputLog.csv")
 
 
-# In[81]:
+# In[9]:
 
 outPutLog = outPutLog.append(cleaniness("Sector base Indices/CBOE Gold Index.csv"))
 #outPutLog.to_csv("OutputLog.csv")           
 
 
-# In[82]:
+# In[10]:
 
 outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Banking Index.csv"))
 #outPutLog.to_csv("OutputLog.csv")
 
 
-# In[83]:
+# In[11]:
 
 outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Biotechnology Index.csv"))
 #outputLog.to_csv("OutputLog.csv")
 
 
-# In[84]:
+# In[12]:
 
 outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Industrial Index.csv"))
 #outputLog.to_csv("OutputLog.csv")
 
 
-# In[85]:
+# In[13]:
 
 outPutLog = outPutLog.append(cleaniness("Sector base Indices/NYSE AMEX Oil Index.csv"))
 
 
-# In[86]:
+# In[14]:
 
 #NaN were messing up the basic analysis, so I had replaces them with zeros
 # I found out how from the pandas developer site
@@ -128,7 +128,7 @@ outPutLog = outPutLog.append(cleaniness("Sector base Indices/NYSE AMEX Oil Index
 nytimesTemp = pandas.read_csv("NYTimes2014elections.csv").fillna('00')
 
 
-# In[87]:
+# In[15]:
 
 #In order to actually evaluate the Nytimes I had to make changes to understand numeric data that was pulled as string
 #had to remove percentage sign from VotePercent columns
@@ -163,7 +163,7 @@ nytimesTemp['VotePercent11'] = floatConverter(nytimesTemp['VotePercent11'])
 nytimesTemp['VotePercent12'] = floatConverter(nytimesTemp['VotePercent12'])
 
 
-# In[88]:
+# In[16]:
 
 nytimesTemp['Votes1'] = floatConverter(nytimesTemp['Votes1'],percentSign = False)
 nytimesTemp['Votes2'] = floatConverter(nytimesTemp['Votes2'],percentSign = False)
@@ -179,7 +179,7 @@ nytimesTemp['Votes11'] = floatConverter(nytimesTemp['Votes11'],percentSign = Fal
 nytimesTemp['Votes12'] = floatConverter(nytimesTemp['Votes12'],percentSign = False)
 
 
-# In[89]:
+# In[17]:
 
 nytimesTemp = nytimesTemp.replace('0', np.nan)
 nytimesTemp = nytimesTemp.replace('00', np.nan)
@@ -187,37 +187,47 @@ nytimesTemp = nytimesTemp.replace(0, np.nan)
 nytimesTemp.to_csv("nytimesTemps.csv")
 
 
-# In[90]:
+# In[18]:
 
 outPutLog = outPutLog.append(cleaniness("nytimesTemps.csv"))
 
 
-# In[91]:
+# In[19]:
 
 outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2004congresults.xls", csv = False, sheet = 2))
 
 
-# In[92]:
+# In[20]:
+
+outPutLog = outPutLog.append(cleaniness("FEC Elections Data/results06.xls", csv = False, sheet = 2))
+
+
+# In[21]:
 
 outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2008congresults.xls", csv = False, sheet = 2))
 
 
-# In[93]:
+# In[22]:
+
+outPutLog = outPutLog.append(cleaniness("FEC Elections Data/results10.xls", csv = False, sheet = 2))
+
+
+# In[23]:
 
 outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2012congresults.xls", csv = False, sheet = 4))
 
 
-# In[94]:
+# In[24]:
 
 outPutLog = outPutLog.append(cleaniness("Contributions by Industry 2012-2014.csv"))
 
 
-# In[95]:
+# In[25]:
 
 outPutLog = outPutLog.append(cleaniness("opensecret/fundingCongress.csv"))
 
 
-# In[96]:
+# In[26]:
 
 outPutLog.to_csv("Cleaning Analysis output.csv")
 
