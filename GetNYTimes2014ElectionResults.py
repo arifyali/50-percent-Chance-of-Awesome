@@ -1,3 +1,9 @@
+# In accordance with the class policies and Georgetown's Honor Code,
+# I certify that, with the exceptions of the lecture notes and those
+# items noted below, this work is my own. I know that I can speak to
+# others about my code, but I cannot share the code itself.
+# If I received any help, I have noted it
+
 print("Begin program: GetNYTimes2014ElectionResults.py") #Indicate to user that program has begun.
 
 #Load packages
