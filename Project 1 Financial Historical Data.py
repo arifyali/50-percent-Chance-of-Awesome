@@ -3,6 +3,12 @@
 
 # In[10]:
 
+# In accordance with the class policies and Georgetown's Honor Code,
+# I certify that, with the exceptions of the lecture notes and those
+# items noted below, this work is my own. I know that I can speak to
+# others about my code, but I cannot share the code itself.
+# If I received any help, I have noted it
+
 import json#I ended up on needing this packages after finding out the API can output CSVs
 import requests#I ended up on needing this packages after finding out the API can output CSVs
 import urllib2#I ended up on needing this packages after finding out the API can output CSVs
