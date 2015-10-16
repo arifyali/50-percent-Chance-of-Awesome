@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[161]:
+# In[76]:
 
 # In accordance with the class policies and Georgetown's Honor Code,
 # I certify that, with the exceptions of the lecture notes and those
@@ -12,7 +12,7 @@
 import pandas
 import numpy as np
 
-outPutLog = pandas.DataFrame(index = ['file', 'column',"data type", 'outlier', 'missing values', 'length', 'outlier score', 'Missing Data Score'])
+outPutLog = pandas.DataFrame(index = ['file', 'score'])
 outPutLog = outPutLog.transpose()
 #import enchant
 def textUncleanCounter(column):
@@ -41,11 +41,11 @@ def textUncleanCounter(column):
     return(count)
 
 
-# In[162]:
+# In[77]:
 
-def cleaniness(filePath, outPutLog, csv = True, sheet = 2):
-    T = pandas.DataFrame(index = ['file', 'column',"data type", 'outlier', 'missing values', 'length', 'outlier score', 'Missing Data Score'])
-    T = T.transpose()
+def cleaniness(filePath, csv = True, sheet = 2):
+    missingData = 0
+    outliers = 0
     if(csv):
         data = pandas.read_csv(filePath)
     else:
@@ -53,81 +53,74 @@ def cleaniness(filePath, outPutLog, csv = True, sheet = 2):
         #http://pandas.pydata.org/pandas-docs/stable/generated/pandas.ExcelFile.parse.html
         data = pandas.ExcelFile(filePath)
         data = data.parse(data.sheet_names[sheet-1])
-    print(len(data.columns))
-    data.count(axis = 1)
     for column in data.columns:
-        #Pandas sets missing values to nan so I found an answer on a stackexchange post
-        #http://stackoverflow.com/questions/26266362/how-to-count-the-nan-values-in-the-column-in-panda-data-frame
+        print(column)
         summary = data[column].describe()
-        #print(data[column].dtype)
-        missingValue = ((data[column].isnull().sum() + textUncleanCounter(data[column])))
-        #print(missingValue)
-        #I know what an outlier is, but the following code came about trying to find the standard deviation.
-        #http://stackoverflow.com/questions/23199796/detect-and-exclude-outliers-in-pandas-dataframe
+        missing = ((data[column].isnull().sum() + textUncleanCounter(data[column])))
+        #print(missing)
+        missingData += missing
         if(data[column].dtype == 'float64' or data[column].dtype == 'int64'):
             outlier = sum(abs(data[column]-data[column].mean())>3*data[column].std())
+            outliers += outlier
         else:
-            outlier = 0
-        #print(outlier)    
-        columndata = (pandas.DataFrame(data = [filePath, column,data[column].dtype ,outlier, missingValue, len(data[column])],index = ['file', 'column',"data type", 'outlier', 'missing values', 'length']))
-        columndata = columndata.transpose()
-        columndata['outlier score'] = (columndata['outlier']/columndata['length']).sum()
-        print(columndata['outlier score'])
-        columndata['Missing Data Score'] = (columndata['missing values']/columndata['length']).sum()
-        T = T.append(columndata)
-        
-
+            outliers += 0
+    #print(outliers)
+    #print(missingData)
+    ##Fixing the float was a pain, but good reminder that int and float do different things
+    score = 1-float(outliers+missingData)/(2*data.shape[0]*data.shape[1])
+    T = pandas.DataFrame(data = [filePath, score] ,index = ['file', 'score'])
+    T = T.transpose()
+    #print(T)
     return(T)
 
 
-# In[164]:
+# In[78]:
 
-outPutLog = outPutLog.append(cleaniness("SP500HistoricalDataPart1.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("SP500HistoricalDataPart1.csv"))
+
+
+# In[79]:
+
+outPutLog = outPutLog.append(cleaniness("SP500HistoricalDataPart2.csv"))
+print(outPutLog)
+
+
+# In[80]:
+
+outPutLog = outPutLog.append(cleaniness("dJIndustialHistoricalData.csv"))
 #outPutLog.to_csv("OutputLog.csv")
 
 
-# In[165]:
+# In[81]:
 
-outPutLog = outPutLog.append(cleaniness("SP500HistoricalDataPart2.csv", outPutLog))
-#outputLog.to_csv("OutputLog.csv")
-
-
-# In[166]:
-
-outPutLog = outPutLog.append(cleaniness("dJIndustialHistoricalData.csv", outPutLog))
-#outPutLog.to_csv("OutputLog.csv")
-
-
-# In[167]:
-
-outPutLog = outPutLog.append(cleaniness("Sector base Indices/CBOE Gold Index.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("Sector base Indices/CBOE Gold Index.csv"))
 #outPutLog.to_csv("OutputLog.csv")           
 
 
-# In[168]:
+# In[82]:
 
-outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Banking Index.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Banking Index.csv"))
 #outPutLog.to_csv("OutputLog.csv")
 
 
-# In[169]:
+# In[83]:
 
-outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Biotechnology Index.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Biotechnology Index.csv"))
 #outputLog.to_csv("OutputLog.csv")
 
 
-# In[170]:
+# In[84]:
 
-outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Industrial Index.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("Sector base Indices/NASDAQ Industrial Index.csv"))
 #outputLog.to_csv("OutputLog.csv")
 
 
-# In[171]:
+# In[85]:
 
-outPutLog = outPutLog.append(cleaniness("Sector base Indices/NYSE AMEX Oil Index.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("Sector base Indices/NYSE AMEX Oil Index.csv"))
 
 
-# In[172]:
+# In[86]:
 
 #NaN were messing up the basic analysis, so I had replaces them with zeros
 # I found out how from the pandas developer site
@@ -135,7 +128,7 @@ outPutLog = outPutLog.append(cleaniness("Sector base Indices/NYSE AMEX Oil Index
 nytimesTemp = pandas.read_csv("NYTimes2014elections.csv").fillna('00')
 
 
-# In[173]:
+# In[87]:
 
 #In order to actually evaluate the Nytimes I had to make changes to understand numeric data that was pulled as string
 #had to remove percentage sign from VotePercent columns
@@ -170,7 +163,7 @@ nytimesTemp['VotePercent11'] = floatConverter(nytimesTemp['VotePercent11'])
 nytimesTemp['VotePercent12'] = floatConverter(nytimesTemp['VotePercent12'])
 
 
-# In[174]:
+# In[88]:
 
 nytimesTemp['Votes1'] = floatConverter(nytimesTemp['Votes1'],percentSign = False)
 nytimesTemp['Votes2'] = floatConverter(nytimesTemp['Votes2'],percentSign = False)
@@ -186,7 +179,7 @@ nytimesTemp['Votes11'] = floatConverter(nytimesTemp['Votes11'],percentSign = Fal
 nytimesTemp['Votes12'] = floatConverter(nytimesTemp['Votes12'],percentSign = False)
 
 
-# In[175]:
+# In[89]:
 
 nytimesTemp = nytimesTemp.replace('0', np.nan)
 nytimesTemp = nytimesTemp.replace('00', np.nan)
@@ -194,54 +187,37 @@ nytimesTemp = nytimesTemp.replace(0, np.nan)
 nytimesTemp.to_csv("nytimesTemps.csv")
 
 
-# In[176]:
+# In[90]:
 
-outPutLog = outPutLog.append(cleaniness("nytimesTemps.csv", outPutLog))
-
-
-# In[177]:
-
-outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2004congresults.xls", outPutLog, csv = False, sheet = 2))
+outPutLog = outPutLog.append(cleaniness("nytimesTemps.csv"))
 
 
-# In[178]:
+# In[91]:
 
-outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2008congresults.xls", outPutLog, csv = False, sheet = 2))
-
-
-# In[179]:
-
-outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2012congresults.xls", outPutLog, csv = False, sheet = 4))
+outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2004congresults.xls", csv = False, sheet = 2))
 
 
-# In[180]:
+# In[92]:
 
-outPutLog = outPutLog.append(cleaniness("Contributions by Industry 2012-2014.csv", outPutLog))
-
-
-# In[181]:
-
-outPutLog = outPutLog.append(cleaniness("opensecret/fundingCongress.csv", outPutLog))
+outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2008congresults.xls", csv = False, sheet = 2))
 
 
-# In[188]:
+# In[93]:
 
-#I had a bunch of duplicating rows so I decided it would be easier to dedup. 
-#It's probably costing me time but fixing function might take longer.
-#http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.drop_duplicates.html
-#http://stackoverflow.com/questions/26469551/drop-duplicates-within-a-set
-outPutLog.drop_duplicates(['file', 'column'])
-outPutLog['Missing Data Score'] = outPutLog['missing values']/outPutLog['length']
-outPutLog['outlier Score'] = outPutLog['outlier']/outPutLog['length']
+outPutLog = outPutLog.append(cleaniness("FEC Elections Data/2012congresults.xls", csv = False, sheet = 4))
+
+
+# In[94]:
+
+outPutLog = outPutLog.append(cleaniness("Contributions by Industry 2012-2014.csv"))
+
+
+# In[95]:
+
+outPutLog = outPutLog.append(cleaniness("opensecret/fundingCongress.csv"))
+
+
+# In[96]:
+
 outPutLog.to_csv("Cleaning Analysis output.csv")
-
-
-# In[ ]:
-
-#outPutLog.transpose().to_csv("Cleaning Analysis output.csv")
-
-
-# In[187]:
-
-
 
