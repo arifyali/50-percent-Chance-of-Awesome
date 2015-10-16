@@ -30,6 +30,7 @@ def cleaniness(filePath, outputLog, csv = True):
         columndata = (pandas.DataFrame(data = [filePath, column,data[column].dtype, summary, missingValue],index = ['file', 'column',"data type", 'summary', 'missing values']))
         T = T.append(columndata.transpose())
     return(T)
+outputLog = outputLog.append(cleaniness("Contributions by Industry 2012-2014.csv", outputLog))
 
 
 # In[19]:
