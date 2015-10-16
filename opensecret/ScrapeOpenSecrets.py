@@ -10,6 +10,7 @@ print("Begin program: ScrapeOpenSecrets.py") #Indicate to user that program has 
 import requests
 import csv
 from bs4 import BeautifulSoup
+import pandas
 
 #Define a procedure for extracting industry donation information from all results in a given <table>.
 def getIndustryDonation(table, industryWriter, state, district, year, candName):
@@ -226,3 +227,23 @@ def main():
 main()
 
 print("End program: ScrapeOpenSecrets.py") #Notify the user that the program is finished.
+
+### Feature generation; I generated two features based on this dataset:
+### candtotal is the total contributions from all industries that the candidate received in an election cycle
+### industrypercent is the percentage of a candidate's total contributions in a cycle that came from each industry
+
+cycles = {2004,2006,2008,2010,2012,2014}
+# read in data
+data = pandas.read_csv('FundingCongress.csv')
+# create vector of unique candidate names
+names = list(set(data.Candidate))
+# http://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python
+# create empty column for candtotal feature
+data['candtotal'] = 0
+for cycle in cycles:    
+    for name in names:
+        data.candtotal[(data.Candidate==name) & (data.Year==cycle)] = sum(data.Amount[(data.Year == cycle) & (data.Candidate == name)])
+# create empty column for industrypercent feature
+data['industrypercent'] = 0
+data.industrypercent = data.Amount/data.candtotal
+pandas.DataFrame.to_csv(data,'FundingCongress.csv')

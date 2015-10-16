@@ -109,7 +109,7 @@ pandas.DataFrame.to_csv(data,'Contributions by Industry 2012-2014.csv')
 
 ### Feature generation; I generated two features based on this dataset:
 ### candtotal is the total contributions from all industries that the candidate received in an election cycle
-### industrypercent is the percentage of a candidates' total contributions in a cycle that came from each industry
+### industrypercent is the percentage of a candidate's total contributions in a cycle that came from each industry
 
 cycles = {2012,2014}
 # read in data
@@ -119,6 +119,7 @@ data = data.ix[:len(data),1:13]
 # http://pandas.pydata.org/pandas-docs/stable/indexing.html
 # create vector of unique candidate names
 names = list(set(data.Name))
+# http://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python
 # create empty column for candtotal feature
 data['candtotal'] = 0
 for cycle in cycles:    
