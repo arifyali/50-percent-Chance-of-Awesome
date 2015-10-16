@@ -211,7 +211,7 @@ def main():
                     #If the page is a real page, print that fact to the console and then scrape the page.
                     except:
                         print("Data Found [state, district, year]=" + state + ", " + district + ", " + year)
-                        scrapeOnePage(url, state, district, year, industryWriter, soup, r)
+                        scrapeOnePage(state, district, year, industryWriter, soup, r)
                         
                     #If the page is not a real page, print that fact to the console.
                     else:
