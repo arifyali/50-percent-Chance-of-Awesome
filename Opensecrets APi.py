@@ -36,6 +36,7 @@ for state in states:
     url = "http://www.opensecrets.org/api/?method=getLegislators&id=" + state + "&apikey=" + apikey + '&output=' + output
     resp = requests.get(url=url)
     data.append(json.loads(resp.text)) 
+    # http://stackoverflow.com/questions/6386308/http-requests-and-json-parsing-in-python
 
 # candidate info comes in one chunk for each state; break it up into individuals
 legislators = []    
@@ -53,6 +54,7 @@ for no in range(len(legislators)):
 # read in 112th Congress CIDs, delete all US territories
 cid112 = pandas.read_csv('112cong.csv')
 cid112 = cid112[(cid112.State != 'District of Columbia') & (cid112.State != 'Guam') & (cid112.State != 'Virgin Islands') & (cid112.State != 'American Samoa') & (cid112.State != 'Puerto Rico')]
+# http://stackoverflow.com/questions/15315452/selecting-with-complex-criteria-from-pandas-dataframe
 cid112 = cid112.CID
 cid112.index = range(len(cid112))
         
@@ -80,7 +82,7 @@ cid7 = cid[365:]
 party = []
 for i in range(len(data)):
     party.append(data[i]['response']['industries']['@attributes']['cand_name'][-2:-1])
-    
+    # http://stackoverflow.com/questions/11922383/access-process-nested-objects-arrays-or-json
 # dealing with bugged pages for 112th Congress, same procedure as 113th
 cid1121 = cid112[127:]
 cid1122 = cid112[201:]
@@ -93,6 +95,7 @@ with open(csvname, 'wb') as csvfile:
     datawriter = csv.writer(csvfile, delimiter=',')        
     datawriter.writerow(['CID','Name','Party','Cycle','Industry','Industry Code','Total','PACs','Individuals','Origin','Last Updated', 'Source'])
     for i in range(len(data)):
+        # some candidates only had contributions from 1 industry        
         if (len(data[i]['response']['industries']['industry'])==1):        
             datawriter.writerow([data[i]['response']['industries']['@attributes']['cid'],data[i]['response']['industries']['@attributes']['cand_name'].replace('','')[:-4],party[i],data[i]['response']['industries']['@attributes']['cycle'],data[i]['response']['industries']['industry']['@attributes']['industry_name'],data[i]['response']['industries']['industry']['@attributes']['industry_code'],data[i]['response']['industries']['industry']['@attributes']['total'],data[i]['response']['industries']['industry']['@attributes']['pacs'],data[i]['response']['industries']['industry']['@attributes']['indivs'],data[i]['response']['industries']['@attributes']['origin'],data[i]['response']['industries']['@attributes']['last_updated'],data[i]['response']['industries']['@attributes']['source']])
         else:        
@@ -103,6 +106,7 @@ with open(csvname, 'wb') as csvfile:
 data = pandas.read_csv('2012data.csv')
 data = data.append(pandas.read_csv('2014data.csv'))
 pandas.DataFrame.to_csv(data,'Contributions by Industry 2012-2014.csv')
+
 ### Feature generation; I generated two features based on this dataset:
 ### candtotal is the total contributions from all industries that the candidate received in an election cycle
 ### industrypercent is the percentage of a candidates' total contributions in a cycle that came from each industry
@@ -112,6 +116,7 @@ cycles = {2012,2014}
 data = pandas.read_csv('Contributions by Industry 2012-2014.csv')
 # delete extra column (index got duplicated at some point)
 data = data.ix[:len(data),1:13]
+# http://pandas.pydata.org/pandas-docs/stable/indexing.html
 # create vector of unique candidate names
 names = list(set(data.Name))
 # create empty column for candtotal feature
