@@ -3,6 +3,7 @@ discovering the real value of a politician
 ANLY-501 & COSC-587, Project Assignment 1
 October 16, 2015
 
+**Group Members:**
 	Tim Ahn
 	Arif Ali
 	John Hotchkiss
