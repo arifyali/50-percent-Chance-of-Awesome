@@ -37,7 +37,8 @@ Table of Contents:
   * Both Factors were averaged and then subtracted from 1. The higher the score, the cleaner the data
 
 
-**List of Files:**
+List of Files:
+---------------
 *	Project Description.docx (not on github yet): This document describes the data science problem, analyses that might be conducted using the merged dataset, and issues with the data.
 *	Opensecrets API.py: This script obtains data on political contributions by industry for 2012 and 2014, for general election winners, from Opensecrets.org, using the getLegislators and candIndustry APIs.
 *	ScrapeOpenSecrets.py: This script scrapes data on political contributions by industry for 2004-2010 general election winners and losers and for 2012-2014 general election losers, from Opensecrets.org.
