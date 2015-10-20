@@ -1,4 +1,3 @@
-# 50-percent-Chance-of-Awesome
 A central Repo for the "50% Chance of Awesome" group in Analytics 501 for Fall 2015
 ====================================================================================
 Table of Contents:
