@@ -1,17 +1,17 @@
-,file,score
-0,SP500HistoricalDataPart1.csv,0.9271537240759604
-0,SP500HistoricalDataPart2.csv,0.925585590287778
-0,dJIndustialHistoricalData.csv,0.8844307834520626
-0,Sector base Indices/CBOE Gold Index.csv,0.9279065550485055
-0,Sector base Indices/NASDAQ Banking Index.csv,0.9149489902144493
-0,Sector base Indices/NASDAQ Biotechnology Index.csv,0.9161496598639456
-0,Sector base Indices/NASDAQ Industrial Index.csv,0.916562565063502
-0,Sector base Indices/NYSE AMEX Oil Index.csv,0.9280057879505393
-0,nytimesTemps.csv,0.22580242287997998
-0,FEC Elections Data/2004congresults.xls,0.4311444033790919
-0,FEC Elections Data/results06.xls,0.39052928203871595
-0,FEC Elections Data/2008congresults.xls,0.4110794703578209
-0,FEC Elections Data/results10.xls,0.3914148264698968
-0,FEC Elections Data/2012congresults.xls,0.5758377425044092
-0,Contributions by Industry 2012-2014.csv,0.9152366725795911
-0,opensecret/fundingCongress.csv,0.7874864897535446
+,Unclean Text (includes missing data,file,outliers,score
+0,0.141372596,SP500HistoricalDataPart1.csv,0.004319956,0.927153724
+0,0.141424814,SP500HistoricalDataPart2.csv,0.007404006,0.92558559
+0,0.149433276,dJIndustialHistoricalData.csv,0.01539077,0.917587977
+0,0.142857143,Sector base Indices/CBOE Gold Index.csv,0.001329747,0.927906555
+0,0.166666667,Sector base Indices/NASDAQ Banking Index.csv,0.003435353,0.91494899
+0,0.142857143,Sector base Indices/NASDAQ Biotechnology Index.csv,0.024843537,0.91614966
+0,0.166666667,Sector base Indices/NASDAQ Industrial Index.csv,0.000208203,0.916562565
+0,0.142857143,Sector base Indices/NYSE AMEX Oil Index.csv,0.001131281,0.928005788
+0,1.546688314,nytimesTemps.csv,0.00170684,0.225802423
+0,1.137697994,FEC Elections Data/2004congresults.xls,1.32E-05,0.431144403
+0,1.21890468,FEC Elections Data/results06.xls,3.68E-05,0.390529282
+0,1.177829044,FEC Elections Data/2008congresults.xls,1.20E-05,0.41107947
+0,1.217098005,FEC Elections Data/results10.xls,7.23E-05,0.391414826
+0,0.848324515,FEC Elections Data/2012congresults.xls,0,0.575837743
+0,0.162219525,Contributions by Industry 2012-2014.csv,0.00730713,0.915236673
+0,0.294703509,fundingCongress.csv,0.005831923,0.849732284
