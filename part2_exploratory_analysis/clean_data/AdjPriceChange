@@ -1,0 +1,24 @@
+# Remove duplicate data for "MMM" from Part 2 data frame
+SP500HistoricalDataPart2 <- SP500HistoricalDataPart2[2968:686993,]
+
+# Combine Part 1 and Part 2 data frames
+SP500data <- rbind(SP500HistoricalDataPart1[,c(2,3,6,8,9,10,12)],SP500HistoricalDataPart2[,c(2,3,6,8,9,10,12)])
+
+# Convert 'Date' to Date data type
+SP500data$Date <- as.Date(SP500data$Date)
+
+# Sort data by Date and Ticker
+SP500data <- SP500data[order(SP500data[,5],SP500data[,1]),]
+
+CloseDate <- min(SP500data$Date)
+SP500data$PercentChange <- NULL
+i <- 1
+
+system.time(while (i < length(SP500data$Date)){
+        if (SP500data$ticker[i] == SP500data$ticker[i+1]){
+                SP500data$PercentChange[i+1] <- (SP500data$Adjusted.Close[i+1]-SP500data$Adjusted.Close[i])/SP500data$Adjusted.Close[i]
+                i <- i+1
+        } else {
+                i <- i+1
+        }
+})
