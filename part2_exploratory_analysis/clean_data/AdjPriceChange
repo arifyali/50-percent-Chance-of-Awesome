@@ -7,6 +7,7 @@ SP500data <- rbind(SP500HistoricalDataPart1[,c(2,3,6,8,9,10)],SP500HistoricalDat
 # Convert 'Date' to Date data type
 SP500data$Date <- as.Date(SP500data$Date)
 
+# Subset data frame to only include the last day of each month
 SP500Monthly <- SP500data[SP500data$Date %in% monthclose,]
 
 # Sort data by Date and Ticker
