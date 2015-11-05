@@ -7,6 +7,14 @@ SP500data <- rbind(SP500HistoricalDataPart1[,c(2,3,6,8,9,10)],SP500HistoricalDat
 # Convert 'Date' to Date data type
 SP500data$Date <- as.Date(SP500data$Date)
 
+AllDates <- SP500data$Date
+
+# Create a vector of each last date of each month of each year
+day = format(AllDates,format="%d")
+MonthYr = format(AllDates,format="%Y-%m")
+LastDay = tapply(day,MonthYr, max)
+Monthclose = as.Date(paste(row.names(LastDay),LastDay,sep="-"))
+
 # Subset data frame to only include the last day of each month
 SP500Monthly <- SP500data[SP500data$Date %in% monthclose,]
 
