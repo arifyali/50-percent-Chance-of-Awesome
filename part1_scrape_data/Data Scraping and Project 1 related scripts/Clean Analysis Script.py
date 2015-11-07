@@ -68,7 +68,7 @@ def cleaniness(filePath, csv = True, sheet = 2):
     #print(missingData)
     ##Fixing the float was a pain, but good reminder that int and float do different things
     score = 1-float(outliers+missingData)/(2*data.shape[0]*data.shape[1])
-    T = pandas.DataFrame(data = [filePath, score] ,index = ['file', 'score'])
+    T = pandas.DataFrame(data = [filePath, score, float(outliers)/(data.shape[0]*data.shape[1]), float(missingData)/(data.shape[0]*data.shape[1])] ,index = ['file', 'score', 'outliers', 'Unclean Text (includes missing data'])
     T = T.transpose()
     #print(T)
     return(T)
@@ -224,7 +224,7 @@ outPutLog = outPutLog.append(cleaniness("Contributions by Industry 2012-2014.csv
 
 # In[25]:
 
-outPutLog = outPutLog.append(cleaniness("opensecret/fundingCongress.csv"))
+outPutLog = outPutLog.append(cleaniness("fundingCongress.csv"))
 
 
 # In[26]:
