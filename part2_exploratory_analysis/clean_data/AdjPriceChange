@@ -1,7 +1,7 @@
 # Remove duplicate data for "MMM" from Part 2 data frame
 SP500HistoricalDataPart2 <- SP500HistoricalDataPart2[2968:686993,]
 
-# Combine Part 1 and Part 2 data frames
+# Combine select variables of Part 1 and Part 2 data frames to create master data frame
 SP500data <- rbind(SP500HistoricalDataPart1[,c(2,8,9,10)],SP500HistoricalDataPart2[,c(2,8,9,10)])
 
 # Convert 'Date' to Date data type
@@ -16,10 +16,10 @@ SP500data <- SP500data[!table(SP500data$Date)[as.character(SP500data$Date)]<82,]
 
 # Create a vector of each last date of each month of each year
 AllDates <- SP500data$Date
-day = format(AllDates,format="%d")
-MonthYr = format(AllDates,format="%Y-%m")
-LastDay = tapply(day,MonthYr, max)
-MonthClose = as.Date(paste(row.names(LastDay),LastDay,sep="-"))
+day <- format(AllDates,format="%d")
+MonthYr <- format(AllDates,format="%Y-%m")
+LastDay <- tapply(day,MonthYr, max)
+MonthClose <- as.Date(paste(row.names(LastDay),LastDay,sep="-"))
 
 # Subset data frame to only include the last day of each month
 # Remove October 2015 since only partial month
@@ -41,3 +41,4 @@ while (i < length(SP500Monthly$Date)){
                 i <- i+1
         }
 }
+SP500Monthly$PercentChange <- SP500Monthly$PercentChange * 100
