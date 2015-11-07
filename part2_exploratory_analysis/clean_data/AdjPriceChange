@@ -2,24 +2,31 @@
 SP500HistoricalDataPart2 <- SP500HistoricalDataPart2[2968:686993,]
 
 # Combine Part 1 and Part 2 data frames
-SP500data <- rbind(SP500HistoricalDataPart1[,c(2,3,6,8,9,10)],SP500HistoricalDataPart2[,c(2,3,6,8,9,10)])
+SP500data <- rbind(SP500HistoricalDataPart1[,c(2,8,9,10)],SP500HistoricalDataPart2[,c(2,8,9,10)])
 
 # Convert 'Date' to Date data type
 SP500data$Date <- as.Date(SP500data$Date)
 
-AllDates <- SP500data$Date
+# Check frequency of each date
+DateFreq <- as.data.frame(table(SP500data$Date)) 
+# Frequency jumps from 6 to 81 to 438 and maxes out at 492
+
+# Remove all dates with less than 82 occurences due to unknown reasons for data on non-trading dates
+SP500data <- SP500data[!table(SP500data$Date)[as.character(SP500data$Date)]<82,]
 
 # Create a vector of each last date of each month of each year
+AllDates <- SP500data$Date
 day = format(AllDates,format="%d")
 MonthYr = format(AllDates,format="%Y-%m")
 LastDay = tapply(day,MonthYr, max)
-Monthclose = as.Date(paste(row.names(LastDay),LastDay,sep="-"))
+MonthClose = as.Date(paste(row.names(LastDay),LastDay,sep="-"))
 
 # Subset data frame to only include the last day of each month
-SP500Monthly <- SP500data[SP500data$Date %in% monthclose,]
+# Remove October 2015 since only partial month
+SP500Monthly <- SP500data[SP500data$Date %in% MonthClose[1:141],]
 
 # Sort data by Date and Ticker
-SP500Monthly <- SP500Monthly[order(SP500Monthly[,5],SP500Monthly[,1]),]
+SP500Monthly <- SP500Monthly[order(SP500Monthly[,3],SP500Monthly[,1]),]
 
 SP500Monthly$PercentChange <- NA
 i <- 1
