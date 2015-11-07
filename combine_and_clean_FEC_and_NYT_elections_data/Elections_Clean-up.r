@@ -5,10 +5,6 @@
 root <- paste0("H:/Hotchkiss Hive Mind/John/Documents/Schoolwork/Georgetown/",
                "ANLY-501/50-percent-Chance-of-Awesome/")
 
-#NOTE TO PROGRAMMER: You must have the "reshape2" package installed to 
-#successfully run this program.
-library(reshape2)
-
 
 
 
@@ -23,7 +19,7 @@ for (i in FECYears) {
   
   #Create the year-specific FEC data set.
   currYrData <- read.csv(paste0(root,cleanFECRepo,i,".csv"),
-                         stringsAsFactors=FALSE.
+                         stringsAsFactors=FALSE,
                          strip.white=TRUE)
   
   #Verify year is not missing and has the expected value.
@@ -49,7 +45,14 @@ names(FECAllYears)[names(FECAllYears)=="GENERAL"]             <- "VOTES"
 names(FECAllYears)[names(FECAllYears)=="GENERAL.."]           <- "PERCENT"
 names(FECAllYears)[names(FECAllYears)=="INCUMBENT.INDICATOR"] <- "INCUMBENT"
 
-#Drop variables that we aren't going to use
+#Change INCUMBENT to be numeric
+FECAllYears$INCUMBENT[FECAllYears$INCUMBENT=="TRUE" | 
+                        FECAllYears$INCUMBENT=="True"] <- "1"
+FECAllYears$INCUMBENT[FECAllYears$INCUMBENT=="FALSE" | 
+                        FECAllYears$INCUMBENT=="False"] <- "0"
+FECAllYears$INCUMBENT <- as.numeric(FECAllYears$INCUMBENT)
+
+#Drop variables that we aren't going to use for cleaning or analysis o merging
 FECAllYears <- FECAllYears[,!(names(FECAllYears) %in% c("PRIMARY","PRIMARY..",
                                                         "RUNOFF","RUNOFF.."))]
 
@@ -78,12 +81,56 @@ FECAllYears <- FECAllYears[!(FECAllYears$STATE %in% c("AS", "DC",
 #Make sure there are 50 states after removal of the above elements.
 stopifnot(length(unique(FECAllYears$STATE))==50)
 
+#Remove unneeded information from the DISTRICT variable
+unique(FECAllYears$DISTRICT)
+FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)=="S"] <- "S"
+FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)!="S"] <- 
+  as.character(as.numeric(
+    substr(FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)!="S"],1,2)))
+unique(FECAllYears$DISTRICT) #Verify DISTRICT is as expected now.
+
 #Get a variable called CANDIDATE that contains the full name to merge with the 
 #NYTimes Data.
 FECAllYears$CANDIDATE <- paste(FECAllYears$FIRST.NAME,FECAllYears$LAST.NAME)
 
-#Remove Data that will not be used
 
+
+
+#==========Import party affiliation crosswalk to clean PARTY variable==========#
+
+#Path to party affiliation crosswalk
+partyAffiliationRepo <- "combine_and_clean_FEC_and_NYT_elections_data/"
+
+#Pull in crosswalk
+partyXwalk <- read.csv(paste0(root,partyAffiliationRepo,
+                              "party affiliation.csv"),
+                       stringsAsFactors=FALSE,
+                       strip.white=TRUE)
+
+#Clean up the PARTY variable.  Binning to R, D, and I.
+#Binned based on minimal ideological research
+D = partyXwalk$Party.Label[partyXwalk$Class=='D']
+R = partyXwalk$Party.Label[partyXwalk$Class=='R']
+I = partyXwalk$Party.Label[partyXwalk$Class=='I']
+
+#Apply Xwalk to the FEC Data
+FECAllYears$PARTY[FECAllYears$PARTY %in% D] <- "D"
+FECAllYears$PARTY[FECAllYears$PARTY %in% R] <- "R"
+FECAllYears$PARTY[FECAllYears$PARTY %in% I] <- "I"
+
+
+
+
+#==========Shape the FEC Data for Merger==========#
+
+#Remove remaining columns that will not be used in the analysis or merging
+FECAllYears <- FECAllYears[,!(names(FECAllYears) %in% c("FEC.ID",
+                                                        "FIRST.NAME",
+                                                        "LAST.NAME",
+                                                        "KEY"))]
+
+#Order in final data set order
+FECAllYears <- FECAllYears[c(5,1,2,8,4,3,6,7)]
 
 
 
@@ -119,6 +166,9 @@ for (i in 1:12) {
     NYTElectionLong <- rbind(NYTElectionLong,currCandData)
   }
 }
+
+
+
 
 #==========Clean NYTimes Data==========#
 
@@ -167,6 +217,21 @@ NYTElectionLong$PARTY[NYTElectionLong$PARTY=="RepublicanRep."] <- "R"
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="DemocratDem."]   <- "D"
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="Other"]          <- "I"
 print(unique(NYTElectionLong$PARTY)) #Check Recode
+#Note that "" belongs to "Uncontested" candidate
+stopifnot(NYTElectionLong$CANDIDATE[NYTElectionLong$PARTY==""]=="Uncontested")
+
+#Handle missing VOTES/PERCENT
+#Verify that anyone missing votes is also missing percentage
+stopifnot(sum(is.na(NYTElectionLong$PERCENT))==
+            sum(is.na(NYTElectionLong$VOTES)))
+#Print offending cases
+print(NYTElectionLong[is.na(NYTElectionLong$PERCENT),])
+#Check that all offending cases are uncontested elections
+stopifnot(
+  sum(NYTElectionLong$CANDIDATE[is.na(NYTElectionLong$PERCENT)]=="Uncontested")==
+    (sum(is.na(NYTElectionLong$PERCENT))/2))
+#Drop all "Uncontested"
+NYTElectionLong <- NYTElectionLong[NYTElectionLong$CANDIDATE!="Uncontested"]
 
 #Make VOTES numeric
 #NOTE: If VOTES is missing it is because the runner was Uncontested.
@@ -182,6 +247,7 @@ NYTElectionLong$YEAR <- 2014
 #Make DISTRICT match FEC
 NYTElectionLong$DISTRICT <- gsub("House District ","",NYTElectionLong$DISTRICT)
 NYTElectionLong$DISTRICT <- gsub("Senate","S",NYTElectionLong$DISTRICT)
+NYTElectionLong$DISTRICT <- gsub(" Special","",NYTElectionLong$DISTRICT)
 
 #Create Incumbent variable
 NYTElectionLong$INCUMBENT <- as.numeric(substr(NYTElectionLong$CANDIDATE,
@@ -190,6 +256,26 @@ NYTElectionLong$INCUMBENT <- as.numeric(substr(NYTElectionLong$CANDIDATE,
 
 #Remove asterisks identifying incumbents from candidate names
 NYTElectionLong$CANDIDATE <- gsub("[*]","",NYTElectionLong$CANDIDATE)
+
+#Order in final data set order
+NYTElectionLong <- NYTElectionLong[c(7,1,2,3,4,8,5,6)]
+
+
+
+
+#==========Stack NYT and FEC Data - Save Master Data Set==========#
+
+#Verify that the column names are the same and in the same order
+stopifnot(names(FECAllYears)==names(NYTElectionLong))
+
+#Stack the data
+ElectionResults <- rbind(NYTElectionLong,FECAllYears)
+
+#Output Location
+OutputRepo <- "combine_and_clean_FEC_and_NYT_elections_data/"
+
+#Output Data Set
+write.csv(ElectionResults,paste0(root,OutputRepo,"ElectionResults.csv"))
 
 
 
