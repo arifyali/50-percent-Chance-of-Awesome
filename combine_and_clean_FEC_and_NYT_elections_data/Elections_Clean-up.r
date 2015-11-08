@@ -60,7 +60,9 @@ FECAllYears <- FECAllYears[,!(names(FECAllYears) %in% c("PRIMARY","PRIMARY..",
 FECAllYears <- FECAllYears[!(is.na(FECAllYears$VOTES) & is.na(FECAllYears$PERCENT)),]
 
 #Check for candidates missing percentage
-print(FECAllYears[is.na(FECAllYears$PERCENT),])
+FECAllYears[is.na(FECAllYears$PERCENT),]
+#Note that candidates with 0 for votes and NA for percent are candidates that 
+#ran unopposed in this data set.
 #See 2004congresults.xls, cell P3615=P3625, which is clearly an error.
 #Mr. Said never made it out of the primaries, so he will be dropped.
 FECAllYears <- FECAllYears[FECAllYears$KEY!="WA|S|Mohammad H.|Said|2004",]
@@ -69,10 +71,14 @@ FECAllYears <- FECAllYears[FECAllYears$KEY!="WA|S|Mohammad H.|Said|2004",]
 #missing.  Using P951/P959 to replace it.
 FECAllYears$PERCENT[FECAllYears$KEY=="CT|2|Janet|Peckinpaugh|2010"] <- 
   round(95671/246809,digits=4)
-print(FECAllYears[is.na(FECAllYears$PERCENT),]) #Verify the cases were handled.
+FECAllYears[is.na(FECAllYears$PERCENT),] #Verify the cases were handled.
 
 #Check for candidates missing votes
-print(FECAllYears[is.na(FECAllYears$VOTES),])
+FECAllYears[is.na(FECAllYears$VOTES),]
+
+#Now change all "unopposed" to having NA for votes so that it matches the NYT data set.
+FECAllYears$VOTES[FECAllYears$VOTES==0] <- NA
+FECAllYears[is.na(FECAllYears$VOTES),] #Check
 
 #Remove unwanted election information (information from non-states)
 FECAllYears <- FECAllYears[!(FECAllYears$STATE %in% c("AS", "DC", 
@@ -117,6 +123,8 @@ I = partyXwalk$Party.Label[partyXwalk$Class=='I']
 FECAllYears$PARTY[FECAllYears$PARTY %in% D] <- "D"
 FECAllYears$PARTY[FECAllYears$PARTY %in% R] <- "R"
 FECAllYears$PARTY[FECAllYears$PARTY %in% I] <- "I"
+unique(FECAllYears$PARTY) #Check Recode
+
 
 
 
@@ -216,7 +224,7 @@ NYTElectionLong <- NYTElectionLong[NYTElectionLong$CANDIDATE!="",]
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="RepublicanRep."] <- "R"
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="DemocratDem."]   <- "D"
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="Other"]          <- "I"
-print(unique(NYTElectionLong$PARTY)) #Check Recode
+unique(NYTElectionLong$PARTY) #Check Recode
 #Note that "" belongs to "Uncontested" candidate
 stopifnot(NYTElectionLong$CANDIDATE[NYTElectionLong$PARTY==""]=="Uncontested")
 
@@ -225,7 +233,7 @@ stopifnot(NYTElectionLong$CANDIDATE[NYTElectionLong$PARTY==""]=="Uncontested")
 stopifnot(sum(is.na(NYTElectionLong$PERCENT))==
             sum(is.na(NYTElectionLong$VOTES)))
 #Print offending cases
-print(NYTElectionLong[is.na(NYTElectionLong$PERCENT),])
+NYTElectionLong[is.na(NYTElectionLong$PERCENT),]
 #Check that all offending cases are uncontested elections
 stopifnot(
   sum(NYTElectionLong$CANDIDATE[is.na(NYTElectionLong$PERCENT)]=="Uncontested")==
