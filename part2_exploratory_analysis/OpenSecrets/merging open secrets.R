@@ -1,17 +1,20 @@
 ##### Merge Contributions by Industry 2012-2014.csv and FundingCongress.csv
-setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis/")
+setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis/OpenSecrets/")
 Contributions_by_Industry_2012_2014 <- read.csv("Contributions by Industry 2012-2014.csv")
 FundingCongress <- read.csv("FundingCongress.csv")
 
+
+
+# this is used to index where the party symbol is in the candidate column
+# Used this stackoverflow link to figure out how to select the last occurrence and '(' and ')'
+# http://stackoverflow.com/questions/5214677/r-find-the-last-dot-in-a-string
+
+Party_index_start = sapply(regexpr("\\([^\\(]*$", FundingCongress$Candidate), function(x){x[1]})+1
+Party_index_end = sapply(regexpr("\\)[^\\)]*$", FundingCongress$Candidate), function(x){x[1]})-1
+FundingCongress$Party = substr(FundingCongress$Candidate,Party_index_start, Party_index_end)
+
 # Removes the Party symbol from candidate
-FundingCongress$Name = gsub("\\((.*)", "",  FundingCongress$Candidate)
-# Remove the last space after the last name 
-FundingCongress$Name = substr(FundingCongress$Name, 1, nchar(FundingCongress$Name)-1)
-
-##this is used to index where the party symbol is in the candidate column
-Party_index = sapply(gregexpr("\\((.*)", FundingCongress$Candidate), function(x){x[1]})
-
-FundingCongress$Party = substr(FundingCongress$Candidate,Party_index+1,Party_index+1)
+FundingCongress$Name = substr(FundingCongress$Candidate, 1, Party_index_start-3)
 
 # Changed name, so that rbind would not be confused.
 colnames(FundingCongress)[7] = "Total"
@@ -20,6 +23,7 @@ colnames(FundingCongress)[4] = "Cycle"
 names(Contributions_by_Industry_2012_2014)
 # Unique ids needs to be created in order to apply the which function later in the process (not in the mood
 # to build a SQL engine in R for only stacking because that's more useful for Merging)
+# The ids are based on industry, cycle (year), party, and name. The idea is to avoid duplications
 Contributions_by_Industry_2012_2014$unique_id_1 =paste0(Contributions_by_Industry_2012_2014$Name, 
                                   Contributions_by_Industry_2012_2014$Cycle, 
                                   Contributions_by_Industry_2012_2014$Party,
@@ -43,5 +47,15 @@ ab = FundingCongress[-which(FundingCongress$unique_id %in% Contributions_by_Indu
 
 
 combined_open_secrets = rbind(aa, ab)
+combined_open_secrets = combined_open_secrets[,-1]
 
-write.csv(combined_open_secrets, "combined_open_secrets.csv")
+mapply(unique,
+       combined_open_secrets[combined_open_secrets$Industry ==
+                               unique(combined_open_secrets$Industry)[89], 
+                             -1])
+
+# There were blank industries, it didn't make sense to keep them
+
+write.csv(combined_open_secrets[combined_open_secrets$Industry !=
+unique(combined_open_secrets$Industry)[89], 
+], "combined_open_secrets.csv")
