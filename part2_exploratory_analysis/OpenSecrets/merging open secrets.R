@@ -1,6 +1,5 @@
 ##### Merge Contributions by Industry 2012-2014.csv and FundingCongress.csv
 setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis/OpenSecrets/")
-Contributions_by_Industry_2012_2014 <- read.csv("Contributions by Industry 2012-2014.csv")
 FundingCongress <- read.csv("FundingCongress.csv")
 
 # this is used to index where the party symbol is in the candidate column
@@ -14,93 +13,35 @@ FundingCongress$Party = substr(FundingCongress$Candidate,Party_index_start, Part
 # Removes the Party symbol from candidate
 FundingCongress$Name = substr(FundingCongress$Candidate, 1, Party_index_start-3)
 
-# Changed name, so that rbind would not be confused.
-colnames(FundingCongress)[7] = "Total"
-colnames(FundingCongress)[4] = "Cycle"
-
-names(Contributions_by_Industry_2012_2014)
-# Unique ids needs to be created in order to apply the which function later in the process (not in the mood
-# to build a SQL engine in R for only stacking because that's more useful for Merging)
-# The ids are based on industry, cycle (year), party, and name. The idea is to avoid duplications
-Contributions_by_Industry_2012_2014$unique_id_1 =paste0(Contributions_by_Industry_2012_2014$Name, 
-                                  Contributions_by_Industry_2012_2014$Cycle, 
-                                  Contributions_by_Industry_2012_2014$Party,
-                                  Contributions_by_Industry_2012_2014$Industry)
-
 names(FundingCongress)
-FundingCongress$unique_id =paste0(FundingCongress$Name, 
-                                  FundingCongress$Cycle, 
-                                  FundingCongress$Party, 
-                                  FundingCongress$Industry)
 
-# subsetting only the columns that exist in both with remain
-aa = Contributions_by_Industry_2012_2014[,
-                                    which(names(Contributions_by_Industry_2012_2014) 
-                                          %in% names(FundingCongress))]
+# Checking the number os unique instances in each data frame column
+mapply(function(x){length(unique(x))}, FundingCongress)
 
-# any data captured by Contributions_by_Industry_2012_2014 should not reappear so those rows are removed.
-ab = FundingCongress[-which(FundingCongress$unique_id %in% Contributions_by_Industry_2012_2014$unique_id_1), 
-                     which(names(FundingCongress) 
-                             %in% names(Contributions_by_Industry_2012_2014))]
+# We are a democracy, but let's be honest, it's near impossible for non democractic
+# or Republican parties to get elected. It's better to list them as independent. 
+# I looked at all non D or R parties and changed them to independent.
+unique(FundingCongress$Party)
 
+FundingCongress$Party[(FundingCongress$Party == "3")|(FundingCongress$Party == "L")|(FundingCongress$Party == "U")] = "I"
 
-combined_open_secrets = rbind(aa, ab)
-combined_open_secrets = combined_open_secrets[,-1]
+# Some districts are senate ones and some are House of Rep, so I'm indexing them
+senate_index= grep('s', FundingCongress$District)
 
-mapply(unique,
-       combined_open_secrets[combined_open_secrets$Industry ==
-                               unique(combined_open_secrets$Industry)[89], 
-                             -1])
+# remove the s and leading zeros
+FundingCongress$District = as.character(as.numeric(gsub("[^0-9]","",FundingCongress$District)))
 
-combined_open_secrets$unique_id = paste0(combined_open_secrets$Name, 
-                                         combined_open_secrets$Cycle, 
-                                         combined_open_secrets$Party,
-                                         combined_open_secrets$candtotal)
+# places a capital S for the senate seats.
+FundingCongress$District[senate_index] = paste0("S", FundingCongress$District[senate_index])
 
+# State Abveviations should be capitalized for merging issues
+FundingCongress$State = toupper(FundingCongress$State)
 
-combined_open_secrets <- combined_open_secrets[complete.cases(combined_open_secrets[, c("Total", "industrypercent", "candtotal")]),]
+# checking to make sure duplicated rows are gone overall
+FundingCongress = FundingCongress[!duplicated(FundingCongress),]
 
-combined_open_secrets$the_number_match = ""
+# Candidates with no industry funding don't help us, so they sounds be around.
+FundingCongress = FundingCongress[complete.cases(FundingCongress),]
 
-unique_candidates = unique(combined_open_secrets$unique_id)
-
-for(i in unique_candidates){
- # print(i)
-  if(sum(combined_open_secrets$Total[combined_open_secrets$unique_id == i]) != 
-     (combined_open_secrets$candtotal[combined_open_secrets$unique_id == i])[1])
-  {
-    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
-      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "F")
-  }else
-    {
-    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
-      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "T")
-    }
-  if(sum(combined_open_secrets$industrypercent[combined_open_secrets$unique_id == i]) < 0.95)
-  {
-    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
-      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "F")
-  }else
-  {
-    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
-      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "T")
-  }
-}
-
-table(combined_open_secrets$the_number_match)
-
-diff_in_totals = c()
-for(i in unique_candidates){
-  diff_in_totals = c(diff_in_totals,(sum(combined_open_secrets$Total[combined_open_secrets$unique_id == i]) - 
-     (combined_open_secrets$candtotal[combined_open_secrets$unique_id == i])[1]))
-  
-}
-
-
-dim(combined_open_secrets[combined_open_secrets$the_number_match=="FF",])
-
-
-
-# There were blank industries, it didn't make sense to keep them
-write.csv(combined_open_secrets, "combined_open_secrets.csv")
-write.csv(combined_open_secrets[combined_open_secrets$the_number_match=="FF",], "combined_open_secrets_no_errors.csv")
+# since we seperated Name and Party, the candidate column isn't needed.
+write.csv(FundingCongress[, -c(1,5)], "FundingCongress_cleaned.csv", row.names = F)
