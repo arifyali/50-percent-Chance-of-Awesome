@@ -1,5 +1,83 @@
 import csv
 from os import listdir
+def parseRow(row):
+	key = row['KEY']
+	value = row
+	return (key, value)
+
+def merge(value1, value2):
+	#KEY	STATE ABBREVIATION	DISTRICT	FEC ID	INCUMBENT INDICATOR	
+	#FIRST NAME	LAST NAME	PARTY	YEAR	
+	#PRIMARY	PRIMARY %	RUNOFF	RUNOFF %	GENERAL	GENERAL %
+	value = {}
+	value['KEY'] = value1['KEY']
+	value['STATE ABBREVIATION'] = value1['STATE ABBREVIATION']
+	value['DISTRICT'] = value1['DISTRICT']
+	value['FEC ID'] = value1['FEC ID']
+	value['INCUMBENT INDICATOR'] = value1['INCUMBENT INDICATOR']
+	value['FIRST NAME'] = value1['FIRST NAME']
+	value['LAST NAME'] = value1['LAST NAME']
+	value['PARTY'] = value1['PARTY']+","+value2['PARTY']
+	value['YEAR'] = value1['YEAR']
+
+	#merge PRIMARY and PRIMARY %
+	if value1['PRIMARY']=="" and value2['PRIMARY']=="":
+		value['PRIMARY'] = ""
+	elif value1['PRIMARY']=="":
+		value['PRIMARY'] = value2['PRIMARY']
+	elif value2['PRIMARY']=="":
+		value['PRIMARY'] = value1['PRIMARY']
+	else:
+		value['PRIMARY'] = max(int(value1['PRIMARY']),int(value2['PRIMARY']))
+
+	if value1['PRIMARY %']=="" and value2['PRIMARY %']=="":
+		value['PRIMARY %'] = ""
+	elif value1['PRIMARY %']=="":
+		value['PRIMARY %'] = value2['PRIMARY %']
+	elif value2['PRIMARY %']=="":
+		value['PRIMARY %'] = value1['PRIMARY %']
+	else:
+		value['PRIMARY %'] = max(float(value1['PRIMARY %']),float(value2['PRIMARY %']))
+
+	#merge RUNOFF and RUNOFF %
+	if value1['RUNOFF']=="" and value2['RUNOFF']=="":
+		value['RUNOFF'] = ""
+	elif value1['RUNOFF']=="":
+		value['RUNOFF'] = value2['RUNOFF']
+	elif value2['RUNOFF']=="":
+		value['RUNOFF'] = value1['RUNOFF']
+	else:
+		value['RUNOFF'] = max(int(value1['RUNOFF']),int(value2['RUNOFF']))
+
+	if value1['RUNOFF %']=="" and value2['RUNOFF %']=="":
+		value['RUNOFF %'] = ""
+	elif value1['RUNOFF %']=="":
+		value['RUNOFF %'] = value2['RUNOFF %']
+	elif value2['RUNOFF %']=="":
+		value['RUNOFF %'] = value1['RUNOFF %']
+	else:
+		value['RUNOFF %'] = max(float(value1['RUNOFF %']),float(value2['RUNOFF %']))
+
+	#merge GENERAL and GENERAL %
+	if value1['GENERAL']=="" and value2['GENERAL']=="":
+		value['GENERAL'] = ""
+	elif value1['GENERAL']=="":
+		value['GENERAL'] = value2['GENERAL']
+	elif value2['GENERAL']=="":
+		value['GENERAL'] = value1['GENERAL']
+	else:
+		value['GENERAL'] = max(int(value1['GENERAL']),int(value2['GENERAL']))
+
+	if value1['GENERAL %']=="" and value2['GENERAL %']=="":
+		value['GENERAL %'] = ""
+	elif value1['GENERAL %']=="":
+		value['GENERAL %'] = value2['GENERAL %']
+	elif value2['GENERAL %']=="":
+		value['GENERAL %'] = value1['GENERAL %']
+	else:
+		value['GENERAL %'] = max(float(value1['GENERAL %']),float(value2['GENERAL %']))
+		
+	return value
 
 def cleanFile(inputFile, outputFile):
 	ifile  = open(inputFile, "rb")
@@ -9,78 +87,31 @@ def cleanFile(inputFile, outputFile):
 	fieldnames = ['KEY','STATE ABBREVIATION','DISTRICT','FEC ID','INCUMBENT INDICATOR','FIRST NAME','LAST NAME','PARTY','YEAR','PRIMARY','PRIMARY %','RUNOFF','RUNOFF %','GENERAL','GENERAL %']
 	writer = csv.DictWriter(ofile, fieldnames=fieldnames)
 	writer.writeheader()
+	candidateDict = {}
 
 	for row in reader:
-		if row['DISTRICT']=="" or row['FIRST NAME']=="" or row['LAST NAME']=="": 
-			continue
+		(key, value) = parseRow(row)
+		#print (key, value)
+
+		if candidateDict.has_key(key):
+			value1 = candidateDict.get(key)
+			mergeValue = merge(value, value1)
+			candidateDict[key] = mergeValue;
 		else:
-			#row['KEY']
-			#print row
-			row['YEAR'] = inputFile[10:14]
+			candidateDict[key] = value
+		#print candidateDict[key]
 
-			row['KEY'] = row['STATE ABBREVIATION']+"|"+row['DISTRICT']+"|"+row['FIRST NAME']+"|"+row['LAST NAME']+"|"+row['YEAR']
-
-
-			#row['STATE ABBREVIATION']
-			#row['DISTRICT']
-			#row['FEC ID']
-
-			#row['INCUMBENT INDICATOR']
-			if row['INCUMBENT INDICATOR']=="(I)":
-				row['INCUMBENT INDICATOR'] = True
-			else:
-				row['INCUMBENT INDICATOR'] = False
-
-			#row['FIRST NAME']
-			#row['LAST NAME']
-			#row['PARTY']
-
-
-
-			#row['PRIMARY']	
-			#row['PRIMARY %']
-			#row['RUNOFF']
-			#row['RUNOFF %']
-			#row['GENERAL']
-			#row['GENERAL %']
-			try:
-				row['PRIMARY'] = int(str(row['PRIMARY']).replace(",",""))
-			except ValueError:
-				row['PRIMARY'] = "nan"
-
-			#float(x.strip('%'))/100
-			try:
-				row['PRIMARY %'] = float(str(row['PRIMARY %']).strip('%'))/100
-			except ValueError:
-				row['PRIMARY %'] = "nan"
-
-			try:
-				row['RUNOFF'] = int(str(row['RUNOFF']).replace(",",""))
-			except ValueError:
-				row['RUNOFF'] = "nan"
-
-			try:
-				row['RUNOFF %'] = float(str(row['RUNOFF %']).strip('%'))/100
-			except ValueError:
-				row['RUNOFF %'] = "nan"
-
-			try:
-				row['GENERAL'] = int(str(row['GENERAL']).replace(",",""))
-			except ValueError:
-				row['GENERAL'] = "nan"
-
-			try:
-				row['GENERAL %'] = float(str(row['GENERAL %']).strip('%'))/100
-			except ValueError:
-				row['GENERAL %'] = "nan"
-		writer.writerow(row)
+	for key, value in candidateDict.iteritems():
+		#if value['STATE ABBREVIATION']=="NY":
+		#	print value
+		writer.writerow(value)
 
 	ifile.close()
 	ofile.close()
 
 def main():
-	inputDir = "./unclean/"
 	outputDir = "./clean/"
+	inputDir = "./preproc/"
 	for f in listdir(inputDir):
 		if f == ".DS_Store":
 			continue
