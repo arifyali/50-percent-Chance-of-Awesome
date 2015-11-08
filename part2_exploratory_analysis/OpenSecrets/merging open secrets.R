@@ -40,7 +40,7 @@ FundingCongress$State = toupper(FundingCongress$State)
 # checking to make sure duplicated rows are gone overall
 FundingCongress = FundingCongress[!duplicated(FundingCongress),]
 
-# Candidates with no industry funding don't help us, so they sounds be around.
+# Candidates with no industry funding don't help us, so they soundn't be around.
 FundingCongress = FundingCongress[complete.cases(FundingCongress),]
 
 # since we seperated Name and Party, the candidate column isn't needed.
