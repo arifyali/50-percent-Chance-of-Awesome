@@ -52,7 +52,7 @@ FECAllYears$INCUMBENT[FECAllYears$INCUMBENT=="FALSE" |
                         FECAllYears$INCUMBENT=="False"] <- "0"
 FECAllYears$INCUMBENT <- as.numeric(FECAllYears$INCUMBENT)
 
-#Drop variables that we aren't going to use for cleaning or analysis o merging
+#Drop variables that we aren't going to use for cleaning or analysis or merging
 FECAllYears <- FECAllYears[,!(names(FECAllYears) %in% c("PRIMARY","PRIMARY..",
                                                         "RUNOFF","RUNOFF.."))]
 
@@ -77,7 +77,7 @@ FECAllYears[is.na(FECAllYears$PERCENT),] #Verify the cases were handled.
 FECAllYears[is.na(FECAllYears$VOTES),]
 
 #Now change all "unopposed" to having NA for votes so that it matches the NYT data set.
-FECAllYears$VOTES[FECAllYears$VOTES==0] <- NA
+FECAllYears$VOTES[FECAllYears$VOTES==0 & is.na(FECAllYears$PERCENT)] <- NA
 FECAllYears[is.na(FECAllYears$VOTES),] #Check
 
 #Remove unwanted election information (information from non-states)
@@ -105,7 +105,7 @@ FECAllYears$CANDIDATE <- paste(FECAllYears$FIRST.NAME,FECAllYears$LAST.NAME)
 #==========Import party affiliation crosswalk to clean PARTY variable==========#
 
 #Path to party affiliation crosswalk
-partyAffiliationRepo <- "combine_and_clean_FEC_and_NYT_elections_data/"
+partyAffiliationRepo <- "part2_exploratory_analysis/combine_and_clean_FEC_and_NYT_elections_data/"
 
 #Pull in crosswalk
 partyXwalk <- read.csv(paste0(root,partyAffiliationRepo,
@@ -239,7 +239,7 @@ stopifnot(
   sum(NYTElectionLong$CANDIDATE[is.na(NYTElectionLong$PERCENT)]=="Uncontested")==
     (sum(is.na(NYTElectionLong$PERCENT))/2))
 #Drop all "Uncontested"
-NYTElectionLong <- NYTElectionLong[NYTElectionLong$CANDIDATE!="Uncontested"]
+NYTElectionLong <- NYTElectionLong[NYTElectionLong$CANDIDATE!="Uncontested",]
 
 #Make VOTES numeric
 #NOTE: If VOTES is missing it is because the runner was Uncontested.
@@ -280,7 +280,7 @@ stopifnot(names(FECAllYears)==names(NYTElectionLong))
 ElectionResults <- rbind(NYTElectionLong,FECAllYears)
 
 #Output Location
-OutputRepo <- "combine_and_clean_FEC_and_NYT_elections_data/"
+OutputRepo <- "part2_exploratory_analysis/combine_and_clean_FEC_and_NYT_elections_data/"
 
 #Output Data Set
 write.csv(ElectionResults,paste0(root,OutputRepo,"ElectionResults.csv"))
