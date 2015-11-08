@@ -3,8 +3,6 @@ setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_ex
 Contributions_by_Industry_2012_2014 <- read.csv("Contributions by Industry 2012-2014.csv")
 FundingCongress <- read.csv("FundingCongress.csv")
 
-
-
 # this is used to index where the party symbol is in the candidate column
 # Used this stackoverflow link to figure out how to select the last occurrence and '(' and ')'
 # http://stackoverflow.com/questions/5214677/r-find-the-last-dot-in-a-string
@@ -54,8 +52,55 @@ mapply(unique,
                                unique(combined_open_secrets$Industry)[89], 
                              -1])
 
-# There were blank industries, it didn't make sense to keep them
+combined_open_secrets$unique_id = paste0(combined_open_secrets$Name, 
+                                         combined_open_secrets$Cycle, 
+                                         combined_open_secrets$Party,
+                                         combined_open_secrets$candtotal)
 
-write.csv(combined_open_secrets[combined_open_secrets$Industry !=
-unique(combined_open_secrets$Industry)[89], 
-], "combined_open_secrets.csv")
+
+combined_open_secrets <- combined_open_secrets[complete.cases(combined_open_secrets[, c("Total", "industrypercent", "candtotal")]),]
+
+combined_open_secrets$the_number_match = ""
+
+unique_candidates = unique(combined_open_secrets$unique_id)
+
+for(i in unique_candidates){
+ # print(i)
+  if(sum(combined_open_secrets$Total[combined_open_secrets$unique_id == i]) != 
+     (combined_open_secrets$candtotal[combined_open_secrets$unique_id == i])[1])
+  {
+    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
+      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "F")
+  }else
+    {
+    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
+      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "T")
+    }
+  if(sum(combined_open_secrets$industrypercent[combined_open_secrets$unique_id == i]) < 0.95)
+  {
+    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
+      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "F")
+  }else
+  {
+    combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i] <- 
+      paste0(combined_open_secrets$the_number_match[combined_open_secrets$unique_id == i], "T")
+  }
+}
+
+table(combined_open_secrets$the_number_match)
+
+diff_in_totals = c()
+for(i in unique_candidates){
+  diff_in_totals = c(diff_in_totals,(sum(combined_open_secrets$Total[combined_open_secrets$unique_id == i]) - 
+     (combined_open_secrets$candtotal[combined_open_secrets$unique_id == i])[1]))
+  
+}
+
+
+dim(combined_open_secrets[combined_open_secrets$the_number_match=="FF",])
+
+
+
+# There were blank industries, it didn't make sense to keep them
+write.csv(combined_open_secrets, "combined_open_secrets.csv")
+write.csv(combined_open_secrets[combined_open_secrets$the_number_match=="FF",], "combined_open_secrets_no_errors.csv")
