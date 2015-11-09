@@ -6,8 +6,7 @@
 library(RSQLite)
 
 #Set Working Directory
-setwd(paste0("H:/Hotchkiss Hive Mind/John/Documents/Schoolwork/Georgetown/",
-             "ANLY-501/50-percent-Chance-of-Awesome/"))
+setwd("/Users/joshuakaplan/50-percent-Chance-of-Awesome/")
 
 
 
@@ -70,16 +69,62 @@ results$CANDIDATE <- toupper(gsub("[^a-zA-Z ]","",results$CANDIDATE))
 #Pull out First and Last Name
 tempCandSplit <- strsplit(openS$CANDIDATE," ")
 stopifnot(length(tempCandSplit)==length(openS$CANDIDATE))
+openS$MID1 = NA
+openS$MID2 = NA
 for (j in 1:length(tempCandSplit)) {
   openS$FIRST[j] <- tempCandSplit[[j]][1]
-  openS$LAST[j] <- tempCandSplit[[j]][min(3,length(tempCandSplit[[j]]))]
+  if (length(tempCandSplit[[j]])==3){
+    if(tempCandSplit[[j]][3]=='JR'|tempCandSplit[[j]][3]=='II'|tempCandSplit[[j]][3]=='III') {
+    openS$LAST[j] <- tempCandSplit[[j]][2]
+    openS$MID1[j]=tempCandSplit[[j]][3]
+    }
+  }
+  if(length(tempCandSplit[[j]])==4){
+    if(tempCandSplit[[j]][4]=='JR'|tempCandSplit[[j]][4]=='II'|tempCandSplit[[j]][4]=='III') {
+      openS$LAST[j] <- tempCandSplit[[j]][3]
+      openS$MID1[j]=tempCandSplit[[j]][2]
+      openS$MID2[j]=tempCandSplit[[j]][4]
+      
+    }
+    else {
+    openS$LAST[j] <- tempCandSplit[[j]][4]
+    openS$MID1[j]=tempCandSplit[[j]][2]
+    openS$MID2[j]=tempCandSplit[[j]][3]
+  }
+  }
 }
 
 tempCandSplit <- strsplit(results$CANDIDATE," ")
 stopifnot(length(tempCandSplit)==length(results$CANDIDATE))
+results$MID1 = NA
+results$MID2 = NA
 for (j in 1:length(tempCandSplit)) {
   results$FIRST[j] <- tempCandSplit[[j]][1]
-  results$LAST[j] <- tempCandSplit[[j]][min(3,length(tempCandSplit[[j]]))]
+  if (length(tempCandSplit[[j]])==3){
+    if(tempCandSplit[[j]][3]=='JR'|tempCandSplit[[j]][3]=='II'|tempCandSplit[[j]][3]=='III'){
+      results$LAST[j]=tempCandSplit[[j]][2]
+      results$MID1[j]=tempCandSplit[[j]][3]
+    }
+    else {
+      results$MID1[j] = tempCandSplit[[j]][2]
+      results$LAST[j]=tempCandSplit[[j]][3]
+    }
+  }
+  if(length(tempCandSplit[[j]])==4){
+    if(tempCandSplit[[j]][4]=='JR'|tempCandSplit[[j]][4]=='II'|tempCandSplit[[j]][4]=='III') {
+      results$MID1[j]=tempCandSplit[[j]][2]
+      results$LAST[j]=tempCandSplit[[j]][3]
+      results$MID2[j]=tempCandSplit[[j]][4]
+    }
+   else {
+       results$MID1[j]=tempCandSplit[[j]][2]
+    results$MID2[j]=tempCandSplit[[j]][3]
+    results$LAST[j]=tempCandSplit[[j]][4]
+     }
+  }
+  if(length(tempCandSplit[[j]])==2){
+  results$LAST[j] <- tempCandSplit[[j]][2]
+  }
 }
 
 
@@ -111,6 +156,11 @@ no_merge_comp <- openResults[is.na(openResults$IN.y) | is.na(openResults$IN.x),]
 #Number of records in the following file is the number of distinct candidates 
 #that didn't merge
 no_merge <- no_merge_comp[!is.na(no_merge_comp$IN.x),]
+#Records that didn't merge from results file
+no_merge_res = no_merge_comp[!is.na(no_merge_comp$IN.y),]
+resultsMergeVars2 <- no_merge_res[,c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE.y")]
+names(resultsMergeVars2) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
+resultsMergeVars2$IN <- 0
 
 #Prepare for another merge by pulling just open secrets data that didn't merge 
 #from the previous no merge results
@@ -119,10 +169,27 @@ names(openmerge2) <- c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
 openmerge2 <- openmerge2[,c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")]
 openmerge2$IN <- 1
 
+  
 #SECOND MERGE
-openResults2 <- merge(openmerge2,resultsMergeVars,by=c("YEAR","STATE","DISTRICT","LAST"),all=TRUE)
+openResults2 <- merge(openmerge2,resultsMergeVars2,by=c("YEAR","STATE","DISTRICT","LAST"),all=TRUE)
 #Find all records that did not match, use this file to visually compare
 no_merge2_comp <- openResults2[is.na(openResults2$IN.y) | is.na(openResults2$IN.x),]
 #Number of records in the following file is the number of distinct candidates 
 #that didn't merge
 no_merge2 <- no_merge2_comp[!is.na(no_merge2_comp$IN.x),]
+
+#Prepare for another merge
+openmerge3 = no_merge2
+names(openmerge3) <- c("YEAR","STATE","DISTRICT","LAST","FIRST","CANDIDATE")
+openmerge3 <- openmerge3[,c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")]
+openmerge3$IN <- 1
+no_merge2_res = no_merge2_comp[!is.na(no_merge2_comp$IN.y),]
+resultsMergeVars3 <- no_merge2_res[,c("YEAR","STATE","FIRST.y","LAST","DISTRICT","CANDIDATE.y")]
+names(resultsMergeVars3) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
+resultsMergeVars3$IN <- 0
+
+#THIRD MERGE
+#Merge with unmerged observations from FEC file on first name
+openResults3 = merge(openmerge3,resultsMergeVars3,by=c("YEAR","STATE","DISTRICT","FIRST"),all=TRUE)
+no_merge3_comp <- openResults3[is.na(openResults3$IN.y) | is.na(openResults3$IN.x),]
+no_merge3 <- no_merge3_comp[!is.na(no_merge3_comp$IN.x),]
