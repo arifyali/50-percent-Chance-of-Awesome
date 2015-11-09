@@ -62,35 +62,57 @@ for (j in c("AK", "DE", "MT", "ND", "SD", "VT", "WY")) {
 
 #After second attempt, trying to remove periods from names
 openS$CANDIDATE <- toupper(gsub("\".*?\"","",openS$CANDIDATE))
-results$CANDIDATE <- toupper(gsub("\".*?\"","",results$CANDIDATE))
 openS$CANDIDATE <- toupper(gsub("[^a-zA-Z ]","",openS$CANDIDATE))
 results$CANDIDATE <- toupper(gsub("[^a-zA-Z ]","",results$CANDIDATE))
+results$CANDIDATE <- toupper(gsub("\".*?\"","",results$CANDIDATE))
+
 
 #Pull out First and Last Name
 tempCandSplit <- strsplit(openS$CANDIDATE," ")
 stopifnot(length(tempCandSplit)==length(openS$CANDIDATE))
 openS$MID1 = NA
 openS$MID2 = NA
+openS$MID3 = NA
 for (j in 1:length(tempCandSplit)) {
-  openS$FIRST[j] <- tempCandSplit[[j]][1]
+  openS$FIRST[j] = tempCandSplit[[j]][1]
+  if(length(tempCandSplit[[j]]==2)) {
+    openS$LAST[j] = tempCandSplit[[j]][2]
+  }
   if (length(tempCandSplit[[j]])==3){
-    if(tempCandSplit[[j]][3]=='JR'|tempCandSplit[[j]][3]=='II'|tempCandSplit[[j]][3]=='III') {
-    openS$LAST[j] <- tempCandSplit[[j]][2]
-    openS$MID1[j]=tempCandSplit[[j]][3]
+    if(tempCandSplit[[j]][3]=='JR'|tempCandSplit[[j]][3]=='II'|tempCandSplit[[j]][3]=='III'|tempCandSplit[[j]][3]=='SR') {
+      openS$LAST[j] = tempCandSplit[[j]][2]
+      openS$MID1[j] = tempCandSplit[[j]][3]
+    }
+    else {
+      openS$LAST[j] = tempCandSplit[[j]][3]
+      openS$MID1[j] = tempCandSplit[[j]][2]
     }
   }
   if(length(tempCandSplit[[j]])==4){
-    if(tempCandSplit[[j]][4]=='JR'|tempCandSplit[[j]][4]=='II'|tempCandSplit[[j]][4]=='III') {
-      openS$LAST[j] <- tempCandSplit[[j]][3]
-      openS$MID1[j]=tempCandSplit[[j]][2]
-      openS$MID2[j]=tempCandSplit[[j]][4]
-      
+    if(tempCandSplit[[j]][4]=='JR'|tempCandSplit[[j]][4]=='II'|tempCandSplit[[j]][4]=='III'|tempCandSplit[[j]][4]=='SR') {
+      openS$LAST[j] = tempCandSplit[[j]][3]
+      openS$MID1[j] = tempCandSplit[[j]][2]
+      openS$MID2[j] = tempCandSplit[[j]][4]
     }
     else {
-    openS$LAST[j] <- tempCandSplit[[j]][4]
-    openS$MID1[j]=tempCandSplit[[j]][2]
-    openS$MID2[j]=tempCandSplit[[j]][3]
+    openS$LAST[j] = tempCandSplit[[j]][4]
+    openS$MID1[j] = tempCandSplit[[j]][2]
+    openS$MID2[j] = tempCandSplit[[j]][3]
+    }
   }
+  if(length(tempCandSplit[[j]])==5){
+    if(tempCandSplit[[j]][5]=='JR'|tempCandSplit[[j]][5]=='II'|tempCandSplit[[j]][5]=='III'|tempCandSplit[[j]][5]=='SR') {
+      openS$LAST[j] = tempCandSplit[[j]][4]
+      openS$MID1[j] = tempCandSplit[[j]][2]
+      openS$MID2[j] = tempCandSplit[[j]][3]
+      openS$MID3[j] = tempCandSplit[[j]][5]
+    }
+    else {
+      openS$LAST[j] = tempCandSplit[[j]][5]
+      openS$MID1[j] = tempCandSplit[[j]][2]
+      openS$MID2[j] = tempCandSplit[[j]][3]
+      openS$MID3[j] = tempCandSplit[[j]][4]
+    }
   }
 }
 
@@ -98,35 +120,49 @@ tempCandSplit <- strsplit(results$CANDIDATE," ")
 stopifnot(length(tempCandSplit)==length(results$CANDIDATE))
 results$MID1 = NA
 results$MID2 = NA
+results$MID3 = NA
 for (j in 1:length(tempCandSplit)) {
-  results$FIRST[j] <- tempCandSplit[[j]][1]
+  results$FIRST[j] = tempCandSplit[[j]][1]
+  if(length(tempCandSplit[[j]])==2){
+    results$LAST[j] = tempCandSplit[[j]][2]
+  }
   if (length(tempCandSplit[[j]])==3){
-    if(tempCandSplit[[j]][3]=='JR'|tempCandSplit[[j]][3]=='II'|tempCandSplit[[j]][3]=='III'){
-      results$LAST[j]=tempCandSplit[[j]][2]
-      results$MID1[j]=tempCandSplit[[j]][3]
+    if(tempCandSplit[[j]][3]=='JR'|tempCandSplit[[j]][3]=='II'|tempCandSplit[[j]][3]=='III'|tempCandSplit[[j]][3]=='SR'){
+      results$LAST[j] = tempCandSplit[[j]][2]
+      results$MID1[j] = tempCandSplit[[j]][3]
     }
     else {
       results$MID1[j] = tempCandSplit[[j]][2]
-      results$LAST[j]=tempCandSplit[[j]][3]
+      results$LAST[j] = tempCandSplit[[j]][3]
     }
   }
   if(length(tempCandSplit[[j]])==4){
-    if(tempCandSplit[[j]][4]=='JR'|tempCandSplit[[j]][4]=='II'|tempCandSplit[[j]][4]=='III') {
-      results$MID1[j]=tempCandSplit[[j]][2]
-      results$LAST[j]=tempCandSplit[[j]][3]
-      results$MID2[j]=tempCandSplit[[j]][4]
+    if(tempCandSplit[[j]][4]=='JR'|tempCandSplit[[j]][4]=='II'|tempCandSplit[[j]][4]=='III'|tempCandSplit[[j]][4]=='SR') {
+      results$MID1[j] = tempCandSplit[[j]][2]
+      results$LAST[j] = tempCandSplit[[j]][3]
+      results$MID2[j] = tempCandSplit[[j]][4]
     }
-   else {
-       results$MID1[j]=tempCandSplit[[j]][2]
-    results$MID2[j]=tempCandSplit[[j]][3]
-    results$LAST[j]=tempCandSplit[[j]][4]
-     }
+    else {
+      results$MID1[j] = tempCandSplit[[j]][2]
+      results$MID2[j] = tempCandSplit[[j]][3]
+      results$LAST[j] = tempCandSplit[[j]][4]
+    }
   }
-  if(length(tempCandSplit[[j]])==2){
-  results$LAST[j] <- tempCandSplit[[j]][2]
+  if(length(tempCandSplit[[j]])==5){
+    if(tempCandSplit[[j]][5]=='JR'|tempCandSplit[[j]][5]=='II'|tempCandSplit[[j]][5]=='III'|tempCandSplit[[j]][5]=='SR') {
+      results$LAST[j] = tempCandSplit[[j]][4]
+      results$MID1[j] = tempCandSplit[[j]][2]
+      results$MID2[j] = tempCandSplit[[j]][3]
+      results$MID3[j] = tempCandSplit[[j]][5]
+    }
+    else {
+      results$LAST[j] = tempCandSplit[[j]][5]
+      results$MID1[j] = tempCandSplit[[j]][2]
+      results$MID2[j] = tempCandSplit[[j]][3]
+      results$MID3[j] = tempCandSplit[[j]][4]
+    }
   }
 }
-
 
 
 
