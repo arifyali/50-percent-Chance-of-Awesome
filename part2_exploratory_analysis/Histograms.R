@@ -29,3 +29,11 @@ RepDonors <- hist(Donors$Amount[Reps],breaks=1000,plot=F)
 plot(0,0,type="n",xlim=c(0,250000),ylim=c(1,15000),xlab="Contribution Amounts",ylab="Frequency",main="Industry Contribution Amounts to Candidates")
 plot(DemDonors,col="blue",density=20,add=T)
 plot(RepDonors,col="red",density=20,angle=135,add=T)
+
+
+
+### This histogram shows the frequency of the number of candidates each unique industry
+### appears in the top 10 of political contributions.
+IndContrib <- as.data.frame(table(Donors$Industry))
+hist(IndContrib$Freq,breaks=30,xlim=c(0,5000),ylim=c(0,25),xlab="# of Candidates Supported by each Industry",
+        main = "Frequency of # of Candidates Each Industry Contributes To")
