@@ -5,7 +5,7 @@ dataset = read.csv("./breast-cancer.csv")
 #attach(Smarket)
 
 #standardize data
-std_data = scale(dataset[,c(2,30)])
+std_data = scale(dataset[,c(2:30)])
 
 #10-folds-accross
 set.seed(2)
