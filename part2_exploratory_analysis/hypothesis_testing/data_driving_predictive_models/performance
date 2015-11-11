@@ -1,0 +1,10 @@
+performance
+
+tree model
+accuracy: 0.9833333
+variance: 0.01641929
+confidence interval:
+
+tree after pruning:
+0.9833333
+0.01641929
