@@ -229,3 +229,43 @@ resultsMergeVars3$IN <- 0
 openResults3 = merge(openmerge3,resultsMergeVars3,by=c("YEAR","STATE","DISTRICT","FIRST"),all=TRUE)
 no_merge3_comp <- openResults3[is.na(openResults3$IN.y) | is.na(openResults3$IN.x),]
 no_merge3 <- no_merge3_comp[!is.na(no_merge3_comp$IN.x),]
+
+#merge 10 unmatched by hand
+no_merge3 <- no_merge3[,c("YEAR","STATE","FIRST","LAST.x","DISTRICT","CANDIDATE.x","IN.x")]
+names(no_merge3) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE","IN")
+
+no_merge3$FIRST[2] = "KOTOS"
+no_merge3$FIRST[3] = "JIM"
+no_merge3$FIRST[4] = "TOM"
+no_merge3$FIRST[5] = "DOTTIE"
+no_merge3$FIRST[6] = "SOLE"
+no_merge3$FIRST[17] = "W"
+no_merge3$FIRST[24] = "CHARLES"
+no_merge3$FIRST[32] = "JIM"
+no_merge3$DISTRICT[42] = 6
+no_merge3$FIRST[46] = "MATTHEW"
+# make sure kenneth del vecchio doesnt get merged with kenneth kaplan
+no_merge3$FIRST[30] = "TEST"
+
+openResults4 = merge(no_merge3,resultsMergeVars,by=c("YEAR","STATE","DISTRICT","FIRST"),all=TRUE)
+no_merge4_comp <- openResults4[is.na(openResults4$IN.y) | is.na(openResults4$IN.x),]
+no_merge4 <- no_merge4_comp[!is.na(no_merge4_comp$IN.x),]
+
+#Combine merged candidates into one dataframe
+openResults = na.omit(openResults[openResults$IN.x==1 & openResults$IN.y==0,])
+openResults = openResults[,c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE.x")]
+names(openResults) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
+openResults2 = na.omit(openResults2[openResults2$IN.x==1 & openResults2$IN.y==0,])
+openResults2 = openResults2[,c("YEAR","STATE","FIRST.x","LAST","DISTRICT","CANDIDATE.x")]
+names(openResults2) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
+openResults = rbind(openResults2,openResults)
+openResults3 = na.omit(openResults3[openResults3$IN.x==1 & openResults3$IN.y==0,])
+openResults3 = openResults3[,c("YEAR","STATE","FIRST","LAST.x","DISTRICT","CANDIDATE.x")]
+names(openResults3) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
+openResults = rbind(openResults3,openResults)
+openResults4 = na.omit(openResults4[openResults4$IN.x==1 & openResults4$IN.y==0,])
+openResults4 = openResults4[,c("YEAR","STATE","FIRST","LAST.x","DISTRICT","CANDIDATE.x")]
+names(openResults4) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE")
+openResults = rbind(openResults4,openResults)
+
+
