@@ -40,11 +40,11 @@ dev.off()
 
 
 
-Industrial_centers = kmeans(numeric_political_data, length(unique(political_data$Industry)))
+Industrial_centers = kmeans(numeric_political_data, length(unique(political_data$INDUSTRY)))
 
 Industrial_data_with_clusters = cbind(numeric_political_data, cluster = Industrial_centers$cluster)
 
-png(paste("Clustering/kmeans", length(unique(political_data$Industry)), "Industry centers.png"))
+png(paste("Clustering/kmeans", length(unique(political_data$INDUSTRY)), "Industry centers.png"))
 clusplot(Industrial_data_with_clusters, Industrial_data_with_clusters$cluster, 
          color = T, shade = T, labels = 2, lines = 0)
 dev.off()
