@@ -283,6 +283,7 @@ openResults2 = openResults2[!z,]
 openResults2 = openResults2[,c("YEAR","STATE","FIRST.x","LAST","DISTRICT","CANDIDATE.x","PARTY.x","INDUSTRY","AMOUNT","INDUSTRYPERCENT","CANDTOTAL","INCUMBENT","VOTES","PERCENT")]
 names(openResults2) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE","PARTY","INDUSTRY","AMOUNT","INDUSTRYPERCENT","CANDTOTAL","INCUMBENT","VOTES","PERCENT")
 openResults = rbind(openResults2,openResults)
+
 openResults3 = openResults3[openResults3$IN.x==1 & openResults3$IN.y==0,]
 z = apply(openResults3, 1, function(x) all(is.na(x)))
 openResults3 = openResults3[!z,]
@@ -298,5 +299,6 @@ openResults4 = openResults4[,c("YEAR","STATE","FIRST","LAST.x","DISTRICT","CANDI
 names(openResults4) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE","PARTY","INDUSTRY","AMOUNT","INDUSTRYPERCENT","CANDTOTAL","INCUMBENT","VOTES","PERCENT")
 openResults = rbind(openResults4,openResults)
 
+write.csv(openResults,file = "openSecretsFECmerged")
 
 
