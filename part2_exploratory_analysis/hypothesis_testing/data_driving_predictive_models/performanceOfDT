@@ -1,10 +1,16 @@
 performance
 
+tree_predict  B  M
+           B 30  0
+           M  0 27
 tree model
 accuracy: 0.9833333
 variance: 0.01641929
-confidence interval:
 
-tree after pruning:
-0.9833333
-0.01641929
+tree_predict_after_prune  B  M
+                       B 30  0
+                       M  0 27
+> mean(tree_predict_after_prune == testdata$class)
+[1] 1
+> var(tree_predict==testdata$class)
+[1] 0

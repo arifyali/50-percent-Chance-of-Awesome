@@ -36,6 +36,7 @@ text(tree_model, pretty = 0)
 #check the performance of the model using test data
 tree_predict = predict(tree_model, testdata, type="class")
 
+table(tree_predict, testdata$class)
 mean(tree_predict==testdata$class)
 var(tree_predict==testdata$class)
 #confint(tree_predict==testdata$class)
@@ -53,10 +54,13 @@ plot(cv_tree$size, cv_tree$dev, type = "b")
 #we can see that when size==3, the error is least
 prune_model = prune.misclass(tree_model, best = 8)
 
+
 #show the tree structure after pruning
 plot(prune_model)
 text(prune_model, pretty = 0)
 
 tree_predict_after_prune = predict(prune_model, testdata, type = "class")
+
+table(tree_predict_after_prune, testdata$class)
 mean(tree_predict_after_prune == testdata$class)
 var(tree_predict==testdata$class)
