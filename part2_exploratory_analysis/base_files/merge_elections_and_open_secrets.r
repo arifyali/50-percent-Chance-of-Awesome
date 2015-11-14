@@ -29,6 +29,9 @@ openS <- read.csv(paste0(openRepo,"FundingCongress_cleaned.csv"),
 
 
 #==========Perform any necessary file manipulations to line up files==========#
+#Find duplicate race/names 
+# results$racenameid = paste0(results$YEAR,results$STATE,results$DISTRICT,results$CANDIDATE) 
+# results$racenameid[duplicated(results$racenameid)]
 
 #Clean openS:
 #Data set names to upper case
@@ -255,13 +258,13 @@ no_merge3$FIRST[12:31] = "JIM"
 no_merge3$FIRST[32:33] = "TOM"
 no_merge3$FIRST[34] = "DOTTIE"
 no_merge3$FIRST[35:37] = "SOLE"
-no_merge3$FIRST[96:115] = "W"
-no_merge3$FIRST[126:145] = "CHARLES"
-no_merge3$FIRST[163:182] = "JIM"
-no_merge3$DISTRICT[222:233] = 6
-no_merge3$FIRST[240:244] = "MATTHEW"
+no_merge3$FIRST[217:236] = "W"
+no_merge3$FIRST[247:266] = "CHARLES"
+no_merge3$FIRST[327:346] = "JIM"
+no_merge3$DISTRICT[386:397] = 6
+no_merge3$FIRST[404:408] = "MATTHEW"
 # make sure kenneth del vecchio doesnt get merged with kenneth kaplan
-no_merge3$FIRST[161] = 0
+no_merge3$FIRST[325] = 0
 no_merge3$IN=1
 
 openResults4 = merge(no_merge3,results,by=c("YEAR","STATE","DISTRICT","FIRST"),all=TRUE)
@@ -299,6 +302,18 @@ openResults4 = openResults4[,c("YEAR","STATE","FIRST","LAST.x","DISTRICT","CANDI
 names(openResults4) = c("YEAR","STATE","FIRST","LAST","DISTRICT","CANDIDATE","PARTY","INDUSTRY","AMOUNT","INDUSTRYPERCENT","CANDTOTAL","INCUMBENT","VOTES","PERCENT")
 openResults = rbind(openResults4,openResults)
 
-write.csv(openResults,file = "openSecretsFECmerged")
+OpenSecretsFECIndustry = openResults
 
+Industry.Crosswalk = read.csv("part2_exploratory_analysis/Industry Crosswalk.csv")
+# Merging industry crosswalk with political data
+names(Industry.Crosswalk) = c("INDUSTRY", "PRIMARY.INDUSTRY", "SECONDARY.INDUSTRY1", "SECONDARY.INDUSTRY2", "SECONDARY.INDUSTRY3")
+OpenSecretsFECIndustry = merge(OpenSecretsFECIndustry,Industry.Crosswalk,by="INDUSTRY",all=TRUE)
+names(OpenSecretsFECIndustry)[1] = "OPENSECRETS INDUSTRY"
+# remove donation amounts <=0; these must be errors
+OpenSecretsFECIndustry = OpenSecretsFECIndustry[OpenSecretsFECIndustry$AMOUNT>0,]
+# clean up industries
+OpenSecretsFECIndustry$PRIMARY.INDUSTRY[OpenSecretsFECIndustry$PRIMARY.INDUSTRY=="not for profit"] = "Not for profit"
+
+
+write.csv(OpenSecretsFECIndustry,file = "OpenSecretsFECIndustry.csv")
 
