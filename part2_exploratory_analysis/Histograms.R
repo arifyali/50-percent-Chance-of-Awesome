@@ -29,6 +29,7 @@ RepDonors <- hist(Donors$Amount[Reps],breaks=1000,plot=F)
 plot(0,0,type="n",xlim=c(0,250000),ylim=c(1,15000),xlab="Contribution Amounts",ylab="Frequency",main="Industry Contribution Amounts to Candidates")
 plot(DemDonors,col="blue",density=20,add=T)
 plot(RepDonors,col="red",density=20,angle=135,add=T)
+legend("topright",c("Democratic Contributions","Republican Contributions"),fill=c("blue","red"),density=20)
 
 
 
@@ -37,3 +38,17 @@ plot(RepDonors,col="red",density=20,angle=135,add=T)
 IndContrib <- as.data.frame(table(Donors$Industry))
 hist(IndContrib$Freq,breaks=30,xlim=c(0,5000),ylim=c(0,25),xlab="# of Candidates Supported by each Industry",
         main = "Frequency of # of Candidates Each Industry Contributes To")
+
+
+
+### This histogram provides a visual representation of the disparity of industry contribution sizes between
+### winning and losing candidates
+PoldataSPIndustries <- read.csv("C:/Users/Ahn/Desktop/50-percent-Chance-of-Awesome/part2_exploratory_analysis/PoldataSPIndustries.csv", stringsAsFactors=FALSE)
+Winners <- PoldataSPIndustries$AMOUNT[PoldataSPIndustries$WINNER==1 & PoldataSPIndustries$AMOUNT>=25500 & PoldataSPIndustries$AMOUNT<=157000]
+Losers <- PoldataSPIndustries$AMOUNT[PoldataSPIndustries$WINNER==0 & PoldataSPIndustries$AMOUNT>=1500 & PoldataSPIndustries$AMOUNT<=40500]
+Windata <- hist(Winners,breaks=30,plot = F)
+Losedata <- hist(Losers,breaks=10,plot = F)
+plot(0,0,type="n",xlim=c(0,160000),ylim=c(0,3000),xlab="Industry Contribution Amounts",ylab="Frequency",main="Frequency of Industry Contributions to Candidates (IQR)")
+plot(Windata,col="green",density=20,add=T)
+plot(Losedata,density=20,angle=135,add=T)
+legend("topright",c("Winning Candidates","Losing Candidates"),fill=c("green","black"),density=20)
