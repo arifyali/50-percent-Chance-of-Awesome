@@ -17,7 +17,7 @@ FL|19|Robert|Wexler|2008,FL,19,H6FL19038,True,Robert,Wexler,D,2008,0,,,,202465,0
 CA|21|Devin G.|Nunes|2008,CA,21,H8CA20059,True,Devin G.,Nunes,R,2008,41638,1.0,,,143498,0.6839
 TX|5|Ken|Ashby|2008,TX,5,H8TX05052,False,Ken,Ashby,LBT,2008,,,,,31967,0.1641
 AZ|1|Preston|Korn|2008,AZ,1,H8AZ01146,False,Preston,Korn,R,2008,1596,0.035,,,,
-TX|32|Alex|Bischoff|2008,TX,32,H8TX32049,False,Alex,Bischoff,LBT,2008,,,,,4421,0.0218
+NJ|8|Roland|Straten|2008,NJ,8,H8NJ08056,False,Roland,Straten,R,2008,5859,1.0,,,63107,0.2817
 UT|2|Dennis Ray|Emery|2008,UT,2,H8UT02172,False,Dennis Ray,Emery,CON,2008,,,,,3000,0.0086
 "NH|2|""Bob""|Clegg|2008",NH,2,H8NH02200,False,"""Bob""",Clegg,"R,W(D)",2008,10771,0.33899999999999997,,,,
 IN|2|Joe|Donnelly|2008,IN,2,H4IN02101,True,Joe,Donnelly,D,2008,119217,1.0,,,187416,0.6709
@@ -78,14 +78,14 @@ SD|S|Tim|Johnson|2008,SD,S,S6SD00051,True,Tim,Johnson,D,2008,0,,,,237889,0.6249
 TX|6|Joe|Barton|2008,TX,6,H4TX06117,True,Joe,Barton,R,2008,42054,1.0,,,174008,0.6202000000000001
 CA|45|George|Pearne|2008,CA,45,H8CA45122,False,George,Pearne,R,2008,4618,0.1065,,,,
 NY|20|Sandy|Treadwell|2008,NY,20,H8NY20122,False,Sandy,Treadwell,"CRV,IDP,R",2008,0,,,,99930,0.3206
-MI|2|Peter |Hoekstra|2008,MI,2,H2MI02066,True,Peter ,Hoekstra,R,2008,53322,1.0,,,214100,0.6236
 TX|30|Jarrett|Woods|2008,TX,30,H8TX30035,False,Jarrett,Woods,LBT,2008,,,,,3366,0.0165
+TX|32|Alex|Bischoff|2008,TX,32,H8TX32049,False,Alex,Bischoff,LBT,2008,,,,,4421,0.0218
 CA|3|Douglas Arthur|Tuma|2008,CA,3,H8CA03154,False,Douglas Arthur,Tuma,LBT,2008,347,1.0,,,7273,0.0232
 MO|8|Joe|Allen|2008,MO,8,H8MO08072,False,Joe,Allen,D,2008,35418,1.0,,,72790,0.2616
 VA|1|Keith B.|Hummel|2008,VA,1,H8VA01212,False,Keith B.,Hummel,D,2008,,,,,,
 AZ|7|Joseph|Sweeney|2008,AZ,7,H4AZ02010,False,Joseph,Sweeney,R,2008,11011,0.6683,,,64425,0.32789999999999997
 MD|6|Frank K.|Nethken|2008,MD,6,H8MD00021,False,Frank K.,Nethken,R,2008,857,0.0129,,,,
-OH|10|Barbara Anne|Ferris|2008,OH,10,H4OH10134,False,Barbara Anne,Ferris,D,2008,9362,0.06480000000000001,,,,
+NM|2|Harry|Teague|2008,NM,2,H8NM02032,False,Harry,Teague,D,2008,20281,0.5217,,,129572,0.5596
 NY|25|Daniel B.|Maffei|2008,NY,25,H6NY25125,False,Daniel B.,Maffei,"WF,D",2008,0,,,,148290,0.5165
 PA|3|Tom|Myers|2008,PA,3,H8PA03043,False,Tom,Myers,D,2008,18584,0.19030000000000002,,,,
 KS|2|Lynn¾|Jenkins|2008,KS,2,H8KS02090,False,Lynn¾,Jenkins,R¾,2008,34278,0.5097999999999999,,,155532,0.5061
@@ -103,6 +103,7 @@ RI|S|Robert G.|Tingle|2008,RI,S,S2RI00063,False,Robert G.,Tingle,R,2008,1068,1.0
 "WV|3|Nick Joe, II|Rahall|2008",WV,3,H6WV04057,True,"Nick Joe, II",Rahall,D,2008,100801,1.0,,,133522,0.6692
 IL|13|Steve|Alesch|2008,IL,13,H8IL13101,False,Steve,Alesch,GRE,2008,105,1.0,,,9402,0.0278
 NJ|4|Joshua M.|Zeitz|2008,NJ,4,H8NJ04147,False,Joshua M.,Zeitz,D,2008,13114,1.0,,,100036,0.32630000000000003
+NC|S|Pete|Di Lauro|2008,NC,S,S8NC00288,False,Pete,Di Lauro,R,2008,51406,0.10039999999999999,,,,
 MS|3|James|Broadwater|2008,MS,3,H8MS03075,False,James,Broadwater,R,2008,424,0.0064,,,,
 CA|5|David B.|Lynch|2008,CA,5,H8CA05167,False,David B.,Lynch,W,2008,,,,,180,0.0008
 VA|11|Douglas J.|Denneny|2008,VA,11,H8VA11013,False,Douglas J.,Denneny,D,2008,1508,0.061399999999999996,,,,
@@ -117,7 +118,6 @@ OR|5|Mike|Erickson|2008,OR,5,H6OR05119,False,Mike,Erickson,R,2008,37217,0.4794,,
 IA|4|William J.|Meyers|2008,IA,4,H8IA04064,False,William J.,Meyers,D,2008,2086,0.114,,,,
 VA|7|Anita|Hartke|2008,VA,7,H8VA07045,False,Anita,Hartke,D,2008,0,,,,138123,0.371
 CA|15|Peter|Myers|2008,CA,15,H8CA15091,False,Peter,Myers,GRE,2008,326,1.0,,,12123,0.0508
-MD|1|Robert Joseph|Banks|2008,MD,1,H8MD01151,False,Robert Joseph,Banks,R,2008,1186,0.015300000000000001,,,,
 GA|10|Barry|Fleming|2008,GA,10,H8GA10114,False,Barry,Fleming,R,2008,18372,0.2901,,,,
 WY|0|Mark|Gordon|2008,WY,0,H8WY00155,False,Mark,Gordon,R,2008,26827,0.3735,,,,
 PA|16|Daniel|Frank|2008,PA,16,H8PA16052,False,Daniel,Frank,CON,2008,,,,,2877,0.009399999999999999
@@ -153,12 +153,13 @@ AZ|6|Jeff|Flake|2008,AZ,6,H0AZ01184,True,Jeff,Flake,R,2008,51562,1.0,,,208582,0.
 NE|2|Richard N.|Carter|2008,NE,2,H8NE02212,False,Richard N.,Carter,"N(D),D",2008,5059,0.2169,,,,
 TX|17|Chet|Edwards|2008,TX,17,H8TX06035,True,Chet,Edwards,D,2008,60557,1.0,,,134592,0.5297999999999999
 LA|4|Willie|Banks|2008,LA,4,H8LA04233,False,Willie,Banks,D,2008,17621,0.2296,57078,0.3801,,
-NJ|2|Frank A. |Lo Biondo|2008,NJ,2,H2NJ02037,True,Frank A. ,Lo Biondo,R,2008,16026,0.8878,,,167701,0.5906
+NJ|11|Kate|Erber|2008,NJ,11,H8NJ11126,False,Kate,Erber,R,2008,3731,0.1331,,,,
 OR|S|David|Loera|2008,OR,S,S8OR00249,False,David,Loera,D,2008,6127,0.0111,,,,
 TX|11|John R.|Strohm|2008,TX,11,H8TX11084,False,John R.,Strohm,LBT,2008,,,,,25051,0.1167
 TX|4|Glenn|Melancon|2008,TX,4,H6TX04083,False,Glenn,Melancon,D,2008,37416,0.574,,,88067,0.2928
 FL|19|Edward J.|Lynch|2008,FL,19,H8FL19042,False,Edward J.,Lynch,R,2008,0,,,,83357,0.2724
 TX|30|Fred|Wood|2008,TX,30,H6TX30104,False,Fred,Wood,R,2008,5366,1.0,,,32361,0.15869999999999998
+NJ|7|Dean|Greco|2008,NJ,7,H8NJ07165,False,Dean,Greco,ADB,2008,,,,,3259,0.011000000000000001
 IN|5|Kenny|Stall|2008,IN,5,H8IN05105,False,Kenny,Stall,D,2008,29513,0.2955,,,,
 CA|53|Susan A.|Davis|2008,CA,53,H0CA49055,True,Susan A.,Davis,D,2008,43171,0.8759999999999999,,,161315,0.6849
 GA|S|Dale|Cardwell|2008,GA,S,S8GA00123,False,Dale,Cardwell,D,2008,79181,0.1605,,,,
@@ -176,6 +177,7 @@ MO|2|Byron|DeLear|2008,MO,2,H8MO02174,False,Byron,DeLear,D,2008,5059,0.1725,,,,
 CA|15|Joyce Stoer|Cordi|2008,CA,15,H8CA15083,False,Joyce Stoer,Cordi,R,2008,19750,1.0,,,55489,0.23260000000000003
 CA|4|Doug|Ose|2008,CA,4,H8CA03105,False,Doug,Ose,R,2008,37802,0.3912,,,,
 TX|26|Stephanie B.|Weiss|2008,TX,26,H8TX26066,False,Stephanie B.,Weiss,LBT,2008,,,,,11028,0.034
+NJ|1|Mahdi|Ibn-Ziyad|2008,NJ,1,H8NJ01127,False,Mahdi,Ibn-Ziyad,D,2008,2222,0.0575,,,,
 NH|1|Robert|Kingsbury|2008,NH,1,H8NH01145,False,Robert,Kingsbury,LBT,2008,,,,,8100,0.023700000000000002
 WY|0|Cynthia M.|Lummis|2008,WY,0,H8WY00148,False,Cynthia M.,Lummis,R,2008,33149,0.46149999999999997,,,131244,0.5262
 NJ|6|James P.|Hogan|2008,NJ,6,H8NJ06134,False,James P.,Hogan,R,2008,1062,0.15839999999999999,,,,
@@ -184,6 +186,7 @@ AZ|1|Mary Kim|Titla|2008,AZ,1,H8AZ01096,False,Mary Kim,Titla,D,2008,18428,0.3256
 VT|0|Jerry|Trudell|2008,VT,0,H6VT00228,False,Jerry,Trudell,ENE,2008,,,,,10818,0.0363
 GA|12|Regina D.|Thomas|2008,GA,12,H8GA12037,False,Regina D.,Thomas,D,2008,13955,0.23579999999999998,,,,
 AZ|4|Richard|Grayson|2008,AZ,4,H8AZ06012,False,Richard,Grayson,W(R),2008,8,0.001,,,,
+NJ|1|Camille S.|Andrews|2008,NJ,1,H8NJ01143,False,Camille S.,Andrews,D,2008,32108,0.8303,,,,
 MD|1|Joseph|Werner|2008,MD,1,H8MD01144,False,Joseph,Werner,D,2008,8753,0.1231,,,,
 WY|S - FULL TERM|Chris|Rothfuss|2008,WY,S - FULL TERM,S8WY00163,False,Chris,Rothfuss,D,2008,14221,0.6188,,,60631,0.2426
 TX|17|Rob|Curnock|2008,TX,17,H8TX17107,False,Rob,Curnock,R,2008,44448,1.0,,,115581,0.455
@@ -198,10 +201,10 @@ GA|3|Lynn|Westmoreland|2008,GA,3,H4GA08067,True,Lynn,Westmoreland,R,2008,55128,1
 IA|2|Wendy|Barth|2008,IA,2,H8IA02076,False,Wendy,Barth,GRE,2008,,,,,6664,0.0218
 LA|2|James|Carter|2008,LA,2,H8LA02088,False,James,Carter,D,2008,9282,0.1341,,,,
 NC|S|Duskin C.|Lassiter|2008,NC,S,S8NC00247,False,Duskin C.,Lassiter,D,2008,62136,0.04650000000000001,,,,
+NM|1|Darren|White|2008,NM,1,H8NM01273,False,Darren,White,R,2008,37060,0.818,,,132485,0.4435
 TN|1|Phil|Roe|2008,TN,1,H6TN01388,False,Phil,Roe,R,2008,25993,0.5015,,,168343,0.7182
 IL|13|Judy|Biggert|2008,IL,13,H8IL13069,True,Judy,Biggert,R,2008,58533,0.7728,,,180888,0.5355
 AR|3|John|Boozman|2008,AR,3,H2AR03176,True,John,Boozman,R,2008,0,,,,215196,0.7853
-WA|8|James E. |Vaughn|2008,WA,8,H8WA08072,False,James E. ,Vaughn,D,2008,5051,0.0331,,,,
 MD|5|Darlene H.|Nicholas|2008,MD,5,H8MD05111,False,Darlene H.,Nicholas,LBT,2008,,,,,7829,0.0227
 KS|S|Lee¾|Jones|2008,KS,S,S4KS00085,False,Lee¾,Jones,D¾,2008,30699,0.3107,,,,
 "MA|5|Theodore J., Jr.|Gaiero|2008",MA,5,n/a,False,"Theodore J., Jr.",Gaiero,W(R),2008,114,0.1557,,,,
@@ -218,9 +221,11 @@ CA|37|June Viena|Pouesi|2008,CA,37,H8CA37285,False,June Viena,Pouesi,W,2008,,,,,
 NH|1|Jeb|Bradley|2008,NH,1,H2NH01130,False,Jeb,Bradley,"W(R),R,W(D)",2008,18559,0.5104,,,156338,0.45840000000000003
 NM|2|Bill|McCamley|2008,NM,2,H8NM02024,False,Bill,McCamley,D,2008,18597,0.4783,,,,
 TX|2|Ted|Poe|2008,TX,2,H4TX02108,True,Ted,Poe,R,2008,36562,1.0,,,175101,0.8892
+TN|5|John P.|Miglietta|2008,TN,5,H8TN05252,False,John P.,Miglietta,I,2008,,,,,3196,0.0116
 MD|6|Joseph T.|Krysztoforski|2008,MD,6,H6MD06147,False,Joseph T.,Krysztoforski,R,2008,5686,0.0855,,,,
 CA|29|Charles|Hahn|2008,CA,29,H8CA29076,False,Charles,Hahn,R,2008,16241,1.0,,,56727,0.26739999999999997
 MN|6|Aubrey|Immelman|2008,MN,6,H8MN06070,False,Aubrey,Immelman,R/W,2008,3134,0.1408,,,20,0.0
+NJ|1|Fernando|Powers|2008,NJ,1,H8NJ01176,False,Fernando,Powers,R,2008,1266,0.1773,,,,
 NY|28|David W.|Crimmen|2008,NY,28,H8NY28091,False,David W.,Crimmen,"CRV,R",2008,0,,,,42016,0.1898
 NV|2|Jill|Derby|2008,NV,2,H6NV02180,False,Jill,Derby,D,2008,0,,,,136548,0.4144
 AZ|6|Rick|Biondi|2008,AZ,6,H8AZ06061,False,Rick,Biondi,LBT,2008,175,1.0,,,10137,0.030299999999999997
@@ -232,11 +237,12 @@ MI|7|Ken|Proctor|2008,MI,7,H2MI07073,False,Ken,Proctor,LBT,2008,,,,,5675,0.0176
 CA|6|Edward K.|Newman|2008,CA,6,H8CA06074,False,Edward K.,Newman,W(D),2008,26,0.0003,,,,
 PA|18|Tim|Murphy|2008,PA,18,H2PA18143,True,Tim,Murphy,R,2008,39780,1.0,,,213349,0.6406999999999999
 KY|2|David E.|Boswell|2008,KY,2,H8KY02049,False,David E.,Boswell,D,2008,61007,0.586,,,143379,0.4743
+MI|4|Andrew D.|Concannon|2008,MI,4,H8MI04077,False,Andrew D.,Concannon,D,2008,23441,1.0,,,117665,0.3568
 OK|3|Frank D.|Lucas|2008,OK,3,H4OK06056,True,Frank D.,Lucas,R,2008,0,,,,184306,0.6972
 FL|5|Carol|Castagnero|2008,FL,5,H8FL05116,False,Carol,Castagnero,D,2008,12854,0.3862,,,,
 TN|1|Thomas (T.K.)|Owens|2008,TN,1,H8TN01061,False,Thomas (T.K.),Owens,I,2008,,,,,1981,0.0085
 GA|13|David|Scott|2008,GA,13,H2GA13012,True,David,Scott,D,2008,30719,0.6367,,,205919,0.6904
-VA|10|Mike R.|Turner|2008,VA,10,H8VA10072,False,Mike R.,Turner,D,2008,3377,0.3821,,,,
+NJ|12|David|Corsi|2008,NJ,12,H8NJ12082,False,David,Corsi,CMS,2008,,,,,4802,0.015600000000000001
 KY|2|S. Brett|Guthrie|2008,KY,2,H8KY02031,False,S. Brett,Guthrie,R,2008,0,,,,158936,0.5257000000000001
 OH|2|William R.|Smith|2008,OH,2,H8OH02074,False,William R.,Smith,D,2008,12455,0.1249,,,,
 NY|20|Kirsten E.|Gillibrand|2008,NY,20,H6NY20167,True,Kirsten E.,Gillibrand,"WF,D",2008,0,,,,178996,0.5742
@@ -257,18 +263,19 @@ TX|12|Tracey|Smith|2008,TX,12,H8TX12058,False,Tracey,Smith,D,2008,48975,1.0,,,82
 CT|5|David J.|Cappiello|2008,CT,5,H8CT05120,False,David J.,Cappiello,R,2008,,,,,117914,0.3896
 CA|16|Steven|Wells|2008,CA,16,H8CA16057,False,Steven,Wells,LBT,2008,255,1.0,,,9447,0.046
 CA|12|Greg|Conlon|2008,CA,12,H8CA12197,False,Greg,Conlon,R,2008,12060,0.6498999999999999,,,49258,0.18460000000000001
-NM|1|Rebecca D. |Vigil-Giron|2008,NM,1,H8NM01315,False,Rebecca D. ,Vigil-Giron,D,2008,12660,0.2466,,,,
+PA|16|Bruce A.|Slater|2008,PA,16,H8PA16045,False,Bruce A.,Slater,D,2008,59246,1.0,,,120193,0.39390000000000003
 NC|10|Steve|Ivester|2008,NC,10,H8NC10048,False,Steve,Ivester,D,2008,27216,0.3985,,,,
 MO|8|Branden C.|McCullough|2008,MO,8,H6MO08118,False,Branden C.,McCullough,LBT,2008,126,1.0,,,4443,0.016
 AL|5|David|Maker|2008,AL,5,H8AL05117,False,David,Maker,D,2008,3874,0.1008,,,,
 CA|32|Innocent O.|Osunwa|2008,CA,32,n/a,False,Innocent O.,Osunwa,W,2008,,,,,8,0.0001
+NJ|4|Steven|Welzer|2008,NJ,4,H8NJ04154,False,Steven,Welzer,GRE,2008,,,,,3543,0.0116
 IN|8|Brad|Ellsworth|2008,IN,8,H6IN08210,True,Brad,Ellsworth,D,2008,134796,1.0,,,188693,0.6474
 MN|S|Alve|Erickson|2008,MN,S,S2MN00142,False,Alve,Erickson,DFL,2008,1017,0.004,,,,
-MP|0|Pedro Agulto |Tenorio|2008,MP,0,H8MP00017,False,Pedro Agulto ,Tenorio,NMR,2008,,,,,2117,0.20829999999999999
 OH|6|Charlie|Wilson|2008,OH,6,H6OH06095,True,Charlie,Wilson,D,2008,114409,1.0,,,176330,0.6228
 TX|17|Gardner C.|Osborne|2008,TX,17,H6TX12128,False,Gardner C.,Osborne,LBT,2008,,,,,3849,0.0152
 AZ|7|Raymond Patrick|Petrulsky|2008,AZ,7,H8AZ07036,False,Raymond Patrick,Petrulsky,W(LBT)/LBT,2008,33,1.0,,,7755,0.0395
 AZ|1|Sandra L. B.|Livingstone|2008,AZ,1,H8AZ01179,False,Sandra L. B.,Livingstone,R,2008,15621,0.3423,,,,
+MI|4|Dave|Camp|2008,MI,4,H0MI10071,True,Dave,Camp,R,2008,57136,1.0,,,204259,0.6194
 MO|2|Mike|Garman|2008,MO,2,H8MO02141,False,Mike,Garman,D,2008,4690,0.15990000000000001,,,,
 ID|S|David J.|Archuleta|2008,ID,S,S8ID00167,False,David J.,Archuleta,D,2008,11074,0.276,,,,
 SC|1|Katherine|Jenerette|2008,SC,1,H8SC01082,False,Katherine,Jenerette,R,2008,11488,0.18899999999999997,,,,
@@ -285,6 +292,7 @@ GA|8|Robert|Nowack|2008,GA,8,H8GA08050,False,Robert,Nowack,D,2008,7396,0.1433,,,
 CA|53|Edward M.|Teyssier|2008,CA,53,H8CA53043,False,Edward M.,Teyssier,LBT,2008,413,1.0,,,9569,0.0406
 CA|8|Michelle Wong|Clay|2008,CA,8,n/a,False,Michelle Wong,Clay,W,2008,,,,,4,0.0
 IA|4|Kurt|Meyer|2008,IA,4,H8IA04049,False,Kurt,Meyer,D,2008,5041,0.2755,,,,
+NE|S|Scott|Kleeb|2008,NE,S,S8NE00133,False,Scott,Kleeb,"N(D),D",2008,64468,0.6866,,,317456,0.4006
 CA|40|Ed|Royce|2008,CA,40,H6CA39020,True,Ed,Royce,R,2008,39565,1.0,,,144923,0.6255
 TX|4|Ralph M.|Hall|2008,TX,4,H0TX04037,True,Ralph M.,Hall,R,2008,41764,0.7339,,,206906,0.688
 TN|1|Michael|Donihe|2008,TN,1,H8TN01046,False,Michael,Donihe,D,2008,1968,0.3231,,,,
@@ -305,6 +313,7 @@ IL|9|Michael Benjamin|Younan|2008,IL,9,H8IL09158,False,Michael Benjamin,Younan,R
 OR|1|Scott|Semrau|2008,OR,1,H8OR01189,False,Scott,Semrau,CON,2008,,,,,14172,0.042699999999999995
 NC|10|Lance|Sigmon|2008,NC,10,H8NC10063,False,Lance,Sigmon,R,2008,16892,0.32899999999999996,,,,
 MT|0|Jim|Hunt|2008,MT,0,H8MT00044,False,Jim,Hunt,D,2008,59768,0.4193,,,,
+NJ|2|Donna M.|Ward|2008,NJ,2,H8NJ02109,False,Donna M.,Ward,R,2008,2025,0.11220000000000001,,,,
 OK|S|Dennis|Lopez|2008,OK,S,S8OK00258,False,Dennis,Lopez,R,2008,3800,0.0275,,,,
 MO|6|Kay|Barnes|2008,MO,6,H8MO06068,False,Kay,Barnes,D,2008,36712,0.8454,,,121894,0.3686
 GA|12|Ray|McKinney|2008,GA,12,H8GA12029,False,Ray,McKinney,R,2008,5316,0.3186,,,,
@@ -320,7 +329,6 @@ IN|3|Michael A. (Mike)|Montagano|2008,IN,3,H8IN03050,False,Michael A. (Mike),Mon
 AZ|4|Don|Karg|2008,AZ,4,H2AZ04101,False,Don,Karg,R,2008,8073,0.9990000000000001,,,26435,0.2125
 IL|16|Scott|Summers|2008,IL,16,H8IL16070,False,Scott,Summers,GRE,2008,,,,,9533,0.0305
 CA|36|Jane|Harman|2008,CA,36,H2CA27107,True,Jane,Harman,D,2008,32009,1.0,,,171948,0.6864
-TX|21|James Arthur|Strohm|2008,TX,21,H6TX21178,False,James Arthur,Strohm,LBT,2008,,,,,60879,0.2
 CA|5|Paul A.|Smith|2008,CA,5,H8CA05159,False,Paul A.,Smith,R,2008,18232,1.0,,,46002,0.20800000000000002
 FL|25|Joe|Garcia|2008,FL,25,H8FL25015,False,Joe,Garcia,D,2008,0,,,,115820,0.46950000000000003
 WA|2|Doug|Schaffer|2008,WA,2,H8WA02158,False,Doug,Schaffer,D,2008,8857,0.0489,,,,
@@ -348,10 +356,9 @@ NY|1|Timothy H.|Bishop|2008,NY,1,H2NY01067,True,Timothy H.,Bishop,"WF,IDP,D",200
 NJ|S|Jeffrey|Boss|2008,NJ,S,S8NJ00418,False,Jeffrey,Boss,BFS,2008,,,,,10345,0.003
 AZ|5|Ralph|Hughes|2008,AZ,5,H8AZ05147,False,Ralph,Hughes,W,2008,,,,,9,0.0
 CA|33|Diane E.|Watson|2008,CA,33,H2CA32099,True,Diane E.,Watson,D,2008,44934,0.8813,,,186924,0.8756999999999999
-MI|2|Dan|Johnson|2008,MI,2,H8MI02105,False,Dan,Johnson,LBT,2008,,,,,5496,0.016
+NJ|S|Murray|Sabrin|2008,NJ,S,S8NJ00285,False,Murray,Sabrin,R,2008,25576,0.1384,,,,
 CT|4|Michael Anthony|Carrano|2008,CT,4,H8CT04206,False,Michael Anthony,Carrano,LBT,2008,,,,,2049,0.0066
 ID|2|Jack Wayne|Chappell|2008,ID,2,H0ID02053,False,Jack Wayne,Chappell,R,2008,4900,0.08410000000000001,,,,
-NM|2|C. Earl |Greer|2008,NM,2,H2NM02118,False,C. Earl ,Greer,R,2008,3614,0.0992,,,,
 UT|1|Joseph Geddes|Buchman|2008,UT,1,H8UT01109,False,Joseph Geddes,Buchman,LBT,2008,,,,,6780,0.0223
 MT|S|Anton A.|Pearson|2008,MT,S,S8MT00176,False,Anton A.,Pearson,R,2008,4257,0.0574,,,,
 CT|4|Jim|Himes|2008,CT,4,H8CT04172,False,Jim,Himes,"WF,D",2008,12260,0.8695,,,149345,0.48369999999999996
@@ -381,16 +388,18 @@ KY|6|Tony|McCurdy|2008,KY,6,H8KY06149,False,Tony,McCurdy,R,2008,11906,0.4849,,,,
 TX|3|Ronald E. (Ron)|Minkow|2008,TX,3,H8TX03057,False,Ronald E. (Ron),Minkow,D,2008,13305,0.2837,,,,
 KS|2|Robert¾|Garrard|2008,KS,2,H8KS02108,False,Robert¾,Garrard,LBT,2008,,,,,4683,0.0152
 VT|0|Thomas J.|Hermann|2008,VT,0,H8VT00125,False,Thomas J.,Hermann,PRO,2008,261,0.8847,,,9081,0.0305
-NC|S|Pete|Di Lauro|2008,NC,S,S8NC00288,False,Pete,Di Lauro,R,2008,51406,0.10039999999999999,,,,
+NJ|2|David|Kurkowski|2008,NJ,2,H8NJ02091,False,David,Kurkowski,D,2008,16465,1.0,,,110990,0.3909
 "PA|5|Richard P., Jr.|Vilello|2008",PA,5,H8PA05121,False,"Richard P., Jr.",Vilello,D,2008,17921,0.2415,,,,
 OK|5|Steven L.|Perry|2008,OK,5,H8OK05083,False,Steven L.,Perry,D,2008,12902,0.589,,,88996,0.3411
 CT|4|Lisa Lee|Whitnum|2008,CT,4,H8CT04180,False,Lisa Lee,Whitnum,D,2008,1840,0.1305,,,,
 FL|16|Gayle|Harrell|2008,FL,16,H4FL16096,False,Gayle,Harrell,R,2008,19626,0.3493,,,,
 TX|22|John|Manlove|2008,TX,22,H8TX22131,False,John,Manlove,R,2008,8399,0.1495,,,,
-MS|1|Steve|Holland|2008,MS,1,H8MS01095,False,Steve,Holland,D,2008,30274,0.3063,15958,0.43420000000000003,,
+MI|9|Joe|Knollenberg|2008,MI,9,H2MI11042,True,Joe,Knollenberg,R,2008,49940,1.0,,,150035,0.4263
 RI|S|Christopher F.|Young|2008,RI,S,S0RI00042,False,Christopher F.,Young,D,2008,7286,0.1315,,,,
 TX|13|Mac|Thornberry|2008,TX,13,H4TX13014,True,Mac,Thornberry,R,2008,56807,1.0,,,180078,0.7765000000000001
+NE|2|Steven|Laird|2008,NE,2,H8NE02204,False,Steven,Laird,"N(R),R",2008,4246,0.3134,,,,
 NC|11|Heath|Shuler|2008,NC,11,H6NC11172,True,Heath,Shuler,D,2008,0,,,,211112,0.6196
+MP|0|Juan Tudela|Lizama|2008,MP,0,H8MP00025,False,Juan Tudela,Lizama,I,2008,,,,,1819,0.179
 UT|3|David O.|Leavitt|2008,UT,3,H8UT03097,False,David O.,Leavitt,R,2008,,,,,,
 PR|0|Myriam|RamÍrez-GarcÍa|2008,PR,0,H3PR00014,False,Myriam,RamÍrez-GarcÍa,NPP,2008,50590,0.0684,,,,
 "AL|S|Johnny, III|Swanson|2008",AL,S,S0AL00149,False,"Johnny, III",Swanson,D,2008,38757,0.22030000000000002,,,,
@@ -402,7 +411,7 @@ TN|9|James|Gregory|2008,TN,9,H8TN09080,False,James,Gregory,D,2008,180,0.00280000
 WA|4|Gordon Allen|Pross|2008,WA,4,H8WA04048,False,Gordon Allen,Pross,GOP,2008,6842,0.045599999999999995,,,,
 MO|6|Sam|Graves|2008,MO,6,H0MO06073,True,Sam,Graves,R,2008,36131,1.0,,,196526,0.5943
 CO|6|Ted|Harvey|2008,CO,6,H8CO06161,False,Ted,Harvey,R,2008,10886,0.1532,,,,
-NJ|12|David|Corsi|2008,NJ,12,H8NJ12082,False,David,Corsi,CMS,2008,,,,,4802,0.015600000000000001
+NM|2|Edward R.|Tinsley|2008,NM,2,H2NM02134,False,Edward R.,Tinsley,R,2008,11510,0.316,,,101980,0.4404
 CA|46|Thomas|Lash|2008,CA,46,H4CA46095,False,Thomas,Lash,GRE,2008,223,1.0,,,8257,0.028900000000000002
 "NH|1|""Dave""|Jarvis|2008",NH,1,H6NH01255,False,"""Dave""",Jarvis,R,2008,414,0.011399999999999999,,,,
 NJ|7|Michael P.|Hsing|2008,NJ,7,H8NJ07132,False,Michael P.,Hsing,HFC,2008,,,,,16419,0.0555
@@ -413,22 +422,21 @@ VA|5|Tom S. P.|Perriello|2008,VA,5,H8VA05106,False,Tom S. P.,Perriello,D,2008,,,
 AZ|1|Tom|Hansen|2008,AZ,1,H8AZ01187,False,Tom,Hansen,R,2008,7847,0.172,,,,
 LA|S|Robert|Stewart|2008,LA,S,S8LA00082,False,Robert,Stewart,OTH,2008,,,,,8780,0.0046
 ND|0|Gaylon|Baker|2008,ND,0,n/a,False,Gaylon,Baker,W(LBT),2008,1,0.07139999999999999,,,,
+TN|1|Rob|Russell|2008,TN,1,H8TN01053,False,Rob,Russell,D,2008,4123,0.6769,,,57525,0.24539999999999998
 MT|0|Robert|Candee|2008,MT,0,H2MT00013,False,Robert,Candee,D,2008,12598,0.08839999999999999,,,,
-NJ|S|Donald |Cresitello|2008,NJ,S,S2NJ00114,False,Donald ,Cresitello,D ,2008,19743,0.057300000000000004,,,,
 NE|S|James Bryan|Wilson|2008,NE,S,S8NE00158,False,James Bryan,Wilson,"N(D),D",2008,3179,0.0339,,,,
 CT|1|Matthew|Coleman|2008,CT,1,n/a,False,Matthew,Coleman,W,2008,,,,,3,0.0
 AL|5|George C.|Barry|2008,AL,5,H8AL05141,False,George C.,Barry,R,2008,2274,0.0599,,,,
 PA|5|John T.|Krupa|2008,PA,5,H8PA05188,False,John T.,Krupa,R,2008,1916,0.0263,,,,
 IL|18|Aaron|Schock|2008,IL,18,H8IL18043,False,Aaron,Schock,R,2008,55610,0.7117,,,182589,0.5888
 NJ|3|Justin Michael|Murphy|2008,NJ,3,H8NJ03180,False,Justin Michael,Murphy,R,2008,6494,0.2525,,,,
-ID|S|Larry|LaRocco|2008,ID,S,S8ID00076,False,Larry,LaRocco,D,2008,29023,0.7234999999999999,,,219903,0.3411
 FL|16|Tom|Rooney|2008,FL,16,H8FL16022,False,Tom,Rooney,R,2008,20637,0.36729999999999996,,,209874,0.6009
 ID|S|Neal|Thompson|2008,ID,S,S8ID00142,False,Neal,Thompson,R,2008,5375,0.0435,,,,
 NV|1|Chris|Dyer|2008,NV,1,H8NV01196,False,Chris,Dyer,R,2008,1847,0.14679999999999999,,,,
 TX|10|Larry Joe|Doherty|2008,TX,10,H8TX10052,False,Larry Joe,Doherty,D,2008,51977,0.6111,,,143719,0.4315
 OH|11|Stephanie Tubbs|Jones|2008,OH,11,H8OH11067,True,Stephanie Tubbs,Jones,D,2008,131857,1.0,,,,
 IA|2|Dave|Loebsack|2008,IA,2,H6IA02146,True,Dave,Loebsack,D,2008,21084,0.9892,,,175218,0.5719
-TX|22|Shelley|Sekula Gibbs|2008,TX,22,H6TX22184,False,Shelley,Sekula Gibbs,R,2008,16697,0.2973,7125,0.3148,,
+KY|3|John|Yarmuth|2008,KY,3,H6KY03124,True,John,Yarmuth,D,2008,0,,,,203843,0.5937
 NC|2|Bob|Etheridge|2008,NC,2,H6NC02080,True,Bob,Etheridge,D,2008,0,,,,199730,0.6693000000000001
 MI|13|Mary|Waters|2008,MI,13,H8MI13185,False,Mary,Waters,D,2008,19303,0.35840000000000005,,,,
 NJ|7|Leonard|Lance|2008,NJ,7,H6NJ12136,False,Leonard,Lance,R,2008,10094,0.3947,,,148461,0.5022
@@ -443,12 +451,12 @@ MO|2|Todd|Akin|2008,MO,2,H0MO02148,True,Todd,Akin,R,2008,46877,1.0,,,232276,0.62
 MS|S - UNEXPIRED TERM|Ronnie|Musgrove|2008,MS,S - UNEXPIRED TERM,S8MS00212,False,Ronnie,Musgrove,N,2008,,,,,560064,0.45039999999999997
 NJ|S|Frank|Lautenberg|2008,NJ,S,S2NJ00080,True,Frank,Lautenberg,D,2008,203012,0.5892000000000001,,,1951218,0.5603
 NJ|1|Matthew|Thieke|2008,NJ,1,H8NJ01218,False,Matthew,Thieke,GRE,2008,,,,,1927,0.0068000000000000005
+NM|1|Robert L.|Pidcock|2008,NM,1,H8NM01299,False,Robert L.,Pidcock,D,2008,4273,0.0832,,,,
 FL|4|Jay|McGovern|2008,FL,4,H8FL04069,False,Jay,McGovern,D,2008,0,,,,119330,0.3475
 CA|49|Darrell|Issa|2008,CA,49,H0CA48024,True,Darrell,Issa,R,2008,41369,1.0,,,140300,0.583
 ND|0|Jim|Lee|2008,ND,0,n/a,False,Jim,Lee,W(CON),2008,1,0.1429,,,,
 NJ|1|Margaret M.|Chapman|2008,NJ,1,H8NJ01192,False,Margaret M.,Chapman,BBA,2008,,,,,1258,0.0044
 MN|8|James L.|Oberstar|2008,MN,8,H6MN08047,True,James L.,Oberstar,DFL,2008,0,,,,241831,0.6769
-NC|7|Mike |McIntyre|2008,NC,7,H8NC07044,True,Mike ,McIntyre,D,2008,0,,,,215383,0.6884
 OH|18|Mark|Pitrone|2008,OH,18,H8OH18104,False,Mark,Pitrone,D,2008,15980,0.15439999999999998,,,,
 FL|8|Mike|Smith|2008,FL,8,H8FL08060,False,Mike,Smith,D,2008,5727,0.1724,,,,
 OK|S|Ted|Ryals|2008,OK,S,S8OK00266,False,Ted,Ryals,R,2008,7306,0.0528,,,,
@@ -484,6 +492,7 @@ TX|23|Lani|Connolly|2008,TX,23,H8TX23105,False,Lani,Connolly,LBT,2008,,,,,5581,0
 IN|1|Chuck|Barman|2008,IN,1,H8IN01104,False,Chuck,Barman,R,2008,2945,0.1463,,,,
 MI|11|Thaddeus G.|McCotter|2008,MI,11,H2MI00037,True,Thaddeus G.,McCotter,R,2008,43303,1.0,,,177461,0.5141
 "VA|6|R. W. ""Bob""|Goodlatte|2008",VA,6,H2VA06115,True,"R. W. ""Bob""",Goodlatte,R,2008,0,,,,192350,0.6157
+NM|2|Greg|Sowards|2008,NM,2,H6NM02077,False,Greg,Sowards,R,2008,6468,0.1776,,,,
 MD|2|Richard Pryce|Matthews|2008,MD,2,H8MD02084,False,Richard Pryce,Matthews,R,2008,15451,1.0,,,68561,0.2481
 TX|6|Steve|Bush|2008,TX,6,H8TX06134,False,Steve,Bush,D,2008,31959,0.4918,,,,
 MN|5|Bill|McGaughey|2008,MN,5,H8MN05148,False,Bill,McGaughey,IDP,2008,828,1.0,,,22318,0.0692
@@ -493,9 +502,11 @@ HI|2|Shaun|Stenshol|2008,HI,2,H8HI02109,False,Shaun,Stenshol,I,2008,967,1.0,,,40
 MN|1|Dick|Day|2008,MN,1,H8MN01212,False,Dick,Day,R,2008,8480,0.33030000000000004,,,,
 NY|15|Martin|Koppel|2008,NY,15,H8NY15130,False,Martin,Koppel,SWP,2008,,,,,2141,0.0108
 "TN|2|John J.|Duncan, Jr.|2008",TN,2,H8TN02069,True,John J.,"Duncan, Jr.",R,2008,50722,1.0,,,227120,0.7811
+"MP|0|John Henry, Jr.|Davis|2008",MP,0,H8MP00082,False,"John Henry, Jr.",Davis,I,2008,,,,,164,0.0161
 OR|3|John|Sweeney|2008,OR,3,H0OR03091,False,John,Sweeney,D,2008,9389,0.0672,,,,
 AZ|7|Gene|Chewning|2008,AZ,7,H8AZ07010,False,Gene,Chewning,R,2008,5464,0.3317,,,,
 CO|6|Hank|Eng|2008,CO,6,H8CO06187,False,Hank,Eng,D,2008,27661,1.0,,,162641,0.3933
+NM|2|Aubrey|Dunn|2008,NM,2,H8NM02065,False,Aubrey,Dunn,R,2008,7341,0.2016,,,,
 LA|2|Kenya J.H.|Smith|2008,LA,2,H8LA02104,False,Kenya J.H.,Smith,D,2008,1748,0.0253,,,,
 TX|16|Jorge|Artalejo|2008,TX,16,H2TX18041,False,Jorge,Artalejo,D,2008,18274,0.19579999999999997,,,,
 NJ|3|John P.|Kelly|2008,NJ,3,H8NJ03164,False,John P.,Kelly,R,2008,6531,0.2539,,,,
@@ -503,10 +514,10 @@ MS|S - FULL TERM|Erik R.|Fleming|2008,MS,S - FULL TERM,S6MS00059,False,Erik R.,F
 TN|1|Joel|Goodman|2008,TN,1,H6TN01321,False,Joel,Goodman,W(LBT)/I,2008,1,1.0,,,3988,0.017
 CA|41|Beverly|Bruins|2008,CA,41,H8CA41147,False,Beverly,Bruins,D,2008,3441,0.1315,,,,
 MO|7|Richard|Monroe|2008,MO,7,H8MO07140,False,Richard,Monroe,D,2008,11973,0.7768999999999999,,,91010,0.2816
+OH|10|Barbara Anne|Ferris|2008,OH,10,H4OH10134,False,Barbara Anne,Ferris,D,2008,9362,0.06480000000000001,,,,
 FL|14|Connie|Mack|2008,FL,14,H4FL14059,True,Connie,Mack,R,2008,0,,,,224602,0.5943999999999999
 WI|4|Michael D.|LaForest|2008,WI,4,H8WI04036,False,Michael D.,LaForest,I,2008,,,,,29282,0.1152
 TN|6|Bart|Gordon|2008,TN,6,H4TN04015,True,Bart,Gordon,D,2008,21752,1.0,,,194264,0.7442
-NC|5|Diane |Hamby|2008,NC,5,H8NC05048,False,Diane ,Hamby,D,2008,39624,0.49700000000000005,,,,
 MI|9|Jack|Kevorkian|2008,MI,9,H8MI09076,False,Jack,Kevorkian,NPA,2008,,,,,8987,0.0255
 SC|2|Blaine|Lotz|2008,SC,2,H8SC02072,False,Blaine,Lotz,D,2008,8219,0.3271,,,,
 IL|5|Alan|Augustson|2008,IL,5,H8IL05065,False,Alan,Augustson,GRE,2008,137,1.0,,,9283,0.04019999999999999
@@ -519,10 +530,10 @@ MN|7|Alan|Roebke|2008,MN,7,H8MN07060,False,Alan,Roebke,R,2008,7172,0.48229999999
 OR|S|Jeff|Merkley|2008,OR,S,S8OR00207,False,Jeff,Merkley,D/IP,2008,246482,0.4482,,,864392,0.489
 MN|S|Bob|Larson|2008,MN,S,S8MN00503,False,Bob,Larson,DFL,2008,3152,0.0125,,,,
 NY|7|Joseph|Crowley|2008,NY,7,H8NY07046,True,Joseph,Crowley,"WF,D",2008,0,,,,113988,0.8145
+TX|1|Roger L.|Owen|2008,TX,1,H6TX01196,False,Roger L.,Owen,I,2008,,,,,26814,0.1242
 OH|7|Ron|Hood|2008,OH,7,H8OH07073,False,Ron,Hood,R,2008,25984,0.336,,,,
 OR|2|Sabrina|Shrake|2008,OR,2,H8OR02104,False,Sabrina,Shrake,D,2008,,,,,,
 IL|4|Omar N.|L„pez|2008,IL,4,H8IL04118,False,Omar N.,L„pez,GRE,2008,,,,,11053,0.07919999999999999
-NJ|7|Kate |Whitman|2008,NJ,7,H8NJ07090,False,Kate ,Whitman,R,2008,5052,0.1975,,,,
 NM|3|Don|Wiviott|2008,NM,3,H8NM03162,False,Don,Wiviott,D,2008,16497,0.2559,,,,
 OH|13|Betty|Sutton|2008,OH,13,H6OH13133,True,Betty,Sutton,D,2008,105802,1.0,,,192593,0.647
 "IL|11|Deborah ""Debbie""|Halvorson|2008",IL,11,H8IL11113,False,"Deborah ""Debbie""",Halvorson,D,2008,74194,1.0,,,185652,0.584
@@ -563,7 +574,6 @@ NY|4|Carolyn|McCarthy|2008,NY,4,H6NY04112,True,Carolyn,McCarthy,"WF,IDP,D",2008,
 CO|3|Wayne|Wolf|2008,CO,3,H8CO03184,False,Wayne,Wolf,R,2008,24263,1.0,,,126762,0.3839
 UT|3|Jim|Noorlander|2008,UT,3,H6UT03141,False,Jim,Noorlander,CON,2008,,,,,17408,0.0611
 NH|1|Carol|Shea-Porter|2008,NH,1,H6NH01230,True,Carol,Shea-Porter,"W(R),D",2008,20839,0.9822,,,176435,0.5173
-MP|0|David Mendiola |Cing|2008,MP,0,H8MP00058,False,David Mendiola ,Cing,D,2008,,,,,307,0.0302
 IN|1|Jayson|Reeves|2008,IN,1,H6IN01157,False,Jayson,Reeves,R,2008,2170,0.10779999999999999,,,,
 GA|10|Paul|Broun|2008,GA,10,H8GA10049,True,Paul,Broun,R,2008,44956,0.7099,,,177265,0.6073
 UT|2|Donald W.|Ferguson|2008,UT,2,H8UT02206,False,Donald W.,Ferguson,R,2008,,,,,,
@@ -611,25 +621,25 @@ NY|2|Frank J.|Stalzer|2008,NY,2,H8NY02062,False,Frank J.,Stalzer,"CRV,R",2008,0,
 UT|1|Kirk D.|Pearson|2008,UT,1,H8UT01091,False,Kirk D.,Pearson,CON,2008,,,,,7397,0.024399999999999998
 IL|14|John|Laesch|2008,IL,14,H6IL14111,False,John,Laesch,D,2008,32012,0.4194,,,,
 CA|34|Wayne|Miller|2008,CA,34,H6CA34211,False,Wayne,Miller,R,2008,2027,0.40740000000000004,,,,
+NJ|2|Frank A.|Lo Biondo|2008,NJ,2,H2NJ02037,True,Frank A.,Lo Biondo,R,2008,16026,0.8878,,,167701,0.5906
 TN|9|Jake|Ford|2008,TN,9,H6TN09381,False,Jake,Ford,I,2008,,,,,11003,0.048600000000000004
 MI|15|Gregory Scott|Stempfle|2008,MI,15,H2MI15092,False,Gregory Scott,Stempfle,LBT,2008,,,,,4002,0.012199999999999999
-TN|1|Rob |Russell|2008,TN,1,H8TN01053,False,Rob ,Russell,D,2008,4123,0.6769,,,57525,0.24539999999999998
 MD|6|Andrew|Duck|2008,MD,6,H6MD06121,False,Andrew,Duck,D,2008,21629,0.368,,,,
 FL|6|Tim|Cunha|2008,FL,6,H8FL06080,False,Tim,Cunha,D,2008,0,,,,146655,0.3911
 OH|11|Thomas|Pekarek|2008,OH,11,H8OH11133,False,Thomas,Pekarek,R,2008,9123,1.0,,,36708,0.1471
 AL|S|Jeff|Sessions|2008,AL,S,S6AL00195,True,Jeff,Sessions,R,2008,199690,0.9227,,,1305383,0.6335999999999999
 TX|22|Kevyn|Bazzy|2008,TX,22,H8TX22164,False,Kevyn,Bazzy,R,2008,880,0.015700000000000002,,,,
 NE|3|Paul A.|Spatz|2008,NE,3,H8NE03061,False,Paul A.,Spatz,"N(D),D",2008,6110,0.2602,,,,
-AL|2|Jay|Love|2008,AL,2,H8AL02080,False,Jay,Love,R,2008,20131,0.35479999999999995,24725,0.5311,142578,0.4961
 CA|46|Ernst P.|Gasteiger|2008,CA,46,H8CA46112,False,Ernst P.,Gasteiger,LBT,2008,295,1.0,,,4311,0.0151
 LA|5|Rodney|Alexander|2008,LA,5,H2LA05084,True,Rodney,Alexander,R,2008,27819,0.8968,,,0,
-UT|3|Stone|Fonua|2008,UT,3,H2UT03173,False,Stone,Fonua,R,2008,,,,,,
+WA|7|Steve|Beren|2008,WA,7,H6WA07391,False,Steve,Beren,R,2008,19307,0.1495,,,57054,0.1635
 "KS|4|Donald, Jr.¾|Betts|2008",KS,4,H8KS04062,False,"Donald, Jr.¾",Betts,D¾,2008,15448,1.0,,,90706,0.32380000000000003
 OR|5|Nancy|Moran|2008,OR,5,H8OR05131,False,Nancy,Moran,D,2008,18597,0.19260000000000002,,,,
 CA|2|Jeff|Morris|2008,CA,2,H8CA02073,False,Jeff,Morris,D,2008,14750,0.34659999999999996,,,118878,0.4211
 TX|15|Gricha|Raether|2008,TX,15,H8TX15044,False,Gricha,Raether,LBT,2008,,,,,3827,0.023399999999999997
 KY|S|Andrew|Horne|2008,KY,S,S8KY00217,False,Andrew,Horne,D,2008,,,,,,
 IL|3|Jerry|Bennett|2008,IL,3,H8IL03060,False,Jerry,Bennett,D,2008,10742,0.0926,,,,
+NE|S|Mike|Johanns|2008,NE,S,S8NE00117,False,Mike,Johanns,"N(R),R",2008,111455,0.7809,,,455854,0.5752
 IL|11|Timothy A.|Baldermann|2008,IL,11,H8IL11097,False,Timothy A.,Baldermann,R,2008,32767,0.6193,,,,
 PA|5|Glenn W.|Thompson|2008,PA,5,H8PA05071,False,Glenn W.,Thompson,R,2008,13988,0.1918,,,155513,0.5672
 OH|2|Jean|Schmidt|2008,OH,2,H6OH02086,True,Jean,Schmidt,R,2008,41987,0.5751,,,148671,0.4483
@@ -647,7 +657,6 @@ CA|26|Russ|Warner|2008,CA,26,H6CA26183,False,Russ,Warner,D,2008,17165,0.6733,,,1
 FL|10|C. W. Bill|Young|2008,FL,10,H6FL06035,True,C. W. Bill,Young,R,2008,0,,,,182781,0.6068
 NY|6|Gregory W.|Meeks|2008,NY,6,H8NY06048,True,Gregory W.,Meeks,D,2008,0,,,,141180,0.9998
 "MS|1|James K. ""Ken""|Hurt|2008",MS,1,H6MS01115,False,"James K. ""Ken""",Hurt,D,2008,4095,0.0414,,,,
-PA|16|Bruce A.|Slater|2008,PA,16,H8PA16045,False,Bruce A.,Slater,D,2008,59246,1.0,,,120193,0.39390000000000003
 OR|2|Richard D.|Hake|2008,OR,2,H8OR02112,False,Richard D.,Hake,CON,2008,,,,,5817,0.0171
 KY|4|Warren O.|Stone|2008,KY,4,H8KY04102,False,Warren O.,Stone,R,2008,2831,0.0799,,,,
 GA|2|Lee|Ferrell|2008,GA,2,H8GA02053,False,Lee,Ferrell,R,2008,11430,1.0,,,71351,0.3105
@@ -660,7 +669,6 @@ TX|25|Lorraine|DeNardis|2008,TX,25,H8TX25092,False,Lorraine,DeNardis,LBT,2008,,,
 PA|7|W. Craig|Williams|2008,PA,7,H8PA07085,False,W. Craig,Williams,R,2008,52733,1.0,,,142362,0.40409999999999996
 OH|13|Frank|Chestney|2008,OH,13,H8OH13097,False,Frank,Chestney,R,2008,10093,0.33630000000000004,,,,
 MA|7|John|Cunningham|2008,MA,7,H8MA07016,False,John,Cunningham,R,2008,4825,0.9806999999999999,,,67978,0.2422
-NJ|2|David |Kurkowski|2008,NJ,2,H8NJ02091,False,David ,Kurkowski,D,2008,16465,1.0,,,110990,0.3909
 OH|2|Nathan W.|Bailey|2008,OH,2,H8OH02082,False,Nathan W.,Bailey,R,2008,2126,0.0291,,,,
 NV|2|Sean Patrick|Morse|2008,NV,2,H8NV02087,False,Sean Patrick,Morse,LBT,2008,,,,,5740,0.0174
 MO|9|Brock|Olivo|2008,MO,9,H8MO09112,False,Brock,Olivo,R,2008,5501,0.1013,,,,
@@ -673,9 +681,9 @@ PR|0|Charlie|Rodriguez-Col„n|2008,PR,0,H4PR00053,False,Charlie,Rodriguez-Col„n,N
 IN|7|Gabrielle|Campo|2008,IN,7,H8IN07275,False,Gabrielle,Campo,R,2008,,,,,92645,0.3492
 WA|7|Donovan|Rivers|2008,WA,7,H6WA07409,False,Donovan,Rivers,D,2008,6685,0.0518,,,,
 NC|5|Roy|Carter|2008,NC,5,H8NC05030,False,Roy,Carter,D,2008,40101,0.503,,,136103,0.4163
-NM|3|Jon |Adams|2008,NM,3,H8NM01240,False,Jon ,Adams,D,2008,1979,0.030699999999999998,,,,
+WA|8|James E.|Vaughn|2008,WA,8,H8WA08072,False,James E.,Vaughn,D,2008,5051,0.0331,,,,
 NH|S|Jeanne|Shaheen|2008,NH,S,S0NH00219,False,Jeanne,Shaheen,"W(R),D",2008,42968,0.8831,,,358438,0.5159
-AZ|6|Rebecca |Schneider|2008,AZ,6,H8AZ06053,False,Rebecca ,Schneider,D,2008,15644,0.7375,,,115457,0.3455
+NJ|7|Darren|Young|2008,NJ,7,H8NJ07080,False,Darren,Young,R,2008,1232,0.0482,,,,
 VA|10|Judy M.|Feder|2008,VA,10,H6VA10183,False,Judy M.,Feder,D,2008,5462,0.6179,,,147357,0.3883
 FL|8|Todd|Long|2008,FL,8,H6FL08247,False,Todd,Long,R,2008,19640,0.4694,,,,
 NC|S|Walter Fry|Rucker|2008,NC,S,S4NC00121,False,Walter Fry,Rucker,W,2008,,,,,64,0.0
@@ -686,8 +694,7 @@ KS|4|Susan¾G.|Ducey|2008,KS,4,H8KS04070,False,Susan¾G.,Ducey,REF,2008,,,,,6441,0
 AZ|1|Sydney|Hay|2008,AZ,1,H2AZ01149,False,Sydney,Hay,R,2008,17825,0.3906,,,109924,0.3943
 MN|S|Doug|Williams|2008,MN,S,S8MN00487,False,Doug,Williams,IDP,2008,639,0.056299999999999996,,,,
 OK|S|Jim|Rogers|2008,OK,S,S2OK00095,False,Jim,Rogers,D,2008,76981,0.4035,,,,
-NJ|1|Camille S. |Andrews|2008,NJ,1,H8NJ01143,False,Camille S. ,Andrews,D,2008,32108,0.8303,,,,
-CA|12|Kevin Dempsey|Peterson|2008,CA,12,H8CA12213,False,Kevin Dempsey,Peterson,LBT,2008,230,1.0,,,5584,0.0209
+ND|0|Modine|Gunsett|2008,ND,0,n/a,False,Modine,Gunsett,W(CON),2008,1,0.1429,,,,
 ID|1|Bill|Sali|2008,ID,1,H6ID01177,True,Bill,Sali,R,2008,41073,0.601,,,171687,0.4939
 UT|2|Kenneth L.|Gray|2008,UT,2,H8UT02214,False,Kenneth L.,Gray,R,2008,,,,,,
 MD|6|John B.|Kimble|2008,MD,6,H8MD06119,False,John B.,Kimble,R,2008,3433,0.0516,,,,
@@ -712,7 +719,6 @@ WA|1|Larry|Ishmael|2008,WA,1,H6WA01162,False,Larry,Ishmael,GOP,2008,52700,0.3356
 OH|10|Jim|Trakas|2008,OH,10,H8OH10085,False,Jim,Trakas,R,2008,22401,0.7931,,,107918,0.39130000000000004
 NH|S|Raymond|Stebbins|2008,NH,S,S8NH00170,False,Raymond,Stebbins,"W(R),D",2008,5281,0.1085,,,,
 TX|31|Brian P.|Ruiz|2008,TX,31,H8TX31017,False,Brian P.,Ruiz,D,2008,58792,1.0,,,106559,0.36579999999999996
-"OH|14|John H., Jr.|Greene|2008",OH,14,H8OH14095,False,"John H., Jr.",Greene,D,2008,21352,0.21359999999999998,,,,
 NC|6|Johnny J.|Carter|2008,NC,6,H8NC06046,False,Johnny J.,Carter,D,2008,19817,0.2839,,,,
 FL|9|Gus Michael|Bilirakis|2008,FL,9,H6FL09070,True,Gus Michael,Bilirakis,R,2008,0,,,,216591,0.6217
 ME|2|John N.|Frary|2008,ME,2,H8ME02128,False,John N.,Frary,R,2008,17741,1.0,,,109268,0.3256
@@ -736,9 +742,9 @@ LA|2|Byron L.|Lee|2008,LA,2,H8LA02070,False,Byron L.,Lee,D,2008,8979,0.1298,,,,
 WI|1|Paulette|Garin|2008,WI,1,H8WI01081,False,Paulette,Garin,D,2008,5221,0.31670000000000004,,,,
 MI|8|Mike|Rogers|2008,MI,8,H0MI08042,True,Mike,Rogers,R,2008,45850,1.0,,,204408,0.5653
 LA|S|John|Kennedy|2008,LA,S,S4LA00065,False,John,Kennedy,R,2008,0,,,,867177,0.4572
+NE|S|Larry|Marvin|2008,NE,S,S8NE00141,False,Larry,Marvin,"N(D),D",2008,2629,0.027999999999999997,,,,
 CA|52|Vickie|Butcher|2008,CA,52,H8CA52086,False,Vickie,Butcher,D,2008,16294,0.4204,,,,
 "SC|6|James E. ""Jim""|Clyburn|2008",SC,6,H2SC02042,True,"James E. ""Jim""",Clyburn,D,2008,0,,,,193378,0.6748000000000001
-NM|3|Ben R. |Lujan|2008,NM,3,H8NM03196,False,Ben R. ,Lujan,D,2008,26775,0.4153,,,161292,0.5674
 TX|4|VaLinda|Hathcox|2008,TX,4,H8TX04139,False,VaLinda,Hathcox,D,2008,27766,0.426,,,,
 NY|13|Jamshad I.|Wyne|2008,NY,13,H8NY13085,False,Jamshad I.,Wyne,R,2008,2702,0.35950000000000004,,,,
 CA|14|Ronny|Santana|2008,CA,14,H8CA14169,False,Ronny,Santana,R,2008,22812,1.0,,,60610,0.22219999999999998
@@ -754,7 +760,7 @@ NY|23|John M.|McHugh|2008,NY,23,H2NY24036,True,John M.,McHugh,"CRV,IDP,R",2008,0
 "UT|3|Joe ""NPC""|Ferguson|2008",UT,3,H8UT03113,False,"Joe ""NPC""",Ferguson,R,2008,,,,,,
 FL|14|Burt|Saunders|2008,FL,14,H8FL14159,False,Burt,Saunders,NPA,2008,,,,,54750,0.1449
 "IL|1|William, III|Walls|2008",IL,1,H8IL01080,False,"William, III",Walls,D,2008,19272,0.1255,,,,
-TN|9|Nikki|Tinker|2008,TN,9,H6TN09209,False,Nikki,Tinker,D,2008,11817,0.1864,,,,
+NJ|7|Martin|Marks|2008,NJ,7,H8NJ07108,False,Martin,Marks,R,2008,3211,0.1255,,,,
 CA|3|William|Durston|2008,CA,3,H6CA03091,False,William,Durston,D,2008,37318,1.0,,,137971,0.4393
 "LA|2|Troy ""C""|Carter|2008",LA,2,H2LA02032,False,"Troy ""C""",Carter,D,2008,5796,0.08380000000000001,,,,
 NJ|5|Roger|Bacon|2008,NJ,5,H2NJ02060,False,Roger,Bacon,D,2008,1114,0.0725,,,,
@@ -763,12 +769,12 @@ KY|S|Kenneth|Stepp|2008,KY,S,S8KY00225,False,Kenneth,Stepp,D,2008,13451,0.0217,,
 OH|7|Thomas L.|Scrivens|2008,OH,7,H8OH07115,False,Thomas L.,Scrivens,D,2008,5024,0.056799999999999996,,,,
 IL|10|Mark Steven|Kirk|2008,IL,10,H0IL10120,True,Mark Steven,Kirk,R,2008,44967,1.0,,,153082,0.5256000000000001
 WA|6|Paul|Richmond|2008,WA,6,H8WA00012,False,Paul,Richmond,D,2008,14983,0.0886,,,,
+TN|S|Chris|Lugo|2008,TN,S,S6TN00315,False,Chris,Lugo,I,2008,,,,,9170,0.0038
 CA|23|Sandra|Marshall-Eminger|2008,CA,23,H8CA23087,False,Sandra,Marshall-Eminger,W(D),2008,164,0.0032,,,,
 DE|0|Michael N.|Castle|2008,DE,0,H2DE00072,True,Michael N.,Castle,R,2008,0,,,,235437,0.6108
 OH|3|David|Esrati|2008,OH,3,H8OH03098,False,David,Esrati,D,2008,11164,0.1165,,,,
 RI|2|Jennifer|Lawless|2008,RI,2,H6RI02268,False,Jennifer,Lawless,W,2008,,,,,5,0.0
 MD|8|Chris|Van Hollen|2008,MD,8,H2MD08126,True,Chris,Van Hollen,D,2008,104108,0.8782,,,229740,0.7506999999999999
-NM|2|Greg |Sowards|2008,NM,2,H6NM02077,False,Greg ,Sowards,R,2008,6468,0.1776,,,,
 FL|5|John|Russell|2008,FL,5,H4FL05032,False,John,Russell,D,2008,16900,0.5077,,,168446,0.3885
 PA|15|Charles W.|Dent|2008,PA,15,H4PA15087,True,Charles W.,Dent,R,2008,27875,1.0,,,181433,0.5857
 NY|12|Allen E.|Romaguera|2008,NY,12,H6NY12115,False,Allen E.,Romaguera,"CRV,R",2008,0,,,,12486,0.0913
@@ -778,28 +784,27 @@ MD|8|Meyer F.|Marks|2008,MD,8,H8MD00013,False,Meyer F.,Marks,R,2008,1375,0.0593,
 UT|2|Bill|Dew|2008,UT,2,H8UT02198,False,Bill,Dew,R,2008,,,,,120083,0.3447
 CA|29|Alan|Pyeatt|2008,CA,29,H8CA29084,False,Alan,Pyeatt,LBT,2008,146,1.0,,,9219,0.0435
 MS|1|Marshall W.|Coleman|2008,MS,1,H8MS01087,False,Marshall W.,Coleman,D,2008,12913,0.1307,,,,
-ND|0|Modine|Gunsett|2008,ND,0,n/a,False,Modine,Gunsett,W(CON),2008,1,0.1429,,,,
 PA|18|Brien|Wall|2008,PA,18,H8PA18108,False,Brien,Wall,D,2008,15733,0.1354,,,,
 LA|6|Michael|Jackson|2008,LA,6,H8LA06030,False,Michael,Jackson,NPA,2008,,,,,36198,0.1159
 ND|0|Charles|Wolfe|2008,ND,0,n/a,False,Charles,Wolfe,W(LBT),2008,1,0.07139999999999999,,,,
 CO|2|Joan|Fitz-Gerald|2008,CO,2,H8CO02129,False,Joan,Fitz-Gerald,D,2008,18599,0.37829999999999997,,,,
 MA|S|Edward J.|O'Reilly|2008,MA,S,S8MA00201,False,Edward J.,O'Reilly,D,2008,154395,0.3104,,,,
+NJ|9|Steven R.|Rothman|2008,NJ,9,H6NJ09165,True,Steven R.,Rothman,D,2008,25418,1.0,,,151182,0.6753
 DC|0|Eleanor Holmes|Norton|2008,DC,0,H0DC00058,True,Eleanor Holmes,Norton,D,2008,38999,0.9828,,,228376,0.9228000000000001
 MI|8|George M.|Zimmer|2008,MI,8,H8MI08086,False,George M.,Zimmer,UST,2008,,,,,3499,0.0097
 MO|9|Ken|Jacob|2008,MO,9,H8MO09054,False,Ken,Jacob,D,2008,6060,0.1189,,,,
 OH|9|Bradley S.|Leavitt|2008,OH,9,H6OH09081,False,Bradley S.,Leavitt,R,2008,14703,0.557,,,76512,0.2563
 VI|0|Victor O.|Frazer|2008,VI,0,H2VI00033,False,Victor O.,Frazer,D,2008,2289,0.2109,,,,
 LA|2|William J.|Jefferson|2008,LA,2,H0LA02119,True,William J.,Jefferson,D,2008,17506,0.253,92921,0.5679,31318,0.4683
+NC|5|Diane|Hamby|2008,NC,5,H8NC05048,False,Diane,Hamby,D,2008,39624,0.49700000000000005,,,,
 WI|7|David R.|Obey|2008,WI,7,H6WI07033,True,David R.,Obey,D,2008,25100,0.9948999999999999,,,212666,0.6079
-TN|5|John P. |Miglietta|2008,TN,5,H8TN05252,False,John P. ,Miglietta,I,2008,,,,,3196,0.0116
 CA|42|Gary G.|Miller|2008,CA,42,H8CA41063,True,Gary G.,Miller,R,2008,39168,1.0,,,158404,0.6015999999999999
-NM|1|Martin T. |Heinrich|2008,NM,1,H8NM01224,False,Martin T. ,Heinrich,D,2008,22341,0.4351,,,166271,0.5565
 MN|S|Jack|Shepard|2008,MN,S,S2MN00159,False,Jack,Shepard,R,2008,12456,0.0868,,,,
 TN|S|Lamar|Alexander|2008,TN,S,S2TN00058,True,Lamar,Alexander,R,2008,244222,1.0,,,1579477,0.6514
 MD|4|Steve|Schulin|2008,MD,4,H8MD04205,False,Steve,Schulin,W,2008,,,,,75,0.0002
 TN|S|Kenneth|Eaton|2008,TN,S,S8TN00261,False,Kenneth,Eaton,D,2008,14702,0.0802,,,,
 CA|26|Cynthia|Matthews|2008,CA,26,H4CA26097,False,Cynthia,Matthews,D,2008,8327,0.3267,,,,
-MI|4|Andrew D. |Concannon|2008,MI,4,H8MI04077,False,Andrew D. ,Concannon,D,2008,23441,1.0,,,117665,0.3568
+CA|12|Kevin Dempsey|Peterson|2008,CA,12,H8CA12213,False,Kevin Dempsey,Peterson,LBT,2008,230,1.0,,,5584,0.0209
 MS|1|Travis W.|Childers|2008,MS,1,H8MS01061,False,Travis W.,Childers,D,2008,40919,0.41409999999999997,20797,0.5658,185959,0.5447
 CA|8|Lea|Sherman|2008,CA,8,n/a,False,Lea,Sherman,W,2008,,,,,11,0.0
 FL|9|Bill|Mitchell|2008,FL,9,H6FL09096,False,Bill,Mitchell,D,2008,7726,0.3738,,,126346,0.3627
@@ -817,15 +822,16 @@ CT|2|Todd|Vachon|2008,CT,2,n/a,False,Todd,Vachon,W,2008,,,,,19,0.0001
 NV|3|Anna|Nevenic|2008,NV,3,H6NV03030,False,Anna,Nevenic,D,2008,1114,0.0424,,,,
 OK|3|Forrest|Michael|2008,OK,3,H8OK03054,False,Forrest,Michael,I,2008,,,,,17756,0.0672
 KY|6|Ben|Chandler|2008,KY,6,H4KY06072,True,Ben,Chandler,D,2008,0,,,,203764,0.6466
+NJ|1|John|Caramanna|2008,NJ,1,H8NJ01150,False,John,Caramanna,D,2008,4342,0.11230000000000001,,,,
 IN|5|John|McGoff|2008,IN,5,H8IN05097,False,John,McGoff,R,2008,39701,0.45049999999999996,,,,
 TX|32|Eric|Roberson|2008,TX,32,H8TX32015,False,Eric,Roberson,D,2008,20043,0.4486,1981,0.7245999999999999,82406,0.4057
 IL|12|Jerry F.|Costello|2008,IL,12,H8IL21021,True,Jerry F.,Costello,D,2008,91636,1.0,,,212891,0.7140000000000001
+NJ|S|Donald|Cresitello|2008,NJ,S,S2NJ00114,False,Donald,Cresitello,D,2008,19743,0.057300000000000004,,,,
 CT|5|Walter|Gengarelly|2008,CT,5,n/a,False,Walter,Gengarelly,W,2008,,,,,10,0.0
 KY|S|Greg|Fischer|2008,KY,S,S8KY00241,False,Greg,Fischer,D,2008,209827,0.3385,,,,
 WI|1|Marge|Krupp|2008,WI,1,H8WI01073,False,Marge,Krupp,D,2008,6015,0.3649,,,125268,0.3469
 HI|1|Li|Zhao|2008,HI,1,H8HI01184,False,Li,Zhao,LBT,2008,396,0.5731,,,7594,0.038
 TN|5|Gerard|Donovan|2008,TN,5,H8TN05245,False,Gerard,Donovan,R,2008,5482,0.7112999999999999,,,85471,0.31010000000000004
-NJ|7|Darren |Young |2008,NJ,7,H8NJ07080,False,Darren ,Young ,R,2008,1232,0.0482,,,,
 MO|5|Randall D. (Randy)|Langkraehr|2008,MO,5,H6MO05197,False,Randall D. (Randy),Langkraehr,R,2008,1641,0.0958,,,,
 "PA|19|Philip J., Jr.|Avillo|2008",PA,19,H6PA19126,False,"Philip J., Jr.",Avillo,D,2008,69068,1.0,,,109533,0.3335
 MO|2|Damien|Johnson|2008,MO,2,n/a,False,Damien,Johnson,W,2008,,,,,7,0.0
@@ -842,17 +848,13 @@ SC|4|Ted|Christian|2008,SC,4,H8SC04185,False,Ted,Christian,D,2008,4900,0.3274,24
 "NV|1|Raymond James, Jr.|Duensing|2008",NV,1,H4NV01138,False,"Raymond James, Jr.",Duensing,LBT,2008,,,,,4528,0.019799999999999998
 MN|S|Kurt Michael|Anderson|2008,MN,S,S8MN00529,False,Kurt Michael,Anderson,IDP,2008,761,0.06709999999999999,,,,
 NY|24|Michael A.|Arcuri|2008,NY,24,H6NY24128,True,Michael A.,Arcuri,"WF,D",2008,0,,,,121345,0.48210000000000003
-NM|1|Robert L. |Pidcock|2008,NM,1,H8NM01299,False,Robert L. ,Pidcock,D,2008,4273,0.0832,,,,
-OH|5|George F. |Mays|2008,OH,5,H8OH05093,False,George F. ,Mays,D,2008,64450,1.0,,,105840,0.3591
 CA|14|Brian|Holtz|2008,CA,14,H4CA14085,False,Brian,Holtz,LBT,2008,524,1.0,,,11929,0.0437
 WV|S|Jay|Rockefeller|2008,WV,S,S4WV00027,True,Jay,Rockefeller,D,2008,271327,0.7706000000000001,,,447560,0.6373
 NY|18|Nita M.|Lowey|2008,NY,18,H8NY20056,True,Nita M.,Lowey,"WF,D",2008,0,,,,167365,0.6555
 IN|2|Luke|Puckett|2008,IN,2,H8IN02102,False,Luke,Puckett,R,2008,14327,0.5028,,,84455,0.3023
-WY|S - UNEXPIRED TERM|Nick|Carter|2008,WY,S - UNEXPIRED TERM,S8WY00155,False,Nick,Carter,D,2008,12316,0.505,,,66202,0.26530000000000004
 NY|28|Louise M.|Slaughter|2008,NY,28,H6NY03031,True,Louise M.,Slaughter,"WF,IDP,D",2008,0,,,,155409,0.7020000000000001
 "MD|3|Thomas E. ""Pinkston""|Harris|2008",MD,3,H8MD03082,False,"Thomas E. ""Pinkston""",Harris,R,2008,10346,0.389,,,87971,0.30079999999999996
 TX|S|Jon|Roland|2008,TX,S,S8TX00244,False,Jon,Roland,LBT,2008,,,,,,
-NJ|11|Kate|Erber|2008,NJ,11,H8NJ11126,False,Kate,Erber,R,2008,3731,0.1331,,,,
 DE|0|Micheal|Miller|2008,DE,0,H0DE00068,False,Micheal,Miller,D,2008,22393,0.34450000000000003,,,,
 MT|0|Mike|Fellows|2008,MT,0,H8MT01141,False,Mike,Fellows,LBT,2008,0,,,,16500,0.034300000000000004
 VA|S|Bob|Berry|2008,VA,S,S8VA00289,False,Bob,Berry,R,2008,,,,,,
@@ -868,14 +870,14 @@ IL|S|Steve|Sauerberg|2008,IL,S,S8IL00165,False,Steve,Sauerberg,R,2008,395199,0.5
 KY|4|Michael|Kelley|2008,KY,4,H8KY04094,False,Michael,Kelley,D,2008,0,,,,111549,0.3697
 "LA|4|Artis ""Doc""|Cash|2008",LA,4,H6LA04054,False,"Artis ""Doc""",Cash,D,2008,6065,0.079,,,,
 "NH|2|Chester L., II|Lapointe|2008",NH,2,H8NH02234,False,"Chester L., II",Lapointe,LBT,2008,,,,,7121,0.0213
+NM|1|Rebecca D.|Vigil-Giron|2008,NM,1,H8NM01315,False,Rebecca D.,Vigil-Giron,D,2008,12660,0.2466,,,,
 AZ|7|Harley|Meyer|2008,AZ,7,H8AZ07028,False,Harley,Meyer,W,2008,,,,,5,0.0
 AZ|3|John|Shadegg|2008,AZ,3,H4AZ04016,True,John,Shadegg,R,2008,43538,1.0,,,148800,0.5408
 OR|S|Pavel|Goberman|2008,OR,S,S4OR00065,False,Pavel,Goberman,D,2008,12056,0.0219,,,,
 GA|5|Shira|Kash|2008,GA,5,H8GA05106,False,Shira,Kash,W,2008,,,,,81,0.0003
-TN|S|Chris |Lugo|2008,TN,S,S6TN00315,False,Chris ,Lugo,I,2008,,,,,9170,0.0038
 TX|12|Kay|Granger|2008,TX,12,H6TX12060,True,Kay,Granger,R,2008,49374,1.0,,,181662,0.6759000000000001
 HI|2|Roger B.|Evans|2008,HI,2,H8HI02091,False,Roger B.,Evans,R,2008,12750,1.0,,,44425,0.2039
-NC|S|Marcus W. |Williams|2008,NC,S,S8NC00270,False,Marcus W. ,Williams,D,2008,170970,0.1281,,,,
+SC|5|Frank|Waggoner|2008,SC,5,H8SC05083,False,Frank,Waggoner,CON,2008,,,,,4093,0.0134
 MA|4|Susan|Allen|2008,MA,4,H8MA04062,False,Susan,Allen,I,2008,,,,,19848,0.0664
 IL|6|Peter J.|Roskam|2008,IL,6,H6IL06117,True,Peter J.,Roskam,R,2008,57612,1.0,,,147906,0.5757
 IN|6|George T.|Holland|2008,IN,6,H6IN06024,False,George T.,Holland,LBT,2008,,,,,7539,0.026699999999999998
@@ -886,7 +888,7 @@ TX|8|Brian|Stevens|2008,TX,8,H8TX08064,False,Brian,Stevens,LBT,2008,,,,,7565,0.0
 KS|3|Roger¾D.|Tucker|2008,KS,3,H6KS02235,False,Roger¾D.,Tucker,REF,2008,,,,,3937,0.011000000000000001
 MI|14|Clyde K.|Shabazz|2008,MI,14,H8MI14084,False,Clyde K.,Shabazz,GRE,2008,,,,,8015,0.0325
 AR|4|Joshua|Drake|2008,AR,4,H8AR04098,False,Joshua,Drake,GRE,2008,,,,,32603,0.1383
-NJ|7|A.D. |Amar|2008,NJ,7,H4NJ07073,False,A.D. ,Amar,R,2008,241,0.009399999999999999,,,,
+KS|S|Pat¾|Roberts|2008,KS,S,S6KS00080,True,Pat¾,Roberts,R¾,2008,214911,1.0,,,727121,0.6006
 KY|4|G.E.|Puckett|2008,KY,4,H8KY04110,False,G.E.,Puckett,R,2008,2427,0.06849999999999999,,,,
 CO|S|Mark|Udall|2008,CO,S,S8CO00172,False,Mark,Udall,D,2008,194227,1.0,,,1231049,0.528
 CO|2|J. A.|Calhoun|2008,CO,2,H6CO02131,False,J. A.,Calhoun,GRE,2008,,,,,10031,0.0291
@@ -896,6 +898,7 @@ PA|14|Titus|North|2008,PA,14,H6PA14168,False,Titus,North,GRE,2008,,,,,23214,0.08
 WA|6|Doug|Cloud|2008,WA,6,H4WA06067,False,Doug,Cloud,R,2008,51300,0.30329999999999996,,,102081,0.33140000000000003
 "MS|4|John, III|McCay|2008",MS,4,H8MS04420,False,"John, III",McCay,R,2008,0,,,,73977,0.2546
 NY|8|Jerrold L.|Nadler|2008,NY,8,H2NY17071,True,Jerrold L.,Nadler,"WF,D",2008,0,,,,152153,0.7613
+ID|2|David|Sneddon|2008,ID,2,H8ID02114,False,David,Sneddon,D,2008,5074,0.30469999999999997,,,,
 ME|S|Thomas H.|Allen|2008,ME,S,S8ME00080,False,Thomas H.,Allen,D,2008,69932,0.8556999999999999,,,279510,0.3858
 OH|16|Matt|Miller|2008,OH,16,H6OH16102,False,Matt,Miller,R,2008,29735,0.4205,,,,
 MI|13|Martha G.|Scott|2008,MI,13,H8MI13177,False,Martha G.,Scott,D,2008,13471,0.2501,,,,
@@ -913,28 +916,32 @@ TX|31|John|Carter|2008,TX,31,H2TX31044,True,John,Carter,R,2008,46388,1.0,,,17556
 IL|3|Jerome|Pohlen|2008,IL,3,H8IL03094,False,Jerome,Pohlen,GRE,2008,111,1.0,,,12607,0.0535
 PA|4|Melissa|Hart|2008,PA,4,H0PA04154,False,Melissa,Hart,R,2008,42854,1.0,,,147411,0.4414
 MA|6|John F.|Tierney|2008,MA,6,H4MA06033,True,John F.,Tierney,D,2008,36646,0.9871,,,226216,0.7040000000000001
+NJ|7|Kate|Whitman|2008,NJ,7,H8NJ07090,False,Kate,Whitman,R,2008,5052,0.1975,,,,
 OH|3|Michael R.|Turner|2008,OH,3,H2OH03067,True,Michael R.,Turner,R,2008,61915,1.0,,,200204,0.6332
 SC|4|Bob|Inglis|2008,SC,4,H2SC04022,True,Bob,Inglis,R,2008,37571,0.6695,,,184440,0.6009
 IL|3|Michael|Hawkins|2008,IL,3,H8IL03086,False,Michael,Hawkins,R,2008,13722,0.6685,,,50336,0.2137
 NC|3|Joe|McLaughlin|2008,NC,3,H8NC03050,False,Joe,McLaughlin,R,2008,16491,0.4103,,,,
 MD|2|Lorenzo|Gaztanaga|2008,MD,2,H8MD02092,False,Lorenzo,Gaztanaga,LBT,2008,,,,,8786,0.0318
 NC|8|Robert C. (Robin)|Hayes|2008,NC,8,H8NC08042,True,Robert C. (Robin),Hayes,R,2008,0,,,,126634,0.4462
-IL|19|Troy|Dennis|2008,IL,19,H8IL19124   ,False,Troy,Dennis,GRE   ,2008,,,,,6817,0.0216
+IL|19|Troy|Dennis|2008,IL,19,H8IL19124,False,Troy,Dennis,GRE,2008,,,,,6817,0.0216
 "NY|7|William E., Jr.|Britt|2008",NY,7,H8NY07079,False,"William E., Jr.",Britt,"CRV,R",2008,0,,,,19373,0.1384
 NY|9|Alfred F.|Donohue|2008,NY,9,H2NY09078,False,Alfred F.,Donohue,CRV,2008,0,,,,8378,0.0695
+NJ|10|Donald M.|Payne|2008,NJ,10,H0NJ10026,True,Donald M.,Payne,D,2008,30764,1.0,,,169945,0.9892
 OH|9|Ed|Emery|2008,OH,9,H8OH09046,False,Ed,Emery,R,2008,11693,0.44299999999999995,,,,
 MD|3|John|Stafford|2008,MD,3,H8MD03108,False,John,Stafford,R,2008,8576,0.3225,,,,
 MS|3|John|Rounsaville|2008,MS,3,H8MS03034,False,John,Rounsaville,R,2008,6949,0.1042,,,,
 IL|3|Daniel William|Lipinski|2008,IL,3,H4IL03077,True,Daniel William,Lipinski,D,2008,62439,0.5381,,,172581,0.7328
-NM|2|Aubrey |Dunn|2008,NM,2,H8NM02065,False,Aubrey ,Dunn,R,2008,7341,0.2016,,,,
+NJ|S|Joseph|Pennacchio|2008,NJ,S,S8NJ00384,False,Joseph,Pennacchio,R,2008,74546,0.40340000000000004,,,,
 TN|5|Thomas F.|Kovach|2008,TN,5,H6TN05264,False,Thomas F.,Kovach,W,2008,,,,,4,0.0
 "NJ|11|Gary ""Harry""|Hager|2008",NJ,11,H8NJ11118,False,"Gary ""Harry""",Hager,D,2008,2271,0.14550000000000002,,,,
+TN|S|Ed|Lawhorn|2008,TN,S,S8TN00303,False,Ed,Lawhorn,I,2008,,,,,8986,0.0037
+NM|3|Rudy|Martin|2008,NM,3,H8NM03188,False,Rudy,Martin,D,2008,1845,0.0286,,,,
 OH|2|Victoria|Wulsin|2008,OH,2,H6OH02151,False,Victoria,Wulsin,D,2008,57673,0.5782,,,124213,0.3746
 FL|5|Jim|King|2008,FL,5,H8FL05108,False,Jim,King,R,2008,12232,0.1993,,,,
 MO|2|Thomas L.|Knapp|2008,MO,2,H8MO02182,False,Thomas L.,Knapp,LBT,2008,211,1.0,,,8628,0.0231
 PA|13|Marina|Kats|2008,PA,13,H8PA13083,False,Marina,Kats,R,2008,27169,1.0,,,108271,0.3453
 MA|5|Nicola S.|Tsongas|2008,MA,5,H8MA05143,True,Nicola S.,Tsongas,D,2008,40248,0.9872,,,225947,0.9871
-MI|1|Tom|Casperson|2008,MI,1,H8MI01107,False,Tom,Casperson,R,2008,17433,0.4622,,,107340,0.3274
+WY|S - UNEXPIRED TERM|Nick|Carter|2008,WY,S - UNEXPIRED TERM,S8WY00155,False,Nick,Carter,D,2008,12316,0.505,,,66202,0.26530000000000004
 "MD|4|Darryn O'Shea, Sr.|Jackson|2008",MD,4,H8MD04197,False,"Darryn O'Shea, Sr.",Jackson,W,2008,,,,,28,0.0001
 FL|10|Bob|Hackworth|2008,FL,10,H8FL10041,False,Bob,Hackworth,D,2008,10420,0.4675,,,118430,0.3932
 CA|24|Michael|Tenenbaum|2008,CA,24,H6CA24279,False,Michael,Tenenbaum,R,2008,13446,0.2296,,,,
@@ -950,6 +957,7 @@ AL|2|David|Woods|2008,AL,2,H4AL02048,False,David,Woods,R,2008,9757,0.172,,,,
 CA|12|Jackie|Speier|2008,CA,12,H8CA12171,True,Jackie,Speier,D,2008,60393,0.8952,,,200442,0.7511
 FL|21|Raul L.|Martinez|2008,FL,21,H8FL21030,False,Raul L.,Martinez,D,2008,0,,,,99776,0.42100000000000004
 VA|8|J. Ron|Fisher|2008,VA,8,H8VA08142,False,J. Ron,Fisher,IGR,2008,,,,,6829,0.0208
+NM|2|C. Earl|Greer|2008,NM,2,H2NM02118,False,C. Earl,Greer,R,2008,3614,0.0992,,,,
 CA|23|Lois|Capps|2008,CA,23,H8CA22089,True,Lois,Capps,D,2008,50385,0.9968,,,171403,0.6807
 NC|S|Christopher|Cole|2008,NC,S,S8NC00296,False,Christopher,Cole,LBT,2008,,,,,133430,0.031200000000000002
 CO|1|George C.|Lilly|2008,CO,1,H2CO01108,False,George C.,Lilly,R,2008,6300,0.5816,,,67346,0.2378
@@ -957,7 +965,6 @@ OH|15|Steve|Stivers|2008,OH,15,H8OH15076,False,Steve,Stivers,R,2008,33838,0.6591
 MN|2|Kevin|Masrud|2008,MN,2,n/a,False,Kevin,Masrud,W,2008,,,,,41,0.0001
 TX|10|Dan|Grant|2008,TX,10,H8TX10060,False,Dan,Grant,D,2008,33072,0.3889,,,,
 FL|21|Lincoln|Diaz-Balart|2008,FL,21,H2FL19037,True,Lincoln,Diaz-Balart,R,2008,0,,,,137226,0.579
-NE|S|Larry |Marvin|2008,NE,S,S8NE00141,False,Larry ,Marvin,"N(D),D",2008,2629,0.027999999999999997,,,,
 MN|6|El|Tinklenberg|2008,MN,6,H6MN06124,False,El,Tinklenberg,DFL,2008,17474,1.0,,,175786,0.4343
 TN|5|Vijay A.|Kumar|2008,TN,5,H8TN05260,False,Vijay A.,Kumar,R,2008,2225,0.2887,,,,
 NE|2|Lee|Terry|2008,NE,2,H8NE02139,True,Lee,Terry,"N(R),R",2008,23054,0.8445,,,142473,0.5193
@@ -979,7 +986,6 @@ CT|4|Richard Z.|Duffee|2008,CT,4,H6CT04119,False,Richard Z.,Duffee,GRE,2008,,,,,
 CA|20|Jim|Costa|2008,CA,20,H4CA20082,True,Jim,Costa,D,2008,22042,1.0,,,93023,0.7433
 "KY|3|Bob, Jr.|DeVore|2008",KY,3,H8KY03161,False,"Bob, Jr.",DeVore,R,2008,713,0.0168,,,,
 MO|8|Richard L.|Smith|2008,MO,8,H8MO08080,False,Richard L.,Smith,CON,2008,,,,,2257,0.008100000000000001
-TN|4|Kent |Greenough|2008,TN,4,H8TN04057,False,Kent ,Greenough,R,2008,3749,0.1759,,,,
 MD|7|Elijah|Cummings|2008,MD,7,H6MD07160,True,Elijah,Cummings,D,2008,98027,0.9305,,,227379,0.795
 NJ|5|Ed|Fanning|2008,NJ,5,H8NJ05102,False,Ed,Fanning,GRE,2008,,,,,5321,0.0172
 MI|12|Bert|Copple|2008,MI,12,H8MI12088,False,Bert,Copple,R,2008,18561,1.0,,,74565,0.23870000000000002
@@ -1000,18 +1006,17 @@ CO|3|John T.|Salazar|2008,CO,3,H4CO03167,True,John T.,Salazar,D,2008,22192,1.0,,
 WA|4|Doc|Hastings|2008,WA,4,H2WA04041,True,Doc,Hastings,R,2008,93241,0.6219,,,169940,0.6309
 UT|2|Mathew|Arndt|2008,UT,2,H8UT02180,False,Mathew,Arndt,LBT,2008,,,,,4576,0.0131
 HI|1|C. Kaui Jochanan|Amsterdam|2008,HI,1,H8HI01176,False,C. Kaui Jochanan,Amsterdam,LBT,2008,295,0.4269,,,,
-NE|S|Mike |Johanns|2008,NE,S,S8NE00117,False,Mike ,Johanns,"N(R),R",2008,111455,0.7809,,,455854,0.5752
 KS|3|Dennis¾|Moore|2008,KS,3,H8KS03049,True,Dennis¾,Moore,D¾,2008,27431,1.0,,,202541,0.5644
 NC|1|G.K.|Butterfield|2008,NC,1,H4NC01046,True,G.K.,Butterfield,D,2008,0,,,,192765,0.7028
 CT|2|Joe|Courtney|2008,CT,2,H2CT02112,True,Joe,Courtney,"WF,D",2008,,,,,198984,0.616
 TX|4|Gene|Christensen|2008,TX,4,H4TX04062,False,Gene,Christensen,R,2008,5492,0.0965,,,,
 AR|1|Marion|Berry|2008,AR,1,H6AR01072,True,Marion,Berry,D,2008,0,,,,0,
 MD|8|Ian|Thomas|2008,MD,8,H8MD08206,False,Ian,Thomas,LBT,2008,,,,,2562,0.0084
-NM|3|Harry B. |Montoya|2008,NM,3,H8NM03170,False,Harry B. ,Montoya,D,2008,7234,0.11220000000000001,,,,
 MI|14|Richard J.|Secula|2008,MI,14,H8MI14092,False,Richard J.,Secula,LBT,2008,,,,,10732,0.0435
 RI|1|David|Lanasse|2008,RI,1,n/a,False,David,Lanasse,W,2008,,,,,29,0.0001
 FL|20|Marc|Luzietti|2008,FL,20,H8FL20024,False,Marc,Luzietti,W,2008,,,,,9,0.0
 OR|S|Gordon H.|Smith|2008,OR,S,S6OR00094,True,Gordon H.,Smith,R,2008,296330,0.8541,,,805159,0.45549999999999996
+NM|1|Joseph J.|Carraro|2008,NM,1,H8NM01281,False,Joseph J.,Carraro,R,2008,8246,0.182,,,,
 WV|1|Ted|Osgood|2008,WV,1,n/a,False,Ted,Osgood,W,2008,,,,,69,0.0004
 FL|2|Eddie|Hendry|2008,FL,2,H8FL02071,False,Eddie,Hendry,R,2008,13505,0.3197,,,,
 NV|1|Caren|Alexander|2008,NV,1,H8NV01253,False,Caren,Alexander,IAP,2008,,,,,4697,0.020499999999999997
@@ -1043,7 +1048,7 @@ NV|1|Ray J.|Kornfield|2008,NV,1,H8NV01238,False,Ray J.,Kornfield,R,2008,1090,0.0
 CA|2|Wally|Herger|2008,CA,2,H8CA02010,True,Wally,Herger,R,2008,62394,1.0,,,163459,0.5789
 "WV|S|John R. ""Rick""|Bartlett|2008",WV,S,n/a,False,"John R. ""Rick""",Bartlett,W,2008,,,,,83,0.0001
 IN|1|Jeff|Duensing|2008,IN,1,H8IN01120,False,Jeff,Duensing,LBT,2008,,,,,5421,0.0192
-NJ|8|Roland |Straten|2008,NJ,8,H8NJ08056,False,Roland ,Straten,R,2008,5859,1.0,,,63107,0.2817
+MD|1|Robert Joseph|Banks|2008,MD,1,H8MD01151,False,Robert Joseph,Banks,R,2008,1186,0.015300000000000001,,,,
 MI|1|Jean|Treacy|2008,MI,1,H8MI01123,False,Jean,Treacy,GRE,2008,,,,,2669,0.008100000000000001
 FL|9|Anita|de Palma|2008,FL,9,H8FL09084,False,Anita,de Palma,D,2008,5902,0.28559999999999997,,,,
 "VA|6|S. ""Sam""|Rasoul|2008",VA,6,H8VA06047,False,"S. ""Sam""",Rasoul,D,2008,,,,,114367,0.3661
@@ -1053,7 +1058,6 @@ DE|0|Mark Anthony|Parks|2008,DE,0,H8DE00087,False,Mark Anthony,Parks,LBT,2008,,,
 MS|3|Gregory W.|Hatcher|2008,MS,3,H8MS03109,False,Gregory W.,Hatcher,R,2008,748,0.011200000000000002,,,,
 OH|14|Bill|O'Neill|2008,OH,14,H8OH14087,False,Bill,O'Neill,D,2008,62263,0.6229,,,125214,0.3874
 IL|19|Joe|McMenamin|2008,IL,19,H8IL19108,False,Joe,McMenamin,D,2008,27700,0.4045,,,,
-ID|S|Richard |Phenneger|2008,ID,S,S8ID00118,False,Richard ,Phenneger,R,2008,6532,0.0529,,,,
 KS|1|Jack¾|Warner|2008,KS,1,H0KS01081,False,Jack¾,Warner,LBT,2008,,,,,5562,0.0212
 AL|4|Greg|Warren|2008,AL,4,H8AL04045,False,Greg,Warren,D,2008,11381,0.4191,,,,
 CA|45|Mary Bono|Mack|2008,CA,45,H8CA44034,True,Mary Bono,Mack,R,2008,38726,0.8935,,,155166,0.5829
@@ -1063,6 +1067,7 @@ MD|4|Thibeaux|Lincecum|2008,MD,4,H8MD04189,False,Thibeaux,Lincecum,LBT,2008,,,,,
 PA|10|Dan|Meuser|2008,PA,10,H8PA10147,False,Dan,Meuser,R,2008,31102,0.4768,,,,
 PA|6|Jim|Gerlach|2008,PA,6,H2PA06114,True,Jim,Gerlach,R,2008,39232,1.0,,,179423,0.521
 AL|S|Earl Mack|Gavin|2008,AL,S,S8AL00167,False,Earl Mack,Gavin,R,2008,16718,0.07730000000000001,,,,
+NE|S|Tony|Raimondo|2008,NE,S,S8NE00125,False,Tony,Raimondo,"N(D),D",2008,23617,0.3036,,,,
 KY|1|Heather A.|Ryan|2008,KY,1,H8KY01041,False,Heather A.,Ryan,D,2008,0,,,,98674,0.3565
 IL|7|Steve|Miller|2008,IL,7,H8IL07087,False,Steve,Miller,R,2008,,,,,41474,0.14980000000000002
 PA|16|John A.|Murphy|2008,PA,16,H6PA16288,False,John A.,Murphy,I,2008,,,,,11768,0.038599999999999995
@@ -1078,6 +1083,7 @@ OH|14|David|Macko|2008,OH,14,H8OH14103,False,David,Macko,LBT,2008,,,,,9511,0.029
 PA|5|Jeffrey J.|Stroehmann|2008,PA,5,H8PA05113,False,Jeffrey J.,Stroehmann,R,2008,9921,0.136,,,,
 GA|S|Josh|Lanier|2008,GA,S,S8GA00149,False,Josh,Lanier,D,2008,19717,0.04,,,,
 WV|2|Aaron|Mills|2008,WV,2,n/a,False,Aaron,Mills,W,2008,,,,,16,0.0001
+MI|2|Peter|Hoekstra|2008,MI,2,H2MI02066,True,Peter,Hoekstra,R,2008,53322,1.0,,,214100,0.6236
 IL|10|Jay K.|Footlik|2008,IL,10,H8IL10099,False,Jay K.,Footlik,D,2008,17271,0.18539999999999998,,,,
 OK|1|Mark|Manley|2008,OK,1,H8OK01116,False,Mark,Manley,D,2008,8842,0.44299999999999995,,,,
 NY|26|Jack|Davis|2008,NY,26,H4NY26045,False,Jack,Davis,D,2008,5602,0.2345,,,,
@@ -1090,13 +1096,13 @@ IN|7|Catherine (Cat)|Ping|2008,IN,7,H8IN07259,False,Catherine (Cat),Ping,R,2008,
 CA|42|Ronald|Shepston|2008,CA,42,H8CA42194,False,Ronald,Shepston,D,2008,4568,0.244,,,,
 TN|2|Bob|Scott|2008,TN,2,H8TN02028,False,Bob,Scott,D,2008,10006,0.5966,,,63639,0.2189
 AZ|5|Susan|Bitter Smith|2008,AZ,5,H4AZ01061,False,Susan,Bitter Smith,R,2008,13212,0.2738,,,,
-TN|7|James |Tomasik|2008,TN,7,H8TN07050,False,James ,Tomasik,D,2008,3535,0.2275,,,,
 FL|25|Mario|Diaz-Balart|2008,FL,25,H2FL25018,True,Mario,Diaz-Balart,R,2008,0,,,,130891,0.5305
 NC|12|Mel|Watt|2008,NC,12,H2NC12021,True,Mel,Watt,D,2008,0,,,,215908,0.7156
 NY|15|Craig|Schley|2008,NY,15,H8NY15122,False,Craig,Schley,VPC,2008,,,,,3708,0.0187
 OR|5|Douglas|Patterson|2008,OR,5,H6OR05135,False,Douglas,Patterson,CON,2008,,,,,6558,0.0196
 KY|S|Bruce|Lunsford|2008,KY,S,S8KY00233,False,Bruce,Lunsford,D,2008,316992,0.5114,,,847005,0.4703
 KY|S|Michael|Cassaro|2008,KY,S,S8KY00209,False,Michael,Cassaro,D,2008,17340,0.027999999999999997,,,,
+NM|3|Ben R.|Lujan|2008,NM,3,H8NM03196,False,Ben R.,Lujan,D,2008,26775,0.4153,,,161292,0.5674
 MO|3|Cynthia (Cindy)|Redburn|2008,MO,3,H8MO03172,False,Cynthia (Cindy),Redburn,CON,2008,,,,,4324,0.014199999999999999
 WA|1|Jay|Inslee|2008,WA,1,H2WA04090,True,Jay,Inslee,D,2008,104342,0.6644,,,233780,0.6776000000000001
 IA|1|David|Hartusch|2008,IA,1,H8IA01086,False,David,Hartusch,R,2008,8865,0.9934000000000001,,,102439,0.35369999999999996
@@ -1150,7 +1156,6 @@ PA|9|Bill|Shuster|2008,PA,9,H2PA09035,True,Bill,Shuster,R,2008,57890,1.0,,,17495
 NV|1|Mike|Powers|2008,NV,1,H8NV01246,False,Mike,Powers,R,2008,896,0.0712,,,,
 IN|1|Richard (Ric)|Holtz|2008,IN,1,H6IN01173,False,Richard (Ric),Holtz,R,2008,3791,0.1884,,,,
 FL|14|Jeff|George|2008,FL,14,H8FL14142,False,Jeff,George,NPA,2008,,,,,4949,0.0131
-SC|5|Frank|Waggoner|2008,SC,5,H8SC05083,False,Frank,Waggoner,CON,2008,,,,,4093,0.0134
 CA|7|Camden|McConnell|2008,CA,7,H6CA07118,False,Camden,McConnell,LBT,2008,237,1.0,,,5950,0.0253
 MT|S|Michael|Lange|2008,MT,S,S8MT00150,False,Michael,Lange,R,2008,17044,0.2298,,,,
 GA|S|Eleanor|Garcia|2008,GA,S,S2GA00142,False,Eleanor,Garcia,W,2008,,,,,43,0.0
@@ -1172,20 +1177,20 @@ KY|5|Jim|Holbert|2008,KY,5,H8KY05042,False,Jim,Holbert,I,2008,,,,,33444,0.1589
 CA|37|Lee|Davis|2008,CA,37,H8CA37178,False,Lee,Davis,D/W,2008,2983,0.0863,,,10,0.0001
 MN|S|Michael|Cavlan|2008,MN,S,n/a,False,Michael,Cavlan,W,2008,,,,,13,0.0
 NC|6|Howard|Coble|2008,NC,6,H4NC06011,True,Howard,Coble,R,2008,0,,,,221018,0.67
+TX|22|Shelley|Sekula Gibbs|2008,TX,22,H6TX22184,False,Shelley,Sekula Gibbs,R,2008,16697,0.2973,7125,0.3148,,
 CA|7|Bill|Callison|2008,CA,7,H4CA07030,False,Bill,Callison,PAF,2008,80,1.0,,,6695,0.0285
 FL|4|Ander|Crenshaw|2008,FL,4,H0FL04066,True,Ander,Crenshaw,R,2008,0,,,,224112,0.6525
 NE|1|Jeff|Fortenberry|2008,NE,1,H4NE01064,True,Jeff,Fortenberry,"N(R),R",2008,45958,1.0,,,184923,0.7036
 MS|2|Bennie G.|Thompson|2008,MS,2,H4MS02068,True,Bennie G.,Thompson,D,2008,110743,0.8615999999999999,,,201606,0.6905
 OH|7|Steve|Austria|2008,OH,7,H8OH07065,False,Steve,Austria,R,2008,42499,0.5496,,,174915,0.5821999999999999
-NM|3|Marco E. |Gonzales|2008,NM,3,H8NM03220,False,Marco E. ,Gonzales,R,2008,12632,0.461,,,,
+MI|1|Tom|Casperson|2008,MI,1,H8MI01107,False,Tom,Casperson,R,2008,17433,0.4622,,,107340,0.3274
 VT|0|Cris|Ericson|2008,VT,0,H8VT00141,False,Cris,Ericson,I,2008,,,,,7841,0.0263
 OH|2|David H.|Krikorian|2008,OH,2,H8OH02090,False,David H.,Krikorian,I,2008,,,,,58710,0.177
-KY|3|John |Yarmuth|2008,KY,3,H6KY03124,True,John ,Yarmuth,D,2008,0,,,,203843,0.5937
 TN|S|Christopher G.|Fenner|2008,TN,S,S2TN00090,False,Christopher G.,Fenner,I,2008,,,,,11073,0.0046
-TX|5|Jeb|Hensarling|2008,TX,5,H2TX05121,True,Jeb,Hensarling,R,2008,45803,1.0,,,162894,0.8359000000000001
 NC|9|Sue|Myrick|2008,NC,9,H4NC09106,True,Sue,Myrick,R,2008,51402,0.9216,,,241053,0.6236999999999999
 NC|7|Will|Breazeale|2008,NC,7,H8NC07085,False,Will,Breazeale,R,2008,0,,,,97472,0.3116
 IN|5|Mary Etta|Ruley|2008,IN,5,H8IN05121,False,Mary Etta,Ruley,D,2008,46606,0.46659999999999996,,,123357,0.34450000000000003
+NJ|7|P. Kelly|Hatfield|2008,NJ,7,H8NJ07132,False,P. Kelly,Hatfield,R,2008,3902,0.15259999999999999,,,,
 MN|6|Michele|Bachmann|2008,MN,6,H6MN06074,True,Michele,Bachmann,R,2008,19127,0.8592,,,187817,0.46409999999999996
 "KY|5|Harold ""Hal""|Rogers|2008",KY,5,H0KY05015,True,"Harold ""Hal""",Rogers,R,2008,0,,,,177024,0.8411
 IN|4|Nels|Ackerson|2008,IN,4,H8IN04108,False,Nels,Ackerson,D,2008,83638,1.0,,,129038,0.40130000000000005
@@ -1208,8 +1213,7 @@ NY|21|Steven|Vasquez|2008,NY,21,H8NY21187,False,Steven,Vasquez,R,2008,3605,0.295
 NJ|2|Jason M.|Grover|2008,NJ,2,H8NJ02125,False,Jason M.,Grover,GRE,2008,,,,,1763,0.0062
 NY|14|Robert G.|Heim|2008,NY,14,H8NY14117,False,Robert G.,Heim,R,2008,0,,,,43385,0.1892
 CA|13|Fortney|Stark|2008,CA,13,H6CA09023,True,Fortney,Stark,D,2008,42897,1.0,,,166829,0.7643000000000001
-KS|S|Pat¾|Roberts|2008,KS,S,S6KS00080,True,Pat¾,Roberts,R¾,2008,214911,1.0,,,727121,0.6006
-MI|4|Dave |Camp|2008,MI,4,H0MI10071,True,Dave ,Camp,R,2008,57136,1.0,,,204259,0.6194
+TX|5|Jeb|Hensarling|2008,TX,5,H2TX05121,True,Jeb,Hensarling,R,2008,45803,1.0,,,162894,0.8359000000000001
 CT|4|Christopher|Shays|2008,CT,4,H8CT04057,True,Christopher,Shays,R,2008,,,,,146854,0.4756
 NV|2|James W.|Smack|2008,NV,2,H8NV02053,False,James W.,Smack,R,2008,7009,0.1398,,,,
 "CA|47|Rosemarie ""Rosie""|Avila|2008",CA,47,H6CA47031,False,"Rosemarie ""Rosie""",Avila,R,2008,12245,1.0,,,31432,0.25429999999999997
@@ -1218,13 +1222,13 @@ MA|3|James P.|McGovern|2008,MA,3,H4MA03022,True,James P.,McGovern,D,2008,37041,0
 CA|30|Henry A.|Waxman|2008,CA,30,H6CA24048,True,Henry A.,Waxman,D,2008,52980,1.0,,,242792,1.0
 "CA|51|Dan ""Frodo""|Litwin|2008",CA,51,H6CA51058,False,"Dan ""Frodo""",Litwin,LBT,2008,156,1.0,,,6199,0.0304
 VA|S|Mark R.|Warner|2008,VA,S,S6VA00093,False,Mark R.,Warner,D,2008,0,,,,2369327,0.6503
-TN|S|Ed |Lawhorn|2008,TN,S,S8TN00303,False,Ed ,Lawhorn,I,2008,,,,,8986,0.0037
 WA|3|Michael|Delavar|2008,WA,3,H8WA03156,False,Michael,Delavar,R,2008,32372,0.1963,,,121828,0.3599
 WI|2|Tammy|Baldwin|2008,WI,2,H8WI00018,True,Tammy,Baldwin,D,2008,18414,0.9929000000000001,,,277914,0.6933
 IL|3|Arthur J.|Jones|2008,IL,3,H4IL03028,False,Arthur J.,Jones,R,2008,6804,0.33149999999999996,,,,
 WY|S - FULL TERM|Mike|Enzi|2008,WY,S - FULL TERM,S6WY00126,True,Mike,Enzi,R,2008,69195,0.9934000000000001,,,189046,0.7563
 WI|2|Peter|Theron|2008,WI,2,H8WI02121,False,Peter,Theron,R,2008,7407,0.997,,,122513,0.3056
 TN|8|James|Hart|2008,TN,8,H2TN08077,False,James,Hart,W(R)/W,2008,23,1.0,,,54,0.0003
+VA|4|J. Randy|Forbes|2008,VA,4,H2VA04052,True,J. Randy,Forbes,R,2008,0,,,,199075,0.5951
 PA|18|Beth|Hafer|2008,PA,18,H8PA18090,False,Beth,Hafer,D,2008,48224,0.415,,,,
 "NJ|6|Frank, Jr.|Pallone|2008",NJ,6,H8NJ03073,True,"Frank, Jr.",Pallone,D,2008,18609,1.0,,,164077,0.6695
 CA|48|John|Campbell|2008,CA,48,H6CA48039,True,John,Campbell,R,2008,50101,1.0,,,171658,0.5561
@@ -1244,17 +1248,15 @@ NY|15|Edward|Daniels|2008,NY,15,H6NY15126,False,Edward,Daniels,R,2008,0,,,,15676
 NY|14|Isaiah|Matos|2008,NY,14,H8NY14125,False,Isaiah,Matos,LBT,2008,,,,,2659,0.0116
 IA|S|George S.|Eichhorn|2008,IA,S,S8IA00096,False,George S.,Eichhorn,R,2008,24390,0.34509999999999996,,,,
 GA|12|John|Barrow|2008,GA,12,H4GA12010,True,John,Barrow,D,2008,45235,0.7642,,,164562,0.66
-WV|3|Marty|Gearheart|2008,WV,3,H4WV03062,False,Marty,Gearheart,R,2008,15916,1.0,,,66005,0.3308
+NC|S|Marcus W.|Williams|2008,NC,S,S8NC00270,False,Marcus W.,Williams,D,2008,170970,0.1281,,,,
 ID|2|Deborah|Holmes|2008,ID,2,H8ID02106,False,Deborah,Holmes,D,2008,11578,0.6953,,,83878,0.289
 TX|24|Tom|Love|2008,TX,24,H8TX24087,False,Tom,Love,D,2008,49166,1.0,,,111089,0.4107
 TX|18|Mike|Taylor|2008,TX,18,H8TX18154,False,Mike,Taylor,LBT,2008,,,,,4486,0.0233
-NJ|6|Peter |Cerrato|2008,NJ,6,H2NJ06111,False,Peter ,Cerrato,R,2008,1946,0.2902,,,,
 "MS|2|Dorothy ""Dot""|Benford|2008",MS,2,H8MS02044,False,"Dorothy ""Dot""",Benford,D,2008,17791,0.1384,,,,
 CA|51|Bob|Filner|2008,CA,51,H2CA50034,True,Bob,Filner,D,2008,31690,0.7568,,,148281,0.7275
 OR|5|Alex|Polikoff|2008,OR,5,H8OR05180,False,Alex,Polikoff,PG,2008,,,,,5272,0.0158
 MI|13|George L.|Corsetti|2008,MI,13,H8MI13201,False,George L.,Corsetti,GRE,2008,,,,,9579,0.0424
 CO|5|Jeff|Crank|2008,CO,5,H6CO05142,False,Jeff,Crank,R,2008,16794,0.2958,,,,
-NM|3|Rudy |Martin|2008,NM,3,H8NM03188,False,Rudy ,Martin,D,2008,1845,0.0286,,,,
 WA|9|Adam|Smith|2008,WA,9,H6WA09025,True,Adam,Smith,D,2008,81503,0.647,,,176295,0.6545000000000001
 NY|8|Grace|Lin|2008,NY,8,H8NY08085,False,Grace,Lin,"CRV,R",2008,0,,,,36897,0.18460000000000001
 KS|1|James¾|Bordonaro|2008,KS,1,H8KS01027,False,James¾,Bordonaro,D¾,2008,13580,1.0,,,34771,0.13269999999999998
@@ -1266,7 +1268,7 @@ CT|3|Rosa L.|DeLauro|2008,CT,3,H0CT03072,True,Rosa L.,DeLauro,"WF,D",2008,,,,,20
 NV|3|Jon|Porter|2008,NV,3,H0NV01078,True,Jon,Porter,R,2008,21955,0.8162999999999999,,,147940,0.4229
 AZ|1|Jeffrey|Brown|2008,AZ,1,H8AZ01138,False,Jeffrey,Brown,D,2008,3376,0.059699999999999996,,,,
 TN|3|Jean|Howard-Hill|2008,TN,3,H4TN03165,False,Jean,Howard-Hill,I,2008,,,,,4848,0.0182
-TN|S|Mark E.|Clayton|2008,TN,S,S8TN00279,False,Mark E.,Clayton,D,2008,32309,0.17620000000000002,,,,
+NM|3|Jon|Adams|2008,NM,3,H8NM01240,False,Jon,Adams,D,2008,1979,0.030699999999999998,,,,
 WV|2|Shelley Moore|Capito|2008,WV,2,H0WV02138,True,Shelley Moore,Capito,R,2008,42476,1.0,,,147334,0.5707
 MP|0|Luis Palacios|Crisostimo|2008,MP,0,H8MP00074,False,Luis Palacios,Crisostimo,I,2008,,,,,946,0.0931
 OH|14|Steven C.|LaTourette|2008,OH,14,H4OH19036,True,Steven C.,LaTourette,R,2008,53036,1.0,,,188488,0.5832
@@ -1279,13 +1281,13 @@ VA|S|Bob|Marshall|2008,VA,S,S8VA00263,False,Bob,Marshall,R,2008,,,,,,
 TX|28|Henry|Cuellar|2008,TX,28,H2TX23082,True,Henry,Cuellar,D,2008,84819,1.0,,,123494,0.6870999999999999
 WA|8|Boleslaw (John)|Orlinski|2008,WA,8,H8WA08098,False,Boleslaw (John),Orlinski,NOP,2008,1523,0.01,,,,
 MD|6|Jennifer P.|Dougherty|2008,MD,6,H8MD06069,False,Jennifer P.,Dougherty,D,2008,25967,0.44179999999999997,,,128207,0.38789999999999997
+NJ|7|A.D.|Amar|2008,NJ,7,H4NJ07073,False,A.D.,Amar,R,2008,241,0.009399999999999999,,,,
 NY|12|Nydia M.|Velazquez|2008,NY,12,H2NY00010,True,Nydia M.,Velazquez,"WF,D",2008,0,,,,115633,0.8452
 TX|29|Joel|Grace|2008,TX,29,H8TX29037,False,Joel,Grace,LBT,2008,,,,,1564,0.0146
 WA|4|George|Fearing|2008,WA,4,H8WA04071,False,George,Fearing,D,2008,49841,0.33240000000000003,,,99430,0.3691
 AR|S|Mark|Pryor|2008,AR,S,S0AR00028,True,Mark,Pryor,D,2008,0,,,,804678,0.7953
 SC|5|Albert F.|Spencer|2008,SC,5,H4SC05041,False,Albert F.,Spencer,R,2008,0,,,,113282,0.3699
 MD|1|Steve|Harper|2008,MD,1,H8MD01136,False,Steve,Harper,D,2008,11904,0.1674,,,,
-NJ|S|Joseph |Pennacchio|2008,NJ,S,S8NJ00384,False,Joseph ,Pennacchio,R,2008,74546,0.40340000000000004,,,,
 CT|2|Sean|Sullivan|2008,CT,2,H8CT02069,False,Sean,Sullivan,R,2008,,,,,104574,0.3237
 CA|41|Rita|Ramirez-Dean|2008,CA,41,H8CA41139,False,Rita,Ramirez-Dean,D,2008,7435,0.2842,,,,
 MO|7|Midge|Potts|2008,MO,7,n/a,False,Midge,Potts,W,2008,,,,,49,0.0002
@@ -1324,20 +1326,15 @@ IL|S|Andy|Martin|2008,IL,S,S4IL00362,False,Andy,Martin,R,2008,240548,0.3385,,,,
 NC|9|Ross|Overby|2008,NC,9,H8NC09065,False,Ross,Overby,D,2008,32197,0.4153,,,,
 NH|2|Jennifer|Horn|2008,NH,2,H8NH02192,False,Jennifer,Horn,"R,W(D)",2008,12726,0.40049999999999997,,,138222,0.414
 WV|1|R. J.|Smith|2008,WV,1,n/a,False,R. J.,Smith,W,2008,,,,,61,0.0003
-NJ|7|P. Kelly |Hatfield|2008,NJ,7,H8NJ07132,False,P. Kelly ,Hatfield,R,2008,3902,0.15259999999999999,,,,
 AL|5|Parker|Griffith|2008,AL,5,H8AL05109,False,Parker,Griffith,D,2008,34543,0.8992,,,158324,0.5152
 MI|2|Fred|Johnson|2008,MI,2,H8MI02097,False,Fred,Johnson,D,2008,20617,1.0,,,119506,0.3481
 IN|9|D. Eric|Schansberg|2008,IN,9,H6IN09119,False,D. Eric,Schansberg,LBT,2008,,,,,11994,0.0382
 DC|0|Maude Louise|Hills|2008,DC,0,H8DC00176,False,Maude Louise,Hills,DCG,2008,173,0.8564,,,16693,0.0675
 RI|S|Christopher|Young|2008,RI,S,S0RI00042,False,Christopher,Young,W,2008,,,,,262,0.0006
-NE|S|Pat |Flynn|2008,NE,S,S8NE00109,False,Pat ,Flynn,"N(R),R",2008,31271,0.282,,,,
-NJ|9|Vincent |Micco|2008,NJ,9,H6NJ09215,False,Vincent ,Micco,R,2008,5797,1.0,,,69503,0.3104
 PR|0|Alfredo|Salazar Conde|2008,PR,0,H8PR00088,False,Alfredo,Salazar Conde,PPD,2008,0,,,,810111,0.42460000000000003
 "MI|14|John, Jr.|Conyers|2008",MI,14,H6MI01028,True,"John, Jr.",Conyers,D,2008,51511,1.0,,,227841,0.924
 ME|S|Edward L.|Cohen|2008,ME,S,S8ME00122,False,Edward L.,Cohen,W(R),2008,19,0.0003,,,,
 FL|1|Jeff|Miller|2008,FL,1,H2FL01100,True,Jeff,Miller,R,2008,0,,,,232559,0.7018000000000001
-NJ|4|Christopher H. |Smith|2008,NJ,4,H8NJ04014,True,Christopher H. ,Smith,R,2008,16818,1.0,,,202972,0.6620999999999999
-NM|1|Darren |White|2008,NM,1,H8NM01273,False,Darren ,White,R,2008,37060,0.818,,,132485,0.4435
 NV|2|Craig|Bergland|2008,NV,2,H8NV02061,False,Craig,Bergland,GRE,2008,,,,,5282,0.016
 WI|6|Roger A.|Kittelson|2008,WI,6,H8WI06056,False,Roger A.,Kittelson,D,2008,7441,0.6195,,,126090,0.36210000000000003
 VT|0|Jane|Newton|2008,VT,0,H2VT00094,False,Jane,Newton,LU,2008,131,0.9562,,,5307,0.0178
@@ -1357,6 +1354,7 @@ AZ|8|Gabrielle|Giffords|2008,AZ,8,H6AZ08038,True,Gabrielle,Giffords,D,2008,46223
 IL|11|Terry|Heenan|2008,IL,11,H8IL11121,False,Terry,Heenan,R,2008,10938,0.20670000000000002,,,,
 OR|1|Joel|Haugen|2008,OR,1,H8OR01171,False,Joel,Haugen,R/IP#,2008,29658,0.6895,,,58279,0.1754
 MI|15|John J.|Lynch|2008,MI,15,H8MI15099,False,John J.,Lynch,R,2008,11160,1.0,,,81802,0.2495
+VA|10|Mike R.|Turner|2008,VA,10,H8VA10072,False,Mike R.,Turner,D,2008,3377,0.3821,,,,
 WY|0|Gary|Trauner|2008,WY,0,H6WY01025,False,Gary,Trauner,D,2008,24741,0.9941,,,106758,0.42810000000000004
 SD|S|Sam|Kephart|2008,SD,S,S8SD00115,False,Sam,Kephart,R,2008,13047,0.24789999999999998,,,,
 OK|4|Blake|Cummings|2008,OK,4,H8OK04045,False,Blake,Cummings,D,2008,0,,,,79674,0.2921
@@ -1369,9 +1367,9 @@ OH|9|Marcy|Kaptur|2008,OH,9,H2OH09031,True,Marcy,Kaptur,D,2008,118814,1.0,,,2220
 ND|0|Wayne|Anderson|2008,ND,0,n/a,False,Wayne,Anderson,W(CON),2008,1,0.1429,,,,
 CA|23|Matt T.|Kokkonen|2008,CA,23,H8CA23079,False,Matt T.,Kokkonen,R,2008,30094,1.0,,,80385,0.3193
 CA|24|Elton|Gallegly|2008,CA,24,H6CA21028,True,Elton,Gallegly,R,2008,45124,0.7704000000000001,,,174492,0.5815
-NJ|10|Donald M. |Payne|2008,NJ,10,H0NJ10026,True,Donald M. ,Payne,D,2008,30764,1.0,,,169945,0.9892
 OR|S|Steve|Novick|2008,OR,S,S8OR00199,False,Steve,Novick,D,2008,230889,0.41979999999999995,,,,
 MN|7|Collin C.|Peterson|2008,MN,7,H2MN07014,True,Collin C.,Peterson,DFL,2008,21791,1.0,,,227187,0.722
+TN|7|James|Tomasik|2008,TN,7,H8TN07050,False,James,Tomasik,D,2008,3535,0.2275,,,,
 "IN|7|Woodrow A. (Woody), Jr.|Myers|2008",IN,7,H8IN07200,False,"Woodrow A. (Woody), Jr.",Myers,D,2008,33683,0.235,,,,
 MN|S|Bill|Dahn|2008,MN,S,S0MN00179,False,Bill,Dahn,IDP,2008,440,0.0388,,,,
 CA|38|Grace F.|Napolitano|2008,CA,38,H8CA34068,True,Grace F.,Napolitano,D,2008,16140,1.0,,,130211,0.8173
@@ -1384,6 +1382,7 @@ VA|S|Glenda Gail|Parker|2008,VA,S,S6VA00135,False,Glenda Gail,Parker,IGR,2008,,,
 FL|15|Stephen|Blythe|2008,FL,15,H8FL15057,False,Stephen,Blythe,D,2008,19281,0.6565000000000001,,,151951,0.4199
 IL|11|Jimmy|Lee|2008,IL,11,H8IL11105,False,Jimmy,Lee,R,2008,9206,0.174,,,,
 TX|10|Michael T.|McCaul|2008,TX,10,H4TX10093,True,Michael T.,McCaul,R,2008,44214,1.0,,,179493,0.5389
+OR|2|Greg|Walden|2008,OR,2,H6OR02116,True,Greg,Walden,R,2008,83087,0.9914000000000001,,,236560,0.695
 NY|21|Phillip G.|Steck|2008,NY,21,H8NY21138,False,Phillip G.,Steck,"IDP,D",2008,7498,0.1859,,,7965,0.028900000000000002
 TN|S|Edward L.|Buck|2008,TN,S,S8TN00295,False,Edward L.,Buck,I,2008,,,,,31631,0.013000000000000001
 "CT|5|Harold H., II|Burbank|2008",CT,5,H8CT05138,False,"Harold H., II",Burbank,GRE,2008,,,,,2324,0.0077
@@ -1391,6 +1390,7 @@ CO|7|Ed|Perlmutter|2008,CO,7,H6CO07023,True,Ed,Perlmutter,D,2008,29704,1.0,,,173
 NY|11|Cartrell|Gore|2008,NY,11,H0NY11060,False,Cartrell,Gore,CRV,2008,0,,,,1517,0.0083
 NJ|5|Camile M|Abate|2008,NJ,5,H6NJ05155,False,Camile M,Abate,D,2008,4861,0.3164,,,,
 "LA|2|""Jerry""|Jacobs|2008",LA,2,H8LA02138,False,"""Jerry""",Jacobs,NPA,2008,,,,,,
+NJ|6|Peter|Cerrato|2008,NJ,6,H2NJ06111,False,Peter,Cerrato,R,2008,1946,0.2902,,,,
 FL|15|Frank|Zilaitis|2008,FL,15,H8FL15099,False,Frank,Zilaitis,NPA,2008,,,,,14274,0.0394
 AZ|8|Paul|Davis|2008,AZ,8,H8AZ08042,False,Paul,Davis,W(LBT)/W,2008,40,1.0,,,8081,0.0246
 CA|17|Jeff|Taylor|2008,CA,17,H8CA17089,False,Jeff,Taylor,R,2008,23188,1.0,,,59037,0.2582
@@ -1400,21 +1400,21 @@ TN|9|Isaac|Richmond|2008,TN,9,H8TN09023,False,Isaac,Richmond,D,2008,172,0.0027,,
 SC|5|John|Spratt|2008,SC,5,H2SC05052,True,John,Spratt,D,2008,0,,,,188785,0.6164000000000001
 CA|12|Nathalie|Hrizi|2008,CA,12,H8CA12221,False,Nathalie,Hrizi,PAF,2008,90,1.0,,,5793,0.0217
 OH|2|Stephen L.|Black|2008,OH,2,H8OH02066,False,Stephen L.,Black,D,2008,29616,0.2969,,,,
+TN|9|Nikki|Tinker|2008,TN,9,H6TN09209,False,Nikki,Tinker,D,2008,11817,0.1864,,,,
 NC|S|Howard|Staley|2008,NC,S,S8NC00262,False,Howard,Staley,D,2008,60403,0.0452,,,,
 ME|S|Susan M.|Collins|2008,ME,S,S6ME00159,True,Susan M.,Collins,R,2008,56304,0.9997,,,444300,0.6133
-NY|22|Maurice D.|Hinchey|2008,NY,22,H2NY26080,True,Maurice D.,Hinchey,"WF,IDP,D",2008,0,,,,147238,0.5803
 CA|34|Christopher|Balding|2008,CA,34,H8CA34084,False,Christopher,Balding,R,2008,2948,0.5926,,,29266,0.2291
 SC|4|Paul|Corden|2008,SC,4,H8SC04177,False,Paul,Corden,D,2008,6189,0.41350000000000003,5312,0.6818000000000001,113291,0.3691
-NM|2|Harry |Teague|2008,NM,2,H8NM02032,False,Harry ,Teague,D,2008,20281,0.5217,,,129572,0.5596
 FL|11|Kathy|Castor|2008,FL,11,H6FL11126,True,Kathy,Castor,D,2008,0,,,,184106,0.7166
 ND|0|Jody|Wright|2008,ND,0,n/a,False,Jody,Wright,W(CON),2008,1,0.1429,,,,
 NV|3|Bob|Giaquinta|2008,NV,3,H8NV03077,False,Bob,Giaquinta,GRE,2008,,,,,3937,0.0113
-MD|1|E. J. |Pipkin|2008,MD,1,H8MD01128,False,E. J. ,Pipkin,R,2008,15700,0.2028,,,,
 RI|1|Patrick J.|Kennedy|2008,RI,1,H4RI01034,True,Patrick J.,Kennedy,D,2008,25493,1.0,,,145254,0.6851999999999999
 AS|0|Aumua|Amata|2008,AS,0,H4AS00036,False,Aumua,Amata,R,2008,,,,,4350,0.3503
 NJ|1|Dale M.|Glading|2008,NJ,1,H8NJ01135,False,Dale M.,Glading,R,2008,5873,0.8227,,,74001,0.2595
-NJ|5|Dennis |Shulman |2008,NJ,5,H8NJ05094,False,Dennis ,Shulman ,D,2008,9390,0.6111,,,131033,0.424
+ID|S|Larry|LaRocco|2008,ID,S,S8ID00076,False,Larry,LaRocco,D,2008,29023,0.7234999999999999,,,219903,0.3411
+NM|3|Marco E.|Gonzales|2008,NM,3,H8NM03220,False,Marco E.,Gonzales,R,2008,12632,0.461,,,,
 ND|0|Al|Jaeger|2008,ND,0,n/a,False,Al,Jaeger,W(LBT),2008,1,0.07139999999999999,,,,
+NJ|3|John|Adler|2008,NJ,3,H8NJ03156,False,John,Adler,D,2008,18130,1.0,,,166390,0.5207999999999999
 CA|4|Tom|McClintock|2008,CA,4,H8CA04152,False,Tom,McClintock,R,2008,51665,0.5346,,,185790,0.5024000000000001
 NM|3|Daniel K.|East|2008,NM,3,H8NM03212,False,Daniel K.,East,R,2008,14767,0.539,,,86618,0.30469999999999997
 "TN|9|Mary ""Taylor Shelby""|Wright|2008",TN,9,H8TN09072,False,"Mary ""Taylor Shelby""",Wright,I,2008,,,,,6434,0.028399999999999998
@@ -1425,8 +1425,9 @@ MI|4|John|Emerick|2008,MI,4,H0MI04082,False,John,Emerick,UST,2008,,,,,4055,0.012
 KS|3|Nick¾|Jordan|2008,KS,3,H8KS03064,False,Nick¾,Jordan,R¾,2008,39091,0.7601,,,142307,0.39659999999999995
 GA|12|John|Stone|2008,GA,12,H8GA12011,False,John,Stone,R,2008,9462,0.5671,,,84773,0.34
 NJ|11|Ellen|Greenberg|2008,NJ,11,H8NJ11092,False,Ellen,Greenberg,D,2008,2456,0.1573,,,,
+MI|10|Robert|Denison|2008,MI,10,H6MI10136,False,Robert,Denison,D,2008,25040,1.0,,,108354,0.31170000000000003
 WV|S|Jay|Wolfe|2008,WV,S,S8WV00093,False,Jay,Wolfe,R,2008,81189,1.0,,,254629,0.3626
-TX|1|Roger L.|Owen|2008,TX,1,H6TX01196,False,Roger L.,Owen,I,2008,,,,,26814,0.1242
+IL|17|Mark Edward|Lioen|2008,IL,17,n/a,False,Mark Edward,Lioen,W,2008,,,,,517,0.0023
 MO|2|John|Hogan|2008,MO,2,H2MO02086,False,John,Hogan,D,2008,4557,0.15539999999999998,,,,
 CT|1|Stephen E.D.|Fournier|2008,CT,1,H8CT01129,False,Stephen E.D.,Fournier,GRE,2008,,,,,7201,0.024399999999999998
 MI|3|Henry|Sanchez|2008,MI,3,H8MI03046,False,Henry,Sanchez,D,2008,13664,1.0,,,117961,0.35369999999999996
@@ -1452,6 +1453,7 @@ IN|7|Carolene|Mays|2008,IN,7,H8IN07226,False,Carolene,Mays,D,2008,11011,0.0768,,
 GA|10|Bobby|Saxon|2008,GA,10,H8GA10106,False,Bobby,Saxon,D,2008,24001,1.0,,,114638,0.39270000000000005
 TX|9|Brad|Walters|2008,TX,9,H8TX09112,False,Brad,Walters,LBT,2008,,,,,9760,0.0635
 NJ|7|Tom|Roughneen|2008,NJ,7,H8NJ07140,False,Tom,Roughneen,R,2008,1845,0.0721,,,,
+NC|7|Mike|McIntyre|2008,NC,7,H8NC07044,True,Mike,McIntyre,D,2008,0,,,,215383,0.6884
 NY|19|Kieran Michael|Lalor|2008,NY,19,H8NY19140,False,Kieran Michael,Lalor,"CRV,R",2008,0,,,,103813,0.36939999999999995
 GA|8|Rick|Goddard|2008,GA,8,H8GA08043,False,Rick,Goddard,R,2008,25420,1.0,,,117446,0.4276
 NY|14|Carolyn B.|Maloney|2008,NY,14,H2NY14037,True,Carolyn B.,Maloney,"WF,D",2008,0,,,,176426,0.7694
@@ -1460,11 +1462,11 @@ ND|0|Torey|Garletz|2008,ND,0,n/a,False,Torey,Garletz,W(LBT),2008,1,0.07139999999
 TX|6|Ludwig|Otto|2008,TX,6,H8TX06142,False,Ludwig,Otto,D,2008,33021,0.5082,,,99919,0.35609999999999997
 MI|7|Lynn|Meadows|2008,MI,7,H8MI07104,False,Lynn,Meadows,GRE,2008,,,,,9528,0.0296
 "MN|3|Harley, Jr.|Swarm|2008",MN,3,n/a,False,"Harley, Jr.",Swarm,W,2008,,,,,9,0.0
-NJ|1|John |Caramanna|2008,NJ,1,H8NJ01150,False,John ,Caramanna,D,2008,4342,0.11230000000000001,,,,
+"OH|14|John H., Jr.|Greene|2008",OH,14,H8OH14095,False,"John H., Jr.",Greene,D,2008,21352,0.21359999999999998,,,,
 CA|50|Nick|Leibham|2008,CA,50,H8CA50023,False,Nick,Leibham,D,2008,23874,0.5767,,,141635,0.4518
 AL|5|Cheryl Baswell|Guthrie|2008,AL,5,H8AL05133,False,Cheryl Baswell,Guthrie,R,2008,6942,0.183,4330,0.2127,,
 OR|4|Peter A.|DeFazio|2008,OR,4,H6OR04047,True,Peter A.,DeFazio,"W(R),D",2008,119366,0.9921,,,275143,0.8234
-NJ|4|Steven |Welzer|2008,NJ,4,H8NJ04154,False,Steven ,Welzer,GRE,2008,,,,,3543,0.0116
+NM|2|Monty|Newman|2008,NM,2,H8NM02073,False,Monty,Newman,R,2008,7486,0.20559999999999998,,,,
 OR|5|Kevin|Mannix|2008,OR,5,H8OR05099,False,Kevin,Mannix,R,2008,36005,0.46380000000000005,,,,
 PA|10|Christopher P.|Carney|2008,PA,10,H6PA10109,True,Christopher P.,Carney,D,2008,71988,1.0,,,160837,0.5633
 CT|5|Anthony Joseph|Nania|2008,CT,5,H8CT05146,False,Anthony Joseph,Nania,R,2008,,,,,,
@@ -1485,7 +1487,6 @@ NJ|S|Sara J.|Lobman|2008,NJ,S,S8NJ00426,False,Sara J.,Lobman,SWP,2008,,,,,9187,0
 NY|4|Jack M.|Martins|2008,NY,4,H8NY04076,False,Jack M.,Martins,"CRV,R",2008,0,,,,84444,0.3295
 CO|1|Diana|DeGette|2008,CO,1,H6CO01141,True,Diana,DeGette,D,2008,35804,1.0,,,203756,0.7193999999999999
 TX|7|Michael|Skelly|2008,TX,7,H8TX07074,False,Michael,Skelly,D,2008,55771,1.0,,,123242,0.4236
-NJ|1|Fernando |Powers|2008,NJ,1,H8NJ01176,False,Fernando ,Powers,R,2008,1266,0.1773,,,,
 NC|3|Walter B.|Jones|2008,NC,3,H2NC01081,True,Walter B.,Jones,R,2008,23699,0.5897,,,201686,0.659
 CA|12|Frank|Wade|2008,CA,12,H8CA12205,False,Frank,Wade,D,2008,1652,0.0245,,,,
 MS|1|Brian|Neely|2008,MS,1,H8MS01103,False,Brian,Neely,D,2008,10624,0.1075,,,,
@@ -1495,6 +1496,7 @@ CA|45|Paul|Clay|2008,CA,45,H8CA45098,False,Paul,Clay,D,2008,8697,0.287,,,,
 OR|1|Mark|Welyczko|2008,OR,1,H8OR01155,False,Mark,Welyczko,D,2008,5982,0.051,,,,
 FL|12|Adam H.|Putnam|2008,FL,12,H0FL12051,True,Adam H.,Putnam,R,2008,0,,,,185698,0.5746
 AZ|5|David|Schweikert|2008,AZ,5,H4AZ06045,False,David,Schweikert,R,2008,14233,0.295,,,122165,0.4357
+NJ|4|Christopher H.|Smith|2008,NJ,4,H8NJ04014,True,Christopher H.,Smith,R,2008,16818,1.0,,,202972,0.6620999999999999
 MO|3|John Wayne|Tucker|2008,MO,3,H8MO03156,False,John Wayne,Tucker,R,2008,5963,0.3139,,,,
 CO|5|Doug|Lamborn|2008,CO,5,H6CO05159,True,Doug,Lamborn,R,2008,24995,0.44020000000000004,,,183179,0.6003000000000001
 KS|1|Jerry¾|Moran|2008,KS,1,H6KS01096,True,Jerry¾,Moran,R¾,2008,67978,1.0,,,214549,0.8188
@@ -1507,6 +1509,8 @@ RI|2|James R.|Langevin|2008,RI,2,H0RI02139,True,James R.,Langevin,D,2008,20018,1
 ND|0|Duane|Sand|2008,ND,0,H4ND00038,False,Duane,Sand,R,2008,46785,1.0,,,119388,0.3803
 FL|15|Alan|Bergman|2008,FL,15,H8FL15065,False,Alan,Bergman,R,2008,7809,0.1467,,,,
 MI|5|Dale E.|Kildee|2008,MI,5,H6MI07108,True,Dale E.,Kildee,D,2008,41697,1.0,,,221841,0.7036
+OH|5|George F.|Mays|2008,OH,5,H8OH05093,False,George F.,Mays,D,2008,64450,1.0,,,105840,0.3591
+TN|S|Mark E.|Clayton|2008,TN,S,S8TN00279,False,Mark E.,Clayton,D,2008,32309,0.17620000000000002,,,,
 OH|12|David|Ryon|2008,OH,12,H8OH12081,False,David,Ryon,R,2008,6681,0.0953,,,,
 NY|16|Ali|Mohamed|2008,NY,16,H4NY16053,False,Ali,Mohamed,"CRV,R",2008,0,,,,3941,0.029900000000000003
 WY|0|Bill|Winney|2008,WY,0,H6WY00118,False,Bill,Winney,R,2008,8537,0.1189,,,,
@@ -1568,8 +1572,7 @@ TN|2|David Ryan|Hancock|2008,TN,2,H8TN02093,False,David Ryan,Hancock,D,2008,6765
 MI|11|Erik|Shelley|2008,MI,11,H8MI11239,False,Erik,Shelley,GRE,2008,,,,,5072,0.0147
 KS|2|Jim¾|Ryun|2008,KS,2,H6KS02227,False,Jim¾,Ryun,R¾,2008,32966,0.4902,,,,
 CA|43|Scott|Folkens|2008,CA,43,H6CA43121,False,Scott,Folkens,R,2008,3670,0.4044,,,,
-NM|2|Edward R. |Tinsley|2008,NM,2,H2NM02134,False,Edward R. ,Tinsley,R,2008,11510,0.316,,,101980,0.4404
-NJ|2|Donna M. |Ward|2008,NJ,2,H8NJ02109,False,Donna M. ,Ward,R,2008,2025,0.11220000000000001,,,,
+NY|22|Maurice D.|Hinchey|2008,NY,22,H2NY26080,True,Maurice D.,Hinchey,"WF,IDP,D",2008,0,,,,147238,0.5803
 NJ|S|Jason|Scheurer|2008,NJ,S,S8NJ00434,False,Jason,Scheurer,LBT,2008,,,,,18810,0.0054
 CO|2|Will|Shafroth|2008,CO,2,H8CO02111,False,Will,Shafroth,D,2008,10075,0.20489999999999997,,,,
 MN|S|Dean|Barkley|2008,MN,S,S4MN00262,False,Dean,Barkley,IDP,2008,6678,0.5888,,,437505,0.1515
@@ -1596,7 +1599,7 @@ IL|14|Michael J.|Dilger|2008,IL,14,H8IL14125,False,Michael J.,Dilger,R,2008,1847
 TX|26|Michael C.|Burgess|2008,TX,26,H2TX26093,True,Michael C.,Burgess,R,2008,41328,1.0,,,195181,0.6017
 WA|5|Kurt|Erickson|2008,WA,5,H8WA05110,False,Kurt,Erickson,R,2008,12155,0.0708,,,,
 CA|8|Cindy|Sheehan|2008,CA,8,H8CA08088,False,Cindy,Sheehan,I,2008,,,,,46118,0.1617
-MI|10|Robert  |Denison|2008,MI,10,H6MI10136,False,Robert  ,Denison,D,2008,25040,1.0,,,108354,0.31170000000000003
+TX|21|James Arthur|Strohm|2008,TX,21,H6TX21178,False,James Arthur,Strohm,LBT,2008,,,,,60879,0.2
 AL|3|Mike|Rogers|2008,AL,3,H2AL03032,True,Mike,Rogers,R,2008,0,,,,142708,0.5403
 MO|9|Tamara A.|Millay|2008,MO,9,H8MO09179,False,Tamara A.,Millay,LBT,2008,250,1.0,,,8108,0.0252
 CO|5|Hal|Bidlack|2008,CO,5,H8CO05106,False,Hal,Bidlack,D,2008,13146,1.0,,,113027,0.3704
@@ -1611,7 +1614,6 @@ NJ|7|Thomas D.|Abrams|2008,NJ,7,H6NJ07136,False,Thomas D.,Abrams,PNW,2008,,,,,26
 WA|8|Keith|Arnold|2008,WA,8,H8WA08080,False,Keith,Arnold,D,2008,1886,0.0123,,,,
 VA|11|Keith S.|Fimian|2008,VA,11,H8VA11021,False,Keith S.,Fimian,R,2008,0,,,,154758,0.4305
 OR|S|David|Brownlow|2008,OR,S,S4OR00149,False,David,Brownlow,CON,2008,,,,,92565,0.0524
-"MP|0|John Henry, Jr. |Davis|2008",MP,0,H8MP00082,False,"John Henry, Jr. ",Davis,I,2008,,,,,164,0.0161
 OR|3|Delia|Lopez|2008,OR,3,H8OR03045,False,Delia,Lopez,R,2008,22114,0.9688,,,71063,0.2084
 LA|2|Helena|Moreno|2008,LA,2,H8LA02062,False,Helena,Moreno,D,2008,13794,0.19940000000000002,70705,0.4321,,
 TX|S|Larry|Kilgore|2008,TX,S,S8TX00210,False,Larry,Kilgore,R,2008,226649,0.1852,,,,
@@ -1626,9 +1628,9 @@ NC|13|Brad|Miller|2008,NC,13,H2NC13029,True,Brad,Miller,D,2008,113254,0.8848,,,2
 OK|S|Evelyn L.|Rogers|2008,OK,S,S8OK00241,False,Evelyn L.,Rogers,R,2008,10770,0.0779,,,,
 TN|7|Marsha|Blackburn|2008,TN,7,H2TN06030,True,Marsha,Blackburn,R,2008,30997,0.6197,,,217332,0.6858
 OH|5|Michael L.|Reynolds|2008,OH,5,H8OH05127,False,Michael L.,Reynolds,R,2008,5873,0.0812,,,,
-NJ|1|Mahdi |Ibn-Ziyad|2008,NJ,1,H8NJ01127,False,Mahdi ,Ibn-Ziyad,D,2008,2222,0.0575,,,,
 NJ|6|Robert E.|McLeod|2008,NJ,6,H8NJ06142,False,Robert E.,McLeod,R,2008,3698,0.5514,,,77469,0.3161
 FL|12|Doug|Tudor|2008,FL,12,H8FL12054,False,Doug,Tudor,D,2008,0,,,,137465,0.4254
+AZ|4|Rebecca|DeWitt|2008,AZ,4,H8AZ04116,False,Rebecca,DeWitt,GRE,2008,71,1.0,,,4464,0.0359
 TX|23|Lyle|Larson|2008,TX,23,H8TX23097,False,Lyle,Larson,R,2008,18681,0.6154999999999999,,,100799,0.4192
 VA|4|Andrea R.|Miller|2008,VA,4,H8VA04018,False,Andrea R.,Miller,D,2008,,,,,135041,0.40369999999999995
 CA|8|Shirley|Golub|2008,CA,8,H8CA08070,False,Shirley,Golub,D,2008,10105,0.1079,,,,
@@ -1638,18 +1640,18 @@ OH|10|Dennis J.|Kucinich|2008,OH,10,H6OH23033,True,Dennis J.,Kucinich,D,2008,726
 PR|0|Pedro|Pierluisi Urrutia|2008,PR,0,H8PR00062,False,Pedro,Pierluisi Urrutia,NPP,2008,440672,0.5959,,,1010304,0.5295000000000001
 ND|0|James E.|Parsons|2008,ND,0,n/a,False,James E.,Parsons,W(LBT),2008,1,0.07139999999999999,,,,
 OH|17|Tim|Ryan|2008,OH,17,H2OH17109,True,Tim,Ryan,D,2008,138610,1.0,,,218896,0.7815000000000001
-VA|4|J. Randy|Forbes|2008,VA,4,H2VA04052,True,J. Randy,Forbes,R,2008,0,,,,199075,0.5951
+NJ|12|Alan R.|Bateman|2008,NJ,12,H8NJ12074,False,Alan R.,Bateman,R,2008,9718,1.0,,,108400,0.3532
 TN|1|David|Davis|2008,TN,1,H6TN01313,True,David,Davis,R,2008,25511,0.49219999999999997,,,,
 TX|18|John|Faulk|2008,TX,18,H8TX18139,False,John,Faulk,R,2008,5638,0.7856000000000001,,,39095,0.2034
 MT|S|Bob|Kelleher|2008,MT,S,S6MT00212,False,Bob,Kelleher,R,2008,26936,0.3632,,,129369,0.2708
-NM|2|Monty |Newman|2008,NM,2,H8NM02073,False,Monty ,Newman,R,2008,7486,0.20559999999999998,,,,
 WV|2|Richard A.|Robb|2008,WV,2,H8WV06017,False,Richard A.,Robb,D,2008,30177,0.2864,,,,
 FL|24|Clint|Curtis|2008,FL,24,H6FL24020,False,Clint,Curtis,D,2008,7137,0.27649999999999997,,,,
 OH|13|Frances L.|Kalapodis|2008,OH,13,H8OH13105,False,Frances L.,Kalapodis,R,2008,7852,0.26170000000000004,,,,
 NH|S|Tom|Alciere|2008,NH,S,S4NH00062,False,Tom,Alciere,R,2008,7084,0.1032,,,,
 TN|6|Steven L.|Edmondson|2008,TN,6,H2TN15015,False,Steven L.,Edmondson,W(R),2008,723,1.0,,,,
+NM|3|Harry B.|Montoya|2008,NM,3,H8NM03170,False,Harry B.,Montoya,D,2008,7234,0.11220000000000001,,,,
+AZ|6|Rebecca|Schneider|2008,AZ,6,H8AZ06053,False,Rebecca,Schneider,D,2008,15644,0.7375,,,115457,0.3455
 OH|6|Dennis|Spisak|2008,OH,6,H8OH06109,False,Dennis,Spisak,GRE,2008,,,,,13812,0.048799999999999996
-NJ|12|Alan R. |Bateman |2008,NJ,12,H8NJ12074,False,Alan R. ,Bateman ,R,2008,9718,1.0,,,108400,0.3532
 MI|11|Joseph W.|Larkin|2008,MI,11,H8MI11221,False,Joseph W.,Larkin,D,2008,25924,0.7290000000000001,,,156625,0.4537
 OR|1|Will|Hobbs|2008,OR,1,H8OR01163,False,Will,Hobbs,D,2008,19659,0.1675,,,,
 IN|4|Steve|Buyer|2008,IN,4,H2IN05025,True,Steve,Buyer,R,2008,45538,0.7156999999999999,,,192526,0.5987
@@ -1666,6 +1668,7 @@ TN|5|Jon|Jackson|2008,TN,5,H8TN05278,False,Jon,Jackson,I,2008,,,,,5464,0.0197999
 OH|10|Rosemary A.|Palmer|2008,OH,10,H8OH10051,False,Rosemary A.,Palmer,D,2008,4339,0.0301,,,,
 IA|S|Tom|Harkin|2008,IA,S,S4IA00020,True,Tom,Harkin,D,2008,90785,0.9883,,,941665,0.6265999999999999
 PA|8|Tom|Manion|2008,PA,8,H8PA08133,False,Tom,Manion,R,2008,35610,1.0,,,145103,0.4163
+RI|2|Mickey|Mouse|2008,RI,2,n/a,False,Mickey,Mouse,W,2008,,,,,5,0.0
 TX|16|Mette A.|Baker|2008,TX,16,H8TX16067,False,Mette A.,Baker,LBT,2008,,,,,12000,0.0756
 PA|1|Mike|Muhammad|2008,PA,1,H8PA01229,False,Mike,Muhammad,R,2008,4637,1.0,,,24714,0.0924
 MO|1|Wm. Lacy|Clay|2008,MO,1,H0MO01066,True,Wm. Lacy,Clay,D,2008,41517,1.0,,,242570,0.8686
@@ -1678,7 +1681,7 @@ NY|10|Kevin|Powell|2008,NY,10,H6NY10093,False,Kevin,Powell,D,2008,11558,0.321300
 CA|10|Nicholas|Gerber|2008,CA,10,H8CA10084,False,Nicholas,Gerber,R,2008,30324,1.0,,,91877,0.31129999999999997
 PA|19|Todd|Platts|2008,PA,19,H0PA19053,True,Todd,Platts,R,2008,57198,1.0,,,218862,0.6665000000000001
 MO|5|Martin D.|Baker|2008,MO,5,H8MO05102,False,Martin D.,Baker,R,2008,2647,0.1545,,,,
-MD|7|Michael T.|Hargadon|2008,MD,7,H8MD07059,False,Michael T.,Hargadon,R,2008,10588,0.7321,,,53147,0.1858
+MD|1|E. J.|Pipkin|2008,MD,1,H8MD01128,False,E. J.,Pipkin,R,2008,15700,0.2028,,,,
 IA|3|Leonard L.|Boswell|2008,IA,3,H6IA03144,True,Leonard L.,Boswell,D,2008,20401,0.6095,,,176904,0.5631
 CO|5|Rich|Hand|2008,CO,5,H6CO05209,False,Rich,Hand,W,2008,,,,,45,0.0001
 TN|3|Ed|Choate|2008,TN,3,H8TN03182,False,Ed,Choate,I,2008,,,,,3750,0.0141
@@ -1686,11 +1689,10 @@ OH|14|Dale Virgil|Blanchard|2008,OH,14,H6OH14172,False,Dale Virgil,Blanchard,D,2
 IL|6|Jill|Morgenthaler|2008,IL,6,H8IL06071,False,Jill,Morgenthaler,D,2008,52690,0.7696999999999999,,,109007,0.4243
 OH|18|Zack|Space|2008,OH,18,H6OH18157,True,Zack,Space,D,2008,87503,0.8456,,,164187,0.5987
 CA|18|Dennis A.|Cardoza|2008,CA,18,H2CA18056,True,Dennis A.,Cardoza,D,2008,26392,1.0,,,130192,1.0
-MP|0|Juan Tudela |Lizama|2008,MP,0,H8MP00025,False,Juan Tudela ,Lizama,I,2008,,,,,1819,0.179
 ND|0|Earl|Pomeroy|2008,ND,0,H2ND00057,True,Earl,Pomeroy,DNL,2008,43293,1.0,,,194577,0.6197
 IL|8|Randi|Scheurer|2008,IL,8,H8IL08069,False,Randi,Scheurer,D,2008,12968,0.1679,,,,
 TN|7|Tom|Leatherwood|2008,TN,7,H8TN07043,False,Tom,Leatherwood,R,2008,19025,0.3803,,,,
-CA|19|George P.|Radanovich|2008,CA,19,H2CA19054,True,George P.,Radanovich,R,2008,51645,1.0,,,179245,0.9843000000000001
+NJ|7|Linda|Stender|2008,NJ,7,H6NJ07128,False,Linda,Stender,D,2008,15776,1.0,,,124818,0.42219999999999996
 WI|6|Tom|Petri|2008,WI,6,H0WI06061,True,Tom,Petri,R,2008,21839,0.9963,,,221875,0.6371
 NJ|13|Julio A.|Fernandez|2008,NJ,13,H8NJ13114,False,Julio A.,Fernandez,NSP,2008,,,,,3661,0.0229
 IL|16|Robert G.|Abboud|2008,IL,16,H8IL16062,False,Robert G.,Abboud,D,2008,56951,1.0,,,112648,0.3608
@@ -1704,7 +1706,7 @@ CA|39|Diane A.|Lenning|2008,CA,39,H8CA39125,False,Diane A.,Lenning,R,2008,10485,
 IL|17|Phil|Hare|2008,IL,17,H6IL17155,True,Phil,Hare,D,2008,75567,1.0,,,220961,0.9976999999999999
 MO|4|Jeff|Parnell|2008,MO,4,H4MO04088,False,Jeff,Parnell,R,2008,31979,0.6679999999999999,,,103446,0.34090000000000004
 AK|0|Don E.|Young|2008,AK,0,H6AK00045,True,Don E.,Young,R,2008,48195,0.4547,,,158939,0.5014
-NE|S|Scott |Kleeb|2008,NE,S,S8NE00133,False,Scott ,Kleeb,"N(D),D",2008,64468,0.6866,,,317456,0.4006
+NE|S|Pat|Flynn|2008,NE,S,S8NE00109,False,Pat,Flynn,"N(R),R",2008,31271,0.282,,,,
 "LA|3|""Charlie""|Melancon|2008",LA,3,H4LA03028,True,"""Charlie""",Melancon,D,2008,0,,,,0,
 MI|8|Aaron|Stuttman|2008,MI,8,H6MI08239,False,Aaron,Stuttman,GRE,2008,,,,,3836,0.0106
 CO|4|Marilyn N.|Musgrave|2008,CO,4,H2CO04045,True,Marilyn N.,Musgrave,R,2008,31822,1.0,,,146030,0.43799999999999994
@@ -1762,23 +1764,23 @@ ND|0|Garry|Heller|2008,ND,0,n/a,False,Garry,Heller,W(LBT),2008,1,0.0713999999999
 CA|41|Pamela|Zander|2008,CA,41,H8CA41162,False,Pamela,Zander,R,2008,3455,0.07769999999999999,,,,
 WI|3|Ron|Kind|2008,WI,3,H6WI03099,True,Ron,Kind,D,2008,18039,0.9965999999999999,,,225208,0.6319
 TX|25|Jim|Stutsman|2008,TX,25,H8TX25100,False,Jim,Stutsman,LBT,2008,,,,,10848,0.037200000000000004
-"OH|2|James, Jr.|Condit|2008",OH,2,H2OH02077   ,False,"James, Jr.",Condit,W,2008,,,,,30,0.0001
+"OH|2|James, Jr.|Condit|2008",OH,2,H2OH02077,False,"James, Jr.",Condit,W,2008,,,,,30,0.0001
 PA|11|Lou|Barletta|2008,PA,11,H2PA11098,False,Lou,Barletta,R,2008,27710,1.0,,,137151,0.48369999999999996
 MN|1|Gregory|Mikkelson|2008,MN,1,H2MN01124,False,Gregory,Mikkelson,IDP,2008,1043,1.0,,,14904,0.044800000000000006
 "VA|5|Virgil H., Jr.|Goode|2008",VA,5,H6VA05068,True,"Virgil H., Jr.",Goode,R,2008,0,,,,158083,0.4986
+ID|S|Richard|Phenneger|2008,ID,S,S8ID00118,False,Richard,Phenneger,R,2008,6532,0.0529,,,,
 "GA|5|""Able"" Mable|Thomas|2008",GA,5,H2GA05075,False,"""Able"" Mable",Thomas,D,2008,8185,,,,,
 AR|4|Mike|Ross|2008,AR,4,H0AR04038,True,Mike,Ross,D,2008,0,,,,203178,0.8617
 OH|11|Craig E.|Willis|2008,OH,11,H8OH11273,False,Craig E.,Willis,W,2008,,,,,144,0.0006
 GU|0|Jonathan Blas|Diaz|2008,GU,0,H8GU00022,False,Jonathan Blas,Diaz,D,2008,2904,0.2494,,,,
+MP|0|Pedro Agulto|Tenorio|2008,MP,0,H8MP00017,False,Pedro Agulto,Tenorio,NMR,2008,,,,,2117,0.20829999999999999
 AL|4|Robert|Aderholt|2008,AL,4,H6AL04098,True,Robert,Aderholt,R,2008,0,,,,196741,0.7476
 CA|14|Anna G.|Eshoo|2008,CA,14,H8CA12098,True,Anna G.,Eshoo,D,2008,60856,1.0,,,190301,0.6977
-NJ|7|Dean |Greco|2008,NJ,7,H8NJ07165,False,Dean ,Greco,ADB,2008,,,,,3259,0.011000000000000001
 MD|8|Bruce|Stern|2008,MD,8,H8MD08180,False,Bruce,Stern,R,2008,5763,0.2484,,,,
 CA|15|Mike|Honda|2008,CA,15,H0CA15148,True,Mike,Honda,D,2008,46652,1.0,,,170977,0.7166
 PA|10|Chris|Hackett|2008,PA,10,H8PA10113,False,Chris,Hackett,R,2008,34129,0.5232,,,124681,0.43670000000000003
 AK|S|David W.|Cuddy|2008,AK,S,S6AK00078,False,David W.,Cuddy,R,2008,28364,0.2693,,,,
 CA|30|Keith A.|Fichtelman|2008,CA,30,H8CA30058,False,Keith A.,Fichtelman,W(R),2008,121,1.0,,,,
-NE|S|Tony |Raimondo|2008,NE,S,S8NE00125,False,Tony ,Raimondo,"N(D),D",2008,23617,0.3036,,,,
 IA|5|Steve|King|2008,IA,5,H2IA05072,True,Steve,King,R,2008,22663,0.993,,,159430,0.598
 MI|10|Candace R.|Caveny|2008,MI,10,H6MI10177,False,Candace R.,Caveny,GRE,2008,,,,,4146,0.011899999999999999
 TN|4|Lincoln|Davis|2008,TN,4,H4TN06051,True,Lincoln,Davis,D,2008,30487,0.9041,,,146776,0.5876
@@ -1793,9 +1795,9 @@ MI|11|Edward|Kriewall|2008,MI,11,H8MI11197,False,Edward,Kriewall,D,2008,9635,0.2
 NC|3|Craig|Weber|2008,NC,3,H6NC03120,False,Craig,Weber,D,2008,54366,0.6920999999999999,,,104364,0.341
 MD|7|Ronald M.|Owens-Bey|2008,MD,7,H8MD07067,False,Ronald M.,Owens-Bey,LBT,2008,,,,,5214,0.0182
 OR|5|Andrew|Foster|2008,OR,5,H8OR05123,False,Andrew,Foster,D,2008,6104,0.0632,,,,
-IL|17|Mark Edward |Lioen|2008,IL,17,n/a,False,Mark Edward ,Lioen,W,2008,,,,,517,0.0023
+AL|2|Jay|Love|2008,AL,2,H8AL02080,False,Jay,Love,R,2008,20131,0.35479999999999995,24725,0.5311,142578,0.4961
 IL|S|Richard J.|Durbin|2008,IL,S,S6IL00151,True,Richard J.,Durbin,D,2008,1653833,1.0,,,3615844,0.6784
-NE|2|Steven |Laird|2008,NE,2,H8NE02204,False,Steven ,Laird,"N(R),R",2008,4246,0.3134,,,,
+UT|3|Stone|Fonua|2008,UT,3,H2UT03173,False,Stone,Fonua,R,2008,,,,,,
 IN|7|Lawrence B. (Larry)|Shouse|2008,IN,7,H8IN07267,False,Lawrence B. (Larry),Shouse,R,2008,921,0.0407,,,,
 AZ|5|Mark|Anderson|2008,AZ,5,H8AZ05113,False,Mark,Anderson,R,2008,6539,0.1355,,,,
 MD|6|Rick|Lank|2008,MD,6,H8MD06085,False,Rick,Lank,D,2008,1222,0.0208,,,,
@@ -1806,7 +1808,6 @@ IL|S|Chad N.|Koppie|2008,IL,S,S2IL00044,False,Chad N.,Koppie,CPI,2008,,,,,24059,
 "FL|5|H. David ""the flag-pole sitter""|Werder|2008",FL,5,H2FL05150,False,"H. David ""the flag-pole sitter""",Werder,D,2008,3532,0.1061,,,,
 UT|2|Jim|Matheson|2008,UT,2,H0UT02096,True,Jim,Matheson,D,2008,,,,,220666,0.6335000000000001
 IL|S|Kathy|Cummings|2008,IL,S,S8IL00199,False,Kathy,Cummings,GRE,2008,,,,,119135,0.022400000000000003
-NJ|9|Steven R. |Rothman|2008,NJ,9,H6NJ09165,True,Steven R. ,Rothman,D,2008,25418,1.0,,,151182,0.6753
 CA|13|Raymond|Chui|2008,CA,13,H8CA13088,False,Raymond,Chui,R,2008,12706,1.0,,,51447,0.2357
 WI|3|Kevin|Barrett|2008,WI,3,H8WI03087,False,Kevin,Barrett,LBT,2008,345,0.599,,,8236,0.0231
 OK|S|Andrew|Rice|2008,OK,S,S8OK00233,False,Andrew,Rice,D,2008,113795,0.5965,,,527736,0.3918
@@ -1816,12 +1817,12 @@ FL|24|Suzanne M.|Kosmas|2008,FL,24,H8FL24026,False,Suzanne M.,Kosmas,D,2008,1867
 CT|1|John B.|Larson|2008,CT,1,H8CT01046,True,John B.,Larson,"WF,D",2008,,,,,194493,0.6581
 IL|14|Jotham|Stein|2008,IL,14,H8IL14042,False,Jotham,Stein,D,2008,5865,0.0768,,,,
 MD|7|Charles U.|Smith|2008,MD,7,H0MD07056,False,Charles U.,Smith,D/W,2008,7322,0.0695,,,8,0.0
-AZ|4|Rebecca|DeWitt|2008,AZ,4,H8AZ04116,False,Rebecca,DeWitt,GRE,2008,71,1.0,,,4464,0.0359
+GA|S|Saxby|Chambliss|2008,GA,S,S2GA00118,True,Saxby,Chambliss,R,2008,392902,1.0,,,1867097,0.4976
 ND|0|Ed|Jameson|2008,ND,0,n/a,False,Ed,Jameson,W(CON),2008,1,0.1429,,,,
 CA|19|Peter|Leinau|2008,CA,19,n/a,False,Peter,Leinau,W,2008,,,,,2490,0.0137
-MI|9|Joe |Knollenberg|2008,MI,9,H2MI11042,True,Joe ,Knollenberg,R,2008,49940,1.0,,,150035,0.4263
 TX|11|Mike|Conaway|2008,TX,11,H4TX19136,True,Mike,Conaway,R,2008,61409,1.0,,,189625,0.8833
 OH|12|Pat|Tiberi|2008,OH,12,H0OH12062,True,Pat,Tiberi,R,2008,63450,0.9047,,,197447,0.5478999999999999
+TN|4|Kent|Greenough|2008,TN,4,H8TN04057,False,Kent,Greenough,R,2008,3749,0.1759,,,,
 FL|8|Quoc Ba|Van|2008,FL,8,H8FL08078,False,Quoc Ba,Van,D,2008,1219,0.036699999999999997,,,,
 "TN|9|Joe|Town, Jr.|2008",TN,9,H8TN09098,False,Joe,"Town, Jr.",D,2008,914,0.0144,,,,
 NJ|3|Chris|Myers|2008,NJ,3,H8NJ03172,False,Chris,Myers,R,2008,12694,0.4936,,,153122,0.4792
@@ -1836,7 +1837,7 @@ WA|6|Norm|Dicks|2008,WA,6,H6WA06021,True,Norm,Dicks,D,2008,96862,0.5726,,,205991
 MI|1|Daniel W.|Grow|2008,MI,1,H8MI01131,False,Daniel W.,Grow,LBT,2008,,,,,2533,0.0077
 CO|1|Martin L.|Buchanan|2008,CO,1,H8CO01071,False,Martin L.,Buchanan,LBT,2008,,,,,12136,0.042800000000000005
 MI|7|Mark|Schauer|2008,MI,7,H8MI07096,False,Mark,Schauer,D,2008,17270,0.6566,,,157213,0.4878
-NJ|7|Martin |Marks|2008,NJ,7,H8NJ07108,False,Martin ,Marks,R,2008,3211,0.1255,,,,
+WV|3|Marty|Gearheart|2008,WV,3,H4WV03062,False,Marty,Gearheart,R,2008,15916,1.0,,,66005,0.3308
 IL|5|Rahm|Emanuel|2008,IL,5,H2IL05092,True,Rahm,Emanuel,D,2008,94406,1.0,,,170728,0.7394
 CT|1|Joe|Visconti|2008,CT,1,H8CT01111,False,Joe,Visconti,R,2008,,,,,76860,0.2601
 MS|1|Greg|Davis|2008,MS,1,H8MS01053,False,Greg,Davis,R,2008,16161,0.3679,16733,0.5082,149818,0.4388
@@ -1847,7 +1848,6 @@ TX|25|Lloyd|Doggett|2008,TX,25,H4TX10028,True,Lloyd,Doggett,D,2008,110108,1.0,,,
 MD|4|Vincent|Martorano|2008,MD,4,H8MD04171,False,Vincent,Martorano,R,2008,1722,0.1369,,,,
 KS|S|Randall¾L.|Hodgkinson|2008,KS,S,S8KS00243,False,Randall¾L.,Hodgkinson,LBT,2008,,,,,25727,0.0212
 AK|S|Rich M.|Wanda|2008,AK,S,S8AK00157,False,Rich M.,Wanda,R,2008,732,0.0069,,,,
-NJ|S|Murray |Sabrin|2008,NJ,S,S8NJ00285,False,Murray ,Sabrin,R,2008,25576,0.1384,,,,
 CA|22|Kevin|McCarthy|2008,CA,22,H6CA22125,True,Kevin,McCarthy,R,2008,61915,1.0,,,224549,1.0
 OH|1|Steve|Driehaus|2008,OH,1,H8OH01068,False,Steve,Driehaus,D,2008,60454,1.0,,,155455,0.5246999999999999
 GA|9|Jeff|Scott|2008,GA,9,H8GA09041,False,Jeff,Scott,D,2008,12596,1.0,,,70537,0.24489999999999998
@@ -1864,8 +1864,8 @@ KY|3|Corley C.|Everett|2008,KY,3,H4KY03202,False,Corley C.,Everett,R,2008,,,,,,
 MN|4|Betty|McCollum|2008,MN,4,H0MN04049,True,Betty,McCollum,DFL,2008,0,,,,216267,0.6844
 MD|4|George E.|McDermott|2008,MD,4,H4MD04071,False,George E.,McDermott,D,2008,1046,0.0079,,,,
 "MS|1|John M., Jr.|Wages|2008",MS,1,H8MS01137,False,"John M., Jr.",Wages,GRE,2008,,,,,1876,0.0055000000000000005
-NJ|3|John |Adler|2008,NJ,3,H8NJ03156,False,John ,Adler,D,2008,18130,1.0,,,166390,0.5207999999999999
 MI|9|Douglas|Campbell|2008,MI,9,H8MI09084,False,Douglas,Campbell,GRE,2008,,,,,4737,0.013500000000000002
+NJ|5|Dennis|Shulman|2008,NJ,5,H8NJ05094,False,Dennis,Shulman,D,2008,9390,0.6111,,,131033,0.424
 MA|4|Barney|Frank|2008,MA,4,H0MA04036,True,Barney,Frank,D,2008,38642,0.9902,,,203032,0.6795
 PA|14|Mike|Doyle|2008,PA,14,H4PA18131,True,Mike,Doyle,D,2008,134298,1.0,,,242326,0.9126000000000001
 TX|19|Dwight|Fullingim|2008,TX,19,H8TX19087,False,Dwight,Fullingim,D,2008,26966,0.6163000000000001,,,58030,0.2495
@@ -1884,7 +1884,7 @@ FL|3|Corrine|Brown|2008,FL,3,H2FL03056,True,Corrine,Brown,D,2008,0,,,,0,
 KY|2|Reid|Haire|2008,KY,2,H8KY02056,False,Reid,Haire,D,2008,43100,0.414,,,,
 MN|S|Anthony Keith|Price|2008,MN,S,n/a,False,Anthony Keith,Price,W,2008,,,,,12,0.0
 CO|5|Bentley|Rayburn|2008,CO,5,H6CO05191,False,Bentley,Rayburn,R,2008,14986,0.264,,,,
-OR|2|Greg|Walden|2008,OR,2,H6OR02116,True,Greg,Walden,R,2008,83087,0.9914000000000001,,,236560,0.695
+MD|7|Michael T.|Hargadon|2008,MD,7,H8MD07059,False,Michael T.,Hargadon,R,2008,10588,0.7321,,,53147,0.1858
 MN|S|Priscilla Lord|Faris|2008,MN,S,S8MN00495,False,Priscilla Lord,Faris,DFL,2008,74655,0.29719999999999996,,,,
 MO|3|Kevin C.|Babcock|2008,MO,3,H4MO03155,False,Kevin C.,Babcock,LBT,2008,224,1.0,,,5518,0.0181
 FL|10|Don|Callahan|2008,FL,10,H6FL10086,False,Don,Callahan,W,2008,,,,,9,0.0
@@ -1902,7 +1902,6 @@ IN|5|Dan|Burton|2008,IN,5,H2IN06023,True,Dan,Burton,R,2008,45682,0.5184000000000
 "MI|S|Jack, Jr.|Hoogendyk|2008",MI,S,S8MI00299,False,"Jack, Jr.",Hoogendyk,R,2008,495467,1.0,,,1641070,0.3385
 TX|10|Matt|Finkel|2008,TX,10,H8TX10078,False,Matt,Finkel,LBT,2008,,,,,9871,0.0296
 IL|12|Harold|Wiegand|2008,IL,12,n/a,False,Harold,Wiegand,W,2008,,,,,1,0.0
-ID|2|David  |Sneddon|2008,ID,2,H8ID02114,False,David  ,Sneddon,D,2008,5074,0.30469999999999997,,,,
 PA|6|Bob|Roggio|2008,PA,6,H8PA06079,False,Bob,Roggio,D,2008,82540,1.0,,,164952,0.479
 IN|9|Mike|Sodrel|2008,IN,9,H2IN09084,False,Mike,Sodrel,R,2008,32101,1.0,,,120529,0.38409999999999994
 TN|4|Kevin|Ragsdale|2008,TN,4,H8TN04073,False,Kevin,Ragsdale,I,2008,,,,,3713,0.0149
@@ -1934,6 +1933,7 @@ ID|S|Kevin|Volkmann|2008,ID,S,S8ID00217,False,Kevin,Volkmann,W(D)/W,2008,20,0.00
 MN|3|David|Dillon|2008,MN,3,H8MN03101,False,David,Dillon,IDP,2008,674,0.7279000000000001,,,38970,0.1056
 OR|S|Candy|Neville|2008,OR,S,S8OR00223,False,Candy,Neville,D,2008,38367,0.0698,,,,
 VA|1|Nathan D.|Larson|2008,VA,1,H8VA01238,False,Nathan D.,Larson,LBT,2008,,,,,5265,0.0146
+HI|1|Steve|Tataii|2008,HI,1,H8HI01168,False,Steve,Tataii,R,2008,13088,1.0,,,38115,0.1907
 NV|2|Dean|Heller|2008,NV,2,H6NV02164,True,Dean,Heller,R,2008,43112,0.8602,,,170771,0.5182
 CO|S|Bruce E.|Lohmiller|2008,CO,S,S8CO00230,False,Bruce E.,Lohmiller,W,2008,,,,,9,0.0
 NJ|12|Rush|Holt|2008,NJ,12,H6NJ12144,True,Rush,Holt,D,2008,23653,1.0,,,193732,0.6312
@@ -1956,7 +1956,7 @@ ID|1|Matthew|Salisbury|2008,ID,1,H8ID01082,False,Matthew,Salisbury,R,2008,27267,
 AZ|5|Harry|Mitchell|2008,AZ,5,H6AZ05067,True,Harry,Mitchell,D,2008,25174,1.0,,,149033,0.5316
 IL|13|Theodore|Knapp|2008,IL,13,n/a,False,Theodore,Knapp,W,2008,,,,,51,0.0002
 NY|26|Christopher J.|Lee|2008,NY,26,H8NY26095,False,Christopher J.,Lee,"IDP,CRV,R",2008,0,,,,124845,0.4618
-NJ|7|Linda|Stender|2008,NJ,7,H6NJ07128,False,Linda,Stender,D,2008,15776,1.0,,,124818,0.42219999999999996
+CA|19|George P.|Radanovich|2008,CA,19,H2CA19054,True,George P.,Radanovich,R,2008,51645,1.0,,,179245,0.9843000000000001
 NJ|S|Daryl Mikell|Brooks|2008,NJ,S,S6NJ00313,False,Daryl Mikell,Brooks,PPC,2008,,,,,15925,0.0046
 NY|3|Peter T.|King|2008,NY,3,H2NY03089,True,Peter T.,King,"R,CRV,IDP",2008,6847,0.8842,,,149344,0.5525
 IL|18|Sheldon|Schafer|2008,IL,18,H8IL18084,False,Sheldon,Schafer,GRE,2008,,,,,9857,0.0318
@@ -1975,7 +1975,8 @@ MN|S|Jack|Uldrich|2008,MN,S,S6MN00341,False,Jack,Uldrich,IDP,2008,1405,0.1239000
 MN|5|Gregg A.|Iverson|2008,MN,5,H6MN05316,False,Gregg A.,Iverson,DFL,2008,6251,0.1553,,,,
 CA|37|Laura|Richardson|2008,CA,37,H8CA37137,True,Laura,Richardson,D,2008,25713,0.7441,,,131342,0.7494
 GA|7|Doug|Heckman|2008,GA,7,H8GA07136,False,Doug,Heckman,D,2008,13318,1.0,,,128159,0.3797
-RI|2|Mickey|Mouse|2008,RI,2,n/a,False,Mickey,Mouse,W,2008,,,,,5,0.0
+MI|2|Dan|Johnson|2008,MI,2,H8MI02105,False,Dan,Johnson,LBT,2008,,,,,5496,0.016
+NJ|9|Vincent|Micco|2008,NJ,9,H6NJ09215,False,Vincent,Micco,R,2008,5797,1.0,,,69503,0.3104
 CA|7|Virginia|Fuller-Kendall|2008,CA,7,H8CA07031,False,Virginia,Fuller-Kendall,R,2008,7660,0.44229999999999997,,,,
 IL|2|Anthony W.|Williams|2008,IL,2,H2IL02107,False,Anthony W.,Williams,R,2008,,,,,29721,0.1059
 CA|19|Phil|Rockey|2008,CA,19,n/a,False,Phil,Rockey,W,2008,,,,,366,0.002
@@ -1988,7 +1989,7 @@ MI|6|Greg|Merle|2008,MI,6,H8MI06114,False,Greg,Merle,LBT,2008,,,,,4720,0.0148
 NC|9|Harry|Taylor|2008,NC,9,H8NC09073,False,Harry,Taylor,D,2008,45329,0.5847,,,138719,0.3589
 FL|15|Trevor|Lowing|2008,FL,15,H8FL15123,False,Trevor,Lowing,NPA,2008,,,,,3495,0.0097
 "NV|1|Eve ""No. 1 Mom""|Ellingwood|2008",NV,1,H8NV01212,False,"Eve ""No. 1 Mom""",Ellingwood,R,2008,1137,0.0904,,,,
-NM|1|Joseph J. |Carraro|2008,NM,1,H8NM01281,False,Joseph J. ,Carraro,R,2008,8246,0.182,,,,
+MP|0|David Mendiola|Cing|2008,MP,0,H8MP00058,False,David Mendiola,Cing,D,2008,,,,,307,0.0302
 SC|S|Buddy|Witherspoon|2008,SC,S,S8SC00100,False,Buddy,Witherspoon,R,2008,93125,0.33159999999999995,,,,
 AL|2|David|Grimes|2008,AL,2,H8AL02114,False,David,Grimes,R,2008,2324,0.040999999999999995,,,,
 "LA|1|""Jim""|Harlan|2008",LA,1,H8LA01114,False,"""Jim""",Harlan,D,2008,37883,0.7265999999999999,,,98839,0.3432
@@ -1997,9 +1998,8 @@ UT|3|Chris|Cannon|2008,UT,3,H6UT03042,True,Chris,Cannon,R,2008,19255,0.4022,,,,
 "NJ|9|Michael|Perrone, Jr.|2008",NJ,9,H8NJ09112,False,Michael,"Perrone, Jr.",IPR,2008,,,,,3200,0.0143
 TX|27|George|Benavides|2008,TX,27,H8TX27023,False,George,Benavides,R,2008,7236,0.4378,,,,
 IA|5|Rob|Hubler|2008,IA,5,H8IA05053,False,Rob,Hubler,D,2008,8052,0.9947,,,99601,0.3736
-WA|7|Steve|Beren|2008,WA,7,H6WA07391,False,Steve,Beren,R,2008,19307,0.1495,,,57054,0.1635
 CA|9|James M.|Eyer|2008,CA,9,H2CA09097,False,James M.,Eyer,LBT,2008,225,1.0,,,11704,0.042199999999999994
-FL|17|Kendrick B.|Meek|2008,FL,17,H2FL17056,True,Kendrick B.,Meek,D,2008,0,,,,,
+FL|17|Kendrick B.|Meek|2008,FL,17,H2FL17056,True,Kendrick B.,Meek,D,2008,0,,,,0,
 OH|7|Jack D.|Null|2008,OH,7,H0OH07062,False,Jack D.,Null,D,2008,6118,0.0691,,,,
 RI|S|Steve|Laffey|2008,RI,S,S6RI00239,False,Steve,Laffey,W,2008,,,,,5,0.0
 CA|52|Rick|Powell|2008,CA,52,H8CA52094,False,Rick,Powell,R,2008,2074,0.031200000000000002,,,,
@@ -2009,7 +2009,7 @@ CO|2|Jared|Polis|2008,CO,2,H8CO02137,False,Jared,Polis,D,2008,20493,0.4168,,,215
 MI|2|Ronald E.|Graeser|2008,MI,2,H0MI02086,False,Ronald E.,Graeser,UST,2008,,,,,4200,0.012199999999999999
 IN|9|Baron P.|Hill|2008,IN,9,H8IN09032,True,Baron P.,Hill,D,2008,99332,0.6762999999999999,,,181281,0.5777
 FL|24|Gaurav|Bhola|2008,FL,24,H8FL24018,False,Gaurav,Bhola,NPA,2008,,,,,6223,0.0168
-GA|S|Saxby|Chambliss|2008,GA,S,S2GA00118,True,Saxby,Chambliss,R,2008,392902,1.0,,,1867097,0.4976
+NM|1|Martin T.|Heinrich|2008,NM,1,H8NM01224,False,Martin T.,Heinrich,D,2008,22341,0.4351,,,166271,0.5565
 MI|12|Les|Townsend|2008,MI,12,H6MI12231,False,Les,Townsend,UST,2008,,,,,4076,0.013000000000000001
 LA|5|Andrew|Clack|2008,LA,5,H8LA05081,False,Andrew,Clack,R,2008,3203,0.1032,,,,
 MI|15|John D.|Dingell|2008,MI,15,H6MI16034,True,John D.,Dingell,D,2008,51306,1.0,,,231784,0.7070000000000001
@@ -2031,7 +2031,7 @@ PA|16|Joseph R.|Pitts|2008,PA,16,H6PA16197,True,Joseph R.,Pitts,R,2008,49740,1.0
 MO|9|Blaine|Luetkemeyer|2008,MO,9,H8MO09153,False,Blaine,Luetkemeyer,R,2008,21543,0.3968,,,161031,0.4999
 RI|1|Lincoln|Chaffee|2008,RI,1,n/a,False,Lincoln,Chaffee,W,2008,,,,,8,0.0
 TX|S|Ray|McMurrey|2008,TX,S,S8TX00228,False,Ray,McMurrey,D,2008,269402,0.12369999999999999,,,,
-HI|1|Steve|Tataii|2008,HI,1,H8HI01168,False,Steve,Tataii,R,2008,13088,1.0,,,38115,0.1907
+MS|1|Steve|Holland|2008,MS,1,H8MS01095,False,Steve,Holland,D,2008,30274,0.3063,15958,0.43420000000000003,,
 IL|4|Luis V.|Gutierrez|2008,IL,4,H2IL08039,True,Luis V.,Gutierrez,D,2008,63436,1.0,,,112529,0.8059999999999999
 OR|1|David|Wu|2008,OR,1,H8OR01072,True,David,Wu,D,2008,91466,0.7792,,,237567,0.715
 PA|5|Mark B.|McCracken|2008,PA,5,H8PA05147,False,Mark B.,McCracken,D,2008,30358,0.40909999999999996,,,112509,0.4104

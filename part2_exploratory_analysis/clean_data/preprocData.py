@@ -18,27 +18,26 @@ def cleanFile(inputFile, outputFile):
 			#print row
 			row['YEAR'] = inputFile[10:14]
 
-			row['KEY'] = row['STATE ABBREVIATION']+"|"+row['DISTRICT']+"|"+row['FIRST NAME']+"|"+row['LAST NAME']+"|"+row['YEAR']
+			row['STATE ABBREVIATION']=row['STATE ABBREVIATION'].strip()
+			row['DISTRICT']=row['DISTRICT'].strip()
+			row['FEC ID']=row['FEC ID'].strip()
 
-
-			#row['STATE ABBREVIATION']
-			#row['DISTRICT']
-			#row['FEC ID']
-
-			#row['INCUMBENT INDICATOR']
+			row['INCUMBENT INDICATOR']=row['INCUMBENT INDICATOR'].strip()
 			if row['INCUMBENT INDICATOR']=="(I)":
 				row['INCUMBENT INDICATOR'] = True
 			else:
 				row['INCUMBENT INDICATOR'] = False
 
-			#row['FIRST NAME']
-			#row['LAST NAME']
-			#row['PARTY']
+			row['FIRST NAME']=row['FIRST NAME'].strip()
+			row['LAST NAME']=row['LAST NAME'].strip()
+			row['PARTY']=row['PARTY'].strip()
+
+			row['KEY'] = row['STATE ABBREVIATION']+"|"+row['DISTRICT']+"|"+row['FIRST NAME']+"|"+row['LAST NAME']+"|"+row['YEAR']
 
 
 
-			#row['PRIMARY']	
-			#row['PRIMARY %']
+			row['PRIMARY'] = row['PRIMARY'].strip()	
+			row['PRIMARY %'] = row['PRIMARY %'].strip()
 			if row['PRIMARY'] == "Unopposed":
 				row['PRIMARY'] = 0
 			else :
@@ -52,8 +51,8 @@ def cleanFile(inputFile, outputFile):
 			except ValueError:
 				row['PRIMARY %'] = ""
 
-			#row['RUNOFF']
-			#row['RUNOFF %']
+			row['RUNOFF']=row['RUNOFF'].strip()
+			row['RUNOFF %']=row['RUNOFF %'].strip()
 			if row['RUNOFF'] == "Unopposed":
 				row['RUNOFF'] = 0
 			else:
@@ -67,8 +66,8 @@ def cleanFile(inputFile, outputFile):
 			except ValueError:
 				row['RUNOFF %'] = ""
 
-			#row['GENERAL']
-			#row['GENERAL %']
+			row['GENERAL']=row['GENERAL'].strip()
+			row['GENERAL %']=row['GENERAL %'].strip()
 			if row['GENERAL'] == "Unopposed":
 				row['GENERAL'] = 0;
 			else:

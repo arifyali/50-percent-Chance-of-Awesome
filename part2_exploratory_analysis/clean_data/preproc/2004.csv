@@ -4,7 +4,7 @@ AL|1|Judy|Belk|2004,AL,1,H2AL01119,False,Judy,Belk,D,2004,0,,,,93938,0.368100000
 AL|2|Terry|Everett|2004,AL,2,H2AL02067,True,Terry,Everett,R,2004,0,,,,177086,0.7142000000000001
 AL|2|Charles D. (Chuck)|James|2004,AL,2,H4AL02063,False,Charles D. (Chuck),James,D,2004,0,,,,70562,0.2846
 AL|3|Mike|Rogers|2004,AL,3,H2AL03032,True,Mike,Rogers,R,2004,0,,,,150411,0.612
-AL|3|Bill|Fuller|2004,AL,3,H4AL03046 ,False,Bill,Fuller,D,2004,0,,,,95240,0.3875
+AL|3|Bill|Fuller|2004,AL,3,H4AL03046,False,Bill,Fuller,D,2004,0,,,,95240,0.3875
 AL|4|Robert|Aderholt|2004,AL,4,H6AL04098,True,Robert,Aderholt,R,2004,0,,,,191110,0.7473000000000001
 AL|4|Carl|Cole|2004,AL,4,H4AL04028,False,Carl,Cole,D,2004,0,,,,64278,0.2514
 AL|5|Bud|Cramer|2004,AL,5,H0AL05049,True,Bud,Cramer,D,2004,37573,0.8953,,,200999,0.7297
@@ -18,7 +18,7 @@ AL|7|Artur|Davis|2004,AL,7,H0AL07060,True,Artur,Davis,D,2004,58193,0.8783,,,1834
 AL|7|Albert|Turner|2004,AL,7,H4AL07054,False,Albert,Turner,D,2004,8061,0.1217,,,,
 AL|7|Steve F.|Cameron|2004,AL,7,H4AL07062,False,Steve F.,Cameron,R,2004,0,,,,61019,0.2494
 AL|S|Richard|Shelby|2004,AL,S,S6AL00013,True,Richard,Shelby,R,2004,0,,,,1242200,0.6755
-AL|S|Wayne |Sowell|2004,AL,S,S2AL00087,False,Wayne ,Sowell,D,2004,0,,,,595018,0.3235
+AL|S|Wayne|Sowell|2004,AL,S,S2AL00087,False,Wayne,Sowell,D,2004,0,,,,595018,0.3235
 AK|0|Don E.|Young|2004,AK,0,H4AK00065,True,Don E.,Young,R,2004,70142,1.0,,,213216,0.7106999999999999
 AK|0|Thomas M.|Higgins|2004,AK,0,H4AK00081,False,Thomas M.,Higgins,D,2004,14109,0.4764,,,67074,0.2236
 AK|0|Frank|Vondersaar|2004,AK,0,H4AK00057,False,Frank,Vondersaar,D,2004,9025,0.3048,,,,
@@ -33,7 +33,7 @@ AK|S|Tony|Knowles|2004,AK,S,S4AK00107,False,Tony,Knowles,D,2004,40881,0.9506,,,1
 AK|S|Don R.|Wright|2004,AK,S,S4AK00149,False,Don R.,Wright,D,2004,1080,0.025099999999999997,,,,
 AK|S|Theresa Nangle|Obermeyer|2004,AK,S,S6AK00102,False,Theresa Nangle,Obermeyer,D,2004,1045,0.024300000000000002,,,,
 AK|S|Marc J.|Millican|2004,AK,S,H4AK00115,False,Marc J.,Millican,N,2004,,,,,8885,0.0288
-AK|S|Jerry |Sanders|2004,AK,S,S4AK00172,False,Jerry ,Sanders,AKI,2004,1953,0.7958,,,3785,0.0123
+AK|S|Jerry|Sanders|2004,AK,S,S4AK00172,False,Jerry,Sanders,AKI,2004,1953,0.7958,,,3785,0.0123
 AK|S|Daniel|DeNardo|2004,AK,S,S4AK00164,False,Daniel,DeNardo,AKI,2004,501,0.20420000000000002,,,,
 AK|S|Jim|Sykes|2004,AK,S,S4AK00093,False,Jim,Sykes,GRN,2004,2868,1.0,,,3053,0.009899999999999999
 AK|S|Scott A.|Kohlhaas|2004,AK,S,S8AK00066,False,Scott A.,Kohlhaas,LBT,2004,775,1.0,,,1240,0.004
@@ -60,7 +60,7 @@ AZ|5|J. D.|Hayworth|2004,AZ,5,H4AZ06052,True,J. D.,Hayworth,R,2004,43166,0.79260
 AZ|5|Roselyn|O'Connell|2004,AZ,5,H4AZ05054,False,Roselyn,O'Connell,R,2004,11296,0.20739999999999997,,,,
 AZ|5|Elizabeth|Rogers|2004,AZ,5,H4AZ05047,False,Elizabeth,Rogers,D,2004,11362,0.6951,,,102363,0.38189999999999996
 AZ|5|Ronald|Maynard|2004,AZ,5,H2AZ05116,False,Ronald,Maynard,D,2004,4985,0.3049,,,,
-AZ|5|Michael|Kielsky|2004,AZ,5,H4AZ05062 ,False,Michael,Kielsky,LBT,2004,330,1.0,,,6189,0.0231
+AZ|5|Michael|Kielsky|2004,AZ,5,H4AZ05062,False,Michael,Kielsky,LBT,2004,330,1.0,,,6189,0.0231
 AZ|6|Jeff|Flake|2004,AZ,6,H0AZ01184,True,Jeff,Flake,R,2004,33784,0.593,,,202882,0.7938
 AZ|6|Stan|Barnes|2004,AZ,6,H4AZ06086,False,Stan,Barnes,R,2004,23186,0.40700000000000003,,,,
 AZ|6|Craig|Stritar|2004,AZ,6,H4AZ06094,False,Craig,Stritar,LBT,2004,272,1.0,,,52695,0.20620000000000002
@@ -75,7 +75,7 @@ AZ|8|Tim|Sultan|2004,AZ,8,H4AZ08033,False,Tim,Sultan,D,2004,9177,0.2661,,,,
 "AZ|8|Jeffrey ""Jeff""|Chimene|2004",AZ,8,H4AZ08041,False,"Jeffrey ""Jeff""",Chimene,D,2004,5093,0.1477,,,,
 AZ|8|Robert|Anderson|2004,AZ,8,H6AZ06024,False,Robert,Anderson,LBT,2004,385,1.0,,,10443,0.0344
 AZ|S|John|McCain|2004,AZ,S,S6AZ00019,True,John,McCain,R,2004,331720,1.0,,,1505372,0.7674
-AZ|S|Stuart |Starky|2004,AZ,S,S0AZ00152,False,Stuart ,Starky,D,2004,173540,1.0,,,404507,0.20620000000000002
+AZ|S|Stuart|Starky|2004,AZ,S,S0AZ00152,False,Stuart,Starky,D,2004,173540,1.0,,,404507,0.20620000000000002
 AZ|S|Ernest|Hancock|2004,AZ,S,S4AZ00121,False,Ernest,Hancock,LBT,2004,2756,1.0,,,51798,0.0264
 AR|1|Marion|Berry|2004,AR,1,H6AR01072,True,Marion,Berry,D,2004,0,,,,162388,0.6657
 AR|1|Vernon|Humphrey|2004,AR,1,H4AR01044,False,Vernon,Humphrey,R,2004,0,,,,81556,0.3343
@@ -101,7 +101,7 @@ CA|1|Bill|Meyers|2004,CA,1,H4CA01058,False,Bill,Meyers,GRN,2004,1966,0.4539,,,,
 CA|2|Wally|Herger|2004,CA,2,H6CA02010,True,Wally,Herger,R,2004,79923,1.0,,,182119,0.6685
 CA|2|Mike|Johnson|2004,CA,2,H2CA02068,False,Mike,Johnson,D,2004,20760,0.4426,,,90310,0.33149999999999996
 CA|2|A.J.|Sekhon|2004,CA,2,H4CA02072,False,A.J.,Sekhon,D,2004,14246,0.3037,,,,
-CA|2|Jeffrey |Vance|2004,CA,2,H4CA02080,False,Jeffrey ,Vance,D,2004,11897,0.25370000000000004,,,,
+CA|2|Jeffrey|Vance|2004,CA,2,H4CA02080,False,Jeffrey,Vance,D,2004,11897,0.25370000000000004,,,,
 CA|3|Dan|Lungren|2004,CA,3,H6CA34112,False,Dan,Lungren,R,2004,35595,0.38909999999999995,,,177738,0.6191
 CA|3|Rico|Oller|2004,CA,3,H4CA03070,False,Rico,Oller,R,2004,32728,0.3577,,,,
 CA|3|Mary|Ose|2004,CA,3,H4CA03088,False,Mary,Ose,R,2004,21469,0.2347,,,,
@@ -112,7 +112,7 @@ CA|4|John T.|Doolittle|2004,CA,4,H0CA14042,True,John T.,Doolittle,R,2004,105015,
 CA|4|David I.|Winters|2004,CA,4,H4CA04078,False,David I.,Winters,D,2004,58036,1.0,,,117443,0.3461
 CA|5|Robert T.|Matsui|2004,CA,5,H8CA03014,True,Robert T.,Matsui,D,2004,63291,0.9998,,,138004,0.7136
 CA|5|Pat|Driscoll|2004,CA,5,H4CA05232,False,Pat,Driscoll,W(D),2004,11,0.0002,,,,
-CA|5|Mike |Dugas |2004,CA,5,H4CA05224,False,Mike ,Dugas ,R,2004,26674,1.0,,,45120,0.23329999999999998
+CA|5|Mike|Dugas|2004,CA,5,H4CA05224,False,Mike,Dugas,R,2004,26674,1.0,,,45120,0.23329999999999998
 CA|5|Pat|Driscoll|2004,CA,5,H4CA05232,False,Pat,Driscoll,GRN,2004,1041,1.0,,,6593,0.0341
 CA|5|John C.|Reiger|2004,CA,5,H4CA05240,False,John C.,Reiger,PFP,2004,215,1.0,,,3670,0.019
 CA|6|Lynn|Woolsey|2004,CA,6,H2CA01045,True,Lynn,Woolsey,D,2004,99970,0.84,,,226423,0.7265
@@ -129,16 +129,16 @@ CA|9|Claudia|Bermudez|2004,CA,9,H4CA09051,False,Claudia,Bermudez,R,2004,11813,1.
 CA|9|Jim|Eyer|2004,CA,9,H2CA09097,False,Jim,Eyer,LBT,2004,410,1.0,,,8131,0.0319
 CA|10|Ellen O.|Tauscher|2004,CA,10,H6CA10088,True,Ellen O.,Tauscher,D,2004,75997,1.0,,,182750,0.6570999999999999
 CA|10|Jeff|Ketelson|2004,CA,10,H4CA10067,False,Jeff,Ketelson,R,2004,45615,1.0,,,95349,0.3429
-CA|11|Richard |Pombo|2004,CA,11,H2CA11051,True,Richard ,Pombo,R,2004,65046,1.0,,,163582,0.6123
+CA|11|Richard|Pombo|2004,CA,11,H2CA11051,True,Richard,Pombo,R,2004,65046,1.0,,,163582,0.6123
 CA|11|Gerald (Jerry) M.|McNerney|2004,CA,11,H4CA11081,False,Gerald (Jerry) M.,McNerney,W(D)/D,2004,1667,1.0,,,103587,0.38770000000000004
-CA|12|Tom |Lantos|2004,CA,12,H0CA11022,True,Tom ,Lantos,D,2004,63323,0.7353000000000001,,,171852,0.6803
+CA|12|Tom|Lantos|2004,CA,12,H0CA11022,True,Tom,Lantos,D,2004,63323,0.7353000000000001,,,171852,0.6803
 CA|12|Ro|Khanna|2004,CA,12,H4CA12055,False,Ro,Khanna,D,2004,17107,0.19870000000000002,,,,
 CA|12|Maad|Abu-Ghazalah|2004,CA,12,H2CA12158,False,Maad,Abu-Ghazalah,D,2004,5678,0.0659,,,,
 CA|12|Norma Bureau|Elias|2004,CA,12,,False,Norma Bureau,Elias,W(D),2004,5,0.0001,,,,
 CA|12|Mike|Garza|2004,CA,12,H4CA05075,False,Mike,Garza,R,2004,13967,0.5547,,,52593,0.2082
 CA|12|Christopher|Huskins|2004,CA,12,H4CA12063,False,Christopher,Huskins,R,2004,11214,0.44530000000000003,,,,
 CA|12|Pat|Gray|2004,CA,12,H4CA12071,False,Pat,Gray,GRN,2004,1072,0.6907,,,23038,0.09119999999999999
-CA|12|Barry |Hermanson|2004,CA,12,H4CA12089,False,Barry ,Hermanson,GRN,2004,480,0.3093,,,,
+CA|12|Barry|Hermanson|2004,CA,12,H4CA12089,False,Barry,Hermanson,GRN,2004,480,0.3093,,,,
 CA|12|Harland|Harrison|2004,CA,12,H4CA12097,False,Harland,Harrison,LBT,2004,390,1.0,,,5116,0.0203
 CA|13|Fortney Pete|Stark|2004,CA,13,H6CA09023,True,Fortney Pete,Stark,D,2004,59726,1.0,,,144605,0.7161
 CA|13|George I.|Bruno|2004,CA,13,H4CA13079,False,George I.,Bruno,R,2004,19606,1.0,,,48439,0.23989999999999997
@@ -152,14 +152,14 @@ CA|15|Raymond L.|Chukwu|2004,CA,15,H4CA15058,False,Raymond L.,Chukwu,R,2004,2681
 CA|15|Peter Sundin|Soule|2004,CA,15,,False,Peter Sundin,Soule,W(R),2004,143,0.0053,,,,
 CA|16|Zoe|Lofgren|2004,CA,16,H4CA16049,True,Zoe,Lofgren,D,2004,50254,1.0,,,129222,0.7089
 CA|16|Douglas Adams|McNea|2004,CA,16,H2CA16084,False,Douglas Adams,McNea,R,2004,20411,1.0,,,47992,0.2633
-CA|16|Markus |Welch|2004,CA,16,H4CA15041,False,Markus ,Welch,LBT,2004,346,1.0,,,5067,0.0278
+CA|16|Markus|Welch|2004,CA,16,H4CA15041,False,Markus,Welch,LBT,2004,346,1.0,,,5067,0.0278
 CA|17|Sam|Farr|2004,CA,17,H4CA17021,True,Sam,Farr,D,2004,65809,0.9114,,,148958,0.6673
 CA|17|Art|Dunn|2004,CA,17,H6CA16069,False,Art,Dunn,D,2004,6401,0.0886,,,,
 CA|17|Mark|Risley|2004,CA,17,H4CA17260,False,Mark,Risley,R,2004,23139,0.7491,,,65117,0.2917
 CA|17|Connor|Vlakancic|2004,CA,17,H8CA15067,False,Connor,Vlakancic,R,2004,7751,0.2509,,,,
 CA|17|Ray|Glock-Grueneich|2004,CA,17,H2CA17074,False,Ray,Glock-Grueneich,GRN,2004,1656,1.0,,,3645,0.0163
-CA|17|Joe |Williams|2004,CA,17,H4CA17278,False,Joe ,Williams,PFP,2004,141,1.0,,,2823,0.0126
-CA|17|Joel |Smolen|2004,CA,17,H4CA17286,False,Joel ,Smolen,LBT,2004,482,1.0,,,2607,0.011699999999999999
+CA|17|Joe|Williams|2004,CA,17,H4CA17278,False,Joe,Williams,PFP,2004,141,1.0,,,2823,0.0126
+CA|17|Joel|Smolen|2004,CA,17,H4CA17286,False,Joel,Smolen,LBT,2004,482,1.0,,,2607,0.011699999999999999
 CA|17|David Mauricio|Munoz|2004,CA,17,,False,David Mauricio,Munoz,W,2004,,,,,75,0.0003
 CA|18|Dennis A.|Cardoza|2004,CA,18,H2CA18056,True,Dennis A.,Cardoza,D,2004,39565,1.0,,,103732,0.6748999999999999
 "CA|18|Charles F.|Pringle, Sr|2004",CA,18,H4CA18045,False,Charles F.,"Pringle, Sr",R,2004,16913,0.6856,,,49973,0.3251
@@ -189,7 +189,7 @@ CA|26|Cynthia M.|Matthews|2004,CA,26,H4CA26097,False,Cynthia M.,Matthews,D,2004,
 CA|26|Vicki Lynn|Johnson|2004,CA,26,H4CA26105,False,Vicki Lynn,Johnson,D,2004,13171,0.3814,,,,
 CA|26|Randall|Weissbuch|2004,CA,26,H4CA28083,False,Randall,Weissbuch,LBT,2004,340,1.0,,,9089,0.0362
 CA|27|Brad|Sherman|2004,CA,27,H6CA24113,True,Brad,Sherman,D,2004,40350,1.0,,,125296,0.6227
-CA|27|Robert M. |Levy|2004,CA,27,H2CA27180,False,Robert M. ,Levy,R,2004,24883,1.0,,,66946,0.33270000000000005
+CA|27|Robert M.|Levy|2004,CA,27,H2CA27180,False,Robert M.,Levy,R,2004,24883,1.0,,,66946,0.33270000000000005
 CA|27|Eric J.|Carter|2004,CA,27,H4CA27103,False,Eric J.,Carter,GRN,2004,335,1.0,,,8956,0.044500000000000005
 CA|28|Howard L.|Berman|2004,CA,28,H2CA26026,True,Howard L.,Berman,D,2004,33702,0.8190000000000001,,,115303,0.7095
 "CA|28|Charles R.|Coleman, Jr.|2004",CA,28,H4CA28069,False,Charles R.,"Coleman, Jr.",D,2004,7448,0.18100000000000002,,,,
@@ -212,13 +212,13 @@ CA|32|Leland|Faegre|2004,CA,32,H4CA32095,False,Leland,Faegre,LBT,2004,91,1.0,,,2
 CA|33|Diane E.|Watson|2004,CA,33,H2CA32099,True,Diane E.,Watson,D,2004,53376,1.0,,,166801,0.8858
 "CA|33|Robert G.|Weber, Jr.|2004",CA,33,H4CA33077,False,Robert G.,"Weber, Jr.",LBT,2004,178,1.0,,,21513,0.1142
 CA|34|Lucille|Royball-Allard|2004,CA,34,H2CA33048,True,Lucille,Royball-Allard,D,2004,22593,1.0,,,82282,0.7448999999999999
-CA|34|Wayne |Miller|2004,CA,34,H8CA33235,False,Wayne ,Miller,R,2004,7683,1.0,,,28175,0.2551
+CA|34|Wayne|Miller|2004,CA,34,H8CA33235,False,Wayne,Miller,R,2004,7683,1.0,,,28175,0.2551
 CA|35|Maxine|Waters|2004,CA,35,H4CA23011,True,Maxine,Waters,D,2004,41452,1.0,,,125949,0.8053
 CA|35|Ross|Moen|2004,CA,35,H2CA35092,False,Ross,Moen,R,2004,7573,1.0,,,23591,0.1508
 CA|35|Gordon Michael|Mego|2004,CA,35,H6CA35093,False,Gordon Michael,Mego,AIP,2004,300,1.0,,,3440,0.022000000000000002
 CA|35|Charles|Tate|2004,CA,35,H2CA33113,False,Charles,Tate,LBT,2004,96,1.0,,,3427,0.0219
 CA|36|Jane|Harman|2004,CA,36,H2CA27107,True,Jane,Harman,D,2004,48524,1.0,,,151208,0.6196
-CA|36|Paul |Whitehead|2004,CA,36,H4CA36096,False,Paul ,Whitehead,R,2004,13081,0.4292,,,81666,0.3346
+CA|36|Paul|Whitehead|2004,CA,36,H4CA36096,False,Paul,Whitehead,R,2004,13081,0.4292,,,81666,0.3346
 CA|36|Gloria E.|Davis|2004,CA,36,H2CA36215,False,Gloria E.,Davis,R,2004,9430,0.3094,,,,
 CA|36|Lee|Leslie|2004,CA,36,H4CA36088,False,Lee,Leslie,R,2004,7966,0.2614,,,,
 CA|36|Alice|Stek|2004,CA,36,H4CA36112,False,Alice,Stek,PFP,2004,124,1.0,,,6105,0.025
@@ -244,7 +244,7 @@ CA|43|Joe|Baca|2004,CA,43,H6CA42099,True,Joe,Baca,D,2004,27769,1.0,,,86830,0.663
 CA|43|Ed|Laning|2004,CA,43,H4CA43069,False,Ed,Laning,R,2004,13599,1.0,,,44004,0.33630000000000004
 CA|44|Ken|Calvert|2004,CA,44,H2CA37023,True,Ken,Calvert,R,2004,49107,0.8579000000000001,,,138768,0.6164000000000001
 CA|44|David J.|Rizzo|2004,CA,44,H4CA44132,False,David J.,Rizzo,R,2004,8132,0.1421,,,,
-CA|44|Louis |Vandenberg|2004,CA,44,H2CA44128,False,Louis ,Vandenberg,D,2004,33140,1.0,,,78796,0.35
+CA|44|Louis|Vandenberg|2004,CA,44,H2CA44128,False,Louis,Vandenberg,D,2004,33140,1.0,,,78796,0.35
 CA|44|Kevin|Akin|2004,CA,44,H4CA44140,False,Kevin,Akin,PFP,2004,103,1.0,,,7559,0.0336
 CA|45|Mary|Bono|2004,CA,45,H8CA44034,True,Mary,Bono,R,2004,51429,0.8593000000000001,,,153523,0.6661
 CA|45|John|Barker|2004,CA,45,H0CA44122,False,John,Barker,R,2004,8422,0.1407,,,,
@@ -278,10 +278,10 @@ CA|51|Michael|Giorgino|2004,CA,51,H4CA51053,False,Michael,Giorgino,R,2004,19948,
 CA|51|Ruben Ricardo|Garcia|2004,CA,51,H4CA51046,False,Ruben Ricardo,Garcia,R,2004,8662,0.3028,,,,
 CA|51|Michael S.|Metti|2004,CA,51,H4CA51061,False,Michael S.,Metti,LBT,2004,203,1.0,,,5912,0.0327
 CA|52|Duncan|Hunter|2004,CA,52,H2CA42023,True,Duncan,Hunter,R,2004,83638,1.0,,,187799,0.6919
-CA|52|Brian S. |Keliher|2004,CA,52,H4CA52044,False,Brian S. ,Keliher,D,2004,42770,1.0,,,74857,0.2758
+CA|52|Brian S.|Keliher|2004,CA,52,H4CA52044,False,Brian S.,Keliher,D,2004,42770,1.0,,,74857,0.2758
 CA|52|Michael|Benoit|2004,CA,52,H0CA52018,False,Michael,Benoit,LBT,2004,671,1.0,,,8782,0.032400000000000005
 CA|53|Susan A.|Davis|2004,CA,53,H0CA49055,True,Susan A.,Davis,D,2004,55791,1.0,,,146449,0.6614
-CA|53|Darin |Hunzeker|2004,CA,53,H4CA53018,False,Darin ,Hunzeker,R,2004,30925,1.0,,,63897,0.28859999999999997
+CA|53|Darin|Hunzeker|2004,CA,53,H4CA53018,False,Darin,Hunzeker,R,2004,30925,1.0,,,63897,0.28859999999999997
 CA|53|Lawrence P.|Rockwood|2004,CA,53,H4CA53026,False,Lawrence P.,Rockwood,GRN,2004,1000,1.0,,,7523,0.034
 CA|53|Adam|Van Susteren|2004,CA,53,H4CA53034,False,Adam,Van Susteren,LBT,2004,712,1.0,,,3567,0.0161
 CA|S|Barbara|Boxer|2004,CA,S,S2CA00286,True,Barbara,Boxer,D,2004,2566298,1.0,,,6955728,0.5771000000000001
@@ -289,19 +289,19 @@ CA|S|Bill|Jones|2004,CA,S,S4CA00274,False,Bill,Jones,R,2004,1015747,0.4481,,,455
 CA|S|Rosario|Marin|2004,CA,S,S4CA00258,False,Rosario,Marin,R,2004,454176,0.2003,,,,
 CA|S|Howard|Kaloogian|2004,CA,S,S4CA00282,False,Howard,Kaloogian,R,2004,253341,0.1118,,,,
 CA|S|Toni|Casey|2004,CA,S,S4CA00225,False,Toni,Casey,R,2004,142080,0.06269999999999999,,,,
-CA|S|Tim |Stoen|2004,CA,S,S4CA00308,False,Tim ,Stoen,R,2004,124938,0.055099999999999996,,,,
+CA|S|Tim|Stoen|2004,CA,S,S4CA00308,False,Tim,Stoen,R,2004,124938,0.055099999999999996,,,,
 CA|S|James|Stewart|2004,CA,S,S4CA00233,False,James,Stewart,R,2004,78264,0.0345,,,,
 CA|S|Barry L.|Hatch|2004,CA,S,S4CA00340,False,Barry L.,Hatch,R,2004,71241,0.031400000000000004,,,,
 CA|S|John M.|Van Zandt|2004,CA,S,S4CA00324,False,John M.,Van Zandt,R,2004,56925,0.025099999999999997,,,,
 CA|S|Danney|Ball|2004,CA,S,S4CA00217,False,Danney,Ball,R,2004,37745,0.0166,,,,
 CA|S|Bill|Quraishi|2004,CA,S,S4CA00290,False,Bill,Quraishi,R,2004,32515,0.0143,,,,
 CA|S|Louis E.|Longoria|2004,CA,S,,False,Louis E.,Longoria,W(R),2004,28,0.0,,,,
-CA|S|Marsha |Feinland|2004,CA,S,S4CA00357,False,Marsha ,Feinland,PFP,2004,4864,1.0,,,243846,0.0202
+CA|S|Marsha|Feinland|2004,CA,S,S4CA00357,False,Marsha,Feinland,PFP,2004,4864,1.0,,,243846,0.0202
 "CA|S|James P. ""Jim""|Gray|2004",CA,S,S4CA00266,False,"James P. ""Jim""",Gray,LBT,2004,13656,0.573,,,216522,0.018000000000000002
 CA|S|Gail K.|Lightfoot|2004,CA,S,S8CA00283,False,Gail K.,Lightfoot,LBT,2004,10177,0.42700000000000005,,,,
 CA|S|Don J.|Grundmann|2004,CA,S,S4CA00332,False,Don J.,Grundmann,AIP,2004,32025,1.0,,,81224,0.0067
 CA|S|Dennis|Richter|2004,CA,S,,False,Dennis,Richter,W,2004,,,,,43,0.0
-CA|S|Howard|Johnson |2004,CA,S,,False,Howard,Johnson ,W ,2004,,,,,8,0.0
+CA|S|Howard|Johnson|2004,CA,S,,False,Howard,Johnson,W,2004,,,,,8,0.0
 CA|S|John Emery|Jones|2004,CA,S,,False,John Emery,Jones,W,2004,,,,,2,0.0
 CO|1|Diana|DeGette|2004,CO,1,H6CO01141,True,Diana,DeGette,D,2004,47579,1.0,,,177077,0.735
 CO|1|Roland|Chicas|2004,CO,1,H2CO01074,False,Roland,Chicas,R,2004,16417,1.0,,,58659,0.24350000000000002
@@ -334,7 +334,7 @@ CO|7|Dave|Thomas|2004,CO,7,H2CO07048,False,Dave,Thomas,D,2004,27706,1.0,,,106026
 CO|7|Clyde J.|Harkins|2004,CO,7,H4CO07028,False,Clyde J.,Harkins,AMC,2004,,,,,6167,0.024900000000000002
 CO|S|Ken|Salazar|2004,CO,S,S4CO00163,False,Ken,Salazar,D,2004,173167,0.7302,,,1081188,0.513
 CO|S|Mike|Miles|2004,CO,S,S0CO00203,False,Mike,Miles,D,2004,63973,0.2698,,,,
-CO|S|Pete |Coors|2004,CO,S,S4CO00189,False,Pete ,Coors,R,2004,203157,0.6057,,,980668,0.4653
+CO|S|Pete|Coors|2004,CO,S,S4CO00189,False,Pete,Coors,R,2004,203157,0.6057,,,980668,0.4653
 CO|S|Bob|Schaffer|2004,CO,S,S4CO00171,False,Bob,Schaffer,R,2004,132274,0.3943,,,,
 "CO|S|Douglas ""Dayhorse""|Campbell|2004",CO,S,S2CO00142,False,"Douglas ""Dayhorse""",Campbell,AMC,2004,,,,,18783,0.0089
 CO|S|Richard|Randall|2004,CO,S,S4CO00254,False,Richard,Randall,LBT,2004,,,,,10160,0.0048
@@ -391,40 +391,40 @@ FL|2|T.A.|Frederick|2004,FL,2,H0FL02052,False,T.A.,Frederick,W,2004,,,,,11,0.0
 FL|3|Corrine|Brown|2004,FL,3,H2FL03056,True,Corrine,Brown,D,2004,46285,0.8131,,,172833,0.9924
 FL|3|Prince|Brown|2004,FL,3,H4FL03060,False,Prince,Brown,D,2004,10639,0.1869,,,,
 FL|3|Johnny M.|Brown|2004,FL,3,H4FL03078,False,Johnny M.,Brown,W,2004,,,,,1323,0.0076
-FL|4|Ander|Crenshaw|2004,FL,4,H0FL04066,True,Ander,Crenshaw,R ,2004,48129,0.8996999999999999,,,256157,0.9954999999999999
-FL|4|Deborah Katz|Pueschel|2004,FL,4,H0FL04033,False,Deborah Katz,Pueschel,R ,2004,5368,0.1003,,,,
+FL|4|Ander|Crenshaw|2004,FL,4,H0FL04066,True,Ander,Crenshaw,R,2004,48129,0.8996999999999999,,,256157,0.9954999999999999
+FL|4|Deborah Katz|Pueschel|2004,FL,4,H0FL04033,False,Deborah Katz,Pueschel,R,2004,5368,0.1003,,,,
 FL|4|Richard|Grayson|2004,FL,4,H4FL09034,False,Richard,Grayson,W,2004,,,,,1170,0.0045000000000000005
 "FL|5|Virginia ""Ginny""|Brown-Waite|2004",FL,5,H2FL05127,True,"Virginia ""Ginny""",Brown-Waite,R,2004,0,,,,240315,0.6593000000000001
-FL|5|Robert G.|Whittel|2004,FL,5,H4FL05057,False,Robert G.,Whittel,D ,2004,15938,0.3121,,,124140,0.3406
-FL|5|John|Russell|2004,FL,5,H4FL05032,False,John,Russell,D ,2004,13388,0.2622,,,,
-FL|5|Brian |Moore|2004,FL,5,H2FL05143,False,Brian ,Moore,D ,2004,11532,0.22579999999999997,,,,
-FL|5|Rick|Penberthy|2004,FL,5,H4FL05040,False,Rick,Penberthy,D ,2004,10211,0.1999,,,,
+FL|5|Robert G.|Whittel|2004,FL,5,H4FL05057,False,Robert G.,Whittel,D,2004,15938,0.3121,,,124140,0.3406
+FL|5|John|Russell|2004,FL,5,H4FL05032,False,John,Russell,D,2004,13388,0.2622,,,,
+FL|5|Brian|Moore|2004,FL,5,H2FL05143,False,Brian,Moore,D,2004,11532,0.22579999999999997,,,,
+FL|5|Rick|Penberthy|2004,FL,5,H4FL05040,False,Rick,Penberthy,D,2004,10211,0.1999,,,,
 FL|6|Clifford (Cliff) B.|Stearns|2004,FL,6,H8FL06056,True,Clifford (Cliff) B.,Stearns,R,2004,0,,,,211137,0.644
 FL|6|David E.|Bruderly|2004,FL,6,H2FL06091,False,David E.,Bruderly,D,2004,0,,,,116680,0.35590000000000005
 FL|6|N.W.|O'Brien|2004,FL,6,H6FL06092,False,N.W.,O'Brien,W,2004,,,,,36,0.0001
 FL|7|John L.|Mica|2004,FL,7,H2FL08055,True,John L.,Mica,R,2004,0,,,,0,
 FL|8|Ric|Keller|2004,FL,8,H0FL08042,True,Ric,Keller,R,2004,0,,,,172232,0.6052000000000001
 FL|8|Stephen|Murray|2004,FL,8,H4FL08069,False,Stephen,Murray,D,2004,0,,,,112343,0.3948
-FL|9|Michael|Bilirakis|2004,FL,9,H2FL09012,True,Michael,Bilirakis,R ,2004,44579,0.8448,,,284035,0.9991
-FL|9|Joseph H. |Stanley|2004,FL,9,H4FL09075,False,Joseph H. ,Stanley,R ,2004,8189,0.1552,,,,
+FL|9|Michael|Bilirakis|2004,FL,9,H2FL09012,True,Michael,Bilirakis,R,2004,44579,0.8448,,,284035,0.9991
+FL|9|Joseph H.|Stanley|2004,FL,9,H4FL09075,False,Joseph H.,Stanley,R,2004,8189,0.1552,,,,
 FL|9|Andrew|Pasayan|2004,FL,9,H2FL09095,False,Andrew,Pasayan,W,2004,,,,,243,0.0009
 FL|10|C.W. Bill|Young|2004,FL,10,H6FL06035,True,C.W. Bill,Young,R,2004,0,,,,207175,0.6933
 "FL|10|Robert D. ""Bob""|Derry|2004",FL,10,H4FL10040,False,"Robert D. ""Bob""",Derry,D,2004,0,,,,91658,0.30670000000000003
 FL|11|Jim|Davis|2004,FL,11,H6FL00087,True,Jim,Davis,D,2004,0,,,,191780,0.8581
 FL|11|Robert Edward|Johnson|2004,FL,11,H4FL11048,False,Robert Edward,Johnson,LBT,2004,,,,,31579,0.1413
 FL|11|Karl M.|Butts|2004,FL,11,H4FL11055,False,Karl M.,Butts,W,2004,,,,,122,0.0005
-FL|12|Adam H.|Putnam|2004,FL,12,H0FL12051,True,Adam H.,Putnam,R ,2004,42605,0.9231999999999999,,,179204,0.6489
-FL|12|Robert|Wirengard|2004,FL,12,H4FL12046,False,Robert,Wirengard,R ,2004,3546,0.0768,,,,
-FL|12|Bob|Hagenmaier|2004,FL,12,H4FL12038,False,Bob,Hagenmaier,D ,2004,21044,0.5715,,,96965,0.35109999999999997
-FL|12|Jeff|Siemer|2004,FL,12,H4FL12020,False,Jeff,Siemer,D ,2004,15781,0.4285,,,,
+FL|12|Adam H.|Putnam|2004,FL,12,H0FL12051,True,Adam H.,Putnam,R,2004,42605,0.9231999999999999,,,179204,0.6489
+FL|12|Robert|Wirengard|2004,FL,12,H4FL12046,False,Robert,Wirengard,R,2004,3546,0.0768,,,,
+FL|12|Bob|Hagenmaier|2004,FL,12,H4FL12038,False,Bob,Hagenmaier,D,2004,21044,0.5715,,,96965,0.35109999999999997
+FL|12|Jeff|Siemer|2004,FL,12,H4FL12020,False,Jeff,Siemer,D,2004,15781,0.4285,,,,
 FL|13|Katherine|Harris|2004,FL,13,H2FL13113,True,Katherine,Harris,R,2004,0,,,,190477,0.5529999999999999
 FL|13|Jan|Schneider|2004,FL,13,H2FL13139,False,Jan,Schneider,D,2004,20573,0.46759999999999996,,,153961,0.447
 FL|13|Christine|Jennings|2004,FL,13,H4FL13069,False,Christine,Jennings,D,2004,16581,0.3768,,,,
 FL|13|Floyd Jay|Winters|2004,FL,13,H4FL13051,False,Floyd Jay,Winters,D,2004,2966,0.0674,,,,
-FL|13|C.J.|Czaia|2004,FL,13,H4FL13044,False,C.J.,Czaia,D ,2004,3880,0.0882,,,,
+FL|13|C.J.|Czaia|2004,FL,13,H4FL13044,False,C.J.,Czaia,D,2004,3880,0.0882,,,,
 FL|14|Connie|Mack|2004,FL,14,H4FL14059,False,Connie,Mack,R,2004,27526,0.3582,,,226662,0.6759000000000001
 FL|14|Carole|Green|2004,FL,14,H4FL14067,False,Carole,Green,R,2004,24767,0.3223,,,,
-FL|14|Andy|Coy|2004,FL,14,H2FL14087,False,Andy,Coy,R ,2004,17089,0.2224,,,,
+FL|14|Andy|Coy|2004,FL,14,H2FL14087,False,Andy,Coy,R,2004,17089,0.2224,,,,
 FL|14|Frank|Schwerin|2004,FL,14,H4FL14083,False,Frank,Schwerin,R,2004,7465,0.0971,,,,
 FL|14|Robert M.|Neeld|2004,FL,14,H4FL14091,False,Robert M.,Neeld,D,2004,0,,,,108672,0.32409999999999994
 FL|15|Dave|Weldon|2004,FL,15,H4FL15114,True,Dave,Weldon,R,2004,0,,,,210388,0.6535
@@ -434,8 +434,8 @@ FL|16|Jeff|Fisher|2004,FL,16,H4FL16088,False,Jeff,Fisher,D,2004,0,,,,101247,0.31
 FL|17|Kendrick B.|Meek|2004,FL,17,H2FL17056,True,Kendrick B.,Meek,D,2004,0,,,,178690,0.9959
 FL|17|Omari|Musa|2004,FL,17,H4FL17029,False,Omari,Musa,W,2004,,,,,734,0.0040999999999999995
 FL|18|Ileana|Ros-Lehtinen|2004,FL,18,H0FL18025,True,Ileana,Ros-Lehtinen,R,2004,0,,,,143647,0.6473
-FL|18|Sam|Sheldon|2004,FL,18,H4FL18035,False,Sam,Sheldon,D ,2004,12869,0.5055,,,78281,0.3527
-FL|18|David Y.|Patlak|2004,FL,18,H4FL18027,False,David Y.,Patlak,D ,2004,12591,0.49450000000000005,,,,
+FL|18|Sam|Sheldon|2004,FL,18,H4FL18035,False,Sam,Sheldon,D,2004,12869,0.5055,,,78281,0.3527
+FL|18|David Y.|Patlak|2004,FL,18,H4FL18027,False,David Y.,Patlak,D,2004,12591,0.49450000000000005,,,,
 FL|19|Robert|Wexler|2004,FL,19,H6FL19038,True,Robert,Wexler,D,2004,0,,,,0,
 FL|20|Debbie Wasserman|Schultz|2004,FL,20,H4FL20023,False,Debbie Wasserman,Schultz,D,2004,0,,,,191195,0.7019
 FL|20|Margaret|Hostetter|2004,FL,20,H4FL20031,False,Margaret,Hostetter,R,2004,0,,,,81213,0.2981
@@ -446,10 +446,10 @@ FL|22|Jim|Stork|2004,FL,22,H4FL22052,False,Jim,Stork,D,2004,0,,,,,
 FL|22|Robin|Rorapaugh|2004,FL,22,H4FL22078,False,Robin,Rorapaugh,D,2004,,,,,108258,0.3529
 FL|22|Jack|McLain|2004,FL,22,H2FL16074,False,Jack,McLain,CPF,2004,,,,,5260,0.0171
 FL|22|Don|Kennedy|2004,FL,22,H4FL22060,False,Don,Kennedy,W,2004,,,,,627,0.002
-FL|23|Alcee L.|Hastings|2004,FL,23,H2FL23021,True,Alcee L.,Hastings,D ,2004,49284,0.7423000000000001,,,0,
-FL|23|Keith A.|Clayborne|2004,FL,23,H4FL23043,False,Keith A.,Clayborne,D ,2004,17106,0.2577,,,,
+FL|23|Alcee L.|Hastings|2004,FL,23,H2FL23021,True,Alcee L.,Hastings,D,2004,49284,0.7423000000000001,,,0,
+FL|23|Keith A.|Clayborne|2004,FL,23,H4FL23043,False,Keith A.,Clayborne,D,2004,17106,0.2577,,,,
 FL|24|Tom|Feeney|2004,FL,24,H2FL00250,True,Tom,Feeney,R,2004,0,,,,0,
-FL|25|Mario|Diaz-Balart|2004,FL,25,H2FL25018,True,Mario,Diaz-Balart,R ,2004,0,,,,0,
+FL|25|Mario|Diaz-Balart|2004,FL,25,H2FL25018,True,Mario,Diaz-Balart,R,2004,0,,,,0,
 FL|S|Mel|Martinez|2004,FL,S,S4FL00298,False,Mel,Martinez,R,2004,522994,0.4486,,,3672864,0.4943
 FL|S|Bill|McCollum|2004,FL,S,S8FL00075,False,Bill,McCollum,R,2004,360474,0.30920000000000003,,,,
 FL|S|Doug|Gallagher|2004,FL,S,S4FL00348,False,Doug,Gallagher,R,2004,158360,0.1358,,,,
@@ -466,7 +466,7 @@ FL|S|Dennis F.|Bradley|2004,FL,S,S4FL00314,False,Dennis F.,Bradley,V,2004,,,,,16
 FL|S|Mark|Stufft|2004,FL,S,S4FL00405,False,Mark,Stufft,W,2004,,,,,119,0.0
 FL|S|Nancy|Travis|2004,FL,S,S4FK00413,False,Nancy,Travis,W,2004,,,,,27,0.0
 FL|S|Rachele|Fruit|2004,FL,S,S4FL00397,False,Rachele,Fruit,W,2004,,,,,25,0.0
-FL|S|Peter|Blass|2004,FL,S,S4FL00272,False,Peter,Blass,W ,2004,,,,,16,0.0
+FL|S|Peter|Blass|2004,FL,S,S4FL00272,False,Peter,Blass,W,2004,,,,,16,0.0
 GA|1|Jack|Kingston|2004,GA,1,H2GA01157,True,Jack,Kingston,R,2004,43942,1.0,,,188347,1.0
 GA|2|Sanford|Bishop|2004,GA,2,H2GA02031,True,Sanford,Bishop,D,2004,67126,1.0,,,129984,0.6679
 GA|2|Dave|Eversman|2004,GA,2,H4GA02045,False,Dave,Eversman,R,2004,18033,1.0,,,64645,0.3321
@@ -524,7 +524,7 @@ GU|0|Madeleine Z.|Bordallo|2004,GU,0,H2GU00033,True,Madeleine Z.,Bordallo,D,2004
 HI|1|Neil|Abercrombie|2004,HI,1,H6HI01121,True,Neil,Abercrombie,D,2004,73934,1.0,,,128567,0.6297
 HI|1|Dalton|Tanonaka|2004,HI,1,H4HI01076,False,Dalton,Tanonaka,R,2004,26475,1.0,,,69371,0.3398
 HI|1|Elyssa (Erin O'Bryn)|Young|2004,HI,1,H4HI01092,False,Elyssa (Erin O'Bryn),Young,LBT,2004,455,1.0,,,6243,0.030600000000000002
-HI|2|Ed |Case|2004,HI,2,H2HI02128,True,Ed ,Case,D,2004,73705,0.9470000000000001,,,133317,0.6277
+HI|2|Ed|Case|2004,HI,2,H2HI02128,True,Ed,Case,D,2004,73705,0.9470000000000001,,,133317,0.6277
 HI|2|John|Gentile|2004,HI,2,H4HI02074,False,John,Gentile,D,2004,4121,0.053,,,,
 HI|2|Mike|Gabbard|2004,HI,2,H0HI01116,False,Mike,Gabbard,R,2004,21698,0.8329000000000001,,,79072,0.37229999999999996
 HI|2|Inam|Rahman|2004,HI,2,H4HI02066,False,Inam,Rahman,R,2004,2102,0.08070000000000001,,,,
@@ -547,7 +547,7 @@ ID|1|Naomi|Preston|2004,ID,1,H4ID01073,False,Naomi,Preston,D,2004,13250,1.0,,,90
 ID|2|Mike|Simpson|2004,ID,2,H8ID02064,True,Mike,Simpson,R,2004,57124,1.0,,,193704,0.7073999999999999
 ID|2|Lin|Whitworth|2004,ID,2,H4ID02055,False,Lin,Whitworth,D,2004,12491,1.0,,,80133,0.2926
 ID|S|Mike|Crapo|2004,ID,S,S8ID00027,True,Mike,Crapo,R,2004,118286,1.0,,,499796,0.9918
-ID|S|Scott F. |McClure|2004,ID,S,S4ID00059,False,Scott F. ,McClure,W(D),2004,,,,,4136,0.008199999999999999
+ID|S|Scott F.|McClure|2004,ID,S,S4ID00059,False,Scott F.,McClure,W(D),2004,,,,,4136,0.008199999999999999
 IL|1|Bobby L.|Rush|2004,IL,1,H2IL01042,True,Bobby L.,Rush,D,2004,102540,1.0,,,212109,0.8486
 IL|1|Raymond G.|Wardingley|2004,IL,1,H0IL01111,False,Raymond G.,Wardingley,R,2004,7190,1.0,,,37840,0.1514
 "IL|2|Jesse L.|Jackson, Jr.|2004",IL,2,H6IL02124,True,Jesse L.,"Jackson, Jr.",D,2004,106506,0.8855,,,207535,0.8848999999999999
@@ -563,19 +563,19 @@ IL|4|Luis V.|Gutierrez|2004,IL,4,H2IL08039,True,Luis V.,Gutierrez,D,2004,37382,1
 IL|4|Tony|Cisneros|2004,IL,4,H2IL04129,False,Tony,Cisneros,R,2004,3296,1.0,,,15536,0.1241
 IL|4|Jake|Witmer|2004,IL,4,H4IL04067,False,Jake,Witmer,LBT,2004,42,1.0,,,4845,0.0387
 IL|5|Rahm|Emanuel|2004,IL,5,H2IL05092,True,Rahm,Emanuel,D,2004,60821,0.8323,,,158400,0.7618
-IL|5|Mark Arnold |Fredrickson|2004,IL,5,H2IL05142,False,Mark Arnold ,Fredrickson,D,2004,12255,0.1677,,,,
+IL|5|Mark Arnold|Fredrickson|2004,IL,5,H2IL05142,False,Mark Arnold,Fredrickson,D,2004,12255,0.1677,,,,
 IL|5|Bruce|Best|2004,IL,5,H4IL05148,False,Bruce,Best,R,2004,10148,1.0,,,49530,0.2382
 IL|6|Henry J.|Hyde|2004,IL,6,H6IL06026,True,Henry J.,Hyde,R,2004,50583,1.0,,,139627,0.5583
 IL|6|Christine|Cegelis|2004,IL,6,H4IL06096,False,Christine,Cegelis,D,2004,23253,0.6431,,,110470,0.44170000000000004
 IL|6|Tom|Berry|2004,IL,6,H4IL06039,False,Tom,Berry,D,2004,12905,0.3569,,,,
 IL|7|Danny K.|Davis|2004,IL,7,H4IL07037,True,Danny K.,Davis,D,2004,84950,0.8220999999999999,,,221133,0.8613
 IL|7|Anita|Rivkin-Carothers|2004,IL,7,H4IL07110,False,Anita,Rivkin-Carothers,D,2004,15190,0.147,,,,
-IL|7|Robert |Dallas|2004,IL,7,H0IL07084,False,Robert ,Dallas,D,2004,3191,0.030899999999999997,,,,
+IL|7|Robert|Dallas|2004,IL,7,H0IL07084,False,Robert,Dallas,D,2004,3191,0.030899999999999997,,,,
 IL|7|Antonio|Davis-Fairman|2004,IL,7,H4IL07136,False,Antonio,Davis-Fairman,R,2004,6780,1.0,,,35603,0.1387
 IL|8|Melissa|Bean|2004,IL,8,H2IL08088,False,Melissa,Bean,D,2004,26740,0.7805,,,139792,0.517
-IL|8|Wiliam C. |Scheurer|2004,IL,8,H4IL08092,False,Wiliam C. ,Scheurer,D,2004,7518,0.2195,,,,
-IL|8|Philip |Crane|2004,IL,8,H6IL12016,True,Philip ,Crane,R,2004,35412,0.6868000000000001,,,130601,0.483
-IL|8|David W. |Phelps|2004,IL,8,H8IL19066,False,David W. ,Phelps,R,2004,16146,0.3132,,,,
+IL|8|Wiliam C.|Scheurer|2004,IL,8,H4IL08092,False,Wiliam C.,Scheurer,D,2004,7518,0.2195,,,,
+IL|8|Philip|Crane|2004,IL,8,H6IL12016,True,Philip,Crane,R,2004,35412,0.6868000000000001,,,130601,0.483
+IL|8|David W.|Phelps|2004,IL,8,H8IL19066,False,David W.,Phelps,R,2004,16146,0.3132,,,,
 IL|9|Janice D.|Schakowsky|2004,IL,9,H8IL09067,True,Janice D.,Schakowsky,D,2004,70736,1.0,,,175282,0.7574
 IL|9|Kurt J.|Eckhardt|2004,IL,9,H4IL09066,False,Kurt J.,Eckhardt,R,2004,,,,,56135,0.2426
 IL|10|Mark Steven|Kirk|2004,IL,10,H0IL10120,True,Mark Steven,Kirk,R,2004,37764,1.0,,,177493,0.6414
@@ -590,13 +590,13 @@ IL|12|Patricia Elaine|Beard|2004,IL,12,,False,Patricia Elaine,Beard,W,2004,,,,,2
 IL|13|Judy|Biggert|2004,IL,13,H8IL13069,True,Judy,Biggert,R,2004,46861,0.9951000000000001,,,200472,0.6502
 IL|13|Bob|Hart|2004,IL,13,H4IL13167,False,Bob,Hart,W(R),2004,231,0.0049,,,,
 IL|13|Gloria Schor|Andersen|2004,IL,13,H4IL13159,False,Gloria Schor,Andersen,D,2004,37636,1.0,,,107836,0.34979999999999994
-IL|13|Mark Alan|Mastrogiovannia|2004,IL,13,,False,Mark Alan,Mastrogiovannia,W ,2004,,,,,4,0.0
+IL|13|Mark Alan|Mastrogiovannia|2004,IL,13,,False,Mark Alan,Mastrogiovannia,W,2004,,,,,4,0.0
 IL|14|J. Dennis|Hastert|2004,IL,14,H6IL14095,True,J. Dennis,Hastert,R,2004,54168,1.0,,,191618,0.6862999999999999
 IL|14|Ruben|Zamora|2004,IL,14,H4IL14116,False,Ruben,Zamora,D,2004,,,,,87590,0.31370000000000003
 IL|15|Tim|Johnson|2004,IL,15,H0IL15053,True,Tim,Johnson,R,2004,53150,1.0,,,178114,0.6104999999999999
 IL|15|David|Gill|2004,IL,15,H4IL15055,False,David,Gill,D,2004,21323,0.7381,,,113625,0.3895
 "IL|15|Ralph L.|Langenheim, Jr.|2004",IL,15,H4IL15063,False,Ralph L.,"Langenheim, Jr.",D,2004,7565,0.2619,,,,
-IL|16|Donald A. |Manzullo|2004,IL,16,H0IL16085,True,Donald A. ,Manzullo,R,2004,59507,1.0,,,204350,0.6908
+IL|16|Donald A.|Manzullo|2004,IL,16,H0IL16085,True,Donald A.,Manzullo,R,2004,59507,1.0,,,204350,0.6908
 IL|16|John H.|Kutsch|2004,IL,16,H2IL16032,False,John H.,Kutsch,D,2004,34141,1.0,,,91452,0.30920000000000003
 IL|16|Tom|Carlson|2004,IL,16,,False,Tom,Carlson,W,2004,,,,,4,0.0
 IL|17|Lane A.|Evans|2004,IL,17,H2IL19010,True,Lane A.,Evans,D,2004,46328,1.0,,,172320,0.6068
@@ -604,18 +604,18 @@ IL|17|Andrea Lane|Zinga|2004,IL,17,H4IL17069,False,Andrea Lane,Zinga,R,2004,3016
 IL|18|Ray|LaHood|2004,IL,18,H4IL18059,True,Ray,LaHood,R,2004,52026,1.0,,,216047,0.7023999999999999
 IL|18|Steve|Waterworth|2004,IL,18,H4IL18091,False,Steve,Waterworth,D,2004,25838,1.0,,,91548,0.29760000000000003
 IL|19|John M.|Shimkus|2004,IL,19,H2IL20042,True,John M.,Shimkus,R,2004,38892,1.0,,,213451,0.6936
-IL|19|Tim |Bagwell|2004,IL,19,H4IL19073,False,Tim ,Bagwell,D,2004,32795,1.0,,,94303,0.3064
+IL|19|Tim|Bagwell|2004,IL,19,H4IL19073,False,Tim,Bagwell,D,2004,32795,1.0,,,94303,0.3064
 IL|S|Barack|Obama|2004,IL,S,S4IL00180,False,Barack,Obama,D,2004,655923,0.5277000000000001,,,3597456,0.6997
 IL|S|Daniel W.|Hynes|2004,IL,S,S4IL00206,False,Daniel W.,Hynes,D,2004,294717,0.2371,,,,
 IL|S|M. Blair|Hull|2004,IL,S,S4IL00172,False,M. Blair,Hull,D,2004,134453,0.1082,,,,
-IL|S|Maria |Pappas|2004,IL,S,S4IL00347,False,Maria ,Pappas,D,2004,74987,0.0603,,,,
+IL|S|Maria|Pappas|2004,IL,S,S4IL00347,False,Maria,Pappas,D,2004,74987,0.0603,,,,
 IL|S|Gery|Chico|2004,IL,S,S4IL00164,False,Gery,Chico,D,2004,53433,0.043,,,,
-IL|S|Nancy |Skinner|2004,IL,S,S4IL00255,False,Nancy ,Skinner,D,2004,16098,0.013000000000000001,,,,
+IL|S|Nancy|Skinner|2004,IL,S,S4IL00255,False,Nancy,Skinner,D,2004,16098,0.013000000000000001,,,,
 IL|S|Joyce|Washington|2004,IL,S,S4IL00198,False,Joyce,Washington,D,2004,13375,0.0108,,,,
 IL|S|Estella Johnson|Hunt|2004,IL,S,,False,Estella Johnson,Hunt,W(D),2004,10,0.0,,,,
 IL|S|Alan|Keyes|2004,IL,S,S4IL00404,False,Alan,Keyes,R,2004,,,,,1390690,0.2705
 IL|S|Jack|Ryan|2004,IL,S,S4IL00230,False,Jack,Ryan,R,2004,234791,0.35479999999999995,,,,
-IL|S|Jim|Oberweis |2004,IL,S,S2IL00119,False,Jim,Oberweis ,R,2004,155794,0.2354,,,,
+IL|S|Jim|Oberweis|2004,IL,S,S2IL00119,False,Jim,Oberweis,R,2004,155794,0.2354,,,,
 IL|S|Steven J.|Rauschenberger|2004,IL,S,S4IL00263,False,Steven J.,Rauschenberger,R,2004,132655,0.2004,,,,
 IL|S|Andy|McKenna|2004,IL,S,S4IL00222,False,Andy,McKenna,R,2004,97238,0.1469,,,,
 IL|S|Jonathan C.|Wright|2004,IL,S,S4IL00354,False,Jonathan C.,Wright,R,2004,17189,0.026000000000000002,,,,
@@ -627,7 +627,7 @@ IL|S|Jerry|Kohn|2004,IL,S,S4IL00412,False,Jerry,Kohn,LBT,2004,,,,,69253,0.013500
 IL|S|Bill|Kuhnke|2004,IL,S,,False,Bill,Kuhnke,W,2004,,,,,2268,0.0004
 IL|S|Scott|Doody|2004,IL,S,,False,Scott,Doody,W,2004,,,,,339,0.0001
 IL|S|Donald|McArthur-Self|2004,IL,S,,False,Donald,McArthur-Self,W,2004,,,,,134,0.0
-IL|S|Kathy|Campbell|2004,IL,S,,False,Kathy,Campbell,W ,2004,,,,,129,0.0
+IL|S|Kathy|Campbell|2004,IL,S,,False,Kathy,Campbell,W,2004,,,,,129,0.0
 IL|S|Shaun L.|Bill|2004,IL,S,,False,Shaun L.,Bill,W,2004,,,,,37,0.0
 IL|S|Marcus|Hester|2004,IL,S,,False,Marcus,Hester,W,2004,,,,,23,0.0
 IL|S|Tom|Carlson|2004,IL,S,,False,Tom,Carlson,W,2004,,,,,20,0.0
@@ -787,15 +787,15 @@ ME|1|Thomas H.|Allen|2004,ME,1,H6ME01157,True,Thomas H.,Allen,D,2004,34524,1.0,,
 ME|2|Michael H.|Michaud|2004,ME,2,H2ME02097,True,Michael H.,Michaud,D,2004,30609,1.0,,,199303,0.5803
 ME|2|Brian N.|Hamel|2004,ME,2,H4ME02176,False,Brian N.,Hamel,R,2004,23832,1.0,,,135547,0.3947
 ME|2|Carl|Cooley|2004,ME,2,H4ME02184,False,Carl,Cooley,U (SEP),2004,,,,,8586,0.025
-MD|1|Wayne T. |Gilchrest|2004,MD,1,H8MD01037,True,Wayne T. ,Gilchrest,R,2004,23590,0.6192,,,245149,0.7576999999999999
+MD|1|Wayne T.|Gilchrest|2004,MD,1,H8MD01037,True,Wayne T.,Gilchrest,R,2004,23590,0.6192,,,245149,0.7576999999999999
 MD|1|Richard F.|Colburn|2004,MD,1,H0MD01042,False,Richard F.,Colburn,R,2004,14508,0.38079999999999997,,,,
 MD|1|Ann D.|Tamlyn|2004,MD,1,H2MD01113,False,Ann D.,Tamlyn,D,2004,14492,0.3652,,,,
-MD|1|Kostas |Alexakis |2004,MD,1,H4MD01085,False,Kostas ,Alexakis ,D,2004,10106,0.2547,,,77872,0.2407
+MD|1|Kostas|Alexakis|2004,MD,1,H4MD01085,False,Kostas,Alexakis,D,2004,10106,0.2547,,,77872,0.2407
 MD|1|Steven R.|Eastaugh|2004,MD,1,H6MD01114,False,Steven R.,Eastaugh,D,2004,7816,0.19699999999999998,,,,
 MD|1|Harry E.|Sampson|2004,MD,1,H4MD01077,False,Harry E.,Sampson,D,2004,7264,0.18309999999999998,,,,
-MD|2|C.A. Dutch |Ruppersberger|2004,MD,2,H2MD02160,True,C.A. Dutch ,Ruppersberger,D,2004,41509,1.0,,,164751,0.6662
-MD|2|Jane |Brooks|2004,MD,2,H4MD02125,False,Jane ,Brooks,R,2004,6751,0.5172,,,75812,0.3066
-MD|2|Dave |Harvilicz|2004,MD,2,H4MD02133,False,Dave ,Harvilicz,R,2004,3515,0.2693,,,,
+MD|2|C.A. Dutch|Ruppersberger|2004,MD,2,H2MD02160,True,C.A. Dutch,Ruppersberger,D,2004,41509,1.0,,,164751,0.6662
+MD|2|Jane|Brooks|2004,MD,2,H4MD02125,False,Jane,Brooks,R,2004,6751,0.5172,,,75812,0.3066
+MD|2|Dave|Harvilicz|2004,MD,2,H4MD02133,False,Dave,Harvilicz,R,2004,3515,0.2693,,,,
 MD|2|Michael J.|Littleton|2004,MD,2,H4MD02141,False,Michael J.,Littleton,R,2004,2788,0.21359999999999998,,,,
 MD|2|Keith|Salkowski|2004,MD,2,H4MD02158,False,Keith,Salkowski,GRN,2004,,,,,6508,0.0263
 MD|3|Benjamin L.|Cardin|2004,MD,3,H6MD03177,True,Benjamin L.,Cardin,D,2004,54398,0.8981999999999999,,,182066,0.6339
@@ -807,33 +807,33 @@ MD|3|Patsy|Allen|2004,MD,3,H4MD03107,False,Patsy,Allen,GRN,2004,,,,,7895,0.0275
 MD|4|Albert R.|Wynn|2004,MD,4,H2MD05361,True,Albert R.,Wynn,D,2004,48643,0.84,,,196809,0.7515999999999999
 MD|4|George E.|McDermott|2004,MD,4,H4MD04071,False,George E.,McDermott,D,2004,9268,0.16,,,,
 MD|4|John|McKinnis|2004,MD,4,H4MD04055,False,John,McKinnis,R,2004,2258,0.3197,,,52907,0.20199999999999999
-MD|4|Roscoe M.|Moore Jr. |2004,MD,4,H4MD04063,False,Roscoe M.,Moore Jr. ,R,2004,1578,0.2234,,,,
+MD|4|Roscoe M.|Moore Jr.|2004,MD,4,H4MD04063,False,Roscoe M.,Moore Jr.,R,2004,1578,0.2234,,,,
 MD|4|John B.|Kimble|2004,MD,4,H6MD04175,False,John B.,Kimble,R,2004,1131,0.16010000000000002,,,,
-MD|4|Patrick A. |Schaeffer Jr. |2004,MD,4,H4MD04097,False,Patrick A. ,Schaeffer Jr. ,R,2004,805,0.114,,,,
+MD|4|Patrick A.|Schaeffer Jr.|2004,MD,4,H4MD04097,False,Patrick A.,Schaeffer Jr.,R,2004,805,0.114,,,,
 "MD|4|William R. ""Bill""|Bernetich|2004",MD,4,H4MD04089,False,"William R. ""Bill""",Bernetich,R,2004,673,0.0953,,,,
-MD|4|Floyd W. |Anderson Jr.|2004,MD,4,H2MD04190,False,Floyd W. ,Anderson Jr.,R,2004,618,0.0875,,,,
+MD|4|Floyd W.|Anderson Jr.|2004,MD,4,H2MD04190,False,Floyd W.,Anderson Jr.,R,2004,618,0.0875,,,,
 MD|4|Theresa Mitchell|Dudley|2004,MD,4,H4MD04105,False,Theresa Mitchell,Dudley,GRN,2004,,,,,11885,0.0454
 MD|4|John B.|Kimble|2004,MD,4,,False,John B.,Kimble,W,2004,,,,,6,0.0
 MD|5|Steny H.|Hoyer|2004,MD,5,H2MD05155,True,Steny H.,Hoyer,D,2004,49218,1.0,,,204867,0.6867
 MD|5|Brad|Jewitt|2004,MD,5,H4MD05110,False,Brad,Jewitt,R,2004,5545,0.375,,,87189,0.2923
 MD|5|Joseph T.|Crawford|2004,MD,5,H2MD05452,False,Joseph T.,Crawford,R,2004,4992,0.33759999999999996,,,,
-MD|5|Patrick Edward|Flaherty |2004,MD,5,H4MD05128,False,Patrick Edward,Flaherty ,R,2004,4251,0.2875,,,,
+MD|5|Patrick Edward|Flaherty|2004,MD,5,H4MD05128,False,Patrick Edward,Flaherty,R,2004,4251,0.2875,,,,
 MD|5|Bob S.|Auerbach|2004,MD,5,H2MD05445,False,Bob S.,Auerbach,GRN,2004,,,,,4224,0.014199999999999999
 MD|5|Steve|Krukar|2004,MD,5,H4MD05136,False,Steve,Krukar,CON,2004,,,,,1849,0.0062
 MD|6|Roscoe G.|Bartlett|2004,MD,6,H2MD06054,True,Roscoe G.,Bartlett,R,2004,31867,0.7027,,,206076,0.6738
 MD|6|Scott L.|Rolle|2004,MD,6,H4MD06118,False,Scott L.,Rolle,R,2004,13481,0.2973,,,,
-MD|6|Kenneth T.|Bosley |2004,MD,6,H8MD02050,False,Kenneth T.,Bosley ,D,2004,7704,0.2293,,,90108,0.29460000000000003
+MD|6|Kenneth T.|Bosley|2004,MD,6,H8MD02050,False,Kenneth T.,Bosley,D,2004,7704,0.2293,,,90108,0.29460000000000003
 MD|6|Rodney D.|Fox|2004,MD,6,H4MD06100,False,Rodney D.,Fox,D,2004,6716,0.1999,,,,
 MD|6|Kevin M.|Shaffer|2004,MD,6,H2MD06112,False,Kevin M.,Shaffer,D,2004,5739,0.17079999999999998,,,,
 MD|6|James Daniel|Benson|2004,MD,6,H4MD06126,False,James Daniel,Benson,D,2004,5524,0.16440000000000002,,,,
 MD|6|Richard|Nacewicz|2004,MD,6,H4MD06134,False,Richard,Nacewicz,D,2004,4911,0.1462,,,,
-MD|6|Ty|Unglebower |2004,MD,6,H4MD06159,False,Ty,Unglebower ,D,2004,2026,0.0603,,,,
+MD|6|Ty|Unglebower|2004,MD,6,H4MD06159,False,Ty,Unglebower,D,2004,2026,0.0603,,,,
 MD|6|Robert J.|Rhudy|2004,MD,6,H4MD06142,False,Robert J.,Rhudy,D,2004,981,0.0292,,,,
 MD|6|Gregory J.|Hemingway|2004,MD,6,H4MD06175,False,Gregory J.,Hemingway,GRN,2004,,,,,9324,0.0305
 MD|7|Elijah E.|Cummings|2004,MD,7,H6MD07160,True,Elijah E.,Cummings,D,2004,53015,0.9143000000000001,,,179189,0.7338
 MD|7|Charles Curtis|McPeek Sr.|2004,MD,7,H2MD06096,False,Charles Curtis,McPeek Sr.,D,2004,4972,0.0857,,,,
 MD|7|Tony|Salazar|2004,MD,7,H4MD07033,False,Tony,Salazar,R,2004,4815,0.5218,,,60102,0.24609999999999999
-MD|7|Joseph E. |Ward|2004,MD,7,H6MD07376,False,Joseph E. ,Ward,R,2004,3960,0.4292,,,,
+MD|7|Joseph E.|Ward|2004,MD,7,H6MD07376,False,Joseph E.,Ward,R,2004,3960,0.4292,,,,
 MD|7|Almaajid Muhammad|El|2004,MD,7,H4MD07041,False,Almaajid Muhammad,El,R,2004,452,0.049,,,,
 MD|7|Virginia T.|Rodino|2004,MD,7,H4MD07058,False,Virginia T.,Rodino,GRN,2004,,,,,4727,0.0194
 MD|8|Chris|Van Hollen|2004,MD,8,H2MD08126,True,Chris,Van Hollen,D,2004,67805,0.9109,,,215129,0.7478
@@ -845,14 +845,14 @@ MD|8|Steve|Rosen|2004,MD,8,H4MD08189,False,Steve,Rosen,R,2004,2306,0.1503,,,,
 MD|S|Barbara A.|Mikulski|2004,MD,S,S6MD00140,True,Barbara A.,Mikulski,D,2004,408848,0.8987999999999999,,,1504691,0.6476999999999999
 MD|S|A. Robert|Kaufman|2004,MD,S,S4MD00178,False,A. Robert,Kaufman,D,2004,32127,0.0706,,,,
 MD|S|Sid|Altman|2004,MD,S,S0MD00218,False,Sid,Altman,D,2004,13901,0.030600000000000002,,,,
-MD|S|E.J. |Pipkin|2004,MD,S,S4MD00152,False,E.J. ,Pipkin,R,2004,70229,0.5058,,,783055,0.3371
-MD|S|John |Stafford|2004,MD,S,S8MD00229,False,John ,Stafford,R,2004,14661,0.1056,,,,
+MD|S|E.J.|Pipkin|2004,MD,S,S4MD00152,False,E.J.,Pipkin,R,2004,70229,0.5058,,,783055,0.3371
+MD|S|John|Stafford|2004,MD,S,S8MD00229,False,John,Stafford,R,2004,14661,0.1056,,,,
 "MD|S|Eileen ""Cookie Baker""|Martin|2004",MD,S,S4MD00210,False,"Eileen ""Cookie Baker""",Martin,R,2004,11748,0.08460000000000001,,,,
-MD|S|Dorothy Corry |Jennings |2004,MD,S,S4MD00194,False,Dorothy Corry ,Jennings ,R,2004,10401,0.07490000000000001,,,,
+MD|S|Dorothy Corry|Jennings|2004,MD,S,S4MD00194,False,Dorothy Corry,Jennings,R,2004,10401,0.07490000000000001,,,,
 MD|S|Earl S.|Gordon|2004,MD,S,S4MD00160,False,Earl S.,Gordon,R,2004,8233,0.0593,,,,
-MD|S|Gene|Zarwell |2004,MD,S,S4MD00228,False,Gene,Zarwell ,R,2004,6865,0.049400000000000006,,,,
+MD|S|Gene|Zarwell|2004,MD,S,S4MD00228,False,Gene,Zarwell,R,2004,6865,0.049400000000000006,,,,
 MD|S|Ray|Bly|2004,MD,S,S4MD00186,False,Ray,Bly,R/W,2004,6244,0.045,,,109,0.0
-MD|S|James A. |Kodak|2004,MD,S,S4MD00202,False,James A. ,Kodak,R,2004,5328,0.0384,,,,
+MD|S|James A.|Kodak|2004,MD,S,S4MD00202,False,James A.,Kodak,R,2004,5328,0.0384,,,,
 MD|S|Corrogan R.|Vaughn|2004,MD,S,S0MD00200,False,Corrogan R.,Vaughn,R,2004,5146,0.0371,,,,
 MD|S|Maria|Allwine|2004,MD,S,S4MD00244,False,Maria,Allwine,GRN,2004,,,,,24816,0.010700000000000001
 MD|S|Thomas|Trump|2004,MD,S,S4MD00236,False,Thomas,Trump,CON,2004,,,,,9009,0.0039000000000000003
@@ -875,7 +875,7 @@ MA|7|Kenneth G.|Chase|2004,MA,7,H4MA07098,False,Kenneth G.,Chase,R,2004,4928,0.9
 MA|7|James O.|Hall|2004,MA,7,H2MA07084,False,James O.,Hall,I,2004,,,,,12139,0.0441
 MA|8|Michael E.|Capuano|2004,MA,8,H8MA08071,True,Michael E.,Capuano,D,2004,32648,0.9842,,,165852,0.9867
 MA|9|Stephen F.|Lynch|2004,MA,9,H2MA09072,True,Stephen F.,Lynch,D,2004,37035,0.9883,,,218167,0.9903
-MA|10|William D. |Delahunt|2004,MA,10,H2MA11060,True,William D. ,Delahunt,D,2004,25939,0.9926999999999999,,,222013,0.6587000000000001
+MA|10|William D.|Delahunt|2004,MA,10,H2MA11060,True,William D.,Delahunt,D,2004,25939,0.9926999999999999,,,222013,0.6587000000000001
 MA|10|Michael J.|Jones|2004,MA,10,H4MA10092,False,Michael J.,Jones,R,2004,11856,0.9921,,,114879,0.3408
 MI|1|Bart|Stupak|2004,MI,1,H2MI01068,True,Bart,Stupak,D,2004,53114,1.0,,,211571,0.6557
 MI|1|Don|Hooper|2004,MI,1,H2MI01092,False,Don,Hooper,R,2004,39964,1.0,,,105706,0.3276
@@ -910,7 +910,7 @@ MI|7|Paul|DeWeese|2004,MI,7,H4MI07087,False,Paul,DeWeese,R,2004,4886,0.0665,,,,
 MI|7|Sharon Marie|Renier|2004,MI,7,H4MI07137,False,Sharon Marie,Renier,D,2004,8944,0.5197999999999999,,,109527,0.36310000000000003
 MI|7|Drew|Walker|2004,MI,7,H4MI07152,False,Drew,Walker,D,2004,4204,0.2443,,,,
 MI|7|Douglas|Wilson|2004,MI,7,H4MI07160,False,Douglas,Wilson,D,2004,4057,0.23579999999999998,,,,
-MI|7|David |Horn|2004,MI,7,H4MI07145,False,David ,Horn,UST,2004,,,,,9032,0.029900000000000003
+MI|7|David|Horn|2004,MI,7,H4MI07145,False,David,Horn,UST,2004,,,,,9032,0.029900000000000003
 MI|7|Jason|Seagraves|2004,MI,7,H4MI07129,False,Jason,Seagraves,GRN,2004,,,,,3996,0.0132
 MI|7|Kenneth|Proctor|2004,MI,7,H2MI07073,False,Kenneth,Proctor,LBT,2004,,,,,3034,0.0101
 MI|8|Mike|Rogers|2004,MI,8,H0MI08042,True,Mike,Rogers,R,2004,53418,1.0,,,207925,0.6108
@@ -923,10 +923,10 @@ MI|9|Steven W.|Reifman|2004,MI,9,H4MI09067,False,Steven W.,Reifman,D,2004,14699,
 MI|9|Bart|Baron|2004,MI,9,H8MI12062,False,Bart,Baron,D,2004,9257,0.3864,,,,
 MI|9|Robert W.|Schubring|2004,MI,9,H2MI09103,False,Robert W.,Schubring,LBT,2004,,,,,6825,0.02
 MI|10|Candice S.|Miller|2004,MI,10,H6MI12181,True,Candice S.,Miller,R,2004,60012,1.0,,,227720,0.6862
-MI|10|Rob |Casey|2004,MI,10,H4MI10065,False,Rob ,Casey,D,2004,20732,1.0,,,98029,0.2954
+MI|10|Rob|Casey|2004,MI,10,H4MI10065,False,Rob,Casey,D,2004,20732,1.0,,,98029,0.2954
 MI|10|Phoebe A.|Basso|2004,MI,10,H4MI10073,False,Phoebe A.,Basso,LBT,2004,,,,,3966,0.012
 MI|10|Anthony|America|2004,MI,10,H0MI10188,False,Anthony,America,NL,2004,,,,,2153,0.006500000000000001
-MI|11|Thaddeus G. |McCotter|2004,MI,11,H2MI00037,True,Thaddeus G. ,McCotter,R,2004,32619,1.0,,,186431,0.5697
+MI|11|Thaddeus G.|McCotter|2004,MI,11,H2MI00037,True,Thaddeus G.,McCotter,R,2004,32619,1.0,,,186431,0.5697
 MI|11|Phillip S.|Truran|2004,MI,11,H4MI11063,False,Phillip S.,Truran,D,2004,15762,0.6892,,,134301,0.4104
 MI|11|Mario Nesr|Fundarski|2004,MI,11,H2MI12115,False,Mario Nesr,Fundarski,D,2004,7108,0.31079999999999997,,,,
 "MI|11|Charles L.|Basso, Jr.|2004",MI,11,H4MI11071,False,Charles L.,"Basso, Jr.",LBT,2004,,,,,6484,0.019799999999999998
@@ -1101,7 +1101,7 @@ NE|3|Joseph A.|Rosberg|2004,NE,3,H4NE03045,False,Joseph A.,Rosberg,NB,2004,28,0.
 NE|3|Duane E.F.|Dufek|2004,NE,3,H6NE01044,False,Duane E.F.,Dufek,NB,2004,14,0.3333,,,,
 NE|3|Joseph A.|Rosberg|2004,NE,3,H4NE03045,False,Joseph A.,Rosberg,N(NB),2004,35,0.7292000000000001,,,,
 NE|3|Duane E.F.|Dufek|2004,NE,3,H6NE01044,False,Duane E.F.,Dufek,N(NB),2004,13,0.2708,,,,
-NE|3|Roy|Guisinger|2004,NE,3,H4NE03052 ,False,Roy,Guisinger,GRN,2004,,,,,1555,0.0062
+NE|3|Roy|Guisinger|2004,NE,3,H4NE03052,False,Roy,Guisinger,GRN,2004,,,,,1555,0.0062
 NV|1|Shelley|Berkley|2004,NV,1,H8NV01071,True,Shelley,Berkley,D,2004,27765,0.8317,,,133569,0.6598
 NV|1|Ann|Reynolds|2004,NV,1,H4NV01096,False,Ann,Reynolds,D,2004,3208,0.09609999999999999,,,,
 NV|1|Brian|Kral|2004,NV,1,H4NV01088,False,Brian,Kral,D,2004,2412,0.0722,,,,
@@ -1116,7 +1116,7 @@ NV|2|Janine|Hansen|2004,NV,2,H2NV02205,False,Janine,Hansen,IAP,2004,,,,,10638,0.
 NV|2|Brendan J.|Trainor|2004,NV,2,H2NV02213,False,Brendan J.,Trainor,LBT,2004,,,,,4997,0.0172
 NV|3|Jon|Porter|2004,NV,3,H0NV01078,True,Jon,Porter,R,2004,0,,,,162240,0.5446
 NV|3|Tom|Gallagher|2004,NV,3,H4NV03019,False,Tom,Gallagher,D,2004,23349,0.695,,,120365,0.40399999999999997
-NV|3|Shanna|Phillips|2004,NV,3,H4NV03043 ,False,Shanna,Phillips,D,2004,2573,0.0766,,,,
+NV|3|Shanna|Phillips|2004,NV,3,H4NV03043,False,Shanna,Phillips,D,2004,2573,0.0766,,,,
 NV|3|Anna|Nevenic|2004,NV,3,H4NV03035,False,Anna,Nevenic,D,2004,2239,0.0666,,,,
 NV|3|Rick|Devoe|2004,NV,3,H4NV03027,False,Rick,Devoe,D,2004,2217,0.066,,,,
 NV|3|Mark|Budetich|2004,NV,3,H2NV03047,False,Mark,Budetich,D,2004,1833,0.0546,,,,
@@ -1192,7 +1192,7 @@ NJ|6|Mac Dara F.X.|Lyden|2004,NJ,6,H2NJ06160,False,Mac Dara F.X.,Lyden,HMR,2004,
 NJ|7|Mike|Ferguson|2004,NJ,7,H8NJ06118,True,Mike,Ferguson,R,2004,13456,1.0,,,162597,0.5688
 NJ|7|Steve|Brozak|2004,NJ,7,H4NJ07065,False,Steve,Brozak,D,2004,9094,1.0,,,119081,0.41659999999999997
 NJ|7|Thomas D.|Abrams|2004,NJ,7,H2NJ12101,False,Thomas D.,Abrams,LBT,2004,,,,,2153,0.0075
-NJ|7|Matthew Angus|Williams|2004,NJ,7,H4NJ07081,False,Matthew Angus,Williams,I  ,2004,,,,,2016,0.0070999999999999995
+NJ|7|Matthew Angus|Williams|2004,NJ,7,H4NJ07081,False,Matthew Angus,Williams,I,2004,,,,,2016,0.0070999999999999995
 "NJ|8|Bill, Jr.|Pascrell|2004",NJ,8,H6NJ08118,True,"Bill, Jr.",Pascrell,D,2004,12143,1.0,,,152001,0.6945999999999999
 NJ|8|George|Ajjan|2004,NJ,8,H4NJ08063,False,George,Ajjan,R,2004,4506,1.0,,,62747,0.2868
 NJ|8|Joseph A.|Fortunato|2004,NJ,8,H0NJ08095,False,Joseph A.,Fortunato,GRN,2004,,,,,4072,0.018600000000000002
@@ -1268,7 +1268,7 @@ NY|6|Gregory W.|Meeks|2004,NY,6,H8NY06048,True,Gregory W.,Meeks,WF,2004,0,,,,456
 NY|7|Joseph|Crowley|2004,NY,7,H8NY07046,True,Joseph,Crowley,,2004,,,,,104275,0.8094
 NY|7|Joseph|Crowley|2004,NY,7,H8NY07046,True,Joseph,Crowley,WF,2004,0,,,,3893,0.0302
 NY|7|Joseph|Crowley|2004,NY,7,H8NY07046,True,Joseph,Crowley,D,2004,15738,0.6335000000000001,,,100382,0.7792
-NY|7|Dennis |Coleman|2004,NY,7,H2NY17055,False,Dennis ,Coleman,D,2004,4716,0.1898,,,,
+NY|7|Dennis|Coleman|2004,NY,7,H2NY17055,False,Dennis,Coleman,D,2004,4716,0.1898,,,,
 NY|7|Aniello V.|Grimaldi|2004,NY,7,H4NY07086,False,Aniello V.,Grimaldi,D,2004,2280,0.09179999999999999,,,,
 NY|7|Curtis|Brooks|2004,NY,7,H4NY07078,False,Curtis,Brooks,D,2004,2102,0.08460000000000001,,,,
 NY|7|Joseph|Cinquemain|2004,NY,7,H4NY07052,False,Joseph,Cinquemain,,2004,,,,,24548,0.1906
@@ -1345,14 +1345,14 @@ NY|18|Nita M.|Lowey|2004,NY,18,H8NY20056,True,Nita M.,Lowey,,2004,,,,,170715,0.6
 NY|18|Nita M.|Lowey|2004,NY,18,H8NY20056,True,Nita M.,Lowey,D,2004,0,,,,159072,0.6501
 NY|18|Nita M.|Lowey|2004,NY,18,H8NY20056,True,Nita M.,Lowey,IDP,2004,0,,,,7271,0.0297
 NY|18|Nita M.|Lowey|2004,NY,18,H8NY20056,True,Nita M.,Lowey,WF,2004,0,,,,4372,0.0179
-NY|18|Richard A.|Hoffman|2004,NY,18,H4NY18075,False,Richard A.,Hoffman,R ,2004,2439,0.4448,,,73975,0.3023
-NY|18|Jim|Russell|2004,NY,18,H6NY19086,False,Jim,Russell,R ,2004,2260,0.4122,,,,
+NY|18|Richard A.|Hoffman|2004,NY,18,H4NY18075,False,Richard A.,Hoffman,R,2004,2439,0.4448,,,73975,0.3023
+NY|18|Jim|Russell|2004,NY,18,H6NY19086,False,Jim,Russell,R,2004,2260,0.4122,,,,
 NY|19|Sue W.|Kelly|2004,NY,19,H4NY19073,True,Sue W.,Kelly,,2004,,,,,175401,0.6674
 NY|19|Sue W.|Kelly|2004,NY,19,H4NY19073,True,Sue W.,Kelly,R,2004,0,,,,152051,0.5785
 NY|19|Sue W.|Kelly|2004,NY,19,H4NY19073,True,Sue W.,Kelly,C,2004,0,,,,11945,0.0454
 NY|19|Sue W.|Kelly|2004,NY,19,H4NY19073,True,Sue W.,Kelly,IDP,2004,0,,,,11405,0.0434
 NY|19|Michael|Jaliman|2004,NY,19,H4NY19107,False,Michael,Jaliman,D,2004,5440,0.5804,,,87429,0.3326
-NY|19|Janine |Selendy|2004,NY,19,H2NY19051,False,Janine ,Selendy,D,2004,3722,0.3971,,,,
+NY|19|Janine|Selendy|2004,NY,19,H2NY19051,False,Janine,Selendy,D,2004,3722,0.3971,,,,
 NY|20|John E.|Sweeney|2004,NY,20,H8NY22045,True,John E.,Sweeney,,2004,,,,,188753,0.6583
 NY|20|John E.|Sweeney|2004,NY,20,H8NY22045,True,John E.,Sweeney,R,2004,0,,,,163343,0.5697
 NY|20|John E.|Sweeney|2004,NY,20,H8NY22045,True,John E.,Sweeney,IDP,2004,0,,,,14131,0.0493
@@ -1388,10 +1388,10 @@ NY|25|James T.|Walsh|2004,NY,25,H8NY27036,True,James T.,Walsh,R,2004,0,,,,155163
 NY|25|James T.|Walsh|2004,NY,25,H8NY27036,True,James T.,Walsh,IDP,2004,0,,,,20184,0.0965
 NY|25|James T.|Walsh|2004,NY,25,H8NY27036,True,James T.,Walsh,C,2004,0,,,,13716,0.06559999999999999
 NY|25|Howie|Hawkins|2004,NY,25,H0NY25037,False,Howie,Hawkins,PJP,2004,,,,,20106,0.09609999999999999
-NY|26|Thomas M. |Reynolds|2004,NY,26,H8NY27077,True,Thomas M. ,Reynolds,,2004,,,,,157466,0.5563
-NY|26|Thomas M. |Reynolds|2004,NY,26,H8NY27077,True,Thomas M. ,Reynolds,R,2004,0,,,,137425,0.4855
-NY|26|Thomas M. |Reynolds|2004,NY,26,H8NY27077,True,Thomas M. ,Reynolds,C,2004,0,,,,10672,0.0377
-NY|26|Thomas M. |Reynolds|2004,NY,26,H8NY27077,True,Thomas M. ,Reynolds,IDP,2004,0,,,,9369,0.0331
+NY|26|Thomas M.|Reynolds|2004,NY,26,H8NY27077,True,Thomas M.,Reynolds,,2004,,,,,157466,0.5563
+NY|26|Thomas M.|Reynolds|2004,NY,26,H8NY27077,True,Thomas M.,Reynolds,R,2004,0,,,,137425,0.4855
+NY|26|Thomas M.|Reynolds|2004,NY,26,H8NY27077,True,Thomas M.,Reynolds,C,2004,0,,,,10672,0.0377
+NY|26|Thomas M.|Reynolds|2004,NY,26,H8NY27077,True,Thomas M.,Reynolds,IDP,2004,0,,,,9369,0.0331
 NY|26|Jack|Davis|2004,NY,26,H4NY26045,False,Jack,Davis,,2004,,,,,125613,0.4437
 NY|26|Jack|Davis|2004,NY,26,H4NY26045,False,Jack,Davis,D,2004,0,,,,116484,0.4115
 NY|26|Jack|Davis|2004,NY,26,H4NY26045,False,Jack,Davis,WF,2004,0,,,,9129,0.0322
@@ -1399,7 +1399,7 @@ NY|27|Brian M.|Higgins|2004,NY,27,H4NY27076,False,Brian M.,Higgins,,2004,,,,,143
 NY|27|Brian M.|Higgins|2004,NY,27,H4NY27076,False,Brian M.,Higgins,WF,2004,0,,,,8091,0.0286
 NY|27|Brian M.|Higgins|2004,NY,27,H4NY27076,False,Brian M.,Higgins,IDP,2004,0,,,,7974,0.0282
 NY|27|Brian M.|Higgins|2004,NY,27,H4NY27076,False,Brian M.,Higgins,D,2004,18790,0.44409999999999994,,,127267,0.4499
-NY|27|Paul T. |Clark|2004,NY,27,H4NY27068,False,Paul T. ,Clark,D,2004,11150,0.2636,,,,
+NY|27|Paul T.|Clark|2004,NY,27,H4NY27068,False,Paul T.,Clark,D,2004,11150,0.2636,,,,
 NY|27|Michael J.|Collesano|2004,NY,27,H4NY27084,False,Michael J.,Collesano,D,2004,5042,0.1192,,,,
 NY|27|Mark W.|Thomas|2004,NY,27,H4NY27100,False,Mark W.,Thomas,D,2004,3961,0.09359999999999999,,,,
 NY|27|Peter|Crotty|2004,NY,27,H2NY27070,False,Peter,Crotty,D,2004,1401,0.0331,,,,
@@ -1413,15 +1413,15 @@ NY|28|Francina J.|Cartonia|2004,NY,28,H4NY28066,False,Francina J.,Cartonia,D,200
 NY|28|Michael D.|Laba|2004,NY,28,H4NY28041,False,Michael D.,Laba,,2004,,,,,54543,0.2481
 NY|28|Michael D.|Laba|2004,NY,28,H4NY28041,False,Michael D.,Laba,R,2004,0,,,,48981,0.2228
 NY|28|Michael D.|Laba|2004,NY,28,H4NY28041,False,Michael D.,Laba,C,2004,0,,,,5562,0.0253
-NY|28|Francina J.|Cartonia|2004,NY,28,H4NY28066,False,Francina J.,Cartonia,IDP ,2004,0,,,,5678,0.0258
-"NY|29|John Randy, Jr.|Kuhl|2004",NY,29,H4NY29080,False,"John Randy, Jr.",Kuhl,R ,2004,25552,0.6399,,,136883,0.5065999999999999
+NY|28|Francina J.|Cartonia|2004,NY,28,H4NY28066,False,Francina J.,Cartonia,IDP,2004,0,,,,5678,0.0258
+"NY|29|John Randy, Jr.|Kuhl|2004",NY,29,H4NY29080,False,"John Randy, Jr.",Kuhl,R,2004,25552,0.6399,,,136883,0.5065999999999999
 NY|29|Mark W.|Assini|2004,NY,29,H4NY29098,False,Mark W.,Assini,R,2004,13303,0.3332,,,,
 NY|29|Samara|Barend|2004,NY,29,H4NY29130,False,Samara,Barend,,2004,,,,,110241,0.408
 NY|29|Samara|Barend|2004,NY,29,H4NY29130,False,Samara,Barend,WF,2004,0,,,,5686,0.021
 NY|29|Samara|Barend|2004,NY,29,H4NY29130,False,Samara,Barend,D,2004,9082,0.7968000000000001,,,104555,0.38689999999999997
 NY|29|Jeremy Weir|Alderson|2004,NY,29,H4NY29155,False,Jeremy Weir,Alderson,D,2004,2204,0.1934,,,,
 NY|29|Mark W.|Assini|2004,NY,29,H4NY29098,False,Mark W.,Assini,C,2004,564,0.7166,,,17272,0.0639
-NY|29|John  |Ciampoli|2004,NY,29,H4NY29148,False,John  ,Ciampoli,IDP,2004,0,,,,5819,0.0215
+NY|29|John|Ciampoli|2004,NY,29,H4NY29148,False,John,Ciampoli,IDP,2004,0,,,,5819,0.0215
 NY|S|Charles|Schumer|2004,NY,S,S8NY00082,True,Charles,Schumer,,2004,,,,,4769824,0.7116
 NY|S|Charles|Schumer|2004,NY,S,S8NY00082,True,Charles,Schumer,D,2004,0,,,,4384907,0.6542
 NY|S|Charles|Schumer|2004,NY,S,S8NY00082,True,Charles,Schumer,IDP,2004,0,,,,216198,0.0323
@@ -1447,7 +1447,7 @@ NC|3|Roger A.|Eaton|2004,NC,3,H4NC03026,False,Roger A.,Eaton,D,2004,0,,,,71227,0
 NC|4|David|Price|2004,NC,4,H6NC04037,True,David,Price,D,2004,0,,,,217441,0.6409999999999999
 NC|4|Todd A.|Batchelor|2004,NC,4,H4NC04073,False,Todd A.,Batchelor,R,2004,11531,0.4542,,,121717,0.3588
 NC|4|Robert E. (Whit)|Whitfield|2004,NC,4,H4NC04057,False,Robert E. (Whit),Whitfield,R,2004,7954,0.31329999999999997,,,,
-NC|4|James C. |Powers|2004,NC,4,H4NC04099,False,James C. ,Powers,R,2004,3116,0.12269999999999999,,,,
+NC|4|James C.|Powers|2004,NC,4,H4NC04099,False,James C.,Powers,R,2004,3116,0.12269999999999999,,,,
 NC|4|Howard|Mason|2004,NC,4,H4NC04081,False,Howard,Mason,R,2004,2787,0.10980000000000001,,,,
 NC|4|Maximilian|Longley|2004,NC,4,H4NC04107,False,Maximilian,Longley,W,2004,,,,,76,0.0002
 NC|5|Virginia|Foxx|2004,NC,5,H4NC05146,False,Virginia,Foxx,R,2004,13119,0.2238,23092,0.546,167546,0.5882999999999999
@@ -1581,7 +1581,7 @@ OK|S|Tom|Coburn|2004,OK,S,S4OK00174,False,Tom,Coburn,R,2004,145974,0.6123,,,7634
 OK|S|Kirk|Humphreys|2004,OK,S,S4OK00141,False,Kirk,Humphreys,R,2004,59877,0.25120000000000003,,,,
 OK|S|Bob|Anthony|2004,OK,S,S4OK00158,False,Bob,Anthony,R,2004,29596,0.1241,,,,
 OK|S|Jay Richard|Hunt|2004,OK,S,S4OK00190,False,Jay Richard,Hunt,R,2004,2944,0.0123,,,,
-OK|S|Brad |Carson|2004,OK,S,S4OK00133,False,Brad ,Carson,D,2004,280026,0.7937000000000001,,,596750,0.41240000000000004
+OK|S|Brad|Carson|2004,OK,S,S4OK00133,False,Brad,Carson,D,2004,280026,0.7937000000000001,,,596750,0.41240000000000004
 OK|S|Carroll|Fisher|2004,OK,S,S4OK00166,False,Carroll,Fisher,D,2004,28385,0.0805,,,,
 OK|S|Jim|Rogers|2004,OK,S,S2OK00095,False,Jim,Rogers,D,2004,20179,0.0572,,,,
 OK|S|Monte E.|Johnson|2004,OK,S,S4OK00125,False,Monte E.,Johnson,D,2004,17274,0.049,,,,
@@ -1635,7 +1635,7 @@ PA|4|Steven B.|Larchuk|2004,PA,4,H4PA04099,False,Steven B.,Larchuk,HEA,2004,,,,,
 PA|5|John E.|Peterson|2004,PA,5,H6PA05091,True,John E.,Peterson,R,2004,47216,,,,192852,0.8798
 PA|5|Bob|Perry|2004,PA,5,H4PA05047,False,Bob,Perry,R,2004,13501,,,,,
 PA|5|Thomas A.|Martin|2004,PA,5,H0PA05052,False,Thomas A.,Martin,LBT,2004,,,,,26239,0.1197
-PA|6|Jim |Gerlach|2004,PA,6,H2PA06114,True,Jim ,Gerlach,R,2004,50809,1.0,,,160348,0.51
+PA|6|Jim|Gerlach|2004,PA,6,H2PA06114,True,Jim,Gerlach,R,2004,50809,1.0,,,160348,0.51
 PA|6|Lois|Murphy|2004,PA,6,H4PA06045,False,Lois,Murphy,D,2004,23310,1.0,,,153977,0.48979999999999996
 PA|7|Curt|Weldon|2004,PA,7,H4PA07027,True,Curt,Weldon,R,2004,66816,1.0,,,196556,0.5875
 PA|7|Paul|Scoles|2004,PA,7,H4PA07076,False,Paul,Scoles,D,2004,,,,,134932,0.4033
@@ -1694,11 +1694,11 @@ PA|S|Joseph M.|Hoeffel|2004,PA,S,S4PA00147,False,Joseph M.,Hoeffel,D,2004,595816
 PA|S|James N.|Clymer|2004,PA,S,S4PA00220,False,James N.,Clymer,CON,2004,,,,,220056,0.039599999999999996
 PA|S|Betsy|Summers|2004,PA,S,S4PA00238,False,Betsy,Summers,LBT,2004,,,,,79263,0.0143
 PR|0|Luis|Fortu_o|2004,PR,0,H4PR00079,False,Luis,Fortu_o,NPP,2004,362328,0.6289,,,956828,0.48829999999999996
-PR|0|Carlos Romero |Barcelã|2004,PR,0,H2PR00016,False,Carlos Romero ,Barcelã,NPP,2004,151040,0.2622,,,,
+PR|0|Carlos Romero|Barcelã|2004,PR,0,H2PR00016,False,Carlos Romero,Barcelã,NPP,2004,151040,0.2622,,,,
 PR|0|Charlie|Rodrêguez|2004,PR,0,H4PR00053,False,Charlie,Rodrêguez,NPP,2004,37624,0.0653,,,,
 PR|0|Miriam|Ramêrez|2004,PR,0,H4PR00087,False,Miriam,Ramêrez,NPP,2004,25008,0.0434,,,,
-PR|0|Roberto L. Prats |Palerm|2004,PR,0,H4PR00061,False,Roberto L. Prats ,Palerm,PPD,2004,0,,,,945691,0.4826
-PR|0|Edwin Irizarry |Mora|2004,PR,0,H0PR00077,False,Edwin Irizarry ,Mora,PRI,2004,0,,,,56589,0.028900000000000002
+PR|0|Roberto L. Prats|Palerm|2004,PR,0,H4PR00061,False,Roberto L. Prats,Palerm,PPD,2004,0,,,,945691,0.4826
+PR|0|Edwin Irizarry|Mora|2004,PR,0,H0PR00077,False,Edwin Irizarry,Mora,PRI,2004,0,,,,56589,0.028900000000000002
 RI|1|Patrick J.|Kennedy|2004,RI,1,H4RI01034,True,Patrick J.,Kennedy,D,2004,22684,0.7551000000000001,,,124923,0.6406000000000001
 RI|1|Mark|Binder|2004,RI,1,H4RI01083,False,Mark,Binder,D,2004,7359,0.24489999999999998,,,,
 RI|1|David W.|Rogers|2004,RI,1,H2RI01145,False,David W.,Rogers,R,2004,385,1.0,,,69819,0.358
@@ -1761,7 +1761,7 @@ TN|2|Robert R. (Bob)|Scott|2004,TN,2,H8TN02028,False,Robert R. (Bob),Scott,D,200
 TN|2|Charles E.|Howard|2004,TN,2,H4TN02050,False,Charles E.,Howard,I,2004,,,,,4978,0.0182
 TN|3|Zach|Wamp|2004,TN,3,H2TN03052,True,Zach,Wamp,R,2004,30183,0.9005,,,166154,0.6474
 TN|3|Timothy A.|Sevier|2004,TN,3,H2TN03110,False,Timothy A.,Sevier,R,2004,3334,0.09949999999999999,,,,
-TN|3|John |Wolfe|2004,TN,3,H8TN03141,False,John ,Wolfe,D,2004,14766,0.5953,,,84295,0.3285
+TN|3|John|Wolfe|2004,TN,3,H8TN03141,False,John,Wolfe,D,2004,14766,0.5953,,,84295,0.3285
 TN|3|Betty F.|Williamson|2004,TN,3,H4TN03140,False,Betty F.,Williamson,D,2004,10037,0.4047,,,,
 TN|3|June|Griffin|2004,TN,3,H4TN03157,False,June,Griffin,I,2004,,,,,3018,0.0118
 TN|3|Doug|Vandagriff|2004,TN,3,H4TN03173,False,Doug,Vandagriff,I,2004,,,,,1696,0.0066
@@ -1862,7 +1862,7 @@ TX|16|Silvestre|Reyes|2004,TX,16,H6TX00115,True,Silvestre,Reyes,D,2004,27469,1.0
 TX|16|David|Brigham|2004,TX,16,H4TX16066,False,David,Brigham,R,2004,4127,0.5323,,,49972,0.31079999999999997
 TX|16|Bobby|Ortiz|2004,TX,16,H4TX16033,False,Bobby,Ortiz,R,2004,3626,0.4677,,,,
 TX|16|Brad|Clardy|2004,TX,16,H8TX19079,False,Brad,Clardy,LBT,2004,,,,,2224,0.0138
-TX|17|Chet |Edwards|2004,TX,17,H8TX06035,True,Chet ,Edwards,D,2004,17754,1.0,,,125309,0.512
+TX|17|Chet|Edwards|2004,TX,17,H8TX06035,True,Chet,Edwards,D,2004,17754,1.0,,,125309,0.512
 TX|17|Arlene|Wohlgemuth|2004,TX,17,H4TX17064,False,Arlene,Wohlgemuth,R,2004,15627,0.41259999999999997,16694,0.5489999999999999,116049,0.4742
 TX|17|Dot|Snyder|2004,TX,17,H4TX11018,False,Dot,Snyder,R,2004,11568,0.3054,13713,0.451,,
 TX|17|Dave|McIntyre|2004,TX,17,H4TX17072,False,Dave,McIntyre,R,2004,10681,0.282,,,,
@@ -1897,7 +1897,7 @@ TX|24|Gary R.|Page|2004,TX,24,H2TX26127,False,Gary R.,Page,D,2004,6572,1.0,,,825
 TX|24|James|Lawrence|2004,TX,24,H4TX24136,False,James,Lawrence,LBT,2004,,,,,4340,0.018000000000000002
 TX|25|Lloyd|Doggett|2004,TX,25,H4TX10028,True,Lloyd,Doggett,D,2004,40306,0.6437999999999999,,,108309,0.6759999999999999
 TX|25|Leticia|Hinojosa|2004,TX,25,H4TX25117,False,Leticia,Hinojosa,D,2004,22305,0.35619999999999996,,,,
-TX|25|Rebecca Armendariz |Klein|2004,TX,25,H4TX25158,False,Rebecca Armendariz ,Klein,R,2004,3679,0.6729,,,49252,0.3074
+TX|25|Rebecca Armendariz|Klein|2004,TX,25,H4TX25158,False,Rebecca Armendariz,Klein,R,2004,3679,0.6729,,,49252,0.3074
 TX|25|Regner A.|Capener|2004,TX,25,H4TX28038,False,Regner A.,Capener,R,2004,1788,0.3271,,,,
 TX|25|James|Werner|2004,TX,25,H4TX25141,False,James,Werner,LBT,2004,,,,,2656,0.0166
 TX|26|Michael C.|Burgess|2004,TX,26,H2TX26093,True,Michael C.,Burgess,R,2004,17184,1.0,,,180519,0.6575
@@ -2081,23 +2081,23 @@ WI|3|Ron|Kind|2004,WI,3,H6WI03099,True,Ron,Kind,D,2004,29464,0.9974,,,204856,0.5
 WI|3|Dale W.|Schultz|2004,WI,3,H4WI03110,False,Dale W.,Schultz,R,2004,38230,0.9976,,,157866,0.4349
 WI|4|Gwen|Moore|2004,WI,4,H4WI04183,False,Gwen,Moore,D,2004,48858,0.642,,,212382,0.696
 WI|4|Matt|Flynn|2004,WI,4,H4WI04159,False,Matt,Flynn,D,2004,19377,0.2546,,,,
-WI|4|Tim |Carpenter|2004,WI,4,H4WI04167,False,Tim ,Carpenter,D,2004,7801,0.1025,,,,
+WI|4|Tim|Carpenter|2004,WI,4,H4WI04167,False,Tim,Carpenter,D,2004,7801,0.1025,,,,
 WI|4|Gerald H.|Boyle|2004,WI,4,H4WI04191,False,Gerald H.,Boyle,R,2004,11720,0.5266,,,85928,0.2816
 WI|4|Corey|Hoze|2004,WI,4,H4WI04142,False,Corey,Hoze,R,2004,10490,0.4714,,,,
-WI|4|Tim |Johnson|2004,WI,4,H4WI04217,False,Tim ,Johnson,I,2004,,,,,3733,0.012199999999999999
+WI|4|Tim|Johnson|2004,WI,4,H4WI04217,False,Tim,Johnson,I,2004,,,,,3733,0.012199999999999999
 WI|4|Robert R.|Raymond|2004,WI,4,H2WI02108,False,Robert R.,Raymond,I,2004,,,,,1861,0.0060999999999999995
 WI|4|Colin|Hudson|2004,WI,4,H4WI04209,False,Colin,Hudson,CON,2004,56,0.9179999999999999,,,897,0.0029
 "WI|5|F. James|Sensenbrenner, Jr.|2004",WI,5,H8WI09050,True,F. James,"Sensenbrenner, Jr.",R,2004,76179,0.9956999999999999,,,271153,0.6657
 WI|5|Bryan|Kennedy|2004,WI,5,H4WI05057,False,Bryan,Kennedy,D,2004,17750,0.7259,,,129384,0.3177
 WI|5|Gary|Kohlenberg|2004,WI,5,H4WI05073,False,Gary,Kohlenberg,D,2004,6664,0.2725,,,,
 WI|5|Tim|Peterson|2004,WI,5,H4WI05081,False,Tim,Peterson,LBT,2004,183,0.9839,,,6549,0.0161
-WI|6|Tom |Petri|2004,WI,6,H0WI06061,True,Tom ,Petri,R,2004,52459,0.997,,,238620,0.6703
-WI|6|Jef |Hall|2004,WI,6,H4WI06022,False,Jef ,Hall,D,2004,13754,0.9979,,,107209,0.3012
+WI|6|Tom|Petri|2004,WI,6,H0WI06061,True,Tom,Petri,R,2004,52459,0.997,,,238620,0.6703
+WI|6|Jef|Hall|2004,WI,6,H4WI06022,False,Jef,Hall,D,2004,13754,0.9979,,,107209,0.3012
 WI|6|Carol Ann|Rittenhouse|2004,WI,6,H4WI06030,False,Carol Ann,Rittenhouse,WG,2004,220,0.9865,,,10018,0.0281
 WI|7|David R.|Obey|2004,WI,7,H6WI07033,True,David R.,Obey,D,2004,29390,0.9986,,,241306,0.8564
 WI|7|Mike|Miles|2004,WI,7,H4WI07079,False,Mike,Miles,WG,2004,122,0.9531000000000001,,,26518,0.0941
 WI|7|Larry|Oftedahl|2004,WI,7,H4WI07061,False,Larry,Oftedahl,CON,2004,60,0.9523999999999999,,,12841,0.045599999999999995
-WI|8|Mark |Green|2004,WI,8,H8WI00026,True,Mark ,Green,R,2004,52503,0.9973000000000001,,,248070,0.7012999999999999
+WI|8|Mark|Green|2004,WI,8,H8WI00026,True,Mark,Green,R,2004,52503,0.9973000000000001,,,248070,0.7012999999999999
 WI|8|Dottie|Le Clair|2004,WI,8,H4WI08069,False,Dottie,Le Clair,D,2004,11479,0.9978,,,105513,0.2983
 WI|S|Russ|Feingold|2004,WI,S,S8WI00026,True,Russ,Feingold,D,2004,251915,0.9965999999999999,,,1632697,0.5535
 WI|S|Tim|Michels|2004,WI,S,S4WI00116,False,Tim,Michels,R,2004,183654,0.4243,,,1301183,0.4411
@@ -2106,7 +2106,7 @@ WI|S|Bob|Welch|2004,WI,S,S4WI00041,False,Bob,Welch,R,2004,99971,0.2309,,,,
 WI|S|Robert Gerald|Lorge|2004,WI,S,S4WI00140,False,Robert Gerald,Lorge,R,2004,18809,0.0435,,,,
 WI|S|Arif|Khan|2004,WI,S,S4WI00157,False,Arif,Khan,LBT,2004,850,0.9681000000000001,,,8367,0.0028000000000000004
 WI|S|Eugene|Hem|2004,WI,S,S6WI00087,False,Eugene,Hem,I,2004,,,,,6662,0.0023
-WY|0|Barbara |Cubin|2004,WY,0,H4WY00055,True,Barbara ,Cubin,R,2004,45433,0.5501,,,132107,0.5527000000000001
+WY|0|Barbara|Cubin|2004,WY,0,H4WY00055,True,Barbara,Cubin,R,2004,45433,0.5501,,,132107,0.5527000000000001
 WY|0|Bruce S.|Asay|2004,WY,0,H4WY00113,False,Bruce S.,Asay,R,2004,20332,0.2462,,,,
 WY|0|Cale|Case|2004,WY,0,H4WY00121,False,Cale,Case,R,2004,13104,0.15869999999999998,,,,
 "WY|0|Marvin ""Trip""|Applequist|2004",WY,0,H4WY00147,False,"Marvin ""Trip""",Applequist,R,2004,2352,0.0285,,,,
