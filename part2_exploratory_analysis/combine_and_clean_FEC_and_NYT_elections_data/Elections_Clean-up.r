@@ -35,8 +35,6 @@ for (i in FECYears) {
 print("FEC Data Stacked") #For log/debug
 
 
-
-
 #==========Start cleaning stacked data==========#
 
 #Rename some columns
@@ -87,13 +85,26 @@ FECAllYears <- FECAllYears[!(FECAllYears$STATE %in% c("AS", "DC",
 #Make sure there are 50 states after removal of the above elements.
 stopifnot(length(unique(FECAllYears$STATE))==50)
 
+#Check assumption that there are no duplicates by state-year-district-first.name-last.name
+dups <- FECAllYears[duplicated(FECAllYears[,c("STATE","DISTRICT","FIRST.NAME","LAST.NAME","YEAR")]),]
+stopifnot(nrow(dups)==0)
+
 #Remove unneeded information from the DISTRICT variable
 unique(FECAllYears$DISTRICT)
+#Drop people running for an unexpired term (indicated as such or with asterisk in DISTRICT)
+FECAllYears <- FECAllYears[substr(FECAllYears$DISTRICT,
+                                  nchar(FECAllYears$DISTRICT)-13,
+                                  nchar(FECAllYears$DISTRICT))!="UNEXPIRED TERM",]
+FECAllYears <- FECAllYears[substr(FECAllYears$DISTRICT,3,3)!="*",]
 FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)=="S"] <- "S"
 FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)!="S"] <- 
   as.character(as.numeric(
     substr(FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)!="S"],1,2)))
 unique(FECAllYears$DISTRICT) #Verify DISTRICT is as expected now.
+
+#Check assumption that there are no duplicates by state-year-district-first.name-last.name
+dups <- FECAllYears[duplicated(FECAllYears[,c("STATE","DISTRICT","FIRST.NAME","LAST.NAME","YEAR")]),]
+stopifnot(nrow(dups)==0)
 
 #Get a variable called CANDIDATE that contains the full name to merge with the 
 #NYTimes Data.
