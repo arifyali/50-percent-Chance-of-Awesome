@@ -3,17 +3,6 @@ setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_ex
 PoldataSPIndustries <- read.csv("PoldataSPIndustries.csv")
 IndustryStockData <- read.csv("IndustryChangeByTerm.csv")
 
-NotSP500Industrydonors = data.frame("X" = rep(NA, times = 15),
-  "Sector" = rep(c("Not for profit", "", "Not publicly traded")
-                                           , each = 5))
-NotSP500Industrydonors$AdjClose = NA
-
-NotSP500Industrydonors$Group = rep(c("Values0506b", "Values0708b",
-                                               "Values0910b", "Values1112b",
-                                               "Values1314b"), each = 3)
-NotSP500Industrydonors$YrPercentChange = NA
-
-IndustryStockData = rbind(IndustryStockData, NotSP500Industrydonors)
 IndustryStockData$RelYear = as.character(IndustryStockData$Group)
 
 IndustryStockData$RelYear[IndustryStockData$Group == "Values0506b"] = 2004
