@@ -1,26 +1,39 @@
 ##### Logistic Model ####
 # Please change setwd to wherever "part2_exploratory_analysis" is
 setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis/")
-political_data = read.csv("OpenSecretsFECIndustry.csv")
+political_data = read.csv("PoldataSPIndustries.csv")
 
 # Null Hypothesis: There is no linear relation between the percentage of votes and the rank of 
 # industry contributions for the candidates
 
 
 ### Figure out how to tell total number of industries supporting each candidate.
+# Remove outliers does exactly what it is designed to, remove outliers. I found this on a stackoverflow board:
+# http://stackoverflow.com/questions/4787332/how-to-remove-outliers-from-a-dataset
 
-Logit_pol_data = political_data[!duplicated(political_data[,c("STATE", "DISTRICT", "CANDIDATE")]),]
+remove_outliers <- function(x) {
+  qnt <- quantile(x, probs=c(.25, .75), na.rm = T)
+  H <- 1.5 * IQR(x, na.rm = T)
+  y <- x
+  y[x < (qnt[1] - H)] <- NA
+  y[x > (qnt[2] + H)] <- NA
+  return(y)
+}
+
+
+Logit_pol_data = political_data[order(political_data$indrank, decreasing = T),]
+Logit_pol_data = Logit_pol_data[!duplicated(Logit_pol_data[,c("STATE", "DISTRICT", "CANDIDATE")]),]
 
 # I'm standardizing the Candidate total contribution in order to better compare it to the vote percentages.
 # Because this is a better representation of contribtuions compared to a ranking.
 
-
-# Remove outliers does exactly what it is designed to, remove outliers. I found this on a stackoverflow board:
-# http://stackoverflow.com/questions/4787332/how-to-remove-outliers-from-a-dataset
+## Add industry percent
+## Add number of supporting industries
 
 
 Logit_pol_data$CANDTOTAL = Logit_pol_data$CANDTOTAL/max(Logit_pol_data$CANDTOTAL)
-model <- lm(PERCENT ~CANDTOTAL,data=Logit_pol_data)
+Logit_pol_data$indrank = Logit_pol_data$indrank/max(Logit_pol_data$indrank)
+model <- lm(PERCENT ~CANDTOTAL+indrank,data=Logit_pol_data)
 summary(model)
 
 # The B1 coefficient is 0.9519 and the p-value is < 2.2e-16, thus we reject the null hypothesis 
@@ -31,6 +44,13 @@ summary(model)
 # Null Hypothesis: There is no difference between the amount of money
 # an incumbent receives vs what a challenger receives.
 Logit_pol_data = political_data[!duplicated(political_data[,c("STATE", "DISTRICT", "CANDIDATE")]),]
+x = Logit_pol_data$CANDTOTAL[Logit_pol_data$INCUMBENT==1]
+y = Logit_pol_data$CANDTOTAL[Logit_pol_data$INCUMBENT==0]
 
-pol_t_test = t.test(Logit_pol_data$CANDTOTAL[Logit_pol_data$INCUMBENT==1],
-                    Logit_pol_data$CANDTOTAL[Logit_pol_data$INCUMBENT==0])
+x = remove_outliers(x)
+y = remove_outliers(y)
+pol_t_test = t.test(x,y)
+
+
+# t-test
+# Null Hypothesis: Industry aggregated stock prices are not affected if the candidates they back win of lose
