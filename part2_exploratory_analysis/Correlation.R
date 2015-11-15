@@ -12,12 +12,12 @@ RaceTotals$YrStDis <- paste(RaceTotals$Year,RaceTotals$State,RaceTotals$District
 RaceTotals <- RaceTotals[,4:5]
 
 # Merge PoldataSPIndustries and RaceTotals
-PoldataSPIndustries <- merge(PoldataSPIndustries,RaceTotals[,c("Total","YrStDis")],by="YrStDis")
+PoldataSPIndustries <- merge(PoldataSPIndustries,RaceTotals[,c("TotalRaceFunds","YrStDis")],by="YrStDis")
 PoldataSPIndustries$RaceFundPerc <- NULL
 i <- 1
 
 for (j in 1:length(PoldataSPIndustries$RaceFundPerc)){
-  PoldataSPIndustries$RaceFundPerc[i] <- PoldataSPIndustries$CANDTOTAL[i]/PoldataSPIndustries$Total[i]
+  PoldataSPIndustries$RaceFundPerc[i] <- PoldataSPIndustries$CANDTOTAL[i]/PoldataSPIndustries$TotalRaceFunds[i]
   i <- i+1
 }
 
