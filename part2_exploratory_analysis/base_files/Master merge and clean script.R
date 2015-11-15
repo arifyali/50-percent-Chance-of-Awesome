@@ -318,6 +318,7 @@ for(racenameid in unique(PoldataSPIndustries$racenameid)){
 
 # remove outliers: lower than 1IQR below 25th percentile 
 # or higher than 1IQR above 75th percentile
+# found this code on stackoverflow: http://stackoverflow.com/questions/4787332/how-to-remove-outliers-from-a-dataset
 remove_outliers <- function(x, na.rm = TRUE, ...) {
   qnt <- quantile(x, probs=c(.25, .75), na.rm = na.rm, ...)
   H <- 1 * IQR(x, na.rm = na.rm)
@@ -411,6 +412,20 @@ mergeddata = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustries, IndustryStockD
                         AND PoldataSPIndustries.YEAR = IndustryStockData.RELYEAR;")
 
 write.csv(mergeddata, "PoldataSPIndustriesStockData.csv",row.names=F)
+
+# Remove outliers from the merged data specifically just the numeric data
+
+
+for(i in 1:ncol(mergeddata)){
+# checking all columns by making sure just to run on the numeric ones  
+  if(is.numeric(mergeddata[,i])){
+# running the remove_outlier function and subsetting out the outliers    
+    mergeddata[,i] = remove_outliers(mergeddata[,i])
+    mergeddata = mergeddata[!is.na(mergeddata[,i]), ]
+    }
+}
+
+write.csv(mergeddata, "PoldataSPIndustriesStockData no outliers.csv",row.names=F)
 
 #### Create a new variable to merge data sets by. We will join Year, State, and District to create a new, unique variable.
 setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis")
