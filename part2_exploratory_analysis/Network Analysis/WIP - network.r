@@ -1,13 +1,11 @@
 
-#library(network)
+library(network)
 root <- paste0("H:/Hotchkiss Hive Mind/John/Documents/Schoolwork/Georgetown/",
                "ANLY-501/50-percent-Chance-of-Awesome/")
 
 baseData <- read.csv(paste0(root,
                             "part2_exploratory_analysis/PoldataSPIndustries.csv"))
 #Remove column X
-stopifnot(names(baseData)[1]=="X")
-baseData <- baseData[,-1]
 candIndOnly <- baseData[baseData$WINNER==1 & 
                           (baseData$indrank %in% c(1,2,3)) &
                           baseData$DISTRICT=="S",
@@ -36,4 +34,5 @@ testattr <- as.numeric(testattr)
 summary(testattr)
 set.vertex.attribute(testnet2012,"ind",testattr)
 
+plot(testnet2012,vertex.col="ind")
 
