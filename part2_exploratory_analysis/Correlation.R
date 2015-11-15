@@ -15,5 +15,5 @@ RaceTotals <- RaceTotals[,4:5]
 PoldataSPIndustries <- merge(PoldataSPIndustries,RaceTotals[,c("TotalRaceFunds","YrStDis")],by="YrStDis")
 PoldataSPIndustries$RaceFundPerc <- round(PoldataSPIndustries$CANDTOTAL/PoldataSPIndustries$TotalRaceFunds*100,digits=2)
 
-PSPI_numeric = PoldataSPIndustries[,c(4,11,12,13,15,16,24,25)]
+PSPI_numeric = PoldataSPIndustries[,c(4,11,12,13,15,16,23,24)]
 cor(na.omit(PSPI_numeric))

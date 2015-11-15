@@ -44,7 +44,7 @@ hist(IndContrib$Freq,breaks=30,xlim=c(0,5000),ylim=c(0,25),xlab="# of Candidates
 ### winning and losing candidates. The green-shaded bars represent winning candidates and the 
 ### black-shaded bars represent the losing candidates.
 ### The interquartile range is being used for the purposes of this histogram.
-PoldataSPIndustries <- read.csv("PoldataSPIndustries.csv", stringsAsFactors=FALSE)
+PoldataSPIndustries <- read.csv("C:/Users/Ahn/Desktop/50-percent-Chance-of-Awesome/part2_exploratory_analysis/PoldataSPIndustries.csv", stringsAsFactors=FALSE)
 # Find Interquartile Range to use for histogram data. Winners = [25500,157000], Losers = [1500,40500]
 summary(PoldataSPIndustries$AMOUNT[PoldataSPIndustries$WINNER==1])
 summary(PoldataSPIndustries$AMOUNT[PoldataSPIndustries$WINNER==0])
