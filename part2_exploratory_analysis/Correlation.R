@@ -13,13 +13,7 @@ RaceTotals <- RaceTotals[,4:5]
 
 # Merge PoldataSPIndustries and RaceTotals
 PoldataSPIndustries <- merge(PoldataSPIndustries,RaceTotals[,c("TotalRaceFunds","YrStDis")],by="YrStDis")
-PoldataSPIndustries$RaceFundPerc <- NULL
-i <- 1
-
-for (j in 1:length(PoldataSPIndustries$RaceFundPerc)){
-  PoldataSPIndustries$RaceFundPerc[i] <- PoldataSPIndustries$CANDTOTAL[i]/PoldataSPIndustries$TotalRaceFunds[i]
-  i <- i+1
-}
+PoldataSPIndustries$RaceFundPerc <- round(PoldataSPIndustries$CANDTOTAL/PoldataSPIndustries$TotalRaceFunds*100,digits=2)
 
 PSPI_numeric = PoldataSPIndustries[,c(4,11,12,13,15,16,24,25)]
 cor(na.omit(PSPI_numeric))
