@@ -25,7 +25,7 @@ clusplot(political_data_with_clusters, political_data_with_clusters$cluster,
          color = T, shade = T, labels = 2, lines = 0)
 dev.off()
 
-
+# I picked a center of four by thinking of all combinations 
 political_centers = kmeans(numeric_political_data, 4)
 
 political_data_with_clusters = cbind(numeric_political_data, cluster = political_centers$cluster)
