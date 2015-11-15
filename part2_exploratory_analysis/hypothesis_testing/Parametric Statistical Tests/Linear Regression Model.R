@@ -1,7 +1,7 @@
 ##### Logistic Model ####
 # Please change setwd to wherever "part2_exploratory_analysis" is
 setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis/")
-political_data = read.csv("PoldataSPIndustries.csv")
+political_data = read.csv("PoldataSPIndustriesStockData.csv")
 
 # Null Hypothesis: There is no linear relation between the percentage of votes and the rank of 
 # industry contributions for the candidates
@@ -31,14 +31,12 @@ Logit_pol_data = Logit_pol_data[!duplicated(Logit_pol_data[,c("STATE", "DISTRICT
 ## Add number of supporting industries
 
 
-Logit_pol_data$CANDTOTAL = Logit_pol_data$CANDTOTAL/max(Logit_pol_data$CANDTOTAL)
-Logit_pol_data$indrank = Logit_pol_data$indrank/max(Logit_pol_data$indrank)
-model <- lm(PERCENT ~CANDTOTAL+indrank,data=Logit_pol_data)
+#Logit_pol_data$CANDTOTAL = Logit_pol_data$CANDTOTAL/max(Logit_pol_data$CANDTOTAL)
+#Logit_pol_data$indrank = Logit_pol_data$indrank/max(Logit_pol_data$indrank)
+model <- lm(VOTES ~ CANDTOTAL + indrank + YrPercentChange,data=Logit_pol_data)
 summary(model)
 
-# The B1 coefficient is 0.9519 and the p-value is < 2.2e-16, thus we reject the null hypothesis 
-# in favor of the alternative indicating that there is a somewhat linear relation between the 
-# Rank of donations by candidate and the percentage of votes received. 
+
 
 # t-test
 # Null Hypothesis: There is no difference between the amount of money
