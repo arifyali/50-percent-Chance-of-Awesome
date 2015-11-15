@@ -17,26 +17,19 @@ legend("topright",c("Election Year","Non-Election Year"),fill=c("red","blue"),de
 
 
 
-### This histogram provides a visual representation of the distribution of industries
-### that appear in the top 10 of each Congress candidates' contributors.
+### This histogram provides a visual representation of the distribution of industry
+### contribution amounts of $10,000 or more. The x-limits are set as [0,300000], but there are
+### several outlier contributions up to $1,000,000 that are not shown for readability reasons.
 ### The red-shaded bars represent Republican donors, the blue bars are Democrat donors.
-Donors <- read.csv("C:/Users/Ahn/Desktop/50-percent-Chance-of-Awesome/part2_exploratory_analysis/OpenSecrets/FundingCongress_cleaned.csv", stringsAsFactors=FALSE)
-Dems <- Donors$Amount[Donors$Party=="D"]>10000
-Reps <- Donors$Amount[Donors$Party=="R"]>10000
-DemDonors <- hist(Donors$Amount[Dems],breaks=1000,plot=F)
-RepDonors <- hist(Donors$Amount[Reps],breaks=1000,plot=F)
-plot(0,0,type="n",xlim=c(0,250000),ylim=c(1,15000),xlab="Contribution Amounts",ylab="Frequency",main="Industry Contribution Amounts to Candidates")
+Donors <- read.csv("C:/Users/Ahn/Desktop/50-percent-Chance-of-Awesome/part2_exploratory_analysis/PoldataSPIndustriesStockData no outliers.csv", stringsAsFactors=FALSE)
+Dems <- Donors$AMOUNT[Donors$PARTY=="D"]>=10000
+Reps <- Donors$AMOUNT[Donors$PARTY=="R"]>=10000
+DemDonors <- hist(Donors$AMOUNT[Dems],breaks=50,plot=F)
+RepDonors <- hist(Donors$AMOUNT[Reps],breaks=50,plot=F)
+plot(0,0,type="n",xlim=c(0,300000),ylim=c(1,6000),xlab="Contribution Amounts",ylab="Frequency",main="Industry Contribution Amounts to Candidates")
 plot(DemDonors,col="blue",density=20,add=T)
 plot(RepDonors,col="red",density=20,angle=135,add=T)
 legend("topright",c("Democratic Contributions","Republican Contributions"),fill=c("blue","red"),density=20)
-
-
-
-### This histogram shows the frequency of the number of candidates each unique industry
-### appears in the top 10 of political contributions.
-IndContrib <- as.data.frame(table(Donors$Industry))
-hist(IndContrib$Freq,breaks=30,xlim=c(0,5000),ylim=c(0,25),xlab="# of Candidates Supported by each Industry",
-        main = "Frequency of # of Candidates Each Industry Contributes To")
 
 
 
@@ -52,7 +45,7 @@ Winners <- PoldataSPIndustries$AMOUNT[PoldataSPIndustries$WINNER==1 & PoldataSPI
 Losers <- PoldataSPIndustries$AMOUNT[PoldataSPIndustries$WINNER==0 & PoldataSPIndustries$AMOUNT>=1500 & PoldataSPIndustries$AMOUNT<=40500]
 Windata <- hist(Winners,breaks=30,plot = F)
 Losedata <- hist(Losers,breaks=10,plot = F)
-plot(0,0,type="n",xlim=c(0,160000),ylim=c(0,3000),xlab="Industry Contribution Amounts",ylab="Frequency",main="Frequency of Industry Contributions to Candidates (IQR)")
+plot(0,0,type="n",xlim=c(0,160000),ylim=c(0,3000),xlab="Industry Contribution Amounts",ylab="Frequency",main="Industry Contribution Amounts to Candidates (IQR)")
 plot(Windata,col="green",density=20,add=T)
 plot(Losedata,density=20,angle=135,add=T)
 legend("topright",c("Winning Candidates","Losing Candidates"),fill=c("green","black"),density=20)
@@ -78,7 +71,21 @@ LosersTotal <- LosersTotal[LosersTotal$Amount>=7416 & LosersTotal$Amount<=395400
 # Create histograms based on winning and losing candidates and plot them together
 WinTotalHist <- hist(WinnersTotal$Amount,breaks=10,plot=F)
 LoseTotalHist <- hist(LosersTotal$Amount,breaks=10,plot=F)
-plot(0,0,type="n",xlim=c(0,1250000),ylim=c(0,800),xlab="Total Contributions per Candidate",ylab="Frequency",main="Frequency of Total Contributions to Candidates per Election (IQR)")
+plot(0,0,type="n",xlim=c(0,1250000),ylim=c(0,800),xlab="Total Contributions per Candidate",ylab="Frequency",main="Winning v Losing Candidate Total Funds Raised (IQR)")
 plot(WinTotalHist,col="green",density=20,add=T)
 plot(LoseTotalHist,density=20,angle=135,add=T)
 legend("topright",c("Winning Candidates","Losing Candidates"),fill=c("green","black"),density=20)
+
+
+
+###
+PoldataSPIndustries <- read.csv("C:/Users/Ahn/Desktop/50-percent-Chance-of-Awesome/part2_exploratory_analysis/PoldataSPIndustriesStockData no outliers.csv", stringsAsFactors=FALSE)
+# Find Interquartile Range to use for histogram data. Winners = [17610,67320], Losers = [1000,17050]
+Winners <- PoldataSPIndustries$RaceFundPerc[PoldataSPIndustries$WINNER==1]
+Losers <- PoldataSPIndustries$RaceFundPerc[PoldataSPIndustries$WINNER==0]
+Windata <- hist(Winners,breaks=30,plot = F)
+Losedata <- hist(Losers,breaks=30,plot = F)
+plot(0,0,type="n",xlim=c(0,1),ylim=c(0,5000),xlab="% of Total Race Funds Raised",ylab="Frequency",main="Winning v Losing % of Funds Raised")
+plot(Windata,col="green",density=20,add=T)
+plot(Losedata,density=20,angle=135,add=T)
+legend("topleft",c("Winning Candidates","Losing Candidates"),fill=c("green","black"),density=20)
