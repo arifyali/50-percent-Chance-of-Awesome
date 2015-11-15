@@ -397,21 +397,6 @@ IndustryStockData$RelYear[IndustryStockData$Group == "Values1314b"] = 2012
 
 # Setting up RSQLite Engine within R. I (Arif) have used this synthax for many projects, so I guess I would
 # cite myself
-
-PoldataSPIndustriesNoOutliers <- read.csv("PSPI no outliers.csv")
-dbWriteTable(con, "PoldataSPIndustriesNoOutliers", PoldataSPIndustriesNoOutliers)
-
-# Adding the year makes sense down here. Since RSQLite doesn't allow joins, I have to use the where clause
-
-mergeddataNoOultiers = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustriesNoOutliers, IndustryStockData 
-                        WHERE PoldataSPIndustriesNoOutliers.'PRIMARY.INDUSTRY' = IndustryStockData.SECTOR
-                        AND PoldataSPIndustriesNoOutliers.YEAR = IndustryStockData.RELYEAR;")
-mergeddataNoOultiers = mergeddataNoOultiers[!is.na(remove_outliers(mergeddataNoOultiers$YrPercentChange)),]
-
-write.csv(mergeddata, "PoldataSPIndustriesStockData.csv",row.names=F)
-
-# Remove outliers from the merged data specifically just the numeric data
-
 library(RSQLite)
 m = dbDriver("SQLite")
 tfile = tempfile()
@@ -420,14 +405,30 @@ con=dbConnect(m, dbname = tfile)
 dbWriteTable(con, "PoldataSPIndustries", PoldataSPIndustries)
 dbWriteTable(con, "IndustryStockData", IndustryStockData)
 
+
 # Adding the year makes sense down here. Since RSQLite doesn't allow joins, I have to use the where clause
 
 mergeddata = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustries, IndustryStockData 
                         WHERE PoldataSPIndustries.'PRIMARY.INDUSTRY' = IndustryStockData.SECTOR
                         AND PoldataSPIndustries.YEAR = IndustryStockData.RELYEAR;")
 
+write.csv(mergeddata, "PoldataSPIndustriesStockData.csv",row.names=F)
 
-write.csv(mergeddata, "PoldataSPIndustriesStockData no outliers.csv",row.names=F)
+
+# Merging to no oulier file while removing stock data with outliers
+
+PoldataSPIndustriesNoOutliers <- read.csv("PSPI no outliers.csv")
+dbWriteTable(con, "PoldataSPIndustriesNoOutliers", PoldataSPIndustriesNoOutliers)
+
+# Adding the year makes sense down here. Since RSQLite doesn't allow joins, I have to use the where clause
+
+mergeddataNoOultiers = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustriesNoOutliers, IndustryStockData 
+                                  WHERE PoldataSPIndustriesNoOutliers.'PRIMARY.INDUSTRY' = IndustryStockData.SECTOR
+                                  AND PoldataSPIndustriesNoOutliers.YEAR = IndustryStockData.RELYEAR;")
+mergeddataNoOultiers = mergeddataNoOultiers[!is.na(remove_outliers(mergeddataNoOultiers$YrPercentChange)),]
+
+write.csv(mergeddataNoOultiers, "PoldataSPIndustriesStockData no outliers.csv",row.names=F)
+
 
 #### Create a new variable to merge data sets by. We will join Year, State, and District to create a new, unique variable.
 setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis")
