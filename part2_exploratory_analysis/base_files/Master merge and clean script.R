@@ -397,6 +397,21 @@ IndustryStockData$RelYear[IndustryStockData$Group == "Values1314b"] = 2012
 
 # Setting up RSQLite Engine within R. I (Arif) have used this synthax for many projects, so I guess I would
 # cite myself
+
+PoldataSPIndustriesNoOutliers <- read.csv("PSPI no outliers.csv")
+dbWriteTable(con, "PoldataSPIndustriesNoOutliers", PoldataSPIndustriesNoOutliers)
+
+# Adding the year makes sense down here. Since RSQLite doesn't allow joins, I have to use the where clause
+
+mergeddataNoOultiers = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustriesNoOutliers, IndustryStockData 
+                        WHERE PoldataSPIndustriesNoOutliers.'PRIMARY.INDUSTRY' = IndustryStockData.SECTOR
+                        AND PoldataSPIndustriesNoOutliers.YEAR = IndustryStockData.RELYEAR;")
+mergeddataNoOultiers = mergeddataNoOultiers[!is.na(remove_outliers(mergeddataNoOultiers$YrPercentChange)),]
+
+write.csv(mergeddata, "PoldataSPIndustriesStockData.csv",row.names=F)
+
+# Remove outliers from the merged data specifically just the numeric data
+
 library(RSQLite)
 m = dbDriver("SQLite")
 tfile = tempfile()
@@ -411,19 +426,6 @@ mergeddata = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustries, IndustryStockD
                         WHERE PoldataSPIndustries.'PRIMARY.INDUSTRY' = IndustryStockData.SECTOR
                         AND PoldataSPIndustries.YEAR = IndustryStockData.RELYEAR;")
 
-write.csv(mergeddata, "PoldataSPIndustriesStockData.csv",row.names=F)
-
-# Remove outliers from the merged data specifically just the numeric data
-
-
-for(i in 1:ncol(mergeddata)){
-# checking all columns by making sure just to run on the numeric ones  
-  if(is.numeric(mergeddata[,i])){
-# running the remove_outlier function and subsetting out the outliers    
-    mergeddata[,i] = remove_outliers(mergeddata[,i])
-    mergeddata = mergeddata[!is.na(mergeddata[,i]), ]
-    }
-}
 
 write.csv(mergeddata, "PoldataSPIndustriesStockData no outliers.csv",row.names=F)
 
