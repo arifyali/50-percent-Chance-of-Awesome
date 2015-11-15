@@ -2,7 +2,7 @@
 #==========Global parameters==========#
 
 #Set Working Directory
-setwd("/Users/joshuakaplan/50-percent-Chance-of-Awesome/")
+setwd("/Users/joshuakaplan/50-percent-Chance-of-Awesome")
 
 #==========Load files to be merged==========#
 
@@ -305,6 +305,17 @@ for (i in 1:length(candyearind)){
 #name cols in new dataset
 names(PoldataSPIndustries) =  names(OpenSecretsFECIndustry)
 
+#save dataset before removing outliers
+write.csv(PoldataSPIndustries, file = "PoldataSPIndustries.csv",row.names = F)
+
+# recalculate candidate totals (there was an error in part 1 feature creation; 
+# candidates from the same year who had the same name got lumped together)
+
+PoldataSPIndustries$racenameid = paste0(PoldataSPIndustries$YEAR,PoldataSPIndustries$STATE,PoldataSPIndustries$DISTRICT,PoldataSPIndustries$CANDIDATE) 
+for(racenameid in unique(PoldataSPIndustries$racenameid)){
+  PoldataSPIndustries$CANDTOTAL[PoldataSPIndustries$racenameid==racenameid] = sum(PoldataSPIndustries$AMOUNT[PoldataSPIndustries$racenameid==racenameid])
+}
+
 # remove outliers: lower than 1IQR below 25th percentile 
 # or higher than 1IQR above 75th percentile
 remove_outliers <- function(x, na.rm = TRUE, ...) {
@@ -362,7 +373,65 @@ for (candidateyear in candyear){
 }
 
 #remove identifier column
-PoldataSPIndustries = PoldataSPIndustries[,c(1:ncol(PoldataSPIndustries)-1,ncol(PoldataSPIndustries))]
+PoldataSPIndustries = PoldataSPIndustries[,c(1:(ncol(PoldataSPIndustries)-2),ncol(PoldataSPIndustries))]
 
 #save file, don't overwrite dataset with outliers incase we need it later
 write.csv(PoldataSPIndustries, file = "PSPI no outliers.csv",row.names = F)
+
+#### Merge S&P500 data with political data (file with outliers) ####
+setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis")
+PoldataSPIndustries <- read.csv("PoldataSPIndustries.csv")
+IndustryStockData <- read.csv("IndustryChangeByTerm.csv")
+
+# The groups are specific to certain years for candidates, so years needed to be assigned in order for
+# the merge between Political Data to occur.
+IndustryStockData$RelYear = as.character(IndustryStockData$Group)
+
+# Done by subsetting each group and attaching the right year
+IndustryStockData$RelYear[IndustryStockData$Group == "Values0506b"] = 2004
+IndustryStockData$RelYear[IndustryStockData$Group == "Values0708b"] = 2006
+IndustryStockData$RelYear[IndustryStockData$Group == "Values0910b"] = 2008
+IndustryStockData$RelYear[IndustryStockData$Group == "Values1112b"] = 2010
+IndustryStockData$RelYear[IndustryStockData$Group == "Values1314b"] = 2012
+
+# Setting up RSQLite Engine within R. I (Arif) have used this synthax for many projects, so I guess I would
+# cite myself
+library(RSQLite)
+m = dbDriver("SQLite")
+tfile = tempfile()
+con=dbConnect(m, dbname = tfile)
+
+dbWriteTable(con, "PoldataSPIndustries", PoldataSPIndustries)
+dbWriteTable(con, "IndustryStockData", IndustryStockData)
+
+# Adding the year makes sense down here. Since RSQLite doesn't allow joins, I have to use the where clause
+
+mergeddata = dbGetQuery(con, "SELECT * FROM  PoldataSPIndustries, IndustryStockData 
+                        WHERE PoldataSPIndustries.'PRIMARY.INDUSTRY' = IndustryStockData.SECTOR
+                        AND PoldataSPIndustries.YEAR = IndustryStockData.RELYEAR;")
+
+write.csv(mergeddata, "PoldataSPIndustriesStockData.csv",row.names=F)
+
+#### Create a new variable to merge data sets by. We will join Year, State, and District to create a new, unique variable.
+setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis")
+PoldataSPIndustries <- read.csv("PoldataSPIndustries.csv")
+
+PoldataSPIndustries$YrStDis <- paste(PoldataSPIndustries$YEAR,PoldataSPIndustries$STATE,PoldataSPIndustries$DISTRICT,sep="-")
+
+# Total the entire amount of political funding to all candidates by year, state, and district. This will be used
+# to calculate the funding received percentage per candidate in each race.
+RaceTotals <- aggregate(PoldataSPIndustries$AMOUNT ~ PoldataSPIndustries$YEAR + PoldataSPIndustries$STATE + 
+                          PoldataSPIndustries$DISTRICT, data=PoldataSPIndustries, sum)
+
+# Rename variables and create a new variable that is identical in nature to the one created in PoldataSPIndustries
+names(RaceTotals) <- c("Year","State","District","TotalRaceFunds")
+RaceTotals$YrStDis <- paste(RaceTotals$Year,RaceTotals$State,RaceTotals$District,sep="-")
+RaceTotals <- RaceTotals[,4:5]
+
+# Merge PoldataSPIndustries and RaceTotals
+PoldataSPIndustries <- merge(PoldataSPIndustries,RaceTotals[,c("TotalRaceFunds","YrStDis")],by="YrStDis")
+
+PoldataSPIndustries$RaceFundPerc <- PoldataSPIndustries$CANDTOTAL/PoldataSPIndustries$TotalRaceFunds
+
+PSPI_numeric = PoldataSPIndustries[,c(4,11,12,13,15,16,24,25)]
+cor(na.omit(PSPI_numeric))
