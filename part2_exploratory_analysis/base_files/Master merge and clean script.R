@@ -449,7 +449,8 @@ RaceTotals <- RaceTotals[,4:5]
 # Merge PoldataSPIndustries and RaceTotals
 PoldataSPIndustries <- merge(PoldataSPIndustries,RaceTotals[,c("TotalRaceFunds","YrStDis")],by="YrStDis")
 
+# Create a new variable, RaceFundPerc, which is the percentage of contributions received
+# by a candidate from a particular race (distinguished by year, state, and district) from
+# the total amount of political contributions to all candidates for that particular race.
 PoldataSPIndustries$RaceFundPerc <- PoldataSPIndustries$CANDTOTAL/PoldataSPIndustries$TotalRaceFunds
 
-PSPI_numeric = PoldataSPIndustries[,c(4,11,12,13,15,16,24,25)]
-cor(na.omit(PSPI_numeric))
