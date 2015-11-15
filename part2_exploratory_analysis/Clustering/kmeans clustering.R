@@ -4,7 +4,7 @@ setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_ex
 political_data= read.csv("PSPI no outliers.csv")
 political_data = political_data[order(political_data$INDRANK, decreasing = T),]
 
-# Focusing on the no outlier dataset first
+# Focusing on the no outlier dataset.
 
 ### K-means ###
 numeric_political_data = political_data[!duplicated(political_data[, c("DISTRICT", "CANDIDATE", "YEAR")]), ]
