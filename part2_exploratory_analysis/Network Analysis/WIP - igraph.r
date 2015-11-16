@@ -1,19 +1,31 @@
 #https://solomonmessing.wordpress.com/2012/09/30/working-with-bipartiteaffiliation-network-data-in-r/
+
+#Used igraph, as suggested from class and in the materials posted on the web.
 library(igraph)
+
+#Change the root to the location of the repository in order to run the program.
 root <- paste0("H:/Hotchkiss Hive Mind/John/Documents/Schoolwork/Georgetown/",
                "ANLY-501/50-percent-Chance-of-Awesome/")
 
+#Load the data that will be subset for the network analysis.
 baseData <- read.csv(paste0(root,
                             "part2_exploratory_analysis/PoldataSPIndustries.csv"),
                      stringsAsFactors = FALSE)
 
+#Reduce data to iformation that will be fed to the network.
+#Since we should try to make a small network, and the cluster command wll stall 
+#with too many nodes, we decided to analyze a logical subset of the data that 
+#had the potential to show interesting results.
+#
+#Subset for only winners of senate elections in 2014 and the top two industries 
+#that supported them.
 candIndOnly <- baseData[baseData$WINNER==1 & 
                           (baseData$indrank %in% c(1,2)) &
                           baseData$YEAR==2014 & 
                           baseData$DISTRICT=="S",
                         c("CANDIDATE","PRIMARY.INDUSTRY")]
-testdata <- candIndOnly
-# 
+
+#THESE COMMENTED OUT COMMANDS ARE OTHER NETWORKS THAT WERE TRIED
 # #Test original data set
 # openRepo <- "part2_exploratory_analysis/openSecrets/"
 # 
@@ -50,7 +62,7 @@ testdata <- candIndOnly
 # candIndOnly <- candIndOnly[candIndOnly$Year==2014 & candIndOnly$District %in% c("S1","S2"),
 #                      c("CANDIDATE","PRIMARY.INDUSTRY")]
 # 
-# testdata <- candIndOnly
+# candIndOnly <- candIndOnly
 
 #Try binning the stock data items and then using those with candidates.
 # stockVersion <- read.csv(paste0(root,"part2_exploratory_analysis/PoldataSPIndustriesStockData no outliers.csv"),
@@ -71,11 +83,11 @@ testdata <- candIndOnly
 # candIndOnly <- candIndOnly[candIndOnly$CANDTOTAL > median(candIndOnly$CANDTOTAL),]
 # candIndOnly <- candIndOnly[candIndOnly$CANDTOTAL > median(candIndOnly$CANDTOTAL),]
 # candIndOnly <- candIndOnly[candIndOnly$CANDTOTAL > median(candIndOnly$CANDTOTAL),]
-# testdata <- candIndOnly[,c("CANDIDATE","YrPercentBin")]
+# candIndOnly <- candIndOnly[,c("CANDIDATE","YrPercentBin")]
 
 
 #Create Incidence matrix
-matInc <- as.matrix(table(testdata))
+matInc <- as.matrix(table(candIndOnly))
 
 #Convert bimodal incidence matrix to unimodal adjacency matrix
 adjacency <- tcrossprod(matInc)
@@ -87,19 +99,34 @@ for (i in 1:nrow(adjacency)) {
 #Generate graph object from the adjacency matrix.
 g1 <- graph.adjacency(adjacency,mode="undirected")
 
+
 # Degree
 degree = degree(g1, mode="out")
 V(g1)$degree <- degree
-V(g1)$rankDegree <- rank(V(g1)$degree, ties.method= "min")
+V(g1)$meanDegree <- mean(V(g1)$degree)
+hist(V(g1)$degree)
 
 # Betweenness
 betweeness = betweenness(g1, directed = FALSE)
 V(g1)$betweeness <- betweeness
-V(g1)$rankBetweeness <- rank(V(g1)$betweeness, ties.method= "min")
+V(g1)$meanBetweeness <- mean(V(g1)$betweeness)
 
-# Global clustering coefficient
-globalClusteringCoef = clusteringCoef = transitivity(g1, type=c("global"))
-g1$globalClusteringCoef = globalClusteringCoef
+# Clustering coefficient
+clusteringCoef = transitivity(g1, type=c("local"))
+V(g1)$clusteringCoef <- clusteringCoef
+V(g1)$meanClusteringCoef <- mean(V(g1)$clusteringCoef)
+
+# Graph Density
+g1$density <- graph.density(g1)
+
+# Graph diameter
+g1$diameter = diameter(g1)
+
+# number of components
+g1$components <- components(g1,mode="strong")
+
+# the size of the largest k-core
+g1$largestKcore <- max(graph.coreness(g1))
 
 # Use edge-betweeness algorithm to generate clusters
 myClusters <- edge.betweenness.community(g1)
