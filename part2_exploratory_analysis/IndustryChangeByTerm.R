@@ -85,7 +85,8 @@ while (i < length(SectorValues$Group)){
                 i <- i+1
         }
 }
-SectorValues$YrPercentChange <- SectorValues$YrPercentChange * 100
+# Since each group of percentage changes is dependent on the tickcers associated with the
+# current and not previous term, we will only include groups ending in "b"
 SecYearlyChange <- SectorValues[grepl("b",SectorValues$Group),]
 
 write.csv(SecYearlyChange, file="IndustryChangeByTerm.csv")
