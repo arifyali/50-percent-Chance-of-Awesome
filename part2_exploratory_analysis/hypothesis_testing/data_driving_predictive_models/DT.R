@@ -62,7 +62,7 @@ head(dataset)
             
             #split the data into trainset and testset
             #set seed to make sure next time you run the program, it gives you the same result
-#10 folds across - get train data and test data
+#3 folds across - get train data and test data
 for(k in 1:3){
   train = sample(1:nrow(dataset),nrow(dataset)*2/3)
   test = -train
@@ -103,7 +103,7 @@ for(k in 1:3){
   
   
   #show the tree structure after pruning
-  jpeg(paste0("DT Prune ", k, ".jpeg", sep = ""))
+  jpeg(paste0("hypothesis_testing/data_driving_predictive_models/DT Prune ", k, ".jpeg", sep = ""))
   plot(prune_model)
   text(prune_model, pretty = 0)
   dev.off()
@@ -119,7 +119,7 @@ for(k in 1:3){
   testTarget = as.numeric(testdata$WINNER)
   result = as.numeric(tree_predict_after_prune)
   myROC = roc(testTarget,result, direction="<", auc=TRUE, ci=TRUE)
-  jpeg(paste0("DT ROC ", k, ".jpeg", sep = ""))
+  jpeg(paste0("hypothesis_testing/data_driving_predictive_models/DT ROC ", k, ".jpeg", sep = ""))
   plot(myROC)
   dev.off()
   
