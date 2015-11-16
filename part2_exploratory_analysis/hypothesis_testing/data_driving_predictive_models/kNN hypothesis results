@@ -1,0 +1,87 @@
+[hypothesis 1]: in prediction, the feature of rank1 amount of money is more important than rank2 amount of money, and rank2 amount of money is more important than rank3 amount of money, ...
+Wrong. seems that they are the same imporant.
+
+the below is the result if we discard the feature rank1 amount/rank2 amount/...
+
+without attribute: rank1 amount of money
+          result
+testTarget   L   W
+         L 176  85
+         W   6 273
+> mean(testTarget==result)
+[1] 0.8314815
+> var(testTarget==result)
+[1] 0.14038
+
+without attribute: rank2 amount of money
+          result
+testTarget   L   W
+         L 194  70
+         W  14 262
+> mean(testTarget==result)
+[1] 0.8444444
+> var(testTarget==result)
+[1] 0.1316017
+
+without attribute: rank3 amount of money
+          result
+testTarget   L   W
+         L 179  72
+         W  18 271
+> mean(testTarget==result)
+[1] 0.8333333
+> var(testTarget==result)
+[1] 0.1391466
+
+without attribute: rank4 amount of money
+          result
+testTarget   L   W
+         L 193  63
+         W  16 268
+> mean(testTarget==result)
+[1] 0.8537037
+> var(testTarget==result)
+[1] 0.1251254
+
+without attribute: rank5 amount of money
+          result
+testTarget   L   W
+         L 200  57
+         W  17 266
+> mean(testTarget==result)
+[1] 0.862963
+> var(testTarget==result)
+[1] 0.1184773
+
+[hypothesis 2]:is incumbent feature important?
+No it is not very important. It is different from DT and Naive Bayes.
+          result
+testTarget   L   W
+         L 211  64
+         W   8 257
+> mean(testTarget==result)
+[1] 0.8666667
+> var(testTarget==result)
+[1] 0.1157699
+
+3) Candtotal and YrPercentChange important?
+No. Candtotal is not important. 
+
+          result
+testTarget   L   W
+         L 184  75
+         W  12 269
+> mean(testTarget==result)
+[1] 0.8388889
+> var(testTarget==result)
+[1] 0.1354051
+
+without attribute:  percentage        
+          result
+testTarget   L   W
+         L 195  70
+         W   9 266
+> mean(testTarget==result)
+[1] 0.8537037
+> var(testTarget==result)
+[1] 0.1251254

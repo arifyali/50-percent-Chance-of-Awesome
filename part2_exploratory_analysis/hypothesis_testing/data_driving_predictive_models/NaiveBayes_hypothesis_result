@@ -1,0 +1,97 @@
+[hypothesis 1]: in prediction, the feature of rank1 amount of money is more important than rank2 amount of money, and rank2 amount of money is more important than rank3 amount of money, ...
+Wrong. seems that they are the same imporant.
+
+the below is the result if we discard the feature rank1 amount/rank2 amount/...
+
+without attribute: rank1 amount of money
+pred   L   W
+   L 252  38
+   W  27 223
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8796296
+> var(pred==testdata$WINNER)
+[1] 0.1060778
+
+without attribute: rank2 amount of money
+pred   L   W
+   L 228  32
+   W  36 244
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8740741
+> var(pred==testdata$WINNER)
+[1] 0.1102728
+
+without attribute: rank3 amount of money
+pred   L   W
+   L 249  37
+   W  20 234
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8944444
+> var(pred==testdata$WINNER)
+[1] 0.09458874
+
+without attribute: rank4 amount of money
+pred   L   W
+   L 247  36
+   W  27 230
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8833333
+> var(pred==testdata$WINNER)
+[1] 0.1032468
+
+without attribute: rank5 amount of money
+pred   L   W
+   L 235  40
+   W  31 234
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8685185
+> var(pred==testdata$WINNER)
+[1] 0.114406
+
+[hypothesis 2]:is incumbent feature important?
+Yes. whether the man/woman is the incumbent is the most important feature. If we discard this feature, the model's performance is as following:
+pred   L   W
+   L 134  17
+   W 135 254
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.7185185
+> var(pred==testdata$WINNER)
+[1] 0.2026249
+
+
+3) Candtotal and YrPercentChange important?
+No. Candtotal is not important. The top 5 money donation attributes works well.
+
+without attribute: YrPercentChange
+pred   L   W
+   L 242  34
+   W  25 239
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8907407
+> var(pred==testdata$WINNER)
+[1] 0.09750223
+
+without attribute: total amount of money(Candtotal)
+pred   L   W
+   L 240  36
+   W  37 227
+> 
+> #the performance
+> mean(pred==testdata$WINNER)
+[1] 0.8648148
+> var(pred==testdata$WINNER)
+[1] 0.1171271
