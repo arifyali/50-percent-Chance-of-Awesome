@@ -4,7 +4,7 @@
 library(e1071)
 
 #load the dataset
-dataset = read.csv("./data.csv")
+dataset = read.csv("hypothesis_testing/data_driving_predictive_models/data.csv")
 #attach(Smarket)
 
 #bin the data
@@ -69,3 +69,4 @@ plot(myROC)
 #the performance
 mean(pred==testdata$WINNER)
 var(pred==testdata$WINNER)
+

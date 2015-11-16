@@ -4,7 +4,7 @@
 library(class)
 
 #load the dataset
-dataset = read.csv("./kNNData.csv")
+dataset = read.csv("hypothesis_testing/data_driving_predictive_models/kNNData.csv")
 
 normalize<-function(x){
   return ((x-min(x))/(max(x)-min(x)))
