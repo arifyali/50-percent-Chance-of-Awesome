@@ -10,8 +10,7 @@ root <- paste0("H:/Hotchkiss Hive Mind/John/Documents/Schoolwork/Georgetown/",
                "ANLY-501/50-percent-Chance-of-Awesome/")
 netRepo <- "part2_exploratory_analysis/Network Analysis/"
 
-#Store output
-sink(paste0(root,netRepo,"NetworkInfo.txt"))
+
 
 
 #==========Load data==========#
@@ -82,23 +81,35 @@ g1$diameter <- diameter(g1)
 
 #Number of components
 #Command Source: http://igraph.org/r/doc/components.html
-g1$components <- components(g1,mode="strong")
+g1$components <- count_components(g1,mode="strong")
 
 #Size of the largest k-core
 #Command source: 
 #http://www.inside-r.org/packages/cran/igraph/docs/graph.coreness
 g1$largestKcore <- max(graph.coreness(g1))
 
-#Output above information to the output file
+
+#=====Output above information to the output file
+
+#Open file to store output
+sink(paste0(root,netRepo,"NetworkInfo.txt"))
+
 cat("DEGREE VECTOR:")
 V(g1)$degree
-cat("The degree mean is:",g1$meanDegree,"\n")
+cat("The degree mean is:",g1$meanDegree,"\n","\n")
 cat("BETWEENNESS VECTOR:")
 V(g1)$betweeness
-cat("The betweenness mean is:",g1$meanBetweenness)
+cat("The betweenness mean is:",g1$meanBetweeness,"\n","\n")
+cat("CLUSTERING COEFFICIENT VECTOR:")
+V(g1)$clusteringCoef
+cat("The clustering coefficient mean is:",g1$meanClusteringCoef,"\n","\n")
+cat("The graph density is:",g1$density,"\n","\n")
+cat("The graph diameter is:",g1$diameter,"\n","\n")
+cat("The number of components is:",g1$components,"\n","\n")
+cat("The size of the largest k-core is:",g1$largestKcore,"\n","\n")
 
-
-
+#Close file collecting output
+sink()
 
 
 
@@ -117,8 +128,16 @@ V(g1)$color <- g1Clusters$membership+1
 #Select a layout. Plot the clusters with labels. Plot the clusters
 #without labels (second one).
 g1 <- set.graph.attribute(g1, "layout", layout.fruchterman.reingold(g1))
+
+#Create and Output network plot with labels
+png(paste0(root,netRepo,"Labeled_Edge_Betweenness_Network.png"))
 plot(g1)
+dev.off()
+
+#Create and Output network plot without labels
+png(paste0(root,netRepo,"No_Labels_Edge_Betweenness_Network.png"))
 plot(g1, vertex.label=NA)
+dev.off()
 
 
 #=====Modularity
@@ -145,10 +164,16 @@ g1ModClusters <- cut_at(fgreedy, steps=which.max(fgreedy$modularity)-1)
 #Set vertex color variable to cluster number plus 1.
 V(g1)$color <- g1ModClusters+1
 
-#Plot
+#Set layout
 g1 <- set.graph.attribute(g1, "layout", layout.fruchterman.reingold(g1))
-plot(g1)
-plot(g1, vertex.label=NA)
 
-#Close file collecting output
-sink()
+#Create and Output network plot with labels
+png(paste0(root,netRepo,"Labeled_Modularity_Network.png"))
+plot(g1)
+dev.off()
+
+#Create and Output network plot without labels
+png(paste0(root,netRepo,"No_Labels_Modularity_Network.png"))
+plot(g1, vertex.label=NA)
+dev.off()
+

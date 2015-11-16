@@ -38,12 +38,15 @@ print("FEC Data Stacked") #For log/debug
 #==========Start cleaning stacked data==========#
 
 #Rename some columns
+#Source for this method: 
+#http://www.cookbook-r.com/Manipulating_data/Renaming_columns_in_a_data_frame/
 names(FECAllYears)[names(FECAllYears)=="STATE.ABBREVIATION"]  <- "STATE"
 names(FECAllYears)[names(FECAllYears)=="GENERAL"]             <- "VOTES"
 names(FECAllYears)[names(FECAllYears)=="GENERAL.."]           <- "PERCENT"
 names(FECAllYears)[names(FECAllYears)=="INCUMBENT.INDICATOR"] <- "INCUMBENT"
 
 #Change INCUMBENT to be numeric
+#Method Source: http://www.cookbook-r.com/Manipulating_data/Recoding_data/
 FECAllYears$INCUMBENT[FECAllYears$INCUMBENT=="TRUE" | 
                         FECAllYears$INCUMBENT=="True"] <- "1"
 FECAllYears$INCUMBENT[FECAllYears$INCUMBENT=="FALSE" | 
@@ -51,11 +54,14 @@ FECAllYears$INCUMBENT[FECAllYears$INCUMBENT=="FALSE" |
 FECAllYears$INCUMBENT <- as.numeric(FECAllYears$INCUMBENT)
 
 #Drop variables that we aren't going to use for cleaning or analysis or merging
+#Method Source: 
+#http://stackoverflow.com/questions/4605206/drop-columns-in-r-data-frame
 FECAllYears <- FECAllYears[,!(names(FECAllYears) %in% c("PRIMARY","PRIMARY..",
                                                         "RUNOFF","RUNOFF.."))]
 
 #Drop candidates that did not make it to the General Election
-FECAllYears <- FECAllYears[!(is.na(FECAllYears$VOTES) & is.na(FECAllYears$PERCENT)),]
+FECAllYears <- FECAllYears[!(is.na(FECAllYears$VOTES) & 
+                               is.na(FECAllYears$PERCENT)),]
 
 #Check for candidates missing percentage
 FECAllYears[is.na(FECAllYears$PERCENT),]
@@ -74,7 +80,8 @@ FECAllYears[is.na(FECAllYears$PERCENT),] #Verify the cases were handled.
 #Check for candidates missing votes
 FECAllYears[is.na(FECAllYears$VOTES),]
 
-#Now change all "unopposed" to having NA for votes so that it matches the NYT data set.
+#Now change all "unopposed" to having NA for votes so that it matches the NYT 
+#data set.
 FECAllYears$VOTES[FECAllYears$VOTES==0 & is.na(FECAllYears$PERCENT)] <- NA
 FECAllYears[is.na(FECAllYears$VOTES),] #Check
 
@@ -85,25 +92,49 @@ FECAllYears <- FECAllYears[!(FECAllYears$STATE %in% c("AS", "DC",
 #Make sure there are 50 states after removal of the above elements.
 stopifnot(length(unique(FECAllYears$STATE))==50)
 
-#Check assumption that there are no duplicates by state-year-district-first.name-last.name
-dups <- FECAllYears[duplicated(FECAllYears[,c("STATE","DISTRICT","FIRST.NAME","LAST.NAME","YEAR")]),]
+#Check assumption that there are no duplicates by state-year-district-first.name
+#-last.name
+#Learned about duplicated() from:
+#http://stats.stackexchange.com/questions/6759/removing-duplicated-rows-
+#data-frame-in-r
+dups <- FECAllYears[duplicated(FECAllYears[,c("STATE",
+                                              "DISTRICT",
+                                              "FIRST.NAME",
+                                              "LAST.NAME",
+                                              "YEAR")]),]
 stopifnot(nrow(dups)==0)
 
 #Remove unneeded information from the DISTRICT variable
+#Illustrate what is in it already
 unique(FECAllYears$DISTRICT)
-#Drop people running for an unexpired term (indicated as such or with asterisk in DISTRICT)
+
+#Drop people running for an unexpired term (indicated as such or with asterisk 
+#in DISTRICT).  Source for learning of substr function:
+#http://stackoverflow.com/questions/7963898/extracting-the-last-n-characters-
+#from-a-string-in-r
+#Source for leaning of nchar function:
+#http://stackoverflow.com/questions/11134812/how-to-find-the-length-of-a-
+#string-in-r
 FECAllYears <- FECAllYears[substr(FECAllYears$DISTRICT,
                                   nchar(FECAllYears$DISTRICT)-13,
-                                  nchar(FECAllYears$DISTRICT))!="UNEXPIRED TERM",]
+                                  nchar(FECAllYears$DISTRICT))!="UNEXPIRED TERM"
+                           ,]
 FECAllYears <- FECAllYears[substr(FECAllYears$DISTRICT,3,3)!="*",]
+
+#Standardize District information
+#Change Senate races to have just "S"
 FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)=="S"] <- "S"
+#Change House races to have just their number, removing leading zeros as 
+#necessary.
 FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)!="S"] <- 
   as.character(as.numeric(
     substr(FECAllYears$DISTRICT[substr(FECAllYears$DISTRICT,1,1)!="S"],1,2)))
 unique(FECAllYears$DISTRICT) #Verify DISTRICT is as expected now.
 
-#Check assumption that there are no duplicates by state-year-district-first.name-last.name
-dups <- FECAllYears[duplicated(FECAllYears[,c("STATE","DISTRICT","FIRST.NAME","LAST.NAME","YEAR")]),]
+#Check assumption that there are no duplicates by state-year-district-first.name
+#-last.name
+dups <- FECAllYears[duplicated(FECAllYears[,c("STATE","DISTRICT","FIRST.NAME",
+                                              "LAST.NAME","YEAR")]),]
 stopifnot(nrow(dups)==0)
 
 #Get a variable called CANDIDATE that contains the full name to merge with the 
@@ -149,6 +180,9 @@ FECAllYears <- FECAllYears[,!(names(FECAllYears) %in% c("FEC.ID",
                                                         "KEY"))]
 
 #Order in final data set order
+#Source for column reordering method:
+#http://www.cookbook-r.com/Manipulating_data/Reordering_the_columns_
+#in_a_data_frame/
 FECAllYears <- FECAllYears[c(5,1,2,8,4,3,6,7)]
 
 
@@ -220,6 +254,8 @@ stateAbbrevList = c("al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl",
                     "va", "wa", "wv", "wi", "wy")
 
 #Make abbreviations upper case to match FEC data
+#Source for finding out about toupper function:
+#https://stat.ethz.ch/pipermail/r-help/2008-August/171427.html
 stateAbbrevList <- toupper(stateAbbrevList)
 
 #Make replacements
@@ -236,7 +272,7 @@ NYTElectionLong$PARTY[NYTElectionLong$PARTY=="RepublicanRep."] <- "R"
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="DemocratDem."]   <- "D"
 NYTElectionLong$PARTY[NYTElectionLong$PARTY=="Other"]          <- "I"
 unique(NYTElectionLong$PARTY) #Check Recode
-#Note that "" belongs to "Uncontested" candidate
+#Note that "" belongs to candidate with name = "Uncontested"
 stopifnot(NYTElectionLong$CANDIDATE[NYTElectionLong$PARTY==""]=="Uncontested")
 
 #Handle missing VOTES/PERCENT
@@ -247,8 +283,8 @@ stopifnot(sum(is.na(NYTElectionLong$PERCENT))==
 NYTElectionLong[is.na(NYTElectionLong$PERCENT),]
 #Check that all offending cases are uncontested elections
 stopifnot(
-  sum(NYTElectionLong$CANDIDATE[is.na(NYTElectionLong$PERCENT)]=="Uncontested")==
-    (sum(is.na(NYTElectionLong$PERCENT))/2))
+  sum(NYTElectionLong$CANDIDATE[is.na(NYTElectionLong$PERCENT)]=="Uncontested")
+      ==(sum(is.na(NYTElectionLong$PERCENT))/2))
 #Drop all "Uncontested"
 NYTElectionLong <- NYTElectionLong[NYTElectionLong$CANDIDATE!="Uncontested",]
 
@@ -274,6 +310,11 @@ NYTElectionLong$INCUMBENT <- as.numeric(substr(NYTElectionLong$CANDIDATE,
                                         nchar(NYTElectionLong$CANDIDATE))=="*")
 
 #Remove asterisks identifying incumbents from candidate names
+#Source for how to get * out of gsub (the regular expression):
+#http://stackoverflow.com/questions/20093275/trimming-data-in-r-getting-rid-of
+#Source for gsub:
+#http://stackoverflow.com/questions/1523126/how-to-read-a-csv-file-in-r-where-
+#some-numbers-contain-commas 
 NYTElectionLong$CANDIDATE <- gsub("[*]","",NYTElectionLong$CANDIDATE)
 
 #Order in final data set order
@@ -291,7 +332,8 @@ stopifnot(names(FECAllYears)==names(NYTElectionLong))
 ElectionResults <- rbind(NYTElectionLong,FECAllYears)
 
 #Output Location
-OutputRepo <- "part2_exploratory_analysis/combine_and_clean_FEC_and_NYT_elections_data/"
+OutputRepo <- paste0("part2_exploratory_analysis/combine_and_clean_FEC",
+                     "_and_NYT_elections_data/")
 
 #Output Data Set
 write.csv(ElectionResults,paste0(root,OutputRepo,"ElectionResults.csv"))

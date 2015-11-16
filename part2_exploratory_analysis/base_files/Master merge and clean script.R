@@ -40,7 +40,7 @@ results <- results[,!(names(results) %in% "X")]
 
 #After a first failed merge attempt, learned about "at-large" congressional 
 #districts.  These districts are listed as district "0" in the FEC data.
-#Proof
+#Source for "at-large" districts: https://en.wikipedia.org/wiki/At-large
 for (j in c("AK", "DE", "MT", "ND", "SD", "VT", "WY")) {
   # cat("\n",j,"\n")
   # print(table(results$DISTRICT[results$STATE==j],
@@ -50,7 +50,7 @@ for (j in c("AK", "DE", "MT", "ND", "SD", "VT", "WY")) {
   results$DISTRICT[results$STATE==j & results$DISTRICT=="0"] <- "1"
 }
 
-#After second attempt, trying to remove periods from names
+#Remove unwanted characters from names - attempted with sum regular expressions.
 openS$CANDIDATE <- toupper(gsub("\".*?\"","",openS$CANDIDATE))
 openS$CANDIDATE <- toupper(gsub("[^a-zA-Z ]","",openS$CANDIDATE))
 results$CANDIDATE <- toupper(gsub("[^a-zA-Z ]","",results$CANDIDATE))
