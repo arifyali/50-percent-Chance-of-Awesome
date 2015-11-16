@@ -34,5 +34,5 @@ testattr <- as.numeric(testattr)
 summary(testattr)
 set.vertex.attribute(testnet2012,"ind",testattr)
 
-plot(testnet2012,vertex.col="ind")
+plot(testnet2012,vertex.col="ind",interactive=TRUE)
 
