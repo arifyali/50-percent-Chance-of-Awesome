@@ -3,68 +3,60 @@
 setwd("~/Documents/Analytics 501 Fall 2015/50-percent-Chance-of-Awesome/part2_exploratory_analysis/")
 political_data = read.csv("PoldataSPIndustriesStockData no outliers.csv")
 
-# Null Hypothesis: There is no relation between the YrPercentChange of Industry Stocks and the amount 
-# an industry contributes the rank of that industry for comtribute to a candidate and if the candidate wins
-
-model <- lm(YrPercentChange ~ CANDTOTAL + INDRANK + WINNER,data=political_data)
-summary(model)
-
-# Call:
-#   lm(formula = YrPercentChange ~ CANDTOTAL + INDRANK + WINNER, 
-#      data = political_data)
-# 
-# Residuals:
-#   Min       1Q   Median       3Q      Max 
-# -0.61350 -0.13918  0.01366  0.20836  0.63036 
-# 
-# Coefficients:
-#   Estimate Std. Error t value Pr(>|t|)    
-# (Intercept)  3.391e-01  5.919e-03  57.288  < 2e-16 ***
-#   CANDTOTAL    6.517e-08  5.607e-09  11.623  < 2e-16 ***
-#   INDRANK     -1.054e-02  9.713e-04 -10.855  < 2e-16 ***
-#   WINNER      -3.062e-02  4.848e-03  -6.317 2.74e-10 ***
-#   ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-# 
-# Residual standard error: 0.255 on 15821 degrees of freedom
-# Multiple R-squared:  0.01603,	Adjusted R-squared:  0.01584 
-# F-statistic: 85.89 on 3 and 15821 DF,  p-value: < 2.2e-16
-
-# The p-values for all three attributes is less than 0.05 and the overall F-Statistic P-value is 
-# less than 0.05. Therefore we we reject the null hypothesis that none of these attributes affect
-# an aggregate of the stock prices.
-
-# Null Hyothesis: The Amount of Money and the Number of Industries back a candidate do not affect
+# Null Hyothesis: The Amount of Money and the Number of Industries backinf a candidate do not affect
 # the chances of the candidate winning said election.
 political_data = political_data[order(political_data$INDRANK, decreasing = T),]
 Logit_pol_data = political_data[!duplicated(political_data[,c("STATE", "DISTRICT", "CANDIDATE", "YEAR")]),]
 
-model <- lm(WINNER ~ CANDTOTAL + INDRANK,data=political_data)
+model <- glm(WINNER ~ CANDTOTAL + INDRANK,data=Logit_pol_data, family = "binomial")
 summary(model)
 
 # Call:
-#   lm(formula = WINNER ~ CANDTOTAL + INDRANK, data = political_data)
+#   glm(formula = WINNER ~ CANDTOTAL + INDRANK, family = "binomial", 
+#       data = Logit_pol_data)
 # 
-# Residuals:
-#   Min      1Q  Median      3Q     Max 
-# -1.3460 -0.3278  0.1191  0.3582  0.7281 
+# Deviance Residuals: 
+#   Min       1Q   Median       3Q      Max  
+# -3.1271  -0.6817   0.2709   0.7789   2.1813  
 # 
 # Coefficients:
-#   Estimate Std. Error t value Pr(>|t|)    
-# (Intercept) 1.787e-01  9.602e-03   18.61   <2e-16 ***
-#   CANDTOTAL   5.666e-07  8.015e-09   70.69   <2e-16 ***
-#   INDRANK     2.488e-02  1.581e-03   15.74   <2e-16 ***
+#   Estimate Std. Error z value Pr(>|z|)    
+# (Intercept) -4.711e+00  2.132e-01  -22.09   <2e-16 ***
+#   CANDTOTAL    3.405e-06  1.295e-07   26.30   <2e-16 ***
+#   INDRANK      4.718e-01  2.704e-02   17.45   <2e-16 ***
 #   ---
 #   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 # 
-# Residual standard error: 0.4181 on 15822 degrees of freedom
-# Multiple R-squared:  0.2557,	Adjusted R-squared:  0.2556 
-# F-statistic:  2717 on 2 and 15822 DF,  p-value: < 2.2e-16
+# (Dispersion parameter for binomial family taken to be 1)
+# 
+# Null deviance: 5057.5  on 3668  degrees of freedom
+# Residual deviance: 3351.9  on 3666  degrees of freedom
+# AIC: 3357.9
+# 
+# Number of Fisher Scoring iterations: 5
 
 
+# Number of Fisher Scoring iterations: 5
 # The p-values for all three attributes is less than 0.05 and the overall F-Statistic P-value is 
 # less than 0.05. Therefore we we reject the null hypothesis that none of these attributes affect
-# the winning outcome of a Candidate.
+# the winning outcome of a Candidate in favor of the alternative hypthesis.
+
+# In order to figure out ROC curves
+# http://stackoverflow.com/questions/18449013/r-logistic-regression-area-under-curver
+estimatedwinners = predict(model, type = c("response"))
+estimatedwinners[estimatedwinners<.5] = 0
+estimatedwinners[estimatedwinners>=.5] = 1
+Logit_pol_data$prob = estimatedwinners
+library(pROC)
+g = roc(WINNER ~ CANDTOTAL + INDRANK,data=Logit_pol_data)
+plot(g$CANDTOTAL, main = "CANDTOTAL")
+plot(g$INDRANK, main = "Number of Industries")
+
+#confusion matrix 
+table(Logit_pol_data$WINNER,Logit_pol_data$prob)
+#    0    1
+# 0 1273  399
+# 1  267 1730
 
 
 # t-test
