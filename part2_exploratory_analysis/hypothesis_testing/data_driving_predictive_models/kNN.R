@@ -1,3 +1,6 @@
+#code citation: https://www.youtube.com/watch?v=GtgJEVxl7DY
+#code citation: https://www.youtube.com/watch?v=DkLNb0CXw84
+#code citation: https://cran.r-project.org/web/packages/class/class.pdf
 library(class)
 
 #load the dataset

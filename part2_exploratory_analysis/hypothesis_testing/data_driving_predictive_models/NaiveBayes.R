@@ -1,3 +1,6 @@
+#code citation: https://cran.r-project.org/web/packages/e1071/e1071.pdf
+#code citation: https://cran.r-project.org/web/packages/pROC/pROC.pdf
+
 library(e1071)
 
 #load the dataset
@@ -53,6 +56,7 @@ pred = predict(nb, testdata,type =c("class"))
 
 #show the result
 table(pred, testdata$WINNER)
+
 library(pROC)
 testTarget = as.numeric(testdata$WINNER)
 result = as.numeric(pred)

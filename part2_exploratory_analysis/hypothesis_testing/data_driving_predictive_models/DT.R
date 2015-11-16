@@ -1,3 +1,6 @@
+#code citation: https://www.youtube.com/watch?v=GOJN9SKl_OE
+#code citation: https://cran.r-project.org/web/packages/ISLR/ISLR.pdf
+
 library(ISLR)
 library(tree)
 #load the dataset
