@@ -53,6 +53,14 @@ pred = predict(nb, testdata,type =c("class"))
 
 #show the result
 table(pred, testdata$WINNER)
+library(pROC)
+testTarget = as.numeric(testdata$WINNER)
+result = as.numeric(pred)
+myROC = roc(testTarget,result, 
+            print.auc=TRUE,
+            main="Confidence intervals", percent=TRUE,
+            ci=TRUE,  auc.polygon=TRUE, grid=TRUE, plot=FALSE)
+plot(myROC)
 
 #the performance
 mean(pred==testdata$WINNER)

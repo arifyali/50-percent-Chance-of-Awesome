@@ -100,5 +100,12 @@ text(prune_model, pretty = 0)
 tree_predict_after_prune = predict(prune_model, testdata, type = "class")
 
 table(tree_predict_after_prune, testdata$WINNER)
+
+library(pROC)
+testTarget = as.numeric(testdata$WINNER)
+result = as.numeric(tree_predict_after_prune)
+myROC = roc(testTarget,result, direction="<", auc=TRUE, ci=TRUE)
+plot(myROC)
+
 mean(tree_predict_after_prune == testdata$WINNER)
 var(tree_predict==testdata$WINNER)

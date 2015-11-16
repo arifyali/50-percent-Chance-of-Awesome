@@ -34,5 +34,11 @@ sqrt(569)
 result = knn(train = traindata, test = testdata, cl = trainTarget, k = 24)
 
 table(testTarget, result)
+library(pROC)
+testTarget = as.numeric(testTarget)
+result = as.numeric(result)
+myROC = roc(testTarget,result, direction="<", auc=TRUE, ci=TRUE)
+plot(myROC)
+
 mean(testTarget==result)
 var(testTarget==result)
