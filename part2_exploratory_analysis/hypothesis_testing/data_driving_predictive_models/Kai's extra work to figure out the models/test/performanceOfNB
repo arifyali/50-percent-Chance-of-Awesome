@@ -1,8 +1,0 @@
-pred  B  M
-   B 28  1
-   M  2 26
-
-> mean(pred!=testdata$class)
-[1] 0.05263158
-> var(pred==testdata$class)
-[1] 0.05075188

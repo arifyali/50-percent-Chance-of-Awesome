@@ -1,9 +1,0 @@
-table(real, predict)
-      predict
-real  B  M
-   B 30  0
-   M  3 24
-> mean(testTarget==result)
-[1] 0.9473684
-> var(testTarget==result)
-[1] 0.05075188
