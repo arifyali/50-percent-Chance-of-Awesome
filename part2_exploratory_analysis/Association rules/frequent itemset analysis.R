@@ -11,7 +11,7 @@ for (i in 1:ncol(PoldataSPIndustries)){
 }
 
 # select subset of dataset to be used in FIA
-FIAsubset = PoldataSPIndustries[,c(2,3,8,12,15,19,22:24)]
+FIAsubset = PoldataSPIndustries[,c(2,3,8,12,15,19,20,22:24)]
 
 # run association rule mining with Apriori algorithm
 rules= apriori(FIAsubset,parameter = list(maxlen=20, supp=0.4, conf=0.2))
