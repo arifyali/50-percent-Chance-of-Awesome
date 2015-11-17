@@ -26,9 +26,12 @@ trainTarget = traindataset[, 5]
 testTarget = testdataset[, 5]
 
 # Determined k should be 17 after benchmarking K values between 1 and 20
-result = knn(train = traindataset[,-5], test = testdataset[,-5], cl = trainTarget, k = 17)
+pred = knn(train = traindataset[,-5], test = testdataset[,-5], cl = trainTarget, k = 17)
 
-table(testTarget, result)
+confmatrix = table(pred, testTarget)
+print("confusion matrix",quote = FALSE)
+print(confmatrix)
+
 library(pROC)
 testTarget = as.numeric(testTarget)
 result = as.numeric(result)-1
@@ -36,6 +39,11 @@ myROC = roc(testTarget,result, direction="<", auc=TRUE, ci=TRUE)
 jpeg(paste0("hypothesis_testing/data_driving_predictive_models/KNN ROC validation ", i, ".jpeg", sep=""))
 plot(myROC)
 dev.off()
-print(mean(testTarget==result))
-print(var(testTarget==result))
+precision = confmatrix[2,2]/sum(confmatrix[2,2],confmatrix[1,2])
+Recall = confmatrix[2,2]/sum(confmatrix[2,2],confmatrix[2,1])
+print(paste0("accuracy: ", mean(pred==testdata$WINNER)),quote = FALSE)
+print(paste0("precision: ", precision),quote = FALSE)
+print(paste0("Recall: ", Recall),quote = FALSE)
+print(paste0("F-measure: ", 2*precision*Recall/(precision+Recall)),quote = FALSE)
+
 }

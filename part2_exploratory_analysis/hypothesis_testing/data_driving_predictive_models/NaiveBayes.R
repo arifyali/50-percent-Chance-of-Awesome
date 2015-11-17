@@ -12,21 +12,22 @@ dataset = dataset[!duplicated(dataset[,c("YEAR", "STATE", "DISTRICT", "CANDIDATE
 #bin the data
 dataset$WINNER = as.factor(dataset$WINNER)
 
-x = dataset[, "CANDTOTAL"]
-candTotalLevel = cut(x, b=10, labels = c(1:10))
-dataset = cbind(dataset, candTotalLevel)
+# x = dataset[, "CANDTOTAL"]
+# candTotalLevel = cut(x, b=10, labels = c(1:10))
+# dataset = cbind(dataset, candTotalLevel)
+# 
+# x = dataset[, "INDRANK"]
+# INDLevel = cut(x, b=12, labels = c(1:12))
+# dataset = cbind(dataset, INDLevel)
 
-x = dataset[, "INDRANK"]
-INDLevel = cut(x, b=12, labels = c(1:12))
-dataset = cbind(dataset, INDLevel)
 
-
-dataset = dataset[, c("WINNER", "CANDTOTAL", "candTotalLevel", "INDRANK", "INDLevel")]
+dataset = dataset[, c("WINNER", "CANDTOTAL", "INDRANK", "INCUMBENT")]
 
 #dataset = dataset[,c(1,3:15)]
 #10-folds-accross
-for(i in 1:3){
-  train = sample(1:nrow(dataset),nrow(dataset)*2/3)
+k = 5
+for(i in 1:k){
+  train = sample(1:nrow(dataset),nrow(dataset)*(k-1)/k)
   test = -train
   traindata = dataset[train,]
   testdata = dataset[test,]
@@ -38,7 +39,9 @@ for(i in 1:3){
   pred = predict(nb, testdata[,-1], type = c("class"))
   
   #show the result
-  print(table(pred, testdata$WINNER))
+  print("confusion matrix",quote = FALSE)
+  confmatrix = table(pred, testdata$WINNER)
+  print(confmatrix)
   
   library(pROC)
   testTarget = as.numeric(testdata$WINNER)
@@ -51,7 +54,10 @@ for(i in 1:3){
   plot(myROC)
   
   #the performance
-  print(mean(pred==testdata$WINNER))
-  print(var(pred==testdata$WINNER))
-
+  precision = confmatrix[2,2]/sum(confmatrix[2,2],confmatrix[1,2])
+  Recall = confmatrix[2,2]/sum(confmatrix[2,2],confmatrix[2,1])
+  print(paste0("accuracy: ", mean(pred==testdata$WINNER)),quote = FALSE)
+  print(paste0("precision: ", precision),quote = FALSE)
+  print(paste0("Recall: ", Recall),quote = FALSE)
+  print(paste0("F-measure: ", 2*precision*Recall/(precision+Recall)),quote = FALSE)
 }
