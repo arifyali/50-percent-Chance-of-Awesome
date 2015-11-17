@@ -329,13 +329,13 @@ remove_outliers <- function(x, na.rm = TRUE, ...) {
 }
 # removing outliers
 PoldataSPIndustries$TEST = remove_outliers(PoldataSPIndustries$CANDTOTAL)
-PoldataSPIndustries$TEST1 = remove_outliers(PoldataSPIndustries$VOTES)
+PoldataSPIndustries$TEST1 = remove_outliers(PoldataSPIndustries$PERCENT)
 PoldataSPIndustries = PoldataSPIndustries[!is.na(PoldataSPIndustries$TEST),]
 PoldataSPIndustries = PoldataSPIndustries[!is.na(PoldataSPIndustries$TEST1),]
 
 # bin candidate total contributions and votes into 4 levels
 PoldataSPIndustries$CANDTOTALLEVEL = cut(PoldataSPIndustries$CANDTOTAL,4,labels = c("Very Low","Mid-Low","Mid-High","High"))
-PoldataSPIndustries$VOTESLEVEL = cut(PoldataSPIndustries$VOTES,4,labels = c("Very Low","Mid-Low","Mid-High","High"))
+PoldataSPIndustries$VOTEPERCENTLEVEL = cut(PoldataSPIndustries$PERCENT,4,labels = c("Very Low","Mid-Low","Mid-High","High"))
 
 # create win variable
 PoldataSPIndustries$race = paste0(PoldataSPIndustries$YEAR,PoldataSPIndustries$STATE,PoldataSPIndustries$DISTRICT)

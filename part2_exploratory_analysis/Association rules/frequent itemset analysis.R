@@ -1,14 +1,9 @@
-### Creating new features in election data for frequent itemset analysis
+### frequent itemset analysis
 install.packages("arules")
 library(arules)
 
-# frequent itemset analysis
 # load in dataset without outliers
 PoldataSPIndustries <- read.csv("~/50-percent-Chance-of-Awesome/part2_exploratory_analysis/PSPI no outliers.csv")
-
-
-#
-PoldataSPIndustries$VOTEPERCENTLEVEL = cut(PoldataSPIndustries$PERCENT,4,labels = c("Very Low","Mid-Low","Mid-High","High"))
 
 # convert dataset to type factor
 for (i in 1:ncol(PoldataSPIndustries)){
@@ -16,7 +11,7 @@ for (i in 1:ncol(PoldataSPIndustries)){
 }
 
 # select subset of dataset to be used in FIA
-FIAsubset = PoldataSPIndustries[,c(2,3,8,12,15,19,22,24:25)]
+FIAsubset = PoldataSPIndustries[,c(2,3,8,12,15,19,22:24)]
 
 # run association rule mining with Apriori algorithm
 rules= apriori(FIAsubset,parameter = list(maxlen=20, supp=0.4, conf=0.2))
