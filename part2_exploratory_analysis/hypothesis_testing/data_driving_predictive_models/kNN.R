@@ -10,23 +10,24 @@ dataset = dataset[!duplicated(dataset[,c("YEAR", "STATE", "DISTRICT", "CANDIDATE
 
 dataset = dataset[, mapply(is.numeric, dataset)]
 
-dataset = dataset[, -c(2,3, 12,13,14,15,10,9,7)]
+dataset = dataset[, c("CANDTOTAL", "INCUMBENT", "WINNER", "INDRANK")]
 
 #10-folds-accross
 #for(k in 1:20){
-for(i in 1:3){
-train = sample(1:nrow(dataset),nrow(dataset)*2/3)
+k = 5
+for(i in 1:k){
+train = sample(1:nrow(dataset),nrow(dataset)*(k-1)/k)
 test = -train
 traindataset = dataset[train,]
 testdataset = dataset[test,]
 
 
 
-trainTarget = traindataset[, 5]
-testTarget = testdataset[, 5]
+trainTarget = traindataset[, 3]
+testTarget = testdataset[, 3]
 
 # Determined k should be 17 after benchmarking K values between 1 and 20
-pred = knn(train = traindataset[,-5], test = testdataset[,-5], cl = trainTarget, k = 17)
+pred = knn(train = traindataset[,-3], test = testdataset[,-3], cl = trainTarget, k = 17)
 
 confmatrix = table(pred, testTarget)
 print("confusion matrix",quote = FALSE)

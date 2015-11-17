@@ -8,26 +8,24 @@ dataset = read.csv("PoldataSPIndustriesStockData no outliers.csv")
 dataset = dataset[order(dataset$INDRANK, decreasing = T),]
 dataset = dataset[!duplicated(dataset[,c("YEAR", "STATE", "DISTRICT", "CANDIDATE")]),]
 dataset$WINNER = as.factor(dataset$WINNER)
-for(k in 1:3){
-  train = sample(1:nrow(dataset),nrow(dataset)*2/3)
+dataset = dataset[,c("CANDTOTAL", "INCUMBENT", "WINNER", "INDRANK")]
+k = 5
+for(i in 1:k){
+  train = sample(1:nrow(dataset),nrow(dataset)*(k-1)/k)
   test = -train
   traindata = dataset[train,]
   testdata = dataset[test,]
               
   #build the tree model using the train data
   #we want to predict the attribute class, we use all other attributes to train this model, the dataset we use is traindata
-  tree_model = tree(traindata$WINNER~.,traindata[,c("CANDTOTAL", "INCUMBENT", "WINNER", "INDRANK")])
+  tree_model = tree(traindata$WINNER~.,traindata)
   
   
   
   #check the performance of the model using test data
   pred = predict(tree_model, testdata, type = "class")
   #using .5 as a standard split
-  print(paste0("accuracy: ", mean(pred==testdata$WINNER)),quote = FALSE)
-  
-  
-  #confint(tree_predict==testdata$class)
-  #how to get mean, variance, confidence interval???????????
+  #print(paste0("accuracy: ", mean(pred==testdata$WINNER)),quote = FALSE)
   
   #prune the tree to improve the performance
   cv_tree = cv.tree(tree_model, FUN = prune.tree)
@@ -58,7 +56,7 @@ for(k in 1:3){
   testTarget = as.numeric(testdata$WINNER)
   result = as.numeric(predict_after_prune)
   myROC = roc(testTarget,result, direction="<", auc=TRUE, ci=TRUE)
-  jpeg(paste0("hypothesis_testing/data_driving_predictive_models/DT ROC ", k, ".jpeg", sep = ""))
+  jpeg(paste0("hypothesis_testing/data_driving_predictive_models/DT ROC ", i, ".jpeg", sep = ""))
   plot(myROC)
   dev.off()
   

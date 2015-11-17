@@ -47,6 +47,7 @@ estimatedwinners = predict(model, type = c("response"))
 estimatedwinners[estimatedwinners<.5] = 0
 estimatedwinners[estimatedwinners>=.5] = 1
 Logit_pol_data$prob = estimatedwinners
+mean(Logit_pol_data$prob == Logit_pol_data$WINNER)
 library(pROC)
 g = roc(WINNER ~ CANDTOTAL + INDRANK,data=Logit_pol_data)
 plot(g$CANDTOTAL, main = "CANDTOTAL")
