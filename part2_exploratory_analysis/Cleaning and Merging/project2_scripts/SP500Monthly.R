@@ -41,4 +41,3 @@ while (i < length(SP500Monthly$Date)){
                 i <- i+1
         }
 }
-SP500Monthly$PercentChange <- SP500Monthly$PercentChange * 100
