@@ -1,5 +1,9 @@
 A central Repo for the "50% Chance of Awesome" group in Analytics 501 for Fall 2015
 ====================================================================================
+
+Project 1:
+---------------------
+
 Table of Contents:
 ---------------------
 *	Project Description
@@ -38,6 +42,7 @@ Table of Contents:
 
 List of Files:
 ---------------
+Programs and Output from Part 1:
 *	Project Description.docx (not on github yet): This document describes the data science problem, analyses that might be conducted using the merged dataset, and issues with the data.
 *	Opensecrets API.py: This script obtains data on political contributions by industry for 2012 and 2014, for general election winners, from Opensecrets.org, using the getLegislators and candIndustry APIs.
 *	ScrapeOpenSecrets.py: This script scrapes data on political contributions by industry for 2004-2010 general election winners and losers and for 2012-2014 general election losers, from Opensecrets.org.
@@ -54,5 +59,42 @@ List of Files:
 *	FEC Data Dictionaries.zip: Prefaces to FEC election results.
 *	Clean Analysis Script.py: Assess cleanliness of results files. 
 *	Cleaning Analysis output.csv: Cleanliness scores for all datasets. Output of Clean Analysis Script.py
+
+
+
+
+Project 2:
+---------------------
+
+Table of Contents:
+---------------------
+* Data Cleaning and Merging Scripts / Crosswalks
+  * Industry crosswalk used to bin Industries
+  * Party crosswalk used to bin party affiliations
+  * Reformat/reshape FEC election results spreadsheets
+  * Align and stack FEC and New York Times election results data
+  * Reformat/reshape Open Secrets scraped data
+  * Reformat/reshape S&P financial data
+* Analyses
+  * Association Rules - Code and output
+  * Clustering
+    * Kmeans
+    * Hierarchical
+    * DBSCAN
+    * Output includes images
+  * Histograms and Correlations
+    * Contains images
+  * Hypothesis Testing
+    * Data Driven Models
+      * kNN
+      * Naive Bayes
+      * Decision Tree
+      * Output includes images
+    * Parametric Statistical Tests
+      * Output includes images
+    * Sector-Specific Indices
+  * Network Analysis
+    * Output includes images
+
 
 
