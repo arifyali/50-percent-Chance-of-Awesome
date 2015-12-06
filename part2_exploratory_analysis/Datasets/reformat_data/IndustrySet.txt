@@ -1,0 +1,2 @@
+"Not for profit","Financials","Consumer Staples","Industrials","Consumer Discretionary","Materials","Utilities","Information Technology","Not publicly traded","Health Care",
+"Telecommunication Services","Energy","Other"
