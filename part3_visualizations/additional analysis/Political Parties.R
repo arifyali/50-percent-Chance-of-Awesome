@@ -31,9 +31,9 @@ for(i in unique(political_data_short$YEAR)){
 
 winnings = data.frame(Democrats, Republicans, Year = unique(political_data_short$YEAR))  
 
-plot(Republicans~Year, data=winnings, type = "l", ylim = c(0.4,0.6), col = "red")
+plot(Republicans~Year, data=winnings, type = "l", ylim = c(0.4,0.6), col = "red", ylab = "Percentage of Winners by Party")
 lines(Democrats~Year, data=winnings, type = "l", col = "blue")
-
+legend(x = "topleft", legend = c("Dem", "Rep"), col = c("blue", "red"), lty = 1)
 
 Republicans.finance = c()
 Democrats.finance = c()
@@ -52,7 +52,8 @@ for(i in unique(political_data_short$YEAR)){
 
 winnings.finance = data.frame(Democrats.finance, Republicans.finance, Year = unique(political_data_short$YEAR))  
 
-plot(y = winnings.finance$Republicans.finance, x = winnings.finance$Year, type = "l", col = "red")
-lines(y = winnings.finance$Democrats.finance, x = winnings.finance$Year, type = "l", col = "blue")
+plot(Republicans.finance~Year, data =winnings.finance, type = "l", col = "red", ylab = "Total Contributions by Party")
+lines(Democrats.finance~Year,data =winnings.finance, type = "l", col = "blue")
+legend(x = "topleft", legend = c("Dem", "Rep"), col = c("blue", "red"), lty = 1)
 
 cor(c(Republicans, Democrats), c(Republicans.finance, Democrats.finance))
