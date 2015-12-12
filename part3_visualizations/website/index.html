@@ -55,10 +55,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home" class="page-scroll">Home</a></li>
-        <li><a href="#services-section" class="page-scroll">Our Question</a></li>
+        <li><a href="#services-section" class="page-scroll">Background</a></li>
         
-        <li><a href="#about-section" class="page-scroll">Our Story</a></li>
-        <li><a href="#works-section" class="page-scroll">Visualizations</a></li>
+        <li><a href="#works-section" class="page-scroll">Our Questions</a></li>
         <li><a href="#testimonials-section" class="page-scroll">Conclusion</a></li>
         <li><a href="#team-section" class="page-scroll">Team</a></li>
 
@@ -80,50 +79,55 @@
 <div id="services-section" class="text-center">
   <div class="container">
     <div class="section-title wow fadeInDown">
-      <h2>Our Question</h2>
+      <h2>Background</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus. Eleifend pellentesque natoque faucibus magna ut etiam.</p>
+      <p>Campaign finance in the United States has been a hot topic for a long time, even before the Supreme Court lifted limits on spending by outside groups in the highly publicized <a href="https://www.oyez.org/cases/2008/08-205"><strong>Citizens United ruling</strong></a>. There have been countless attempts to reform this system, ever since the Naval Appropriations Bill of 1867, which prohibited government employees from soliciting donations from navy yard workers. And as the sums of money involved continue to grow (individuals contributed more than $3 billion to federal candidates in the <a href="http://www.fec.gov/press/press2013/20130419_2012-24m-Summary.shtml"><strong>2012 election cycle</strong></a>), calls for reform also grow louder. Proponents of campaign finance reform, like Senator (and 2016 presidential candidate) Bernie Sanders (D – VT), argue that campaign contributions are a form of <a href="http://www.sanders.senate.gov/newsroom/recent-business/sanders-proposes-public-funding-of-elections-to-replace-corrupt-system-of-legalized-bribery_--"><strong>“legalized bribery”</strong></a> where contributors expect to see a return on their investment in the form of friendly policy. This idea enjoys widespread acceptance on both sides of the aisle; as Republican presidential candidate Donald Trump put it in a recent debate, <a href="https://theintercept.com/2015/08/07/donald-trump-buy/"><strong>“When you give, they do whatever the hell you want them to do.”</strong></a> 
+      <h2>Interactive Visuals</h2>
+      <li><a href="http://cs-sys-1.uis.georgetown.edu/~hw271/ds_visualization/USCongressionalDistrict/index.html">Map of Congress for 2014</a></li>
+      <li><a href="http://cs-sys-1.uis.georgetown.edu/~hw271/ds_visualization/interactive_network_demo/index.html">Network</a></li>
+		
+</p>
     </div>
     <div class="space"></div>
   </div>
 </div>
 <!-- About Section -->
-<div id="about-section">
-  <div class="container">
-    <div class="section-title text-center wow fadeInDown">
-      <h2><strong>Our Story</h2>
+<div id="works-section" class="text-center">
+  <div class="container"> <!-- Container -->
+    <div class="section-title wow fadeInDown">
+      <h2>Our Questions</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+      <p>To follow understand how we </p>
     </div>
-          <h4>Who We Are</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+          <h4>Question One: Do campaign contributions predict electoral success?</h4>
+          <p>Our analysis found that campaign contributions are highly correlated with electoral success, both in terms of amount of funding and percentage of total funding in a given race received. The correlation coefficient between the percentage of funds received and the percentage of votes received is .87; for every additional percentage point of funds a candidate raised, he/she received an additional .87% of votes. In the graph of percentage of funds raised, it is clear that there are stark differences between the winning and losing candidates, with only a small bit of overlap.</p>
+          <img src="img/Picture1.png" width="375" height="250" alt="Funds raised">
+          <p>This result was supported by the frequent itemset mining analysis. For this portion of the analysis, funds raised was binned into four categories (very low, low, mid-high, and high). Candidates who received a very low amount of funding tended to be election losers, while candidates who raised a high amount of funding tended to be election winners.</p>
+          <p>After concluding that campaign funding was highly correlated with electoral success, we ran some predictive analyses to determine how effective the campaign funding variable was in determining election winners. We set up a logistic regression model in which the winner variable was determined solely by the amount of money raised and the number of industries that contributed to a candidate, and found that these two variables alone gave us a classification rate of 81.8%, with most of the predictive power coming from the funds raised variable. We were a bit surprised by the high classification rate; although we came into the project with the idea that funding played a role in election outcomes, we were not expecting it’s impact to be so large.</p>
+          <p>We wanted to see if we could develop an even more accurate predictive model, so for the decision tree analysis we added the incumbency status variable. The prediction accuracy improved to about 90%, but, as the tree below shows, the incumbent variable dwarfed both other variables; once the model had a candidate’s incumbency status, nothing else was important in determining the outcome of the election. Basically, what is happening here is the incumbency variable subsumes the contribution amount; incumbents raise higher amounts of funding than non-incumbents, and since the incumbent variable is such a good predictor of winners on its own (over 90% of election winners in our dataset were incumbents), adding more info on top of the incumbency status doesn’t add any predictive power.</p>
+          <img src="img/Picture2.png" width="375" height="250" alt="DT">
+          <p>However, the fact that incumbency status is a better predictor of electoral success than amount of funding does not mean funding is meaningless. It is abundantly clear that the more money a candidate raises, the higher that candidate’s chances of being elected. An interesting extension of this analysis would be to closely examine outliers; candidates who raised a great deal of money yet still lost and candidates who raised very little money but were elected anyway, to see how they differ from their counterparts.</p>
           <div class="space"></div>
-          <h4>What We Do</h4>
+          <h4>Question Two</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-             
+          <img src="img/Percentages of Winners by Party.jpeg" width="375" height="250" alt="Percentages of Winners by Party">
+          <p>Percentages of Winners by Party</p>
+          <img src="img/Total Contributions by Party.jpeg" width="375" height="250" alt="Total Contributions by Party">
+          <p>Total Contributions by Party</p>  
       </div>
     </div>
   </div>
 </div>
 
-<!-- Portfolio Section -->
-<div id="works-section" class="text-center">
-  <div class="container"> <!-- Container -->
-    <div class="section-title wow fadeInDown">
-      <h2><strong>Our Visualizations</strong></h2>
-      <h4>Interactive</h4>
-      <li><a href="http://cs-sys-1.uis.georgetown.edu/~hw271/ds_visualization/USCongressionalDistrict/index.html">Map of Congress for 2014</a></li>
-      <li><a href="http://cs-sys-1.uis.georgetown.edu/~hw271/ds_visualization/interactive_network_demo/index.html">Network</a></li>
-      <li><a href="">Barchart</a></li>
+
       
-      <h4>Static</h4>
       
-      <img src="img/Percentages of Winners by Party.jpeg" alt="Percentages of Winners by Party">
-      <p>Percentages of Winners by Party</p>
-      <img src="img/Total Contributions by Party.jpeg" alt="Total Contributions by Party">
-      <p>Total Contributions by Party</p>
+      
+   
+      
+      
 <!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
@@ -191,9 +195,7 @@ function type(d) {
 
 </script>
 --!>
-      </div>
-    </div>
-  </div>
+
 <!-- Testimonials Section -->
 <div id="testimonials-section" class="text-center">
   <div class="container">
@@ -205,17 +207,19 @@ function type(d) {
       <div class="col-md-8 col-md-offset-2">
         <div id="testimonial" class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="200ms">
           <div class="item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p>Many of our conclusions supported already expected conclusions.</p>
             
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <h4>Stocks aren’t significantly affected by election results</h4>
+            	<p>Initially, we wanted to see if stock prices were influenced by the the number of incumbents that certain sectors supported. This was hard to figure out and we came to the conclusion that if elections influenced stock prices, the effect was negligible.</p>
             
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
-            
+          <h4>Incumbents Win.</h4>
+          <p>The most important conclusion that we were able to revalidate was that incumbent (who also got more money than challengers) also tended to win elections. This theory had been explored in many different political science articles; an article from the Washington Post discusses <a href="https://www.washingtonpost.com/news/the-fix/wp/2013/05/09/people-hate-congress-but-most-incumbents-get-re-elected-what-gives/"><strong>the concept in more detail</strong></a>.</p>
           </div>
+          
         </div>
       </div>
     </div>
