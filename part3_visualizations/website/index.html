@@ -135,13 +135,13 @@
           <img src="img/Picture5.png" width="340" height="340" alt="Monthly % of change">
           <p>The main take-away from this network is that the candidates are hopelessly intertwined by industry.  One possible conclusion from this network is that industries hedge their bets and support many different candidates to be sure they end up on the winning side in one way or another.  However, a more likely explanation in this case is that our data is just not good enough for this sort of analysis.  The bins are just too coarse to find the relationships that we are hoping to find.  The coarseness comes directly from the binning of the Open Secrets data in order to allow it to merge to the financial data.    Given these disappointing results, it seemed better to focus our effort on expanding our other research questions.</p>
           <p>Other methods that we considered for exploring the chain of campaign contribution to election to contributor gains, but couldn’t complete due to the form of our data, included “What are the time series effects of an election and industry contributions?”, “What is the influence of Super PACs and individual contributions on campaign success?”.  Unfortunately, we simply don’t have the granularity of when contributions are made in order to assess time series relationships.  The only time series data that we had was the stock data.  In the case of the second question, although Open Secrets has PAC and individual contribution information, it was not in a scrapable form and their API restricts accesses to a limited number of records per day.  Furthermore, even if we had setup a strategy for gathering that information, it was only available for one or two election cycles.</p>
-          <h4>Question Three</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+          <h4>Question Three: Are there disparities between the parties?</h4>
+          <p>Historically, the Senate has been controlled for more years by Republicans while the Democrats have held control of the House of Representatives for a longer amount of time. In our network analysis, our decision to consider the networks of candidates and industries did not uncover any clustering of parties. A limitation of using industries was the ambiguity of how industries are defined by the S&P 500 Index. The implications of this analysis reveals a sense of hedging, so as to remain out of disfavor rather than risking full support to win the favor of the party that may end up being less influential. What we may not see, however, is if there are specific sectors within an industry that eschew this rationale. But this analysis would be outside the scope of our research.</p>
 
           <img src="img/Percentages of Winners by Party.jpeg" width="375" height="250" alt="Percentages of Winners by Party">
-          <p>Percentages of Winners by Party</p>
+          <p>With regard to party disparity in election win percentages, we found that Republicans won more elections in four of the six elections we covered, but in total of all six elections, the disparity was not as prominent with the Republican Party winning in 50.7% of elections compared to 49.1% for Democrats. In the instances where incumbents were running in an election, Republican incumbents were re-elected at a slightly higher rate than Democratic incumbents with percentages of 92.1% to 91.1%.</p>
           <img src="img/Total Contributions by Party.jpeg" width="375" height="250" alt="Total Contributions by Party">
-          <p>Total Contributions by Party</p>  
+          <p>Finally, observing the total amount of funds received by each party from election year to the next, we find somewhat of an oddity in 2010 where Democrats received more contributions, but won significantly fewer elections. We also found that in total of the six years, Democrats actually raised over 2.5% more funds than Republicans with 50.9% for Democrats to the Republicans’ 48.3%. This is an interesting piece of data as it does not concur with the common perception that money essentially equates to election wins. This is evidenced by the anomaly in 2010.</p>  
       </div>
     </div>
   </div>
@@ -247,7 +247,12 @@ function type(d) {
           <h4 style="color:black;">Incumbents Win.</h4>
           <p style="color:black;">The most important conclusion that we were able to revalidate was that incumbent (who also got more money than challengers) also tended to win elections. This theory had been explored in many different political science articles; an article from the Washington Post discusses <a href="https://www.washingtonpost.com/news/the-fix/wp/2013/05/09/people-hate-congress-but-most-incumbents-get-re-elected-what-gives/"><strong style="color:black;">the concept in more detail</strong></a>.</p>
           </div>
-          
+          <div class="item">
+          <h4 style="color:black;">Democrats vs. The GOP</h4>
+          <p style="color:black;">There is little evidence that any significant disparity exists between the Republican and Democratic parties when considering industry support, fundraising, and election win percentages as variables. T-tests that were run by using these variables to create our samples reported high p-values and confidence intervals that would not allow the rejection of the hypothesis that there is no difference in means.</p>
+          </div>
+        
+  
         </div>
       </div>
     </div>
