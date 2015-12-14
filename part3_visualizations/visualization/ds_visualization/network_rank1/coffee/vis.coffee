@@ -148,7 +148,7 @@ Network = () ->
     vis = d3.select(selection).append("svg")
       .attr("width", width)
       .attr("height", height)
-      .attr("style","position:fixed; left:0px;")
+      .attr("style","margin-left:-700px;")
       .attr("right",0)
     linksG = vis.append("g").attr("id", "links")
     nodesG = vis.append("g").attr("id", "nodes")
