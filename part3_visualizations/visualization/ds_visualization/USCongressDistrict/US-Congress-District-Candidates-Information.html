@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css_visualization/USCongressionalDistrict.css">
+<style type="text/css">
+#body {
+	background-color:#FDF3E7;
+}
+#head {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 25px
+}
+
+#description{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px
+}
+</style>
+<body id="body">
+<div id="head">US Congress Candidate Information</div>
+<div id="description">This map shows the information of Congress candidates in each area, including their names, party, total amount of funding, whether they are incumbents, whether they win the campaign. For some areas like Alaska, we don't have any candidate's information.<div>
+<div><br /><br /></div>
+
+<script src="./js_visualization/d3.js"></script>
+<script src="./js_visualization/queue.v1.min.js"></script>
+<script src="./js_visualization/topojson.v1.min.js"></script>
+<script src="./js_visualization/uscongress.js"></script>
