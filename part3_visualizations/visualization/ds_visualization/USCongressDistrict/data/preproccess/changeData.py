@@ -20,15 +20,17 @@ def getCandInfoFromCSV(csvReader, dictOfStateCode):
 
 		candInfo = "candidate:"+row['CANDIDATE']+", party:"+\
 			row['PARTY']+", total_funding:"+row['CANDTOTAL']
-		if row['INCUMBENT'] == 1:
+		if row['INCUMBENT'] == '1':
+			print "incumbent"
 			candInfo = candInfo+", incumbent"
 		else:
 			candInfo = candInfo+", not_incumbent"
-		if row['WINNER'] == 1:
+		if row['WINNER'] == 'W':
+			print "winner"
 			candInfo = candInfo+", winner"
 		else:
 			candInfo = candInfo+", loser"
-
+		candInfo = candInfo + "   "
 		if key in informationDict:
 			informationDict[key]=informationDict[key]+candInfo
 		else:
