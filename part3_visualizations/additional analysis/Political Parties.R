@@ -57,3 +57,54 @@ lines(Democrats.finance~Year,data =winnings.finance, type = "l", col = "blue")
 legend(x = "topleft", legend = c("Dem", "Rep"), col = c("blue", "red"), lty = 1)
 
 cor(c(Republicans, Democrats), c(Republicans.finance, Democrats.finance))
+
+### SVM Implimentation
+# Use Candidate Total to predict 
+political_data_short$ID = (political_data_short$WINNER)
+political_data_short$PARTY = as.character(political_data_short$PARTY)
+political_data_short$ID = paste0(political_data_short$PARTY, political_data_short$INCUMBENT, political_data_short$WINNER)
+# Id which will be the SVM response variable combines party, incumbent status, and winner.
+
+for(i in 1:length(unique(political_data_short$ID))){
+  print(unique(political_data_short$ID)[i])
+  print(i)
+  political_data_short$ID[political_data_short$ID==unique(political_data_short$ID)[i]] = i
+}
+
+# [1] "R11"
+# [1] 1
+# [1] "I00"
+# [1] 2
+# [1] "D00"
+# [1] 3
+# [1] "D11"
+# [1] 4
+# [1] "R00"
+# [1] 5
+# [1] "D10"
+# [1] 6
+# [1] "D01"
+# [1] 7
+# [1] "R01"
+# [1] 8
+# [1] "R10"
+# [1] 9
+# [1] "I01"
+# [1] 10
+# [1] "I11"
+# [1] 11
+political_data_short$ID = as.factor(as.numeric(political_data_short$ID))
+k = 5
+for(i in 1:k){
+  index = sample(nrow(political_data_short), nrow(political_data_short)*(k-1)/k)
+  train = political_data_short[index,]
+  test = political_data_short[-index,]
+  
+  cv.pd = svm(ID~CANDTOTAL, data = train)
+  test.predictions = predict(object = cv.pd, newdata = test)
+  print(mean(test.predictions == test$ID))
+}
+table(test.predictions, test$ID)
+# The SVM looked at different classifications. Based on the last table
+# it confirms our theory that party doesn't matter as much because winners
+# of one party are classified as winners from another party at an unusally high rate.
