@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css_visualization/chart.css">
+
+
+<style type="text/css">
+#body {
+	background-color:#FDF3E7;
+}
+#head {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 25px
+}
+
+#description{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px
+}
+
+#tablename{
+	font-family: "Times New Roman", Times, serif;
+}
+</style>
+<body id = "body">
+
+	<div id = "head">Distribution of Race Funding Percent Received by Candidate</div>
+	<div id = "description">The two charts describe the distribution of race funding percent received by winner candidates and loser candidates. Each bin is the % of funds (money) each candidate collected in their election. For example, if in Election 1, Candidate A receives $95 and wins, and Candidate B receives $5 and loses, Candidate A will be in the 0.9-1.0 bin on the winner's chart and Candidate B will be in the 0.0-0.1 bin on the loser's chart. There are about 470 elections each election year, and there are normally only 2 candidates for each election. (Sometimes there will only be 1 candidate, sometimes there will be more than 2.)</div>
+	<div id = "description">The format of note in x axis is yy-x. Yy represents the year, for example, 04 represents 2004. X represents the bin. For example, 0.1 represent 0~0.1, 0.8 represents 0.7~0.8.</div>
+	<script src="./js_visualization/d3.min.js"></script>
+	
+	<p></p>
+	<h5 id = "tablename" align = "center">winner table</h5>
+	<script src="./js_visualization/winner.js"></script>
+
+	<h></h>
+	<script src="./js_visualization/loser.js"></script>
+	<h5 id = "tablename" align = "center">loser table</h5>

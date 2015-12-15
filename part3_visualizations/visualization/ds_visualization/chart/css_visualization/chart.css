@@ -1,0 +1,30 @@
+#winnerbar{
+	fill:#c5d5cb;
+}
+
+#winnerbar:hover {
+  fill: brown;
+}
+
+#loserbar{
+	fill:#9fa8a3;
+}
+
+#loserbar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
