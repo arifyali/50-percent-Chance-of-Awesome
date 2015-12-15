@@ -93,10 +93,10 @@
       <div class="clearfix"></div>
       <p>Our primary data source became Open Secrets, a research group whose mission statement includes tracking money in U.S. politics.  From Open Secrets we were able to obtain data covering the funding of elections every two years from 2004 to 2014.  In particular, we were able to obtain contributions by industry (as long as they were large enough to be required to be reported to the government) for every year-election-candidate combination.    For election results information, we gathered federal filings to the Federal Election Committee (FEC) for 2004-2012.  The 2014 results were unavailable, so they were obtained from the New York Times Election Tracking website.  Finally, industry stock data was collected from Yahoo Finance via Quandl, with an eye towards tracking industry performance across elections.</p>
       <h4>Interactive Visuals</h4>
-      <li><a href="visualization/ds_visualization/USCongressDistrict/US-Congress-District-Candidates-Information.html">Map of Congress for 2014</a></li>
-      <li><a href="http://cs-sys-1.uis.georgetown.edu/~hw271/ds_visualization/interactive_network_demo/index.html">Network</a></li>
+      <li><a href="visualization/ds_visualization/USCongressionalDistrict/US-Congress-District-Candidates-Information.html">Map of Congress for 2014</a></li>
+      <li><a href="visualization/ds_visualization/network_rank1/network.html">Network</a></li>
       <li><a href="http://cs-sys-1.uis.georgetown.edu/~hw271/ds_visualization/chart/chart.html">Funding Barplot</a></li>
-      <h2>Our Analysis</h2>
+      <h2>Our Analysis and Our Limitations</h2>
       <hr>
       <div class="clearfix"></div>
       <p>For the majority of the analyses below, we do not use the full dataset constructed from the sources above, but instead use a more limited data set of what we would call “typical” candidates.  To give some examples of the “a-typical” candidates that were removed: 1) Uncontested candidates, since without an opponent there would not be as much pressure to fund raise, therefore they would be a distinct group from the majority in funding practices.  2) Candidates that ran but received a very small percentage of votes (there are candidates that ran but received only 5 votes, such as write-ins).  3) Clear outlier candidates with such a vast percentage of funding in their race as to eschew a typical funding distribution.</p>
@@ -142,6 +142,13 @@
           <p>With regard to party disparity in election win percentages, we found that Republicans won more elections in four of the six elections we covered, but in total of all six elections, the disparity was not as prominent with the Republican Party winning in 50.7% of elections compared to 49.1% for Democrats. In the instances where incumbents were running in an election, Republican incumbents were re-elected at a slightly higher rate than Democratic incumbents with percentages of 92.1% to 91.1%.</p>
           <img src="img/Total Contributions by Party.jpeg" width="375" height="250" alt="Total Contributions by Party">
           <p>Finally, observing the total amount of funds received by each party from election year to the next, we find somewhat of an oddity in 2010 where Democrats received more contributions, but won significantly fewer elections. We also found that in total of the six years, Democrats actually raised over 2.5% more funds than Republicans with 50.9% for Democrats to the Republicans’ 48.3%. This is an interesting piece of data as it does not concur with the common perception that money essentially equates to election wins. This is evidenced by the anomaly in 2010.</p>  
+      		<h4>Question 4: What are the differences in funding between the Senate and the House with respect to Party? (Partially answered)</h4>
+      		<p>Further analysis shows when separating Congress data into Senate and House of Representatives, there is no discernible pattern when comparing the total number of election winners with the total amount of funding for each party. Rather, a more distinct relationship is found between the party of the President and the success of that party in Congress. This phenomenon is described as the <a href = http://www.nytimes.com/2012/11/03/us/politics/senate-races-get-little-lift-from-obama-and-romney.html"> <strong>"coattail effect."</strong></a></p>
+			<img src="img/HouseFundingByParty.jpeg" width="375" height="250" alt="HouseFundingByParty">
+			<img src="img/HouseWinnersByParty.jpeg" width="375" height="250" alt="HouseWinnersByParty"> 
+			<img src="img/SenateFundingByParty.jpeg" width="375" height="250" alt="SenateFundingByParty">
+			<img src="img/SenateWinnersByParty.jpeg" width="375" height="250" alt="SenateWinnersByParty">         
+			<p>Given more time, a deeper analysis into the coattail effect would have been interesting to explore. Looking into seeing of the Predictions for Senators vs Representative would have been improved compared to the merged prediction would have been interesting as well. Presidential Candidates are another subset that would have been interesting to look at if we had time and more data, but do to the limitations set in the beginning, that is data that will need to be collected after the fact.</p> 	
       </div>
     </div>
   </div>
